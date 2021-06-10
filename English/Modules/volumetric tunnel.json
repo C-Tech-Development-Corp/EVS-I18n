@@ -1,0 +1,94 @@
+{
+  "name": "volumetric tunnel",
+  "display": "volumetric tunnel",
+  "desc": "The volumetric_tunnel module is used to produce a volumetric extrusion along a line.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Merge Continuous Paths",
+          "display": "Merge Continuous Paths",
+          "desc": "The Merge Continuous Path toggle controls whether continuous lines and polylines will be handled as single, connected lines to obtain a smooth extrusion without intermediary end caps."
+        },
+        {
+          "name": "Max Step Distance",
+          "display": "Max Step Distance",
+          "desc": "The Max Step Distance is the maximal distance to subdivide the path by. Generally, cells will never be longer than this distance, but may be shorter at the end of a segment."
+        },
+        {
+          "name": "Offset",
+          "display": "Offset",
+          "desc": "The Offset value controls the initial translation of the two-dimensional cross section to allow off-center extrusion or move off-centered cross sections to the origin."
+        },
+        {
+          "name": "Phase Determination",
+          "display": "Phase Determination",
+          "desc": "The Phase Determination is controls the orientation of the input surface along the path. When using Perpendicular Extrusion the surface is extruded perpendicular to the segments of the path. If only rotations around the Z axis should be allowed regardless of the path direction, use Force Z Up."
+        },
+        {
+          "name": "Scale Factor By",
+          "display": "Scale Factor By",
+          "desc": "The Scale Factor By choice allows the user to choose constant or data dependent scaling."
+        },
+        {
+          "name": "Constant Data For Scale Factor",
+          "display": "Constant Data For Scale Factor",
+          "desc": "If Scale Factor By is set to Constant, the constant scale factor can be set using this control."
+        },
+        {
+          "name": "Nodal Data For Scale Factor",
+          "display": "Nodal Data For Scale Factor",
+          "desc": "The Nodal Data for Scale Factor allows you to choose the nodal data component for scaling."
+        },
+        {
+          "name": "Cell Data For Scale Factor",
+          "display": "Cell Data For Scale Factor",
+          "desc": "The Cell Data for Scale Factor allows you to choose the cell data component for scaling."
+        },
+        {
+          "name": "Rotate By",
+          "display": "Rotate By",
+          "desc": "The Rotate By choice allows the user to choose constant or data dependent rotation."
+        },
+        {
+          "name": "Constant Data For Rotation",
+          "display": "Constant Data For Rotation",
+          "desc": "If Rotate By is set to Constant, the Constant Data For Rotation can be set using this control."
+        },
+        {
+          "name": "Nodal Data For Rotation",
+          "display": "Nodal Data For Rotation",
+          "desc": "The Nodal Data for Rotation allows you to choose the nodal data component for rotation."
+        },
+        {
+          "name": "Cell Data For Rotation",
+          "display": "Cell Data For Rotation",
+          "desc": "The Cell Data for Rotation allows you to choose the cell data component for rotation."
+        }
+      ]
+    },
+    {
+      "name": "Data Output",
+      "display": "Data Output",
+      "properties": [
+        {
+          "name": "Map Nodal Data",
+          "display": "Map Nodal Data",
+          "desc": "The Map Nodal Data options allow the user to select those nodal data components that are used for coloring or subsequent subsetting operations. "
+        },
+        {
+          "name": "Map Cell Data",
+          "display": "Map Cell Data",
+          "desc": "The Map Cell Data options allow the user to select those cell data components that are used for coloring or subsequent subsetting operations. "
+        }
+      ]
+    }
+  ]
+}

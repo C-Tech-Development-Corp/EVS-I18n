@@ -1,0 +1,165 @@
+{
+  "name": "glyph",
+  "display": "glyph",
+  "desc": "The glyph module is used to place geometric objects (glyphs) at nodal locations.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Size And Orient By",
+          "display": "Size And Orient By",
+          "desc": "The Size And Orient By control is used to determine which data to use when creating the glyph. Sizing and orienting based on cell data only works if the cells are point type."
+        },
+        {
+          "name": "Nodal Orientation Component",
+          "display": "Nodal Orientation Component",
+          "desc": "The Nodal Orientation Component determines which nodal data component is used to rotate and align the glyphs. This data component should be a vector."
+        },
+        {
+          "name": "Cell Orientation Component",
+          "display": "Cell Orientation Component",
+          "desc": "The Cell Orientation Component determines which cell data component is used to rotate and align the glyphs. This data component should be a vector. The cell type must be a point."
+        },
+        {
+          "name": "Datamap Range",
+          "display": "Datamap Range",
+          "desc": "The Datamap range refers the min and max values that are used by the datamap. This does not change data values from the file."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Use Log Data",
+          "display": "Use Log Data",
+          "desc": "The Use Log Data toggle will force the size of the glyph to be based on the log10 of the selected data."
+        },
+        {
+          "name": "Priority",
+          "display": "Priority",
+          "desc": "The Priority of the glyph will reverse the scaling so that the smallest sample values have the largest size"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "Minimum Scale Factor",
+          "desc": "The Minimum Scale Factor scales the sample values with the least Priority"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "Maximum Scale Factor",
+          "desc": "The Maximum Scale Factor scales the sample values with the greatest Priority"
+        },
+        {
+          "name": "Reverse Direction",
+          "display": "Reverse Direction",
+          "desc": "The Reverse Direction option flips the direction of the input glyph by 180° around the Z-axis."
+        },
+        {
+          "name": "Size For Vector Data",
+          "display": "Size For Vector Data",
+          "desc": "The Size for Vector Data allows the user to change the method behavior when sizing by a vector data component."
+        },
+        {
+          "name": "Nodal Size Component",
+          "display": "Nodal Size Component",
+          "desc": "The Nodal Size Component control determines which nodal data component is used to size the glyphs."
+        },
+        {
+          "name": "Cell Size Component",
+          "display": "Cell Size Component",
+          "desc": "The Cell Size Component control determines which cell data component is used to size the glyphs. The cell type must be a point."
+        },
+        {
+          "name": "Magnitude For Zero Length",
+          "display": "Magnitude For Zero Length",
+          "desc": "Magnitude for Zero Length is the vector magnitude at which the glyphs will be zero size. This establishes the minimum level for taking log values since the log of zero is undefined (minus infinity)."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each glyph as a cell data component.  This allows the user to probe onto the glyph and return its center instead of the position on the outside of the glyph."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Type",
+          "display": "Glyph Type",
+          "desc": "The Glyph Type choice allows the user to select the source for the created glyph.  Both the Generated and Directed Line options are created by the internally.  The Input Glyph option requires the InputGlyph port to be connected."
+        },
+        {
+          "name": "Include Glyph Data",
+          "display": "Include Glyph Data",
+          "desc": "The Include Glyph Data will notify the module to keep data from the Input Glyph field as data for the output"
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The number of subdivisions to use for spheres. Larger numbers create more detailed sphere representations."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        }
+      ]
+    },
+    {
+      "name": "Output Settings",
+      "display": "Output Settings",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If Color By is set to Cell Data the Cell Data Component selects which cell data will set the data map."
+        }
+      ]
+    }
+  ]
+}

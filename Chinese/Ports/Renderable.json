@@ -1,0 +1,324 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "端口信息",
+      "properties": []
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "可见性",
+          "desc": "控制对象的可见性"
+        },
+        {
+          "name": "Opacity",
+          "display": "不透明度",
+          "desc": "控制对象的不透明度"
+        },
+        {
+          "name": "Face Culling",
+          "display": "面剔除",
+          "desc": "控制对象的哪些面可以展示。"
+        },
+        {
+          "name": "Normals Generation",
+          "display": "法线生成",
+          "desc": "控制如何生成面的法线。单元法线将导致面化。顶点法线将创建光滑的面。"
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "渲染优先级",
+          "desc": "控制对象的展示优先级。更高的数值的渲染对象会比同一视图空间中的其他对象优先渲染。"
+        },
+        {
+          "name": "Node Data Datamap",
+          "display": "节点数据映射",
+          "desc": "基于渲染对象中包含的数据，将颜色映射到最终输出对象。"
+        },
+        {
+          "name": "Cell Data Datamap",
+          "display": "单元数据映射",
+          "desc": "基于渲染对象中包含的数据，将颜色映射到最终输出对象"
+        },
+        {
+          "name": "Object Secondary Color",
+          "display": "对象次生色",
+          "desc": "设置对象的次生色。"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Properties",
+      "display": "高级属性",
+      "properties": [
+        {
+          "name": "Use Alternate Object",
+          "display": "使用替代对象",
+          "desc": "确定是否在旋转时使用替代的简单渲染以提高与查看器交互时的性能。"
+        }
+      ]
+    },
+    {
+      "name": "Rendering Modes",
+      "display": "渲染模式",
+      "properties": [
+        {
+          "name": "Point Display Mode",
+          "display": "点显示模式",
+          "desc": "控制点在查看器中如何渲染。注意：大部分显卡不支持所有选项。"
+        },
+        {
+          "name": "Line Display Mode",
+          "display": "线显示模式",
+          "desc": "控制线在查看器中如何渲染。注意：大部分显卡不支持所有选项。"
+        },
+        {
+          "name": "Hide Cell Outlines",
+          "display": "隐藏单元格轮廓线",
+          "desc": "确定在使用线显示模式时，单元格的轮廓是否渲染，或者我们是否只显示实际的线和多段线单元格。"
+        },
+        {
+          "name": "Surface Display Mode",
+          "display": "面显示模式",
+          "desc": "控制面如何在查看器中渲染。"
+        },
+        {
+          "name": "Volume Display Mode",
+          "display": "体积显示模式",
+          "desc": "Controls how volumes are rendered in the Viewer.控制空间体如何在查看器中渲染"
+        },
+        {
+          "name": "Bounds Display Mode",
+          "display": "边界显示模式",
+          "desc": "控制对象的边界如何在查看器中渲染。"
+        }
+      ]
+    },
+    {
+      "name": "Surface Properties",
+      "display": "面属性",
+      "properties": [
+        {
+          "name": "Ambient",
+          "display": "环境",
+          "desc": "考虑到环境(无方向性或朗伯反射)照明，环境值会影响对象的亮度。"
+        },
+        {
+          "name": "Diffuse",
+          "display": "漫反射",
+          "desc": "考虑漫反射(定向或镜面反射)照明，漫反射值会影响对象的亮度。"
+        },
+        {
+          "name": "Specular",
+          "display": "镜面",
+          "desc": "镜面值决定了物体表面白色镜面高光的亮度和焦点，其表面法线将定向光源反射回观察者。这也可以被认为是发亮的。"
+        },
+        {
+          "name": "Gloss",
+          "display": "光泽",
+          "desc": "光泽值决定了物体表面法线将定向光源反射回观察者的亮度。这也可以被认为是有光泽的。"
+        }
+      ]
+    },
+    {
+      "name": "Point And Line Properties",
+      "display": "点与线属性",
+      "properties": [
+        {
+          "name": "Line Style",
+          "display": "线样式",
+          "desc": "线条样式影响线条的绘制方式。"
+        },
+        {
+          "name": "Line Thickness",
+          "display": "线厚度",
+          "desc": "线厚度以像素为单位设置线宽，可以设置为0到25之间的值。Zero是一个特殊的1像素宽的快速版本。"
+        },
+        {
+          "name": "Glyph Size",
+          "display": "图元尺寸",
+          "desc": "图元尺寸只适用于特殊的几何图形。"
+        },
+        {
+          "name": "Subdivision",
+          "display": "细分",
+          "desc": "细分值控制沿着面(网格)绘制线之前要执行的元素细分的数量。数字越高，通过数据放置的线条就越精确。根据数据分布，更高的精度并不总是导致线条变得更平滑。"
+        },
+        {
+          "name": "Smooth Lines",
+          "display": "平滑线条",
+          "desc": "（打开）平滑线条开关将创建(有时)令人愉悦的线条显示。沿着像素划分的锯齿状显示被调暗和模糊，以创建更平滑(更柔和)的外观。平滑的线条产生更厚的抗锯齿线条。"
+        }
+      ]
+    },
+    {
+      "name": "Texture Settings",
+      "display": "纹理设置",
+      "properties": [
+        {
+          "name": "Interpolation",
+          "display": "内插",
+          "desc": ""
+        },
+        {
+          "name": "Tile",
+          "display": "瓦片",
+          "desc": ""
+        },
+        {
+          "name": "Blending",
+          "display": "混合",
+          "desc": ""
+        },
+        {
+          "name": "Type",
+          "display": "类型",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "可见性",
+          "desc": "控制对象的可见性。"
+        },
+        {
+          "name": "Opacity",
+          "display": "不透明度",
+          "desc": "控制对象的不透明度。"
+        },
+        {
+          "name": "Face Culling",
+          "display": "面选择",
+          "desc": "控制对象的哪些面将被展示。"
+        },
+        {
+          "name": "Normals Generation",
+          "display": "法线生成",
+          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "渲染优先级",
+          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
+        },
+        {
+          "name": "Node Data Datamap",
+          "display": "节点数据映射",
+          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
+        },
+        {
+          "name": "Cell Data Datamap",
+          "display": "单元数据映射",
+          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
+        },
+        {
+          "name": "Object Secondary Color",
+          "display": "对象次生色,
+          "desc": "控制对象的次生色。
+        },
+        {
+          "name": "Pickable",
+          "display": "可选性
+          "desc": "控制是否可以在查看器中通过交互的方式选择对象。"
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "可见性",
+          "desc": "控制对象的可见性。"
+        },
+        {
+          "name": "Opacity",
+          "display": "不透明度",
+          "desc": "控制对象的不透明度。"
+        },
+        {
+          "name": "Face Culling",
+          "display": "面选择",
+          "desc": "控制对象的哪些面将被展示。"
+        },
+        {
+          "name": "Normals Generation",
+          "display": "法线生成",
+          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
+        },
+        {
+          "name": "Glyph Normals",
+          "display": "图元法线",
+          "desc": "控制如何为包括球体在内的图元生成法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "渲染优先级",
+          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
+        },
+        {
+          "name": "Node Data Datamap",
+          "display": "节点数据映射",
+          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
+        },
+        {
+          "name": "Cell Data Datamap",
+          "display": "单元数据映射",
+          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
+        },
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "可见性",
+          "desc": "控制对象的可见性。"
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "可见性",
+          "desc": "控制对象的可见性。"
+        },
+        {
+          "name": "Opacity",
+          "display": "不透明度",
+          "desc": "控制对象的不透明度。"
+        },
+        {
+          "name": "Face Culling",
+          "display": "面选择",
+          "desc": "控制对象的哪些面将被展示。"
+        },
+        {
+          "name": "Normals Generation",
+          "display": "法线生成",
+          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
+        },
+         {
+          "name": "Rendering Priority",
+          "display": "渲染优先级",
+          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "name": "isolines",
+  "display": "isolines",
+  "desc": "该模块用于产生定值线，定值线可从二维表面或三维表面面偏移。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Suppress Warnings",
+          "display": "抑制警告",
+          "desc": "此开关将打开警告，提醒用户他们在创建等值线时输入无效。这在动画中很有用，因为动画中的数据在多个点上不会发生变化。"
+        },
+        {
+          "name": "Color Lines",
+          "display": "线条着色",
+          "desc": "线和标签可以用数据或选定的默认纯色着色。"
+        },
+        {
+          "name": "Default Color",
+          "display": "默认颜色",
+          "desc": "线和标签的颜色(如果不按数据着色的话)。"
+        }
+      ]
+    },
+    {
+      "name": "Isoline Settings",
+      "display": "等值线设置",
+      "properties": [
+        {
+          "name": "Isoline Component",
+          "display": "等值线组件",
+          "desc": "等值线组件是指将用于创建等值线的节点数据组件。"
+        },
+        {
+          "name": "Isolines Method",
+          "display": "等值线方法",
+          "desc": "等值线方法允许用户选择是自动生成等值线还是手动设置等值线。"
+        },
+        {
+          "name": "Logarithmic Decades",
+          "display": "对数刻度数",
+          "desc": "当数据经过对数处理后，对数刻度数决定了等值线的数量。如果选择了对数选项，则使用每度数刻度等值线数选项的值。如果选择非格式化，则使用等值线数的值。"
+        },
+        {
+          "name": "Isolines Per Log Decade",
+          "display": "每对数单位等值线数",
+          "desc": "如果选择了对数选项，则用该值来设置每个刻度的对数增量。"
+        },
+        {
+          "name": "Number Of Isolines",
+          "display": "等值线数",
+          "desc": "当对数据进行日志处理时，等值线的数量是指每对数单位等值线的数量。如果数据是线性处理的，等值线的数量是指要绘制的等值线的总数。"
+        },
+        {
+          "name": "Min Max Linking",
+          "display": "最小最大值关联",
+          "desc": "最小最大关联控件是用来设置连接值的最小和最大等值线水平。如果所选组件的最小值和最大值被更改，则可以使用重新计算来找到实际的最小值和最大值。"
+        },
+        {
+          "name": "Minimum Isoline Level",
+          "display": "最小值等值线",
+          "desc": "允许用户约束等值线数据范围。编辑字段中输入的默认值是所选数据组件的最小值。"
+        },
+        {
+          "name": "Maximum Isoline Level",
+          "display": "最大值等值线",
+          "desc": "允许用户约束等值线数据范围。编辑字段中输入的默认值是所选数据组件的最大值。"
+        },
+        {
+          "name": "Additional Lines At Min Max",
+          "display": "最小最大值添加线",
+          "desc": "打开此开关如果可能的话，在等值线的最小值和最大值上再加两条线。"
+        },
+        {
+          "name": "Isoline Levels",
+          "display": "等值线水平",
+          "desc": "设置的等值线水平是用户定义的等值线。"
+        },
+        {
+          "name": "Cell Subdivision",
+          "display": "单元格细分",
+          "desc": "单元格细分水平控制在绘制等值线之前要执行的元素细分的数量。数值越高，等值线的位置就越准确。更高的精度不一定会使等值线变得更平滑，这取决于数据的分布。"
+        },
+        {
+          "name": "Surface Offset",
+          "display": "表面偏移",
+          "desc": "表面偏移控制将垂直放置等值线的位置，以对照表面。"
+        },
+        {
+          "name": "Offset In True Scale",
+          "display": "真实比例偏移",
+          "desc": "将导致表面偏移在模型坐标中发生。"
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "标签设置",
+      "properties": [
+        {
+          "name": "Add Labels",
+          "display": "添加标签",
+          "desc": "指定是否添加标签。"
+        },
+        {
+          "name": "Flip Labels Horizontally",
+          "display": "水平翻转标签",
+          "desc": "把所有标签倒过来。根据视点和数据，这可能有助于使标签更具可读性。"
+        },
+        {
+          "name": "Flip Labels Vertically",
+          "display": "垂直翻转标签",
+          "desc": "将把所有的标签翻转到表面的另一边。根据视点和数据，这可能有助于使标签更具可读性。"
+        },
+        {
+          "name": "Label Spacing",
+          "display": "标签间距",
+          "desc": "标签间距值。"
+        },
+        {
+          "name": "Label Height",
+          "display": "标签高度",
+          "desc": "缩放每个标签的大小。"
+        },
+        {
+          "name": "Label Start",
+          "display": "标签起始",
+          "desc": "沿线偏移每个标签的开始位置。"
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "格式化标签数字",
+          "desc": "允许用户设置如何格式化转换为标签的数字。"
+        },
+        {
+          "name": "Label Suffix",
+          "display": "标签后缀",
+          "desc": "附加到每个标签的字符串。"
+        },
+        {
+          "name": "User Suffix",
+          "display": "用户后缀",
+          "desc": "如果在标签后缀中选择了用户指定的选项，则可以使用此字段设置字符串。"
+        }
+      ]
+    }
+  ]
+}

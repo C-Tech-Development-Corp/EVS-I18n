@@ -1,0 +1,63 @@
+{
+  "name": "statistics",
+  "display": "statistics",
+  "desc": "The statistics module is used to analyze the statistical distribution of a single data from a field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": []
+    },
+    {
+      "name": "Statistic Settings",
+      "display": "Statistic Settings",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component on which the statistical anaylsis is to be performed."
+        },
+        {
+          "name": "Minimum Data Level",
+          "display": "Minimum Data Level",
+          "desc": "The Minimum Data Level is used to set the lower limit on the data bins for statistical analysis. The default value is the minimum in the data component. If the statistical distribution should focus on only a portion of the data, this value can be changed to reflect only that desired range of data."
+        },
+        {
+          "name": "Maximum Data Level",
+          "display": "Maximum Data Level",
+          "desc": "The Maximum Data Level is used to set the upper limit on the data bins for statistical analysis. The default value is the maximum in the data component. If the statistical distribution should focus on only a portion of the data, this value can be changed to reflect only that desired range of data."
+        },
+        {
+          "name": "Clamp Data",
+          "display": "Clamp Data",
+          "desc": "The Clamp Data toggle will actually clamp the data to the Minimum and Maximum Data Level before processing it for statistics."
+        },
+        {
+          "name": "Number Of Bins",
+          "display": "Number Of Bins",
+          "desc": "The Number of Bins is used to set the number of distribution bins to be used in the analysis. The default is 10 and the range is from 2 to 255. This value is generally changed to get unary or aesthetically pleasing bin values. For example, if the data min is -3.0 and the data max is 2.0, setting the Number of Bins to 6 will result in unary bin values (e.g. -3, -2, -1, etc.)."
+        },
+        {
+          "name": "Details",
+          "display": "Details",
+          "desc": "The Details toggle will display additional statistical information such as variance, deviation and quartile values."
+        },
+        {
+          "name": "Report Delimiter",
+          "display": "Report Delimiter",
+          "desc": "The Report Delimiter string controls the spacing of the output window. The text of the output window will be broken up according to whatever is in the Delimiter box, there is one special delimiter tag and that is the word 'TAB' which allows the text to be tab delimited"
+        },
+        {
+          "name": "Coordinate Precision",
+          "display": "Coordinate Precision",
+          "desc": "The Coordiante Precision is the number of decimal points to use for coordinate values."
+        },
+        {
+          "name": "Precision",
+          "display": "Precision",
+          "desc": "The Precision is the number of decimal points to use for calculated values."
+        }
+      ]
+    }
+  ]
+}

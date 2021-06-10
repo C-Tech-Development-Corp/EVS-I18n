@@ -1,0 +1,140 @@
+{
+  "name": "file statistics",
+  "display": "file statistics",
+  "desc": "The file_statistics module is used to calculate and display statistics about the data contained in the selected file.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Use Application Origin",
+          "display": "Use Application Origin",
+          "desc": "When true, the module will apply the Application Origin. When false, data will be left in internal model space. Turn off when loading data intended to use as a glyph or similar."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Component Or Layer",
+          "display": "Component Or Layer",
+          "desc": "The Data Component is used to select which file data component to process for display."
+        },
+        {
+          "name": "Log Process",
+          "display": "Log Process",
+          "desc": "Process to compute the log (base 10) of the data value."
+        },
+        {
+          "name": "Log Post Processing Clip Min",
+          "display": "Log Post Processing Clip Min",
+          "desc": "Post Processing Clip Min will be used after data processing to replace any sample property value that is less than the specified number in log space."
+        },
+        {
+          "name": "Linear Post Processing Clip Min",
+          "display": "Linear Post Processing Clip Min",
+          "desc": "Linear Post Processing Clip Min will be used after data processing to replace any sample property value that is less than the specified number in linear space."
+        },
+        {
+          "name": "Detection Limit",
+          "display": "Detection Limit",
+          "desc": "The Detection Limit value affects any file values set with the 'ND' or other non-detect flags (for a list of these flags open the help for the APDV file format). When the module encounters this flag in the file it will insert the a value equal to (Detection Limit * LT Multiplier)."
+        },
+        {
+          "name": "Less Than Multiplier",
+          "display": "Less Than Multiplier",
+          "desc": "The Less Than Multiplier is the value that any sample with the '<' less than flag."
+        },
+        {
+          "name": "Number Of Bins",
+          "display": "Number Of Bins",
+          "desc": "The Number of Bins value allows the user to specify the bins that will be used to calculate the frequency histogram. The default value of 0 does not calculate a frequency distribution during execution of the module. The user can select any number of bins from 2 to 255 (note that a value of 1 is not valid)."
+        },
+        {
+          "name": "Delimiter",
+          "display": "Delimiter",
+          "desc": "The Delimiter specifies how the labels and values in the Output Log are separated. The word TAB will be replaced by a tab advancement."
+        },
+        {
+          "name": "Coordinate Precision",
+          "display": "Coordinate Precision",
+          "desc": "The Coordiante Precision is the number of decimal points to use for coordinate values."
+        },
+        {
+          "name": "Precision",
+          "display": "Precision",
+          "desc": "The Precision is the number of decimal points to use for calculated values."
+        },
+        {
+          "name": "Detailed Statistics",
+          "display": "Detailed Statistics",
+          "desc": "The Detail Statistics toggle causes the module to display the original statistical information along with more detailed statistics."
+        },
+        {
+          "name": "Points As Spheres",
+          "display": "Points As Spheres",
+          "desc": "The Points As Spheres toggle will cause the points to be displayed as spheres."
+        },
+        {
+          "name": "Point Width",
+          "display": "Point Width",
+          "desc": "The Point Width sets the size of the rendered pixels. The default is 0 which is equivalent to 1."
+        },
+        {
+          "name": "Sphere Radius",
+          "display": "Sphere Radius",
+          "desc": "The Sphere Radius will set the radius for each sphere when Points As Spheres is on."
+        }
+      ]
+    },
+    {
+      "name": "Time Settings",
+      "display": "Time Settings",
+      "properties": [
+        {
+          "name": "Chem File Is Time Domain",
+          "display": "Chem File Is Time Domain",
+          "desc": "The Chem File is Time Domain toggle turns on date interpolation for time domain analyte (e.g. chemistry) files."
+        },
+        {
+          "name": "Specify Date By Component",
+          "display": "Specify Date By Component",
+          "desc": "The Specify Date by Component toggle will cause the Date field to be ignored and the date to be selected using the Data Component."
+        },
+        {
+          "name": "Date For Interpolation",
+          "display": "Date For Interpolation",
+          "desc": "The Date For Interpolation field is the date being interpolated to, for example if you have an analyte value of 2 on 1/01/05 and a value of 4 on 1/03/05 and the date is set to 1/02/05 with Direct Interpolation the value should be set to 3. The Date can be either set here or passed in via the Date port."
+        },
+        {
+          "name": "Analyte Name",
+          "display": "Analyte Name",
+          "desc": "The Analyte Name field is used for AIDV and APDV time files as the dates take up the spots in these files usually reserved for analyte names."
+        },
+        {
+          "name": "Interpolation Type",
+          "display": "Interpolation Type",
+          "desc": "There are 5 different Interpolation Methods that are available, each interpolation method is used to define how to interpolate when given non-detects in a file. Please read the module help for a complete description."
+        },
+        {
+          "name": "Use Nearest Measured Data",
+          "display": "Use Nearest Measured Data",
+          "desc": "The Use Nearest Measured Data toggle causes the sample at the interpolated date, to have the same value as the nearest measured date and not an interpolated value."
+        },
+        {
+          "name": "Non Linear Shrink",
+          "display": "Non Linear Shrink",
+          "desc": "If the Non-Linear Shrink toggle is selected the size of the sphere will be determined by a cosine interpolation instead of a linear one."
+        }
+      ]
+    }
+  ]
+}

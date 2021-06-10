@@ -1,0 +1,50 @@
+{
+  "name": "external faces",
+  "display": "external faces",
+  "desc": "The external_faces module extracts external faces from a 2D or 3D field for rendering.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "Data Selection",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
+        {
+          "name": "Remove Internal Layer Boundaries",
+          "display": "Remove Internal Layer Boundaries",
+          "desc": "Remove Internal Layer Boundaries allows the user to merge cell sets in order to remove non-visible, internal layer boundaries."
+        },
+        {
+          "name": "Keep Cell Sets",
+          "display": "Keep Cell Sets",
+          "desc": "If Remove Internal Layer Boundaries is activated Keep Cell Sets allows the user to split the cells of the merged field back into original cell sets after calculating external faces."
+        }
+      ]
+    }
+  ]
+}

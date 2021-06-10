@@ -1,0 +1,28 @@
+{
+  "name": "application_properties",
+  "display": "application_properties",
+  "desc": "Global Application Properties",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Application Origin",
+          "display": "Application Origin",
+          "desc": "This application origin is used to determine an origin coordinate used for all calculations.  On write, some modules allow you to not trnaslate this back, in which case, this becomes a local origin point of the output generated."
+        },
+        {
+          "name": "Application Loading",
+          "display": "Application Loading",
+          "desc": ""
+        },
+        {
+          "name": "Smooth Lines",
+          "display": "Smooth Lines",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

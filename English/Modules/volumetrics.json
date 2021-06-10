@@ -1,0 +1,268 @@
+{
+  "name": "volumetrics",
+  "display": "volumetrics",
+  "desc": "The volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Update Information Window",
+          "display": "Update Information Window",
+          "desc": "Send report to the Information window receives a report everytime the module is run."
+        }
+      ]
+    },
+    {
+      "name": "Input Settings",
+      "display": "Input Settings",
+      "properties": [
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "The Nodal Data Component used to subset the input."
+        },
+        {
+          "name": "Cell Sets",
+          "display": "Cell Sets",
+          "desc": "The Cell Sets selection list allows the user to select which of the cell sets (or possibly geologic layers) the volumes and masses will be calculated in."
+        },
+        {
+          "name": "Auto Detect Units",
+          "display": "Auto Detect Units",
+          "desc": "The Auto Detect Units toggle will try to determine which Nodal Data Units to use based on the Nodal Data Component and the Processing Type.  It will also try to determine the Coordinate Units based on the input field."
+        },
+        {
+          "name": "Calculation Type",
+          "display": "Calculation Type",
+          "desc": "The Calculation Type determines what type of units to process the Nodal Data Component in."
+        },
+        {
+          "name": "Soil Nodal Data Units",
+          "display": "Soil Nodal Data Units",
+          "desc": "The Soil Nodal Data Units for the Soil Calculation Type and the Nodal Data Component."
+        },
+        {
+          "name": "Groundwater Nodal Data Units",
+          "display": "Groundwater Nodal Data Units",
+          "desc": "The Groundwater Nodal Data Units for the Groundwater Calculation Type and the Nodal Data Component."
+        },
+        {
+          "name": "Nodal Data Unit Ratio",
+          "display": "Nodal Data Unit Ratio",
+          "desc": "If Nodal Data Units have been set to Specify the user needs to set the Nodal Data Unit Ratio. This is the ratio of the user specified units to the units we use for calculation. For example, the units we use for the Nodal Data Component in our calculations are grams/grams. If you wanted to use the units of mg/kg (ppm) you would need to find the ratio to convert the units which is in this case .001/1000 or .000001."
+        },
+        {
+          "name": "Nodal Specified Units",
+          "display": "Nodal Specified Units",
+          "desc": "If Nodal Data Units have been set to Specify the user needs to set the Nodal Specified Units label so that the correct units can be displayed."
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Coordinate Units",
+          "desc": "The Coordinate Units of the input field."
+        },
+        {
+          "name": "Coordinate Unit Ratio",
+          "display": "Coordinate Unit Ratio",
+          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Unit Ratio.  The ratio should be the factor needed to convert between the user specified units and Liters."
+        },
+        {
+          "name": "Coordinate Specified Units",
+          "display": "Coordinate Specified Units",
+          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Specified Units.  This is the label used in the output."
+        }
+      ]
+    },
+    {
+      "name": "Processing Settings",
+      "display": "Processing Settings",
+      "properties": [
+        {
+          "name": "Porosity",
+          "display": "Porosity",
+          "desc": "The Porosity value allows the user to input the properties of the soil matrix in which the chemicals reside. Note that if the mass of chemicals in a combined soil and ground water plume are to be estimated, one of the geologic layers should be set up to have a boundary within it that corresponds to the water table position. In essence, this will create two layers out of one geologic unit that can be used to separate the soil domain from the ground water domain. The user can then choose the appropriate Nodal Data Units for each layer in the two domains, and obtain volumetrics estimates by summing the results in individual layers. "
+        },
+        {
+          "name": "Soil Density",
+          "display": "Soil Density",
+          "desc": "The Soil Density value allows the user to input the properties of the soil matrix in which the chemicals reside. Note that if the mass of chemicals in a combined soil and ground water plume are to be estimated, one of the geologic layers should be set up to have a boundary within it that corresponds to the water table position. In essence, this will create two layers out of one geologic unit that can be used to separate the soil domain from the ground water domain. The user can then choose the appropriate Nodal Data Units for each layer in the two domains, and obtain volumetrics estimates by summing the results in individual layers. "
+        },
+        {
+          "name": "Chemical Density",
+          "display": "Chemical Density",
+          "desc": "The Chemical Density value allows the user to input the density of the chemical constituent for which mass estimates are being completed. Note that this value is used to calculate the volume of chemical in the specified isosurface, as the mass units are calculated directly from the nodal data."
+        },
+        {
+          "name": "Water Density",
+          "display": "Water Density",
+          "desc": "The Water Density value allows the user to specify the density of water. The default of 0.9999720 g/mL is the Density of Water at 4.5 degrees Celsius."
+        },
+        {
+          "name": "Volume Dollars",
+          "display": "Volume Dollars",
+          "desc": "The Volume Dollars value is used along with the total volume of the chemical to indicate the cost of the removal of the chemical."
+        },
+        {
+          "name": "Mass Dollars",
+          "display": "Mass Dollars",
+          "desc": "The Mass Dollars value is used, along with the total chemical mass, to determine the value of the chemical mass."
+        }
+      ]
+    },
+    {
+      "name": "Output Settings",
+      "display": "Output Settings",
+      "properties": [
+        {
+          "name": "Volume Units",
+          "display": "Volume Units",
+          "desc": "Volume Units is used to select which units the volume should be calculated in. "
+        },
+        {
+          "name": "Volume Units Ratio",
+          "display": "Volume Units Ratio",
+          "desc": "If the Volume Units is set to Specify the user must set the Volume Units Ratio. The ratio should be the factor needed to convert between the user specified units and liters. For example if your units were Cubic Meters the ratio would be 1000."
+        },
+        {
+          "name": "Volume Specified Units",
+          "display": "Volume Specified Units",
+          "desc": "If the Volume Units is set to Specify the user must set the Volume Specified Units.  This label will be used in the output."
+        },
+        {
+          "name": "Mass Units",
+          "display": "Mass Units",
+          "desc": "Mass Units is used to select which units the mass should be calculated in."
+        },
+        {
+          "name": "Mass Unit Ratio",
+          "display": "Mass Unit Ratio",
+          "desc": "If the Mass Units is set to Specify the user must set the Mass Unit Ratio. The ratio should be the factor needed to convert between the user specified units and kilograms."
+        },
+        {
+          "name": "Mass Specified Units",
+          "display": "Mass Specified Units",
+          "desc": "If the Mass Units is set to Specify the user must set the Mass Unit Ratio. This label will be used in the output."
+        },
+        {
+          "name": "Output Results To File",
+          "display": "Output Results To File",
+          "desc": "The Output Results To File toggle causes volumetrics to write a file, specified by the Filename, that contains all volumetrics information in a format suitable for input to programs like Excel (tab delimited .txt file). This file is written to in an append mode. It will grow in size as you use volumetrics. You should delete or move the file when you're done with it."
+        },
+        {
+          "name": "Output String",
+          "display": "Output String",
+          "desc": "The Output String will output a leading string for every entry into the output file."
+        },
+        {
+          "name": "Output Filetype",
+          "display": "Output Filetype",
+          "desc": "The Output File Type choice is used to select the format of the output file. The default is a tab spaced single line output, the second choice will format the output the same as the display window, and the third option will format the output separated by tabs on multiple lines."
+        },
+        {
+          "name": "Overwrite File",
+          "display": "Overwrite File",
+          "desc": "The Overwrite File toggle causes the output file to be written over instead of appended to."
+        }
+      ]
+    },
+    {
+      "name": "Area Moment Of Inertia",
+      "display": "Area Moment Of Inertia",
+      "properties": [
+        {
+          "name": "Display Mass Along Major Eigen Vector",
+          "display": "Display Mass Along Major Eigen Vector",
+          "desc": "The Display Mass Along Major Eigen Vector allows the user to toggle the visibility along the Major Eigen Vector."
+        },
+        {
+          "name": "Display Mass Along Minor Eigen Vector",
+          "display": "Display Mass Along Minor Eigen Vector",
+          "desc": "The Display Mass Along Minor Eigen Vector allows the user to toggle the visibility along the Minor Eigen Vector."
+        },
+        {
+          "name": "Display Mass Along Interm Eigen Vector",
+          "display": "Display Mass Along Interm Eigen Vector",
+          "desc": "The Display Mass Along Interm Eigen Vector allows the user to toggle the visibility along the Intermediate Eigen Vector."
+        },
+        {
+          "name": "Segments In Lines",
+          "display": "Segments In Lines",
+          "desc": "The Segments In Lines allows the user to control the number of segments making up each line, the larger the number of segments the closer the node data along the line will match the node data of the model, but at the cost of speed."
+        },
+        {
+          "name": "Color Lines By Axis",
+          "display": "Color Lines By Axis",
+          "desc": "The Color Lines by Axis toggle strips the node data from the lines leaving them colored by the axis the represent."
+        },
+        {
+          "name": "Ellipsoid Resolution",
+          "display": "Ellipsoid Resolution",
+          "desc": "Ellipsoid Resolution is an integer value determines the number of faces used to approximate the analytically smooth ellipsoid. The higher the resolution the smoother the ellipsoid. The Export Results button must be used to have an output port for the ellipsoid."
+        },
+        {
+          "name": "Ellipsoid Scale",
+          "display": "Ellipsoid Scale",
+          "desc": "The Ellipsoid Scale is a scaling factor for the second moment ellipsoid. A value of 1.0 (default) is analogous to one-sigma (67%) statistical confidence. Higher values would provide an indication of the size of the eigenvalues with a higher statistical confidence."
+        },
+        {
+          "name": "Ellipsoid Color",
+          "display": "Ellipsoid Color",
+          "desc": "The second moment ellipse is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Volumetric Output",
+      "display": "Volumetric Output",
+      "properties": [
+        {
+          "name": "Total Soil Volume",
+          "display": "Total Soil Volume",
+          "desc": "The total soil volume output."
+        },
+        {
+          "name": "Total Soil Mass",
+          "display": "Total Soil Mass",
+          "desc": "The total soil mass output."
+        },
+        {
+          "name": "Chemical Volume",
+          "display": "Chemical Volume",
+          "desc": "The output chemical volume."
+        },
+        {
+          "name": "Chemical Mass",
+          "display": "Chemical Mass",
+          "desc": "The output chemical mass."
+        },
+        {
+          "name": "Average",
+          "display": "Average",
+          "desc": "The Average Concentration of the selected analyte."
+        },
+        {
+          "name": "Volume Dollars",
+          "display": "Volume Dollars",
+          "desc": "The volume in volume dollars."
+        },
+        {
+          "name": "Mass Dollars",
+          "display": "Mass Dollars",
+          "desc": "The mass in mass dollars."
+        },
+        {
+          "name": "Center Of Mass",
+          "display": "Center Of Mass",
+          "desc": "The Center Of Mass of the output volume."
+        }
+      ]
+    }
+  ]
+}

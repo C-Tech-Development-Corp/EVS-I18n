@@ -1,0 +1,38 @@
+{
+  "name": "thin_fence",
+  "display": "thin_fence",
+  "desc": "Thin_fence模块沿用户定义的（x，y）路径创建围栅图。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Clean Fence Boundaries",
+          "display": "清除围栅边界",
+          "desc": "清除围栅边界开关尝试合并每个围栅段(由2D输入的每个线段创建)之间的所有单元格。有时候关闭它后输出效果会更好，但通常最好是打开它。"
+        },
+        {
+          "name": "Straighten To 2D",
+          "display": "拉直至2D",
+          "desc": "拉直至2D开关用于将3D围栅投影到2D表示中。其中，每个样本的x值等于到传入输入线端口的线的距离。"
+        },
+        {
+          "name": "Straightened Plane",
+          "display": "拉直平面",
+          "desc": "拉直平面允许用户设置拉直样本所在的平面。这就需要将样本拉直到2D。"
+        },
+        {
+          "name": "Nodal Data Components",
+          "display": "节点数据组件",
+          "desc": "节点数据组件开关允许您选择要包含在围栅中的节点数据。"
+        },
+        {
+          "name": "Cell Data Components",
+          "display": "单元数据组件",
+          "desc": "单元数据组件开关允许您选择要包含在围栅中的单元数据"
+        }
+      ]
+    }
+  ]
+}

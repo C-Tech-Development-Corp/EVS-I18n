@@ -1,0 +1,68 @@
+{
+  "name": "bounds",
+  "display": "bounds",
+  "desc": "该模块产生3D结构化场的边界线框或者边界面框。当你需要显示一个对象的形状和网格的结构时非常有用。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Hull",
+          "display": "外廓",
+          "desc": "当打开时，绘制网格范围内的线框。"
+        },
+        {
+          "name": "Edges",
+          "display": "边缘",
+          "desc": "当打开时，Imin/Imax、Jmin/Jmax、Kmin/Kmax控件将生成该平面上网格的线框表示。"
+        },
+        {
+          "name": "Faces",
+          "display": "表面",
+          "desc": "当打开时，会使Imin/Imax、Jmin/Jmax、Kmin/Kmax控件生成一个代表该平面范围位置的实体面。 "
+        },
+        {
+          "name": "I Min",
+          "display": "I Min",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在I面平面的最小范围上。"
+        },
+        {
+          "name": "I Max",
+          "display": "I Max",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在I面平面的最大范围上。 "
+        },
+        {
+          "name": "J Min",
+          "display": "J Min",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在J面平面的最小范围上。"
+        },
+        {
+          "name": "J Max",
+          "display": "J Max",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在J面平面的最大范围上。"
+        },
+        {
+          "name": "K Min",
+          "display": "K Min",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在K面平面的最小范围上。"
+        },
+        {
+          "name": "K Max",
+          "display": "K Max",
+          "desc": "当打开时，显示网格(打开边缘)或平面(打开表面)在K面平面的最大范围上。"
+        },
+        {
+          "name": "Data",
+          "display": "数据",
+          "desc": "当打开时，使边界复制选择的组件的节点数据值沿输出网格的节点到输出字段。由于存在数据，边界线可以根据所选节点数据组件的内插数据值着色。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数组组件",
+          "desc": "当打开数据开关时，允许用户选择着色的节点数据组件。"
+        }
+      ]
+    }
+  ]
+}

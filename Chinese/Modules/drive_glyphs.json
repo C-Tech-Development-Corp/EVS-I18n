@@ -1,0 +1,232 @@
+{
+  "name": "drive_glyphs",
+  "display": "drive_glyphs",
+  "desc": "drive_glyph模块提供了一种沿着多个路径移动任何对象以创建一个“驱动”动画的方法。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Map Component",
+          "display": "映射组件",
+          "desc": "允许用户选择要将哪些数据从输入路径映射到输出图元。"
+        },
+        {
+          "name": "Data Processing",
+          "display": "数据处理",
+          "desc": "允许用户指定如何处理映射组件的输出和大小。"
+        },
+        {
+          "name": "Datamap",
+          "display": "数据映射",
+          "desc": "数据映射引用数据映射所使用的最小值和最大值。更改这些值可以影响颜色范围和图元大小。"
+        },
+        {
+          "name": "Glyph Position",
+          "display": "图元位置",
+          "desc": "允许用户确定图元在输入路径中的位置。"
+        },
+        {
+          "name": "Number Of Glyphs",
+          "display": "图元数量",
+          "desc": "图元数量表示沿着该线最多将出现多少字形。"
+        },
+        {
+          "name": "Circulate",
+          "display": "循环",
+          "desc": "循环开关用于循环或循环动画。如果图元的位置大于路径长度，则图元将被放置在与路径开始的适当距离处。或者，如果图元位置在行尾之前，则将其放置在与行尾适当的距离上。例如，如果您选择了3个图元放置在一个路径上(这意味着每个图元的间距应为路径长度的33%)，并且位置为0。然后在0处有一个图元，在100 - 33或66%处有另一个图元，最后在100 - 66或沿线长度距离的33%处有一个图元。"
+        },
+        {
+          "name": "Glyph Size",
+          "display": "图元尺寸",
+          "desc": "图元尺寸用来对图元在各个方向进行缩放。默认大小是基于输入数据自动计算的。"
+        },
+        {
+          "name": "Priority",
+          "display": "优先级",
+          "desc": "图元的优先级将反转缩放，以便最小的样本值具有最大的尺寸。"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "最小缩放因",
+          "desc": "以最小优先级对样本值进行缩放"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "最大缩放因",
+          "desc": "以最大优先级对样本值进行缩放"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "使用对数数据",
+          "desc": "将强制图元大小基于所选数据的对数值。"
+        },
+        {
+          "name": "Size For Vector Data",
+          "display": "矢量数据大小",
+          "desc": "允许用户在按矢量数据组件调整大小时更改方法行为。"
+        },
+        {
+          "name": "Magnitude For Zero Length",
+          "display": "零长度量级",
+          "desc": "表示图元为零的矢量大小。这就建立了取对数值的最小值，因为0的对数是没有定义的(负无穷)。"
+        },
+        {
+          "name": "Include Center Data",
+          "display": "包含中心数据",
+          "desc": "该开关告诉模块将每个图元的中心点包含为单元数据组件。这允许用户探测图元并返回它的中心位置，而不是图元外部的位置。"
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "图元设置",
+      "properties": [
+        {
+          "name": "Glyph Type",
+          "display": "图元类型",
+          "desc": "图元类型选项允许用户为所创建的图元选择来源。生成和定向线选项都是由内部创建的。输入图元选项要求连接输入图元端口。"
+        },
+        {
+          "name": "Include Input Glyph Data",
+          "display": "包含图元数据",
+          "desc": "通知模块将输入图元字段中的数据作为输出数据"
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "产生图元",
+          "desc": "该选项允许用户选择自动生成的图元类型。"
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "球体细分度",
+          "desc": "用于球体细分的数量。更大的数字创建更精确的球体表示。"
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "图元分辨率",
+          "desc": "产生的圆锥、多边形、圆柱、圆盘等图元的分辨率。"
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "主轴因子",
+          "desc": "图元主轴额缩放因子。"
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "次轴因子",
+          "desc": "图元次轴额缩放因子。"
+        },
+        {
+          "name": "Roll",
+          "display": "卷曲",
+          "desc": "沿图元主轴的卷曲。"
+        },
+        {
+          "name": "Alignment",
+          "display": "对齐",
+          "desc": "允许用户选择图元的方向。"
+        }
+      ]
+    },
+    {
+      "name": "Percentage Options",
+      "display": "百分比选项",
+      "properties": [
+        {
+          "name": "Position",
+          "display": "位置",
+          "desc": "位置滑条用来给图元位置给出沿路径的百分比。"
+        },
+        {
+          "name": "Position Animation",
+          "display": "位置动画",
+          "desc": "位置动画控制图元沿路径的移动。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步距大小",
+          "desc": "步距值指定了当图元运动时前进的增量值。"
+        }
+      ]
+    },
+    {
+      "name": "Date Options",
+      "display": "日期选项",
+      "properties": [
+        {
+          "name": "Date Component",
+          "display": "日期组件",
+          "desc": "允许用户选择当使用时间数据来定位图元时的数据来源。"
+        },
+        {
+          "name": "Date",
+          "display": "日期",
+          "desc": "用来定位图元"
+        },
+        {
+          "name": "Date Loop",
+          "display": "日期循环",
+          "desc": "通过指定增量设置日期。"
+        },
+        {
+          "name": "Step Time Units",
+          "display": "步进时间单位",
+          "desc": "当步进或运行时前进的增量单位。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步距大小",
+          "desc": "为步进或运行时的前进增量指定一个因子，结合步进时间单位。"
+        },
+        {
+          "name": "Glyph Placement Method",
+          "display": "图元放置方法",
+          "desc": "图元放置方法允许用户选择沿每条路径设置附加图元的位置。“按图元数量”选项允许用户按图元的数量划分时间范围，将第一个图元放置在时间值上，而每个附加的图元与时间值之间有一定比例的距离。“依据偏移时间”允许用户设置所有图元的时间差值。"
+        },
+        {
+          "name": "Offset Time",
+          "display": "时间偏移",
+          "desc": "当图元放置方法选择“依据偏移时间”时，该控件允许用户设置剩余图元放置的时间差值。"
+        }
+      ]
+    },
+    {
+      "name": "Data Options",
+      "display": "数据选项",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "允许用户从输入路径中选择哪一个数据用来定位图元。"
+        },
+        {
+          "name": "Data Value",
+          "display": "数据值",
+          "desc": "想要的数据值。"
+        },
+        {
+          "name": "Data Loop",
+          "display": "数据循环",
+          "desc": "用指定增量设置数据。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步进大小",
+          "desc": "运行时指定前进的增量。"
+        },
+        {
+          "name": "Glyph Placement Method",
+          "display": "图元放置方法",
+          "desc": "图元放置方法允许用户选择沿每条路径设置附加图元的位置。“按图元数量”选项允许用户按图元的数量划分数据范围，将第一个图元放置在数据值上，而每个附加的图元与数据值之间有一定比例的距离。“依据偏移值”允许用户设置所有图元的数据差值。"
+        },
+        {
+          "name": "Offset Value",
+          "display": "偏移值",
+          "desc": "当图元放置方法选择“依据偏移值”时，该控件允许用户设置剩余图元放置的数据差值。"
+        }
+      ]
+    }
+  ]
+}

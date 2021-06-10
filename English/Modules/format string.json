@@ -1,0 +1,85 @@
+{
+  "name": "format string",
+  "display": "format string",
+  "desc": "The format_string module provides a simple means to convert values coming from various numeric and string input ports into a resultant string.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Expression",
+          "display": "Expression",
+          "desc": "The Expression allows the user to control the sequence of Variables used to create the output string."
+        },
+        {
+          "name": "Date Format",
+          "display": "Date Format",
+          "desc": "The Date Format allows the user to control how Date values will be displayed in the output string."
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "Variables",
+      "properties": [
+        {
+          "name": "Scale",
+          "display": "Scale",
+          "desc": "Scale is the  scaling factor for vertical (z) coordinates.  This value reflects a multiplication factor of the layer thickness. For example, a layer that is 10 feet thick that is subjected to a z- exaggeration value of 4, will appear 40 feet thick in the viewer."
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "The N1 field is a double value that can be used as the variable {N1} in the expression."
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "The N2 field is a double value that can be used as the variable {N2} in the expression."
+        },
+        {
+          "name": "N3",
+          "display": "N3",
+          "desc": "The N3 field is a double value that can be used as the variable {N3} in the expression."
+        },
+        {
+          "name": "N4",
+          "display": "N4",
+          "desc": "The N4 field is a double value that can be used as the variable {N4} in the expression."
+        },
+        {
+          "name": "S1",
+          "display": "S1",
+          "desc": "The S1 field is a string value that can be used as the variable {S1} in the expression."
+        },
+        {
+          "name": "S2",
+          "display": "S2",
+          "desc": "The S2 field is a string value that can be used as the variable {S2} in the expression."
+        },
+        {
+          "name": "S3",
+          "display": "S3",
+          "desc": "The S3 field is a string value that can be used as the variable {S3} in the expression."
+        },
+        {
+          "name": "Date",
+          "display": "Date",
+          "desc": "The Date field is a date value that can be used as the variable {Date} in the expression."
+        }
+      ]
+    },
+    {
+      "name": "Output",
+      "display": "Output",
+      "properties": [
+        {
+          "name": "Result",
+          "display": "Result",
+          "desc": "The Result is the output string created by resolving the Expression."
+        }
+      ]
+    }
+  ]
+}

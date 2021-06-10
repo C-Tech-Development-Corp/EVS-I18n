@@ -1,0 +1,53 @@
+{
+  "name": "create spheroid",
+  "display": "create spheroid",
+  "desc": "The create_spheroid module produces a 2D or 3D spheroid.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Spheroid Type",
+          "display": "Spheroid Type",
+          "desc": "The Spheroid Type allows the user to create either a 2D circle or a 3D sphere."
+        },
+        {
+          "name": "Subdivisions",
+          "display": "Subdivisions",
+          "desc": "The Subdivisions control allows the user to change the number of divisions used to create the sphere or circle.  The greater the number the smoother the output appears."
+        },
+        {
+          "name": "Grid Rotation",
+          "display": "Grid Rotation",
+          "desc": "The Grid Rotation allows you to rotate the sphere about its center point by a set Azimuth and Inclination."
+        },
+        {
+          "name": "Center Point",
+          "display": "Center Point",
+          "desc": "The Center Point is the location of the center of the spheroid. It is also used as a center of rotation for the spheroid."
+        },
+        {
+          "name": "I Size",
+          "display": "I Size",
+          "desc": "The I Size value controls the size of the sphere in the x direction before rotation."
+        },
+        {
+          "name": "J Size",
+          "display": "J Size",
+          "desc": "The I Size value controls the size of the sphere in the y direction before rotation."
+        },
+        {
+          "name": "K Size",
+          "display": "K Size",
+          "desc": "The I Size value controls the size of the sphere in the z direction before rotation."
+        }
+      ]
+    }
+  ]
+}

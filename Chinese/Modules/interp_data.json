@@ -1,0 +1,23 @@
+{
+  "name": "interp_data",
+  "display": "interp_data",
+  "desc": "该模块将场空间的节点数据插入到另一个维度相同或者更低维度的场中去。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Remove Nodes Outside Volume",
+          "display": "清除空间外部节点",
+          "desc": "告诉算法如何处理来自输入目标场中的位于输入数据场坐标范围之外的节点。"
+        },
+        {
+          "name": "Data To Interpolate",
+          "display": "插值数据",
+          "desc": "用于选择将哪个标量数据组件插入到感兴趣的面或直线上。"
+        }
+      ]
+    }
+  ]
+}

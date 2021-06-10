@@ -1,0 +1,33 @@
+{
+  "name": "overburden",
+  "display": "overburden",
+  "desc": "overburden模块计算给定坑壁坡度(从垂直方向测量)和挖掘挖掘精度(我们称为缓冲区大小)，挖掘羽或矿体所需的完整体积。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Wall Slope",
+          "display": "坑壁坡度",
+          "desc": "坑壁坡度设置从垂直角度测量的角度，其中0是垂直的，90是水平的。"
+        },
+        {
+          "name": "Create Plume Buffer",
+          "display": "创建羽缓冲",
+          "desc": "创建羽缓冲开关确定覆盖层计算是否严格，并确定羽(矿体)的所有侧面的缓冲。如果关闭此选项，则模块运行得更快。"
+        },
+        {
+          "name": "Buffer Size",
+          "display": "缓冲区大小",
+          "desc": "缓冲区大小设置精确度水平，从而产生在感兴趣的子集化水平之外的挖掘量。例如，值为10.0将产生从感兴趣的子集化水平开始的10英尺的覆盖挖掘量。"
+        },
+        {
+          "name": "Nodal Data",
+          "display": "节点数据",
+          "desc": "节点数据控件允许用户设置感兴趣的分析对象。"
+        }
+      ]
+    }
+  ]
+}

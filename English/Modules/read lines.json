@@ -1,0 +1,110 @@
+{
+  "name": "read lines",
+  "display": "read lines",
+  "desc": "The read_lines module is used to visualize a series of points with data connected by lines.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "This Data Component controls which data value to color the lines by."
+        },
+        {
+          "name": "Use Application Origin",
+          "display": "Use Application Origin",
+          "desc": "When true, the module will apply the Application Origin. When false, data will be left in internal model space. Turn off when loading cross section paths or similar."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Log Process Nodal Data",
+          "display": "Log Process Nodal Data",
+          "desc": "This toggle sets the nodal data values to the log value of the input node data."
+        },
+        {
+          "name": "Log Process Cell Data",
+          "display": "Log Process Cell Data",
+          "desc": "This toggle sets the cell data values to the log value of the input cell data. "
+        },
+        {
+          "name": "Connectivity Component",
+          "display": "Connectivity Component",
+          "desc": "The Connectivity Component determines how SAD files are connected."
+        },
+        {
+          "name": "Clip Min",
+          "display": "Clip Min",
+          "desc": "This is only active if either Log processing for nodal or cell data is selected and sets the minimum value for each data value so that they can be correctly processed."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Create Glyphs",
+          "display": "Create Glyphs",
+          "desc": "The Create Glyphs control will allow for the creation of user selected glyphs at each node in the input file."
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The number of subdivisions to use for spheres. Larger numbers create more detailed sphere representations."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each glyph as a cell data component.  This allows the user to probe onto the glyph and return its center instead of the position on the outside of the glyph."
+        }
+      ]
+    }
+  ]
+}

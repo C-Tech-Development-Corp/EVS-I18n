@@ -1,0 +1,28 @@
+{
+  "name": "cell centers",
+  "display": "cell centers",
+  "desc": "The cell_centers module produces a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+        }
+      ]
+    }
+  ]
+}

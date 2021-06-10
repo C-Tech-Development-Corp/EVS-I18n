@@ -1,0 +1,53 @@
+{
+  "name": "time_geology",
+  "display": "time_geology",
+  "desc": "time_geology模块允许您从一组基于时间的表面中提取一个表面。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Date And Time",
+          "display": "日期和时间",
+          "desc": "关注的日期和时间。"
+        },
+        {
+          "name": "Time Loop",
+          "display": "时间循环",
+          "desc": "时间循环控件通过指定的增量设置日期和时间。"
+        },
+        {
+          "name": "Start Date",
+          "display": "起始日期",
+          "desc": "起始日期是模拟的开始时间。该值设置为文件中的第一个日期。"
+        },
+        {
+          "name": "End Date",
+          "display": "结束日期",
+          "desc": "模拟的结束时间。该值被设置为所选数据组件的最后一个日期。"
+        },
+        {
+          "name": "Step Time Units",
+          "display": "步进时间单位",
+          "desc": "当步进或者运行时指定前进的增量单位。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步距大小",
+          "desc": "当步进或者运行时指定前进的增量因子，和步进时间单位一起使用。"
+        },
+        {
+          "name": "Material Number",
+          "display": "材质编号",
+          "desc": "材质编号提供了为地质信息端口设置材质编号的能力。"
+        },
+        {
+          "name": "Material Name",
+          "display": "材质名称",
+          "desc": "材质名称提供了设置地质信息端口材质名称的功能。"
+        }
+      ]
+    }
+  ]
+}

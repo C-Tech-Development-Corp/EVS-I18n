@@ -1,0 +1,237 @@
+{
+  "name": "drive glyphs",
+  "display": "drive glyphs",
+  "desc": "The drive_glyph module provides a way to move any object along multiple paths to create a 'driving' animation.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Map Component",
+          "display": "Map Component",
+          "desc": "The Map Component allows the user to select which data to map from the input path to the output glyph."
+        },
+        {
+          "name": "Data Processing",
+          "display": "Data Processing",
+          "desc": "The Data Processing control allow the user to specify how to process the Map Component for output and size."
+        },
+        {
+          "name": "Datamap",
+          "display": "Datamap",
+          "desc": "The Datamap refers the min and max values that are used by the datamap. Changing these values can affect both the color range and the glyph size."
+        },
+        {
+          "name": "Glyph Position",
+          "display": "Glyph Position",
+          "desc": "The Glyph Position allows the user to determine where the glyphs are placed along the input paths."
+        },
+        {
+          "name": "Number Of Glyphs",
+          "display": "Number Of Glyphs",
+          "desc": "Number of glyphs indicates how many glyphs at most will be present along the line."
+        },
+        {
+          "name": "Circulate",
+          "display": "Circulate",
+          "desc": "The Circulate toggle is used for looping or cycling animations. If a glyphs position is greater than the line length the glyph will be placed the appropriate distance from the start of the line. Or if the glyph position is before the end of the line it will be placed the appropriate distance from the end of the line. In example if you have selected 3 glyphs to be placed on a line (meaning that each glyph should be placed 33% of the line distance apart) and the Position is at zero. Then there will be one glyph at zero and another at 100 - 33 or 66% and a final glyph at 100 - 66 or 33% of the distance along the line length."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Priority",
+          "display": "Priority",
+          "desc": "The Priority of the glyph will reverse the scaling so that the smallest sample values have the largest size"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "Minimum Scale Factor",
+          "desc": "The Minimum Scale Factor scales the sample values with the least Priority"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "Maximum Scale Factor",
+          "desc": "The Maximum Scale Factor scales the sample values with the greatest Priority"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "Use Log Data",
+          "desc": "The Use Log Data toggle will force the size of the glyph to be based on the log10 of the selected data."
+        },
+        {
+          "name": "Size For Vector Data",
+          "display": "Size For Vector Data",
+          "desc": "The Size for Vector Data allows the user to change the method behavior when sizing by a vector data component."
+        },
+        {
+          "name": "Magnitude For Zero Length",
+          "display": "Magnitude For Zero Length",
+          "desc": "Magnitude for Zero Length is the vector magnitude at which the glyphs will be zero size. This establishes the minimum level for taking log values since the log of zero is undefined (minus infinity)."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each glyph as a cell data component.  This allows the user to probe onto glyph and return its center instead of the position on the outside of the glyph."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Type",
+          "display": "Glyph Type",
+          "desc": "The Glyph Type choice allows the user to select the source for the created glyph.  Both the Generated and Directed Line options are created by the internally.  The Input Glyph option requires the InputGlyph port to be connected."
+        },
+        {
+          "name": "Include Input Glyph Data",
+          "display": "Include Input Glyph Data",
+          "desc": "If the Glyph Type is set to Input Glyph this toggle will allow data that is associated with the input glyph to be passed through to the output."
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The number of subdivisions to use for spheres. Larger numbers create more detailed sphere representations."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        }
+      ]
+    },
+    {
+      "name": "Percentage Options",
+      "display": "Percentage Options",
+      "properties": [
+        {
+          "name": "Position",
+          "display": "Position",
+          "desc": "The Position slider gives the percentage along a line to use for glyph positioning."
+        },
+        {
+          "name": "Position Animation",
+          "display": "Position Animation",
+          "desc": "The Position Animation controls the movement (or driving) of the glyphs along the line."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a value for the increment for advancement when stepping or running."
+        }
+      ]
+    },
+    {
+      "name": "Date Options",
+      "display": "Date Options",
+      "properties": [
+        {
+          "name": "Date Component",
+          "display": "Date Component",
+          "desc": "The Date Component allows the user to select which data to use when positioning the glyph by time data."
+        },
+        {
+          "name": "Date",
+          "display": "Date",
+          "desc": "The Date used to position the glyphs"
+        },
+        {
+          "name": "Date Loop",
+          "display": "Date Loop",
+          "desc": "The Date Loop controls setting the Date by specified increments."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Glyph Placement Method",
+          "display": "Glyph Placement Method",
+          "desc": "The Glyph Placement Method allows the user to select where to set additional glyphs along each line.  By Number of Glyphs allows the user to break up the time range by the number of glyphs, placing the first glyph at the Time Value and each additional glyph a proportional distance behind it.  By Offset Time allows the user to set the the difference in time for all glyphs."
+        },
+        {
+          "name": "Offset Time",
+          "display": "Offset Time",
+          "desc": "When the By Offset Value option is selected in the Glyph Placement Method this control allows the user to set the difference in value used to set the position of the remaining glyphs."
+        }
+      ]
+    },
+    {
+      "name": "Data Options",
+      "display": "Data Options",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component allows the user to select which data from the input path should be used to position the glyphs."
+        },
+        {
+          "name": "Data Value",
+          "display": "Data Value",
+          "desc": "The Data Value interest."
+        },
+        {
+          "name": "Data Loop",
+          "display": "Data Loop",
+          "desc": "The Data Loop controls setting the Data by specified increments."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Glyph Placement Method",
+          "display": "Glyph Placement Method",
+          "desc": "The Glyph Placement Method allows the user to select where to set additional glyphs along each line.  By Number of Glyphs allows the user to break up the data range by the number of glyphs, placing the first glyph at the Data Value and each additional glyph a proportional distance behind it.  By Offset Value allows the user to set the the difference in value for all glyphs."
+        },
+        {
+          "name": "Offset Value",
+          "display": "Offset Value",
+          "desc": "When the By Offset Value option is selected in the Glyph Placement Method this control allows the user to set the difference in value used to set the position of the remaining glyphs."
+        }
+      ]
+    }
+  ]
+}

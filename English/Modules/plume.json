@@ -1,0 +1,86 @@
+{
+  "name": "plume",
+  "display": "plume",
+  "desc": "The plume module creates a true 3D volumetric subset of a 3D input. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric. This module should not normally be used when you desire a visualization of a plume but rather when you wish to do subsequent operations such as analysis, slices, etc.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Above Output String",
+          "display": "Above Output String",
+          "desc": "When the Subsetting Direction is set to Subset Above Level, the Output String will use this string as its identifier."
+        },
+        {
+          "name": "Below Output String",
+          "display": "Below Output String",
+          "desc": "When the Subsetting Direction is set to Subset Below Level, the Output String will use this string as its identifier."
+        },
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Subsetting Component",
+          "display": "Subsetting Component",
+          "desc": "The Subsetting Component is the nodal data value to use to subset the input by."
+        },
+        {
+          "name": "Subsetting Level",
+          "display": "Subsetting Level",
+          "desc": "The Subsetting Level is used to set the level for subsetting the input field. If a value is chosen larger than the max value, the max value is placed in the edit box. Similarly, if a value less than the minimum is input, the minimum value is placed in the box. The default level is the arithmetic average of the minimum and maximum values in the subsetting component."
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "Subsetting Level Has Been Set",
+          "desc": ""
+        },
+        {
+          "name": "Subsetting Direction",
+          "display": "Subsetting Direction",
+          "desc": "The Subsetting Direction choice allows the user to select which range of values to include in the output.  Either the range of data from the subsetting level to the max can be selected, or the range of data from the subsetting level to the min of the data."
+        },
+        {
+          "name": "Output Nodal Data",
+          "display": "Output Nodal Data",
+          "desc": "The Output Nodal Data choice allows the user to select the nodal data to include in the output."
+        },
+        {
+          "name": "Output Cell Data",
+          "display": "Output Cell Data",
+          "desc": "The Output Cell Data choice allows the user to select the cell data to include in the output."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

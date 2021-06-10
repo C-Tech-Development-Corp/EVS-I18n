@@ -1,0 +1,155 @@
+{
+  "name": "isolines",
+  "display": "isolines",
+  "desc": "The isolines module is used to produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Suppress Warnings",
+          "display": "Suppress Warnings",
+          "desc": "The Suppress Warnings toggle will turn of the warnings alerting the user that they have invalid input for creating isolines.  This is useful in animations where data may not vary at multiple points."
+        },
+        {
+          "name": "Color Lines",
+          "display": "Color Lines",
+          "desc": "Lines and labels can be colored by either data or a selected solid Default Color."
+        },
+        {
+          "name": "Default Color",
+          "display": "Default Color",
+          "desc": "The Color For both the lines and labels if not colored by data."
+        }
+      ]
+    },
+    {
+      "name": "Isoline Settings",
+      "display": "Isoline Settings",
+      "properties": [
+        {
+          "name": "Isoline Component",
+          "display": "Isoline Component",
+          "desc": "The Isoline Component refers to the nodal data component that will be used to create isolines."
+        },
+        {
+          "name": "Isolines Method",
+          "display": "Isolines Method",
+          "desc": "The Isolines Method allows the user to choose between automatically generating isolevels or setting them by hand."
+        },
+        {
+          "name": "Logarithmic Decades",
+          "display": "Logarithmic Decades",
+          "desc": "When the data has been log processed the Logarithmic Decades determines the number of isolines.  If the Log option is selected the Isolines Per Log Decade value is used. If Unformatted is selected the Number Of Isolines is used."
+        },
+        {
+          "name": "Isolines Per Log Decade",
+          "display": "Isolines Per Log Decade",
+          "desc": "If the Log Option is Selected for Logarithmic Decades the increments per decade can be set with this value."
+        },
+        {
+          "name": "Number Of Isolines",
+          "display": "Number Of Isolines",
+          "desc": "When the data is log processed the Number If Isolines refers to the number of isolines per decade.  If the data is linear processed the number of isolines refers to the total number of isolines to be drawn."
+        },
+        {
+          "name": "Min Max Linking",
+          "display": "Min Max Linking",
+          "desc": "The Min Max Linking control control is used to set the linked values for the Minimum and Maximum Isoline levels.  If the min and max values for the selected component have been changed, Recalculate can be used to find the actual min and max."
+        },
+        {
+          "name": "Minimum Isoline Level",
+          "display": "Minimum Isoline Level",
+          "desc": "The Minimum isoline level input field allows the user to constrain the isoline data range. The default value entered into the edit fields is the minimum value of the data component selected."
+        },
+        {
+          "name": "Maximum Isoline Level",
+          "display": "Maximum Isoline Level",
+          "desc": "The Maximum isoline level input field allows the user to constrain the isoline data range. The default value entered into the edit fields is the maximum value of the data component selected."
+        },
+        {
+          "name": "Additional Lines At Min Max",
+          "display": "Additional Lines At Min Max",
+          "desc": "If the Additional Lines At Min Max toggle is selected two additional lines are created at the Minimum and Maximum Isoline Level if possible."
+        },
+        {
+          "name": "Isoline Levels",
+          "display": "Isoline Levels",
+          "desc": "The Set Isoline Levels are user defined isolevels."
+        },
+        {
+          "name": "Cell Subdivision",
+          "display": "Cell Subdivision",
+          "desc": "The Cell Subdivision level controls the number of element subdivisions to be performed before drawing the isolines. The higher the number, the more accurately the isolines will be placed through the data. Higher accuracy may not always cause the isolines to become smoother, this depends on the data distribution."
+        },
+        {
+          "name": "Surface Offset",
+          "display": "Surface Offset",
+          "desc": "The Surface Offset controls where the isolines will be placed, vertically, in reference to the surface."
+        },
+        {
+          "name": "Offset In True Scale",
+          "display": "Offset In True Scale",
+          "desc": "The Offset In True Scale toggle will cause the Surface Offset to happen in model coordinates."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "Add Labels",
+          "display": "Add Labels",
+          "desc": "The Add Labels toggle specifies whether labels are added."
+        },
+        {
+          "name": "Flip Labels Horizontally",
+          "display": "Flip Labels Horizontally",
+          "desc": "The Flip Labels Horizontally toggle will flip all labels upside down. Depending on the viewpoint and the data, this may be useful for making the labels more readable."
+        },
+        {
+          "name": "Flip Labels Vertically",
+          "display": "Flip Labels Vertically",
+          "desc": "The Flip Labels Vertically toggle will flip all labels to the other side of the surface. Depending on the viewpoint and the data, this may be useful for making the labels more readable."
+        },
+        {
+          "name": "Label Spacing",
+          "display": "Label Spacing",
+          "desc": "The Label Spacing value ."
+        },
+        {
+          "name": "Label Height",
+          "display": "Label Height",
+          "desc": "The Label Height scales the size of each label."
+        },
+        {
+          "name": "Label Start",
+          "display": "Label Start",
+          "desc": "The Label Start will offset the start of each label along the line."
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "Format Label Numbers",
+          "desc": "The Format Label Numbers control allows the user to set how numbers that are turned into labels will be formatted."
+        },
+        {
+          "name": "Label Suffix",
+          "display": "Label Suffix",
+          "desc": "The Label Suffix is a string that is appended to each label."
+        },
+        {
+          "name": "User Suffix",
+          "display": "User Suffix",
+          "desc": "If the User Specified option is selected in Label Suffix, the string can be set with this value."
+        }
+      ]
+    }
+  ]
+}

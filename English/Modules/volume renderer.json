@@ -1,0 +1,98 @@
+{
+  "name": "volume renderer",
+  "display": "volume renderer",
+  "desc": "Volume_renderer directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The nodal data component to be volume rendered."
+        },
+        {
+          "name": "Range 1 Cut Off Value",
+          "display": "Range 1 Cut Off Value",
+          "desc": "Range 1 Cut Off Value slider allows positioning the breakpoint of the two data ranges to be adjusted. By default, it is set to the midpoint of the input nodal data range. The first range in the datamap spans from the minimum data value to the breakpoint. The second range in the datamap spans from the breakpoint to the maximum data value. The range of this slider matches the range of your data or the Data Min and Data Max values."
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "Subsetting Level Has Been Set",
+          "desc": ""
+        },
+        {
+          "name": "Data Min",
+          "display": "Data Min",
+          "desc": "The Data Min is the minimum value for the selected data component."
+        },
+        {
+          "name": "Data Max",
+          "display": "Data Max",
+          "desc": "The Data Max is the maximum value for the selected data component."
+        },
+        {
+          "name": "Minimum Opacity Range 1",
+          "display": "Minimum Opacity Range 1",
+          "desc": "The Minimum Opacity of the first data range."
+        },
+        {
+          "name": "Minimum Color Range 1",
+          "display": "Minimum Color Range 1",
+          "desc": "The data map color for the minimum of the first data range"
+        },
+        {
+          "name": "Maximum Opacity Range 1",
+          "display": "Maximum Opacity Range 1",
+          "desc": "The Maximum Opacity of the first data range.  We recommend that this value should equal the value for Minimum Opacity Range2 in most cases."
+        },
+        {
+          "name": "Maximum Color Range 1",
+          "display": "Maximum Color Range 1",
+          "desc": "The data map color for the maximum of the first data range"
+        },
+        {
+          "name": "Range 2 Min Values",
+          "display": "Range 2 Min Values",
+          "desc": "The Range 2 Min Values control will control how the opacity and color for the second range is set relative to the maximum color and opacity of range 1."
+        },
+        {
+          "name": "Minimum Opacity Range 2",
+          "display": "Minimum Opacity Range 2",
+          "desc": "The Minimum Opacity of the second data range. We recommend that this value should equal the value for Maximum Opacity Range1 in most cases."
+        },
+        {
+          "name": "Minimum Color Range 2",
+          "display": "Minimum Color Range 2",
+          "desc": "The data map color for the minimum of the second data range"
+        },
+        {
+          "name": "Maximum Opacity Range 2",
+          "display": "Maximum Opacity Range 2",
+          "desc": "The Maximum Opacity for the second data range."
+        },
+        {
+          "name": "Maximum Color Range 2",
+          "display": "Maximum Color Range 2",
+          "desc": "The data map color for the maximum of the second data range"
+        },
+        {
+          "name": "Render Type",
+          "display": "Render Type",
+          "desc": "The Render Type controls allows the user to select between BTF Textures (which is for OpenGL rendering only) and Ray Traced rendering. Ray Tracing provides the highest quality volume rendering, but it can be as much as 100 times slower than BTF depending on your hardware and viewer (output) resolution. The two modes will produce similar results but with a markedly different appearance."
+        },
+        {
+          "name": "Coarse",
+          "display": "Coarse",
+          "desc": "The Coarse toggle provides for a low resolution quick version of software rendering. This is useful for setting parameters, but is not recommended for final output."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "texture wave",
+  "display": "texture wave",
+  "desc": "The texture_wave module utilizes opacity and texture mapping to create an animated effect. This module works with both OpenGL and Software Rendering.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Mode",
+          "display": "Mode",
+          "desc": "The Mode allows the user to determine how the phase affects the texture of the line."
+        },
+        {
+          "name": "Phase",
+          "display": "Phase",
+          "desc": "The Phase slider allows you to control the current position of the oscillation."
+        },
+        {
+          "name": "Phase Loop",
+          "display": "Phase Loop",
+          "desc": "The Phase Loop controls the method for animating the change through the phase values."
+        },
+        {
+          "name": "Number Of Steps",
+          "display": "Number Of Steps",
+          "desc": "The Number Of Steps determines the length of the animation."
+        },
+        {
+          "name": "Texture Resolution",
+          "display": "Texture Resolution",
+          "desc": "Texture Resolution is the internal resolution of the image used for texture-coloring."
+        },
+        {
+          "name": "Minimum Amplitude",
+          "display": "Minimum Amplitude",
+          "desc": "Min Amplitude is the minimum opacity of the objects."
+        },
+        {
+          "name": "Maximum Amplitude",
+          "display": "Maximum Amplitude",
+          "desc": "Max Amplitude is the maximum opacity of the objects."
+        },
+        {
+          "name": "Contrast",
+          "display": "Contrast",
+          "desc": "Contrast affects the contrast (similar to color saturation)."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data component to display."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "test_module",
+  "display": "ƭèƨƭ_₥ôδúℓè",
+  "desc": "Tλè ƭèƨƭ ₥ôδúℓè.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Test_module_properties",
+          "display": "Tèƨƭ_₥ôδúℓè_ƥřôƥèřƭïèƨ",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": []
+    }
+  ]
+}

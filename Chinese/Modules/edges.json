@@ -1,0 +1,23 @@
+{
+  "name": "edges",
+  "display": "edges",
+  "desc": "这允许查看输入网格的所有单元格边界(内部和外部)。edge模块非常有用，因为它能够渲染自适应网格位置周围的线条。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "允许用户选择输出的边缘线如何着色。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "当着色依据设置为节点数据后，可以选择哪个节点数据组件来进行数据映射。"
+        }
+      ]
+    }
+  ]
+}

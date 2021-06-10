@@ -1,0 +1,59 @@
+{
+  "name": "texture colors",
+  "display": "texture colors",
+  "desc": "The texture_colors module does high-quality coloring based on texturing.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Texture By",
+          "display": "Texture By",
+          "desc": "The Texture By control allows the user to set how the texture of the output should be determined."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component selects which nodal data to texture."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If Texture By is set to Cell Data the Cell Data Component selects which cell data will set the texture."
+        },
+        {
+          "name": "Texture Resolution",
+          "display": "Texture Resolution",
+          "desc": "Texture Resolution determines the number of colors utilized in the texture map for coloring. Higher resolutions create smoother coloring, but at the expense of memory and compute/rendering time."
+        },
+        {
+          "name": "Separate Cells",
+          "display": "Separate Cells",
+          "desc": "If Texture By is set to cell data, this option will ensure that no cells are sharing nodes this can prevent blurring affects."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
+        {
+          "name": "Input Z Scale",
+          "display": "Input Z Scale",
+          "desc": "The Input Z Scale is the vertical exaggeration of the input object."
+        }
+      ]
+    }
+  ]
+}

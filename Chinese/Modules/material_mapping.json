@@ -1,0 +1,390 @@
+{
+  "name": "material_mapping",
+  "display": "material_mapping",
+  "desc": "This module can re-assign data for the purpose of grouping.这个模块可以重新分配数据进行分组。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Value Type",
+          "display": "值类型",
+          "desc": "The Value Type radio selector determines the type of data to be modified.值类型选择器确定要修改的数据类型。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 1",
+      "display": "材料映射 1",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 2",
+      "display": "材料映射 2",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 3",
+      "display": "材料映射 3",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 4",
+      "display": "材料映射 4",
+      "properties": [
+       {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 5",
+      "display": "材料映射 5",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 6",
+      "display": "材料映射 6",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 7",
+      "display": "材料映射 7",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 8",
+      "display": "材料映射 8",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 9",
+      "display": "材料映射 9",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 10",
+      "display": "材料映射 10",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 11",
+      "display": "材料映射 11",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    },
+    {
+      "name": "Material Map 12",
+      "display": "材料映射 12",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "激活映射",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping.此开关打开或关闭当前材质映射。"
+        },
+        {
+          "name": "From Value",
+          "display": "起始值",
+          "desc": "The From Value specifies the starting range to map from.指定要映射的起始范围。"
+        },
+        {
+          "name": "To Value",
+          "display": "结束值",
+          "desc": "The To Value specifies the ending range to map from.指定要映射的结束范围"
+        },
+        {
+          "name": "Map Value",
+          "display": "映射值",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to.指定所需的新值来映射从起始值到结束值的所有内容。"
+        },
+        {
+          "name": "Map Name",
+          "display": "映射名称",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port.映射材料的名称。这在创建地质图例端口时使用。"
+        }
+      ]
+    }
+  ]
+}

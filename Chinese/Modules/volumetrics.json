@@ -1,0 +1,257 @@
+{
+  "name": "volumetrics",
+  "display": "volumetrics",
+  "desc": "该模块用于计算土壤的体积和质量，以及土壤和地下水中的化学物质数据。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Input Settings",
+      "display": "输入设置",
+      "properties": [
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "用来子集化输入。"
+        },
+        {
+          "name": "Cell Sets",
+          "display": "单元集",
+          "desc": "单元集选择列表允许用户选择某些单元集(或可能的地质层)来计算其体积和质量。"
+        },
+        {
+          "name": "Auto Detect Units",
+          "display": "自动检测单位",
+          "desc": "自动检测单位开关将尝试基于节点数据组件和处理类型来确定使用哪个节点数据单位。它还将尝试根据输入场确定坐标单位。"
+        },
+        {
+          "name": "Calculation Type",
+          "display": "计算类型",
+          "desc": "计算类型决定处理节点数据组件的单元类型。"
+        },
+        {
+          "name": "Soil Nodal Data Units",
+          "display": "土壤节点数据单位",
+          "desc": "用于土壤计算类型和节点数据组件。"
+        },
+        {
+          "name": "Groundwater Nodal Data Units",
+          "display": "地下水数据单位",
+          "desc": "地下水计算类型及节点数据组件。"
+        },
+        {
+          "name": "Nodal Data Unit Ratio",
+          "display": "节点数据单位比率",
+          "desc": "如果节点数据单位被设置为指定，用户需要设置节点数据单位比率。这是用户指定的单位与我们用于计算的单位的比率。例如，我们在计算中为节点数据组件使用的单位是克/克。如果你想使用mg/kg (ppm)的单位，你需要找到转换单位的比率，在这种情况下是.001/1000或.000001。"
+        },
+        {
+          "name": "Nodal Specified Units",
+          "display": "节点数据指定单位",
+          "desc": "如果节点数据单位已被设置为指定，用户需要设置节点指定单位标签，以便正确的单位可以被显示。"
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "坐标单位",
+          "desc": "输入场的坐标单位。"
+        },
+        {
+          "name": "Coordinate Unit Ratio",
+          "display": "坐标单位比率",
+          "desc": "如果坐标单位被设置为指定，用户必须设置坐标单位比率。比率应该是用户指定的单位和升之间转换的因子。"
+        },
+        {
+          "name": "Coordinate Specified Units",
+          "display": "坐标指定单位",
+          "desc": "如果坐标单位被设置为指定，用户必须将坐标设置为指定的单位。这是输出中使用的标签。"
+        }
+      ]
+    },
+    {
+      "name": "Processing Settings",
+      "display": "处理设置",
+      "properties": [
+        {
+          "name": "Porosity",
+          "display": "孔隙率",
+          "desc": "孔隙率值允许用户输入化学物质驻留的土壤的性质。请注意，如果要估计土壤和地下水混合羽流中化学物质的质量，就应该建立一个地质层，使其边界与地下水位的位置相一致。本质上，这将从一个地质单元中创建两个层，可以用来将土壤域和地下水域分开。然后，用户可以为这两个域中的每一层选择适当的节点数据单位，并通过在各个层中对结果进行求和来获得容量估计数。"
+        },
+        {
+          "name": "Soil Density",
+          "display": "土壤密度",
+          "desc": "土壤密度值允许用户输入化学物质驻留的土壤的性质。请注意，如果要估计土壤和地下水混合羽流中化学物质的质量，就应该建立一个地质层，使其边界与地下水位的位置相一致。本质上，这将从一个地质单元中创建两个层，可以用来将土壤域和地下水域分开。然后，用户可以为这两个域中的每一层选择适当的节点数据单位，并通过在各个层中对结果进行求和来获得容量估计数。"
+        },
+        {
+          "name": "Chemical Density",
+          "display": "化学物密度",
+          "desc": "化学物密度值允许用户输入正在进行质量估计的化学成分的密度。注意，这个值用于计算指定等值面的化学物质体积，因为质量单位是直接从节点数据计算出来的。"
+        },
+        {
+          "name": "Water Density",
+          "display": "水密度",
+          "desc": "水密度值允许用户指定水的密度。默认的0.9999720 g/mL，是水在4.5摄氏度的密度。"
+        },
+        {
+          "name": "Volume Dollars",
+          "display": "单位体积成本",
+          "desc": "与化学物质的总体积一起使用，以表明移除化学物质的成本。"
+        },
+        {
+          "name": "Mass Dollars",
+          "display": "单位质量成本",
+          "desc": "连同总化学物质量一起用来决定化学质量的价值。"
+        }
+      ]
+    },
+    {
+      "name": "Output Settings",
+      "display": "输出设置",
+      "properties": [
+        {
+          "name": "Volume Units",
+          "display": "体积单位",
+          "desc": "用于选择计算体积的单位。 "
+        },
+        {
+          "name": "Volume Units Ratio",
+          "display": "体积单位比率",
+          "desc": "如果将体积单位设置为指定，则用户必须设置体积单位比例。比率应该是用户指定的单位和升之间转换的因子。例如，如果单位是立方米，比例就是1000。"
+        },
+        {
+          "name": "Volume Specified Units",
+          "display": "体积指定单位",
+          "desc": "如果卷单元设置为指定，则用户必须将体积设置为指定的单元。这个标签将在输出中使用。"
+        },
+        {
+          "name": "Mass Units",
+          "display": "质量单位",
+          "desc": "质量单位用于选择计算质量的单位。"
+        },
+        {
+          "name": "Mass Unit Ratio",
+          "display": "质量单位比率",
+          "desc": "如果质量单位被设置为指定，用户必须设置质量单位比。比率应该是用户指定的单位和千克之间转换的因素。"
+        },
+        {
+          "name": "Mass Specified Units",
+          "display": "质量指定单位",
+          "desc": "如果质量单位被设置为指定，用户必须设置质量单位比率。这个标签将在输出中使用。"
+        },
+        {
+          "name": "Output Results To File",
+          "display": "输出结果文件",
+          "desc": "此开关使得volumetrics写入一个由文件名指定的文件，该文件包含所有volumetrics信息，适合于输入到类似Excel等程序的格式(以制表符分隔的.txt文件)。它以附加模式写入此文件。它的大小将随着您使用volumetrics次数而增长。当您完成它后，应该及时删除或转移文件。"
+        },
+        {
+          "name": "Output String",
+          "display": "输出字符串",
+          "desc": "输出字符串将为输出文件中的每个条目输出一个前导字符串。"
+        },
+        {
+          "name": "Output Filetype",
+          "display": "输出文件类型",
+          "desc": "输出文件类型的选择用于选择输出文件的格式。默认是以制表符为间隔的单行输出，第二种选择将输出格式化为与显示窗口相同的格式，第三种选择将输出格式化为在多行上用制表符分隔的格式。"
+        },
+        {
+          "name": "Overwrite File",
+          "display": "覆盖文件",
+          "desc": "打开覆盖文件将导致输出文件被覆盖而不是附加。"
+        }
+      ]
+    },
+    {
+      "name": "Area Moment Of Inertia",
+      "display": "面积惯性矩",
+      "properties": [
+        {
+          "name": "Display Mass Along Major Eigen Vector",
+          "display": "沿主特征向量显示质量",
+          "desc": "允许用户切换主特征向量上的可见性。"
+        },
+        {
+          "name": "Display Mass Along Minor Eigen Vector",
+          "display": "沿小特征向量显示质量",
+          "desc": "允许用户切换小特征向量上的可见性。"
+        },
+        {
+          "name": "Display Mass Along Interm Eigen Vector",
+          "display": "沿中间特征向量显示质量",
+          "desc": "允许用户切换中间特征向量上的可见性。"
+        },
+        {
+          "name": "Segments In Lines",
+          "display": "线中的片段",
+          "desc": "允许用户控制组成每条线的片段数量，线段数量越大，沿线节点数据与模型节点数据越接近，但以速度为代价。"
+        },
+        {
+          "name": "Color Lines By Axis",
+          "display": "以坐标轴着色线",
+          "desc": "从线中去除节点数据，并按所表示的轴着色。"
+        },
+        {
+          "name": "Ellipsoid Resolution",
+          "display": "椭球体分辨率",
+          "desc": "椭球分辨率是一个整数值，它决定了用来近似解析光滑椭球面的数目。分辨率越高，椭球面越平滑。导出结果按钮必须用于为椭球体提供输出端口。"
+        },
+        {
+          "name": "Ellipsoid Scale",
+          "display": "椭球比例",
+          "desc": "椭球比例是二阶矩椭球的尺度因子。值1.0(默认值)类似于1标准差(67%)的统计置信度。较高的值将以较高的统计置信度提供特征值大小的指示。"
+        },
+        {
+          "name": "Ellipsoid Color",
+          "display": "椭球颜色",
+          "desc": "二阶矩椭圆是一个纯色，可以使用此控件选择。"
+        }
+      ]
+    },
+    {
+      "name": "Volumetric Output",
+      "display": "体积输出",
+      "properties": [
+        {
+          "name": "Total Soil Volume",
+          "display": "总土壤体积",
+          "desc": "总土壤体积输出。"
+        },
+        {
+          "name": "Total Soil Mass",
+          "display": "总土壤质量",
+          "desc": "总土壤质量输出。"
+        },
+        {
+          "name": "Chemical Volume",
+          "display": "化学物体积",
+          "desc": "输出化学物体积。"
+        },
+        {
+          "name": "Chemical Mass",
+          "display": "化学物质量",
+          "desc": "输出化学物质量。"
+        },
+        {
+          "name": "Average",
+          "display": "平均值",
+          "desc": "所选分析物的平均浓度。"
+        },
+        {
+          "name": "Volume Dollars",
+          "display": "体积成本",
+          "desc": "消耗成本的体积。"
+        },
+        {
+          "name": "Mass Dollars",
+          "display": "质量成本",
+          "desc": "消耗成本的质量。"
+        },
+        {
+          "name": "Center Of Mass",
+          "display": "质心",
+          "desc": "输出体积的质心。"
+        }
+      ]
+    }
+  ]
+}

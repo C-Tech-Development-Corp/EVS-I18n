@@ -1,0 +1,54 @@
+{
+  "name": "geologic surfmap",
+  "display": "geologic surfmap",
+  "desc": "The geologic_surfmap module provides a mechanism to drape lines onto Geologic surfaces",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Surface Settings",
+      "display": "Surface Settings",
+      "properties": [
+        {
+          "name": "Surface Offset",
+          "display": "Surface Offset",
+          "desc": "The Surface Offset parameter provides a means to offset the draped lines from the surface so that z-buffering will not make the lines ragged or partially invisible where they intersect the surface."
+        },
+        {
+          "name": "Minimum Thickness",
+          "display": "Minimum Thickness",
+          "desc": "The Minimum Thickness parameter determines the minimum spacing between surfaces when hierarchy is imposed."
+        },
+        {
+          "name": "Account For Hierarchy",
+          "display": "Account For Hierarchy",
+          "desc": "The Account for Hierarchy toggle causes geologic surfaces that might otherwise intersect each other to be corrected to account for Geologic Hierarchy."
+        },
+        {
+          "name": "Reverse Hierarchy",
+          "display": "Reverse Hierarchy",
+          "desc": "The Reverse Hierarchy toggle causes hierarchy to be imposed from the bottom up versus the normal top down"
+        },
+        {
+          "name": "Surface Selection",
+          "display": "Surface Selection",
+          "desc": "The Surface Selection sets the surface from the Input Geology to map the Mapping Field onto."
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "Data Selection",
+      "properties": []
+    }
+  ]
+}

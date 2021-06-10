@@ -1,0 +1,43 @@
+{
+  "name": "time loop",
+  "display": "time loop",
+  "desc": "The time_loop module allows you to loop through a series of times or specify a specific time of interest.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Date And Time",
+          "display": "Date And Time",
+          "desc": "The Date and Time of interest."
+        },
+        {
+          "name": "Time Loop",
+          "display": "Time Loop",
+          "desc": "The Time Loop controls setting the Date and Time by specified increments."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the beginning time of the simulation."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the end time for the simulation."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for advancement when stepping or running."
+        }
+      ]
+    }
+  ]
+}

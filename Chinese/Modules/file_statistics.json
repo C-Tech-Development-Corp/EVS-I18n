@@ -1,0 +1,124 @@
+{
+  "name": "file_statistics",
+  "display": "file_statistics",
+  "desc": "该模块用来计算和显示所选文件中所包含数据的统计信息。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Component Or Layer",
+          "display": "组件或层",
+          "desc": "用于选择要处理并显示的文件数据组件。"
+        },
+        {
+          "name": "Log Process",
+          "display": "对数处理",
+          "desc": "计算数据值的对数(以10为底数)。"
+        },
+        {
+          "name": "Log Post Processing Clip Min",
+          "display": "对数处理后最小剪切值",
+          "desc": "用于经过数据处理后替换对数空间中小于指定数值的任何样本属性值。"
+        },
+        {
+          "name": "Linear Post Processing Clip Min",
+          "display": "线性处理后最小剪切值",
+          "desc": "用于经过数据处理后，在线性空间中替换任何小于指定数值的样本属性值。"
+        },
+        {
+          "name": "Detection Limit",
+          "display": "检测限",
+          "desc": "检测限值会影响用“ND”或其他非检测标志设置的任何文件值(要查看这些标志的列表，请打开APDV文件格式的帮助)。当模块在文件中遇到这个标志时，它会插入一个值等于(检测限* LT乘数)。"
+        },
+        {
+          "name": "Less Than Multiplier",
+          "display": "小于号乘数",
+          "desc": "小于号乘数是任何带有“<”标志的采样数据的替换值。"
+        },
+        {
+          "name": "Number Of Bins",
+          "display": "竖条区域数量",
+          "desc": "允许用户指定将用于计算频率直方图的竖条数。默认值0不计算模块执行期间的频率分布。用户可以选择从2到255的任意数量的竖条(注意，值1是无效的)。"
+        },
+        {
+          "name": "Delimiter",
+          "display": "分隔符",
+          "desc": "分隔符指定如何分隔输出日志中的标签和值。单词TAB将被加强TAB替换。"
+        },
+        {
+          "name": "Precision",
+          "display": "精度",
+          "desc": ".精度是计算值的小数点位数。"
+        },
+        {
+          "name": "Detailed Statistics",
+          "display": "详细统计",
+          "desc": "使模块显示原始统计信息和更详细的统计信息。"
+        },
+        {
+          "name": "Points As Spheres",
+          "display": "球体显示",
+          "desc": "使点显示为球体。"
+        },
+        {
+          "name": "Point Width",
+          "display": "点宽度",
+          "desc": "点宽度设置渲染像素的大小。默认值是0，相当于1个像素。"
+        },
+        {
+          "name": "Sphere Radius",
+          "display": "球体半径",
+          "desc": "当点为球体时，将设置每个球体的半径。"
+        }
+      ]
+    },
+    {
+      "name": "Time Settings",
+      "display": "时间设置",
+      "properties": [
+        {
+          "name": "Chem File Is Time Domain",
+          "display": "分析文件是时域的",
+          "desc": "此开关为时间分析文件打开日期插值。"
+        },
+        {
+          "name": "Specify Date By Component",
+          "display": "指定日期的组件",
+          "desc": "此开关将使得忽略日期字段并且使用数据组件来选择日期。"
+        },
+        {
+          "name": "Date For Interpolation",
+          "display": "插值日期",
+          "desc": "该字段是被插值的日期，比如如果您有一个分析物数值2日期是1/01/05，一个分析物数值4日期是1/03/05，然后此日期设置为1/02/05，且直接插值的值应该设置为3.日期可以在这里设置也可以通过日期端口来设置。"
+        },
+        {
+          "name": "Analyte Name",
+          "display": "分析物名称",
+          "desc": "分析物名称字段用于AIDV和APDV时间文件，因为日期占据了这些文件中通常为分析物名称保留的位置。"
+        },
+        {
+          "name": "Interpolation Type",
+          "display": "插值类型",
+          "desc": "有5种不同的插值方法是可用的，当文件中有non-dectects时，每个插值方法是用来定义如何插值。请阅读模块帮助以获得完整的描述。"
+        },
+        {
+          "name": "Use Nearest Measured Data",
+          "display": "使用最近的检测数据",
+          "desc": "使插值日期的样本具有与最近测量日期相同的值，而不是插值的值。"
+        },
+        {
+          "name": "Non Linear Shrink",
+          "display": "非线性收缩",
+          "desc": "打开此开关，球体的大小将由余弦插值决定，而不是线性插值。"
+        }
+      ]
+    }
+  ]
+}

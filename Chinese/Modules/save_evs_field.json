@@ -1,0 +1,38 @@
+{
+  "name": "save_evs_field",
+  "display": "save_evs_field",
+  "desc": "Save_EVS_Field模块以5种不同格式之一创建文件，其中包含发送到输入端口的所有网格、节点和/或单元数据组件信息。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Split Into Separate Files",
+          "display": "拆分为单独的文件",
+          "desc": "将输出拆分为单独的文件。相应的.EFF或.EFZ文件将仅包含标签信息（请参见下文）。任何需要的节点、数据或连接都将写入单独的文件。"
+        },
+        {
+          "name": "Force Nodal Data In Output",
+          "display": "强制输出节点数据",
+          "desc": "因为场定义始终包含节点数据。如果关闭此选项，并且没有节点数据组件，则将保存一个简单的、仅网格样式的场。但是，当您将这些场加载到EVS或MVS中时，许多模块将无法正确使用它们。这将导致像这样的网格另存为Mesh + Node_Data（具有0个数据组件），这将允许许多模块使用此数据。"
+        },
+        {
+          "name": "Force Cell Data In Output",
+          "display": "强制输出单元数据",
+          "desc": "和上面一样，但是有单元数据。很少有模块需要单元数据，因此在默认情况下不是打开的，而是作为一个选项提供的。"
+        },
+        {
+          "name": "Check For Cell Set Data",
+          "display": "检查单元集数据",
+          "desc": "检查单元集数据开关将导致在整个单元中保持不变的任何单元数据被写入为单元集数据组件。"
+        },
+        {
+          "name": "Notes",
+          "display": "注释",
+          "desc": "要包含在文件中的注释。这些只是注释，必须影响模块。"
+        }
+      ]
+    }
+  ]
+}

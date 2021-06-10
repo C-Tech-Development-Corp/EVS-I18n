@@ -1,0 +1,105 @@
+{
+  "name": "read cad",
+  "display": "read cad",
+  "desc": "The read_CAD module will read all versions of AutoCAD DWG and DXF files.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Use Application Origin",
+          "display": "Use Application Origin",
+          "desc": "When true, the module will apply the Application Origin. When false, data will be left in internal model space. Turn off when loading data intended to use as a glyph or similar."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Render Mode",
+          "display": "Render Mode",
+          "desc": "The Render Mode options allow you to choose how the CAD data will be rendered.  Please read the module help for more details."
+        },
+        {
+          "name": "Unit Handling",
+          "display": "Unit Handling",
+          "desc": "The Unit Handling option determines whether we try to use units from the CAd file, or force the use of the default coordinate units."
+        },
+        {
+          "name": "Default Coordinate Units",
+          "display": "Default Coordinate Units",
+          "desc": "The units to use when the units cannot be determined from the CAD file"
+        },
+        {
+          "name": "Remove Coincident Nodes",
+          "display": "Remove Coincident Nodes",
+          "desc": "The Remove Coincident Nodes toggle causes the reader to process the data, removing coincident nodes.  This takes longer to process but creates a smaller more efficient representation of your CAD data."
+        },
+        {
+          "name": "Include Hidden Layers",
+          "display": "Include Hidden Layers",
+          "desc": "The Include Hidden Layers toggle will cause CAD layers marked as hidden to be drawn."
+        },
+        {
+          "name": "Remove Points And Degenerate Cells",
+          "display": "Remove Points And Degenerate Cells",
+          "desc": "The Remove Point and Degenerate Cells option will remove all points and degenerate cells from the output"
+        },
+        {
+          "name": "Show As Wireframe",
+          "display": "Show As Wireframe",
+          "desc": "The Show As Wire-frame toggle outlines surfaces.  It is equivalent to setting Line Rendering to 'regular'."
+        },
+        {
+          "name": "Ignore Colors",
+          "display": "Ignore Colors",
+          "desc": "The Ignore Colors option will ignore the colors in the CAD file"
+        },
+        {
+          "name": "Color For White",
+          "display": "Color For White",
+          "desc": "The Color For White button allows the user to set the color for any feature colored white."
+        },
+        {
+          "name": "Deviation For Curves",
+          "display": "Deviation For Curves",
+          "desc": "The Deviation for Curves field allows the user to specify the accuracy with which analytical curves (arcs, circles) are displayed.  The default value of 0.0 employs an expert system algorithm to determine a reasonable value based on the overall size of your CAD model."
+        },
+        {
+          "name": "Normal For 3D Solids",
+          "display": "Normal For 3D Solids",
+          "desc": "The Normal for 3D Solids specifies the tolerance for parallel faces."
+        },
+        {
+          "name": "Separate Layers",
+          "display": "Separate Layers",
+          "desc": "The Separate Layers toggle causes each layer in the CAD file to be output as a separate cell set in EVS.  "
+        },
+        {
+          "name": "Layers To Include",
+          "display": "Layers To Include",
+          "desc": "The Data To Include allows the user to set which sets of data to render."
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "Export",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "Convert To Packaged",
+          "desc": "Replace this module with a packaged version of the data."
+        }
+      ]
+    }
+  ]
+}

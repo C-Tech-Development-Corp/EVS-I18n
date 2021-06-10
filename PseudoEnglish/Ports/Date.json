@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "Þôřƭ Ìñƒôř₥áƭïôñ",
+      "properties": []
+    },
+    {
+      "name": "Values",
+      "display": "Váℓúèƨ",
+      "properties": [
+        {
+          "name": "Data",
+          "display": "Ðáƭá",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè çúřřèñƭ ₥ôδúℓè ƥřôƥèřƭïèƨ."
+        }
+      ]
+    }
+  ]
+}

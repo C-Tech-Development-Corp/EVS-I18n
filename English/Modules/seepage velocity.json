@@ -1,0 +1,100 @@
+{
+  "name": "seepage velocity",
+  "display": "seepage velocity",
+  "desc": "The seepage_velocity module is used to compute the vector groundwater flow field visualizations of the vector field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Head Data Component",
+          "display": "Head Data Component",
+          "desc": "Head Data Component allows the user to select which data component to use for Head values."
+        }
+      ]
+    },
+    {
+      "name": "Material Presets",
+      "display": "Material Presets",
+      "properties": [
+        {
+          "name": "Common Material Settings",
+          "display": "Common Material Settings",
+          "desc": "The Common Material Settings are pre-set conductivity values that can be applied to the currently selected material."
+        },
+        {
+          "name": "Preserve Original Name",
+          "display": "Preserve Original Name",
+          "desc": "If the Preserve Original Name toggle is selected the Preset name for the currently selected material will be the original name along with the name of the selected Common Material.  If this is off, the output name will just be the Common Material Name."
+        },
+        {
+          "name": "Apply To Current Material",
+          "display": "Apply To Current Material",
+          "desc": "The Apply To Current Material button will take the currently set conductivity values and the Common Material name and apply it to the currently selected material."
+        }
+      ]
+    },
+    {
+      "name": "Material Properties",
+      "display": "Material Properties",
+      "properties": [
+        {
+          "name": "Current Material",
+          "display": "Current Material",
+          "desc": "The Current Material allows the user to select a single material to edit."
+        },
+        {
+          "name": "Materials",
+          "display": "Materials",
+          "desc": ""
+        },
+        {
+          "name": "Preset Name",
+          "display": "Preset Name",
+          "desc": ""
+        },
+        {
+          "name": "Output Conductivity Units",
+          "display": "Output Conductivity Units",
+          "desc": "Conductivity Units allows you to choose the units for specifying the conductivity in all three (x, y, z) directions for each geologic layer. You can choose any units (regardless of your head and coordinate units) and the appropriate conversions will be made for you."
+        },
+        {
+          "name": "Conductivity In X Log Space",
+          "display": "Conductivity In X Log Space",
+          "desc": "Conductivity In X Log Space allows the user to set the conductivity in log10 space."
+        },
+        {
+          "name": "Conductivity In X Linear Space",
+          "display": "Conductivity In X Linear Space",
+          "desc": "The Conductivity In X Linear Space lets the user set the conductivity in linear space."
+        },
+        {
+          "name": "Conductivity In Y Log Space",
+          "display": "Conductivity In Y Log Space",
+          "desc": "Conductivity In Y Log Space allows the user to set the conductivity in log10 space."
+        },
+        {
+          "name": "Conductivity In Y Linear Space",
+          "display": "Conductivity In Y Linear Space",
+          "desc": "The Conductivity In Y Linear Space lets the user set the conductivity in linear space."
+        },
+        {
+          "name": "Conductivity In Z Log Space",
+          "display": "Conductivity In Z Log Space",
+          "desc": "Conductivity In Z Log Space allows the user to set the conductivity in log10 space."
+        },
+        {
+          "name": "Conductivity In Z Linear Space",
+          "display": "Conductivity In Z Linear Space",
+          "desc": "The Conductivity In Z Linear Space lets the user set the conductivity in linear space."
+        },
+        {
+          "name": "Effective Porosity",
+          "display": "Effective Porosity",
+          "desc": "The Effective Porosity lets the user set the porosity of the current material."
+        }
+      ]
+    }
+  ]
+}

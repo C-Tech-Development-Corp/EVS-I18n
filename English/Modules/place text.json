@@ -1,0 +1,79 @@
+{
+  "name": "place text",
+  "display": "place text",
+  "desc": "The place_text module provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Import File",
+          "display": "Import File",
+          "desc": "Import existing text from an *.pt (place_text) file."
+        },
+        {
+          "name": "Reload Import File",
+          "display": "Reload Import File",
+          "desc": "The Reload Import File button forces the module to reload the Import File."
+        },
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Export File",
+          "display": "Export File",
+          "desc": "Export current text to an *.pt (place_text) file."
+        }
+      ]
+    },
+    {
+      "name": "Text Settings",
+      "display": "Text Settings",
+      "properties": [
+        {
+          "name": "Probe Action",
+          "display": "Probe Action",
+          "desc": "Allows for the changing of the text center or for adding a new string at the probed location.  Only available when the viewer is connected."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font.  These values are module wide so apply to all Forward Facing selected fonts."
+        },
+        {
+          "name": "Trim White Space",
+          "display": "Trim White Space",
+          "desc": "The Trim White Space control when selected will remove leading and trailing spaces from all text"
+        },
+        {
+          "name": "Created Text",
+          "display": "Created Text",
+          "desc": "The Created Text allows the user to select a single text to edit."
+        },
+        {
+          "name": "Remove Current Text",
+          "display": "Remove Current Text",
+          "desc": "The Remove Current Text Button allows the user to remove the currently selected text from the list"
+        },
+        {
+          "name": "Current Text Values",
+          "display": "Current Text Values",
+          "desc": "The currently selected text from the Created Text."
+        },
+        {
+          "name": "List Of Texts",
+          "display": "List Of Texts",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "extrude",
+  "display": "extrude",
+  "desc": "该模块接受任何网格，并通过在Z方向延伸网格来增加网格的维度。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Extrude By",
+          "display": "拉伸依据",
+          "desc": "允许用户处理拉伸的方法。"
+        },
+        {
+          "name": "Constant Value",
+          "display": "常量值",
+          "desc": "如果拉伸依据设置为常量值，则该值会成为每个单元的高度。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "如果拉伸依据设置为单元数据组件，则可以选择想要的单元数据组件来拉伸。"
+        },
+        {
+          "name": "Node Data Component",
+          "display": "节点数据组件",
+          "desc": "如果拉伸依据设置为节点数据组件，则可以选择想要的节点数据组件来拉伸。"
+        },
+        {
+          "name": "Limit Extrusion",
+          "display": "拉伸极限",
+          "desc": "如果拉伸依据设置为节点数据组件，您必须选择“正拉伸”或“负拉伸”。由于三角形或四边形的每个节点可以具有不同的值，因此单个单元格的节点上可能同时具有正数据值和负数据值。如果这种类型的单元格在两个方向上都被拉伸，则单元格拓扑可能会纠缠在一起。"
+        },
+        {
+          "name": "Subdivisions",
+          "display": "细分度",
+          "desc": "该字段决定了垂直方向上创建多少个单元。"
+        },
+        {
+          "name": "Scale Factor",
+          "display": "缩放因子",
+          "desc": "缩放因子乘以选择的拉伸值得到实际的拉伸高度。"
+        },
+        {
+          "name": "Heading Dip Value",
+          "display": "方向和倾角值",
+          "desc": "用来定位拉伸点。"
+        }
+      ]
+    }
+  ]
+}

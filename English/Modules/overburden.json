@@ -1,0 +1,33 @@
+{
+  "name": "overburden",
+  "display": "overburden",
+  "desc": "The overburden module computes the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size).",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Wall Slope",
+          "display": "Wall Slope",
+          "desc": "Wall Slope sets the angle measured from vertical whereby 0 is vertical and 90 is horizontal."
+        },
+        {
+          "name": "Create Plume Buffer",
+          "display": "Create Plume Buffer",
+          "desc": "The Create Plume Buffer toggle determines if the overburden computations are rigorous and determines the buffer on all side of the plume (ore body).  If this is off, the module runs much quicker."
+        },
+        {
+          "name": "Buffer Size",
+          "display": "Buffer Size",
+          "desc": "The Buffer Size sets the accuracy level resulting in the amount of excavation outside the subsetting level of interest. For example, a value of 10.0 would result in 10 feet of over-excavation from the subsetting level of interest."
+        },
+        {
+          "name": "Nodal Data",
+          "display": "Nodal Data",
+          "desc": "The Nodal Data controls lets the user set the analyte of interest."
+        }
+      ]
+    }
+  ]
+}

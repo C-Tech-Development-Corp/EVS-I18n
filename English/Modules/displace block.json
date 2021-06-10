@@ -1,0 +1,28 @@
+{
+  "name": "displace block",
+  "display": "displace block",
+  "desc": "The displace_block module translates a field in z by the input surface and input surface data",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Translation Component",
+          "display": "Translation Component",
+          "desc": "The Translation Component is the nodal data component from the Input Surface that allows for non-uniform fault block translation of the Input Field."
+        },
+        {
+          "name": "Displace Scale",
+          "display": "Displace Scale",
+          "desc": "The Displace Scale is a factor applied to the interpolated translation component."
+        }
+      ]
+    }
+  ]
+}

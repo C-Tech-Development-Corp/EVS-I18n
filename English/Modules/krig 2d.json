@@ -1,0 +1,498 @@
+{
+  "name": "krig 2d",
+  "display": "krig 2d",
+  "desc": "Performs a two dimensional estimation of analytical data. Can also estimate analytical data sourced from other fields, or map data onto an external grid.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component allows the user to select which of the property values in the analyte (e.g. chemistry) file will be kriged by execution of the module. The default value is -1, which results in kriging of all of the data components in the file during a single execution of the module."
+        },
+        {
+          "name": "Data Priority",
+          "display": "Data Priority",
+          "desc": "The Data Priority in krig 2D affects which samples are adaptively gridded."
+        }
+      ]
+    },
+    {
+      "name": "Grid Settings",
+      "display": "Grid Settings",
+      "properties": [
+        {
+          "name": "Grid Type",
+          "display": "Grid Type",
+          "desc": "The type of grid to create for interpolation.   A Convex Hull boundary should be utilized when the user wishes to produce a model that can have irregular boundaries that are defined by the extent of the measured data points. The convex hull of a data set can be thought of as the domain that would be outlined by stretching a rubber band around the external data points in the data set."
+        },
+        {
+          "name": "Grid Coordinates",
+          "display": "Grid Coordinates",
+          "desc": "Allows the user to define the coordinate domain within the data set in which kriging will be completed. The Min and Max values are only used when the Rectilinear Option is selected."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "The X Resolution specifies the number of grid nodes that will be included within the model horizontal domain."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "The Y Resolution specifies the number of grid nodes that will be included within the model vertical domain."
+        },
+        {
+          "name": "Adaptive Gridding",
+          "display": "Adaptive Gridding",
+          "desc": "The Adaptive Gridding toggle refines the grid automatically to place grid nodes at all of the measured data points. The adaptive grid will result in an estimated parameter distribution that honors all of the measured data points exactly."
+        },
+        {
+          "name": "Adaptive Gridding Limit",
+          "display": "Adaptive Gridding Limit",
+          "desc": "The Adaptive Gridding Limit value will turn off adaptive gridding when the number of sample points is greater than the set value."
+        },
+        {
+          "name": "Boundary Offset",
+          "display": "Boundary Offset",
+          "desc": "The Boundary Offset parameter sets the distance in user units that the grid coordinate range for the kriging domain will be set outside of the actual coordinate range of the data."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Data Processing",
+          "display": "Data Processing",
+          "desc": "Data Processing will allow the module to be run in either Linear or Log Space."
+        },
+        {
+          "name": "Data Scaling",
+          "display": "Data Scaling",
+          "desc": "Data Scaling is used to specify a value by which all nodal data values will be multiplied before kriging."
+        },
+        {
+          "name": "Pre Clip Min",
+          "display": "Pre Clip Min",
+          "desc": "Pre Clip Min value will be used during preprocessing to replace any nodal property value that is less than the specified number."
+        },
+        {
+          "name": "Pre Clip Max",
+          "display": "Pre Clip Max",
+          "desc": "The Pre Clip Max value will be used during preprocessing to replace any nodal property value that is greater than the specified number."
+        },
+        {
+          "name": "LT Multiplier",
+          "display": "LT Multiplier",
+          "desc": "The Less Than Multiplier value is applied when reading a file with values flagged with the '<' character.  It will multiply the file value by the set multiplier value."
+        },
+        {
+          "name": "Detection Limit",
+          "display": "Detection Limit",
+          "desc": "The Detection Limit value affects any file values set with the 'ND' or other non-detect flags (for a list of these flags open the help for the APDV file format). When the module encounters this flag in the file it will insert the a value equal to (Detection Limit * LT Multiplier)."
+        },
+        {
+          "name": "Collapse Method",
+          "display": "Collapse Method",
+          "desc": "The Collapse Method allows the user to extract data from within the interval specified in Min Z and Max Z using four different methods. It should be noted that if multiple samples occur at the exact same x, y, and z coordinates (duplicate samples), the average of these samples will be calculated first to provide a single data point for that coordinate, and then the extract method will be applied to other samples in the specified depth interval."
+        },
+        {
+          "name": "Tolerance",
+          "display": "Tolerance",
+          "desc": "The Tolerance parameter further extends the definition of coincident points.  It allows all points within a +/- x-y box to be treated as coincident."
+        },
+        {
+          "name": "Collapse Min Z",
+          "display": "Collapse Min Z",
+          "desc": "The Collapse Min Z value is the lowest depth to use when including points to use in the chosen Collapse Method"
+        },
+        {
+          "name": "Collapse Max Z",
+          "display": "Collapse Max Z",
+          "desc": "The Collapse Max Z value is the highest depth to use when including points to use in the chosen Collapse Method"
+        },
+        {
+          "name": "Slice Position",
+          "display": "Slice Position",
+          "desc": "The Slice Position value is used with the Slice Collapse Method. Krig_2D will look for the closest data point above the specified Collapse Min Z value, and the closest data point below the specified Collapse Max Z value, and calculate the average of these two points for input to the kriging analysis."
+        },
+        {
+          "name": "Post Clip Min",
+          "display": "Post Clip Min",
+          "desc": "The Post-Clip Min value specifies the smallest nodal value that will be present in the output data field."
+        },
+        {
+          "name": "Post Clip Max",
+          "display": "Post Clip Max",
+          "desc": "The Post-Clip Max value specifies the largest nodal value that will be present in the output data field."
+        },
+        {
+          "name": "Auto Exponentiate External Log Data",
+          "display": "Auto Exponentiate External Log Data",
+          "desc": "Automatically Exponentiate External Log Data toggle will detect if the data being imported has been log processed and if it has exponentiate it. This avoids double log processing the data with the Preprocessing option."
+        },
+        {
+          "name": "External Data",
+          "display": "External Data",
+          "desc": "The External Data options let the user decide which data components input by the External Data port to use for interpolation."
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "Krig Settings",
+      "properties": [
+        {
+          "name": "Estimation Type",
+          "display": "Estimation Type",
+          "desc": "The Estimation Type determines the method for interpolating file data onto the created grid. For more information regarding the types of interpolation, please read the module help."
+        },
+        {
+          "name": "Use Gradients",
+          "display": "Use Gradients",
+          "desc": "The Use Gradients option is used Natural Neighbor interpolation.  When the option is on, gradients estimated at the sample points improve the interpolation result."
+        },
+        {
+          "name": "Reach",
+          "display": "Reach",
+          "desc": "The Reach input field defines the radial distance (in user units) from any given model node that the kriging module will look for data points to be included in the estimation of the model parameter at that node. Setting the reach to 0 will result in the module calculating a reach value which is approximately two-thirds of the longest distance between any two data points in the data set."
+        },
+        {
+          "name": "Points In Reach",
+          "display": "Points In Reach",
+          "desc": "The Points In Reach value defines the maximum number of data points (within the specified reach) that will be considered for the parameter estimation at a model node. This value is not used for Nearest Neighbor interpolation or when the number of samples falls below the Use All Data threshold."
+        },
+        {
+          "name": "Quadrant Search",
+          "display": "Quadrant Search",
+          "desc": "When Quadrant Search is selected searching is performed for each of the quadrilaterals surrounding the point to be kriged. Within each quadrilateral a maximum number of points (up to one-fourth of the total points) are selected."
+        },
+        {
+          "name": "Use All Points",
+          "display": "Use All Points",
+          "desc": "The Use All Points toggle causes the module to include samples up to the All Points Limit value.  If the number of samples exceeds the limit value the Reach and Points In Reach settings are used."
+        },
+        {
+          "name": "All Points Limit",
+          "display": "All Points Limit",
+          "desc": "The All Points Limit is the maximum number of points to use when interpolating.  If there are more samples in the file than this value the Reach and Points In Reach settings will be used."
+        },
+        {
+          "name": "Statistical Confidence Tolerance",
+          "display": "Statistical Confidence Tolerance",
+          "desc": "The Statistic Confidence Tolerance value is used to specify what interval (in linear space) around the kriged model estimates the kriging confidence or uncertainty will apply to."
+        },
+        {
+          "name": "Statistical Confidence Factor",
+          "display": "Statistical Confidence Factor",
+          "desc": "The Statistic Confidence Factor value is used to specify what interval (in log space) around the kriged model estimates the kriging confidence or uncertainty will apply to."
+        },
+        {
+          "name": "Min Max Plume Confidence",
+          "display": "Min Max Plume Confidence",
+          "desc": "The Min Max Plume Confidence value is used to specify what interval around the kriged model estimates the kriging confidence or uncertainty will apply to."
+        },
+        {
+          "name": "IDW Power",
+          "display": "IDW Power",
+          "desc": "The IDW Power value is used with Inverse Distance Weighting.  The greater this value is the greater the influence of values closest to the interpolated point."
+        },
+        {
+          "name": "Use Legacy Kriging",
+          "display": "Use Legacy Kriging",
+          "desc": "Force the internal kriging to use the legacy kriging interpolator from EVS and MVS 9.x and earlier."
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "Variogram And Anisotropy",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Time Settings",
+      "display": "Time Settings",
+      "properties": [
+        {
+          "name": "Chem File Is Time Domain",
+          "display": "Chem File Is Time Domain",
+          "desc": "Selecting the Chem File Is Time Domain option will cause the file to be read as a time file, with values interpolated first to the set date and then to the grid."
+        },
+        {
+          "name": "Specify Date By Component",
+          "display": "Specify Date By Component",
+          "desc": "Setting the Specify Date By Component will allow the user to use the Data Component value to select a date.  This results in the exact data at a date instead of a an interpolated value near the date of interest."
+        },
+        {
+          "name": "Date For Interpolation",
+          "display": "Date For Interpolation",
+          "desc": "The Date For Interpolation value is the date of interest.  This value along with the Interpolation Type determine the value of a sample before it has been interpolated onto the grid."
+        },
+        {
+          "name": "Analyte Name",
+          "display": "Analyte Name",
+          "desc": "The Analyte Name for date files can be set here."
+        },
+        {
+          "name": "Date Interpolation Method",
+          "display": "Date Interpolation Method",
+          "desc": "There are 5 different Interpolation methods that are available, each interpolation method is used to define how to interpolate when given unsampled times in a file.  Please refer to the module help for a detailed description of these options."
+        },
+        {
+          "name": "TCF File Name",
+          "display": "TCF File Name",
+          "desc": "When Create TCF File is chosen the TCF File Name should then be set.  When the module runs it will loop through each component and create an EFB file.  The dates and filenames will be added to the TCF file."
+        },
+        {
+          "name": "Create TCF",
+          "display": "Create TCF",
+          "desc": "The Create TCF button will cause the module to run in a loop, going through each component and creating an EFB file at that time. These EFB files will be linked together in the specified TCF file."
+        },
+        {
+          "name": "Create TCF File",
+          "display": "Create TCF File",
+          "desc": "The Create TCF File toggle will cause the module to run in a loop, going through each component and creating an EFB file at that time. These EFB files will be linked together in the specified TCF file."
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "Data To Export",
+      "properties": [
+        {
+          "name": "Auxillary Kriging Data",
+          "display": "Auxillary Kriging Data",
+          "desc": "The Auxillary Kriging Data options let the user decide which data components generated during kriging to generate for the output field on a node by node basis."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Display Component",
+          "display": "Display Component",
+          "desc": "The Display Component will set the color of the data map of the output surface of any of the exported data components."
+        },
+        {
+          "name": "Surface Distortion Component",
+          "display": "Surface Distortion Component",
+          "desc": "The Surface Distortion Component will set the z value at each node to the selected nodal data component at that node."
+        },
+        {
+          "name": "Surface Vertical Scale",
+          "display": "Surface Vertical Scale",
+          "desc": "The Surface Vertical Scale is the Z exaggeration of the output surface."
+        },
+        {
+          "name": "Display Sphere Toggle",
+          "display": "Display Sphere Toggle",
+          "desc": "The Dispaly Sphere Toggle will allow the user to turn on or off the spheres representing the locations of maximum uncertainty."
+        }
+      ]
+    },
+    {
+      "name": "Variography Display",
+      "display": "Variography Display",
+      "properties": [
+        {
+          "name": "Display Variogram Ellipse",
+          "display": "Display Variogram Ellipse",
+          "desc": "The Display Variogram Ellipsoid control allows the user to display the variography ellipse."
+        },
+        {
+          "name": "Resolution",
+          "display": "Resolution",
+          "desc": "The resolution to use for the ellipse. Larger numbers create more detailed representations."
+        },
+        {
+          "name": "Ellipse Scale",
+          "display": "Ellipse Scale",
+          "desc": "The Ellipse Scale will scale the ellipse equally along each axis."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "The X Offset slider will allow the user to translate the ellipse along the x axis"
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset slider will allow the user to translate the ellipse along the y axis"
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset slider will allow the user to translate the ellipse along the z axis"
+        },
+        {
+          "name": "Ellipsoid Color",
+          "display": "Ellipsoid Color",
+          "desc": "The ellipse is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Display Variogram Lines",
+          "display": "Display Variogram Lines",
+          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipse."
+        },
+        {
+          "name": "Line Scale",
+          "display": "Line Scale",
+          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipse."
+        },
+        {
+          "name": "Primary Ratio Color",
+          "display": "Primary Ratio Color",
+          "desc": "The primary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Secondary Ratio Color",
+          "display": "Secondary Ratio Color",
+          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Drill Guide",
+      "display": "Drill Guide",
+      "properties": [
+        {
+          "name": "Create DG File",
+          "display": "Create DG File",
+          "desc": "When the Create DG file button is selected the module will run in a loop creating a synthetic boring at the maximum uncertainty location until it has reached the set Number Of Synthetic Samples."
+        },
+        {
+          "name": "Run Drill Guide",
+          "display": "Run Drill Guide",
+          "desc": "When the Run Drill Guide toggle is selected the module will run in a loop creating a synthetic boring at the maximum uncertainty location until it has reached the set Number Of Synthetic Samples."
+        },
+        {
+          "name": "Number Of Synthetic Samples",
+          "display": "Number Of Synthetic Samples",
+          "desc": "The Number Of Synthetic Samples value controls how many times drill guide will run."
+        },
+        {
+          "name": "Target Concentration",
+          "display": "Target Concentration",
+          "desc": "The Target Concentration toggle, when selected, changes the location of the uncertainty sphere based upon the specified Target Isolevel."
+        },
+        {
+          "name": "Target Isolevel",
+          "display": "Target Isolevel",
+          "desc": "When Target Concentration has been select the Target Isolevel is used to change the location of the uncertainty sphere."
+        },
+        {
+          "name": "User Points",
+          "display": "User Points",
+          "desc": "The User Points value is used to manage the number of points added to the grid for drill guide purposes.  The purpose of these points is to help eliminate areas of high uncertainty that cannot be drilled, under a building for example."
+        }
+      ]
+    },
+    {
+      "name": "Variography Display",
+      "display": "Variography Display",
+      "properties": [
+        {
+          "name": "Display Variogram Ellipse",
+          "display": "Display Variogram Ellipse",
+          "desc": "The Display Variogram Ellipsoid control allows the user to display the variography ellipse."
+        },
+        {
+          "name": "Ellipse Opacity",
+          "display": "Ellipse Opacity",
+          "desc": "The Ellipse Opacity control allows the user to set the opacity of the ellipse directly"
+        },
+        {
+          "name": "Resolution",
+          "display": "Resolution",
+          "desc": "The resolution to use for the ellipse. Larger numbers create more detailed representations."
+        },
+        {
+          "name": "Ellipse Scale",
+          "display": "Ellipse Scale",
+          "desc": "The Ellipse Scale will scale the ellipse equally along each axis."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "The X Offset slider will allow the user to translate the ellipse along the x axis"
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset slider will allow the user to translate the ellipse along the y axis"
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset slider will allow the user to translate the ellipse along the z axis"
+        },
+        {
+          "name": "Ellipse Color",
+          "display": "Ellipse Color",
+          "desc": "The ellipse is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Display Variogram Lines",
+          "display": "Display Variogram Lines",
+          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipse."
+        },
+        {
+          "name": "Line Scale",
+          "display": "Line Scale",
+          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipse."
+        },
+        {
+          "name": "Primary Ratio Color",
+          "display": "Primary Ratio Color",
+          "desc": "The primary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Secondary Ratio Color",
+          "display": "Secondary Ratio Color",
+          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Display Output Surface",
+          "display": "Display Output Surface",
+          "desc": "The Display OutputSurface control allows the user to choose whether to display the output surface."
+        },
+        {
+          "name": "Display Component",
+          "display": "Display Component",
+          "desc": "The Display Component will set the color of the data map of the output surface of any of the exported data components."
+        },
+        {
+          "name": "Surface Distortion Component",
+          "display": "Surface Distortion Component",
+          "desc": "The Surface Distortion Component will set the z value at each node to the selected nodal data component at that node."
+        },
+        {
+          "name": "Surface Vertical Scale",
+          "display": "Surface Vertical Scale",
+          "desc": "The Surface Vertical Scale is the Z exaggeration of the output surface."
+        },
+        {
+          "name": "Display Sphere Toggle",
+          "display": "Display Sphere Toggle",
+          "desc": "The Dispaly Sphere Toggle will allow the user to turn on or off the spheres representing the locations of maximum uncertainty."
+        }
+      ]
+    }
+  ]
+}

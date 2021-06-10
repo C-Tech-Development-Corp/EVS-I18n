@@ -1,0 +1,119 @@
+{
+  "name": "illuminated_lines",
+  "display": "illuminated_lines",
+  "desc": "illuminated_lines模块在带有线晕和动画效果的线段上使用纹理映射照明模型。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "允许你选择输入线中的哪个数据组件来着色。"
+        },
+        {
+          "name": "Progress",
+          "display": "进度",
+          "desc": "进度滑块允许您在进度循环中控制当前动画时间。时间从0到动画长度和动画间距的总和。"
+        },
+        {
+          "name": "Animated Length",
+          "display": "动画长度",
+          "desc": "动画长度沿线段设置效果的长度。"
+        },
+        {
+          "name": "Animation Spacing",
+          "display": "动画间距",
+          "desc": "动画间距设置沿直线的效果之间的间距。"
+        },
+        {
+          "name": "Progress Loop",
+          "display": "进度循环",
+          "desc": "进度循环通过指定的增量来控制动画的设置。"
+        },
+        {
+          "name": "Interpolation Mode",
+          "display": "插入模式",
+          "desc": "使用斜插模式（Ramped），插补可以选择先小后大，或相反，或两者兼而有之。样式是使用斜插样式控件设置的。阶梯式导致效果的突变。"
+        },
+        {
+          "name": "Ramped Interpolation Style",
+          "display": "斜插风格",
+          "desc": "当插入模式设置为斜插时，斜插样式决定值如何混合。"
+        },
+        {
+          "name": "Modulation Type",
+          "display": "调整类型",
+          "desc": "如果选择不透明度，线段的不透明度将从完全透明变为不透明。如果选择宽度，线宽会根据效果模式和形状控件在1(非常细)到粗之间变化。"
+        },
+        {
+          "name": "Reverse Effects",
+          "display": "反转效果",
+          "desc": "当动画效果应用于两个区域(如横线和横线之间的空间)时，此切换将反转应用效果的区域。"
+        },
+        {
+          "name": "Halo Width",
+          "display": "光晕宽度",
+          "desc": "光晕效果的宽度控制定义了添加到每条线边缘的透明蒙版区域的大小。如果数值为0，光环效应就会被关闭。"
+        }
+      ]
+    },
+    {
+      "name": "Shading Model",
+      "display": "光照模型",
+      "properties": [
+        {
+          "name": "Ambient Lighting",
+          "display": "环境照明",
+          "desc": "此值提供一个基础阴影值，一个添加到所有阴影值的常量。"
+        },
+        {
+          "name": "Diffuse Lighting",
+          "display": "漫射照明",
+          "desc": "纯粹漫反射项，相当于依赖于光的角度的阴影。"
+        },
+        {
+          "name": "Specular Highlights",
+          "display": "镜面高光",
+          "desc": "高光的镜面反射量基于光线和观众角度。"
+        },
+        {
+          "name": "Specular Focus",
+          "display": "镜面焦点",
+          "desc": "镜面反射的严密性，低值为暗反射，宽值为小光斑反射。"
+        },
+        {
+          "name": "Line Width",
+          "display": "线宽",
+          "desc": "线宽控制。正常的1像素线为1，可以整段递增。宽线是在2D屏幕空间绘制的，而不是完整的3D丝带。如果你想要完整的缎带，使用流线型模块缎带模式。"
+        },
+        {
+          "name": "Line Opacity",
+          "display": "线不透明度",
+          "desc": "所有线条的不透明度可变。1.0的值是完全不透明的，而0的值则使行不可见。"
+        },
+        {
+          "name": "Data Color Blending",
+          "display": "数据颜色混合",
+          "desc": "如果存在节点数据，则控制数据颜色和底纹颜色的相对组合。0表示全部使用数据颜色，1.0表示不使用数据颜色，线阴影主要由光照效果控制。"
+        },
+        {
+          "name": "Smooth Shading",
+          "display": "平滑着色",
+          "desc": "这为混合节点数据的颜色提供了额外的插值模式。在关闭状态下，每个线段采样一次数据。当启用时，在每个段的端点之间使用线性插值。如果在低分辨率折线上有大的梯度，这可能会很有帮助。"
+        },
+        {
+          "name": "Anti Alias",
+          "display": "抗混叠",
+          "desc": "这种效果有时被称为“平滑线条”，它混合了线条的绘制来创造一个平滑的效果，减少了像素分辨率上的“锯齿”的影响。"
+        },
+        {
+          "name": "Sort Opacity",
+          "display": "排序不透明度",
+          "desc": "当使用不透明度或反锯齿模式时，这种模式有助于提高视觉质量，帮助减少由非深度排序的线交叉造成的伪影。"
+        }
+      ]
+    }
+  ]
+}

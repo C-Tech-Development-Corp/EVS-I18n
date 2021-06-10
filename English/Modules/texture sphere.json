@@ -1,0 +1,53 @@
+{
+  "name": "texture sphere",
+  "display": "texture sphere",
+  "desc": "The texture_sphere module provides a means to (texture map) project images onto a sphere.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Longitude Dimension",
+          "display": "Longitude Dimension",
+          "desc": "The Longitude Dimension slider will set the sphere resolution for longitude."
+        },
+        {
+          "name": "Latitude Dimension",
+          "display": "Latitude Dimension",
+          "desc": "The Latitude Dimension slider will set the sphere resolution for latitude."
+        },
+        {
+          "name": "Radius",
+          "display": "Radius",
+          "desc": "The Radius controls the size of the sphere to be texture mapped. (Set to the radius of the Earth by default.)"
+        },
+        {
+          "name": "Starting Longitude",
+          "display": "Starting Longitude",
+          "desc": "The Starting Longitude is the polar coordinate in degrees to start creating the textured_sphere."
+        },
+        {
+          "name": "Ending Longitude",
+          "display": "Ending Longitude",
+          "desc": "The Ending Longitude is the polar coordinate in degrees to stop creating the textured_sphere."
+        },
+        {
+          "name": "Starting Latitude",
+          "display": "Starting Latitude",
+          "desc": "The Starting Latitude is the polar coordinate from the equator to start creating the textured sphere."
+        },
+        {
+          "name": "Ending Latitude",
+          "display": "Ending Latitude",
+          "desc": "The Ending Latitude is the polar coordinate from the equator to stop creating the textured sphere."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "loop",
+  "display": "loop",
+  "desc": "loop模块迭代一个操作。例如，您可以使用循环对象来控制应用程序中对象的移动;例如增加切片平面的滑块的移动。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Current Value",
+          "display": "当前值",
+          "desc": "当前想要的值。"
+        },
+        {
+          "name": "Loop",
+          "display": "循环",
+          "desc": "循环控件依据指定增量设置了当前的值。"
+        },
+        {
+          "name": "Starting Value",
+          "display": "起始值",
+          "desc": "模拟的起始值。"
+        },
+        {
+          "name": "Ending Value",
+          "display": "结束值",
+          "desc": "模拟的结束值。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步长",
+          "desc": "当步进或运行时，该值指定了前进的增量因子。"
+        }
+      ]
+    }
+  ]
+}

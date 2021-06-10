@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "Þôřƭ Ìñƒôř₥áƭïôñ",
+      "properties": []
+    },
+    {
+      "name": "General Properties",
+      "display": "Gèñèřáℓ Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Contour Levels",
+          "display": "Çôñƭôúř £èƲèℓƨ",
+          "desc": "Tλè Çôñƭôúř £èƲèℓƨ."
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè çúřřèñƭ ₥ôδúℓè ƥřôƥèřƭïèƨ."
+        }
+      ]
+    }
+  ]
+}

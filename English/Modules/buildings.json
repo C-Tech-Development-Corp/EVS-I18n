@@ -1,0 +1,130 @@
+{
+  "name": "buildings",
+  "display": "buildings",
+  "desc": "The buildings module reads C Tech's .BLDG file and creates various 3D objects.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Import File",
+          "display": "Import File",
+          "desc": "Import an existing *.bldg file."
+        },
+        {
+          "name": "Reload Import File",
+          "display": "Reload Import File",
+          "desc": "The Reload Import File will force the module to load the the import file and run."
+        },
+        {
+          "name": "Building Height Scale",
+          "display": "Building Height Scale",
+          "desc": "The Building Height Scale will vertically exaggerate the height of each building."
+        },
+        {
+          "name": "Export File",
+          "display": "Export File",
+          "desc": "Export current buildings to a *.bldg file."
+        }
+      ]
+    },
+    {
+      "name": "Default Building Settings",
+      "display": "Default Building Settings",
+      "properties": [
+        {
+          "name": "Default Name",
+          "display": "Default Name",
+          "desc": "The default name for each new building added."
+        },
+        {
+          "name": "Increment Building Id",
+          "display": "Increment Building Id",
+          "desc": "New buildings will have an Identifier greater that the value of the last building on the list."
+        },
+        {
+          "name": "Default Offset",
+          "display": "Default Offset",
+          "desc": "The vertical offset for each new building."
+        },
+        {
+          "name": "Default Height",
+          "display": "Default Height",
+          "desc": "The height to set for each new building."
+        },
+        {
+          "name": "Default Width",
+          "display": "Default Width",
+          "desc": "The width to set for each new building."
+        },
+        {
+          "name": "Default Length",
+          "display": "Default Length",
+          "desc": "The length to set for each new building."
+        },
+        {
+          "name": "Default Azimuth",
+          "display": "Default Azimuth",
+          "desc": "The azimuth to align each new building to."
+        },
+        {
+          "name": "Default Type",
+          "display": "Default Type",
+          "desc": "The type for each new building."
+        },
+        {
+          "name": "Default Id",
+          "display": "Default Id",
+          "desc": "The Identifier for each new building."
+        },
+        {
+          "name": "Default Color",
+          "display": "Default Color",
+          "desc": "The color for new buildings."
+        }
+      ]
+    },
+    {
+      "name": "Building Settings",
+      "display": "Building Settings",
+      "properties": [
+        {
+          "name": "Probe Action",
+          "display": "Probe Action",
+          "desc": "Allows for the changing of the building center or for adding a new building at the probed location.  Only available when the viewer is connected."
+        },
+        {
+          "name": "Outline Current Building",
+          "display": "Outline Current Building",
+          "desc": "The Outline Current Building turns on or off a bounding rectangle showing the current building being edited."
+        },
+        {
+          "name": "Delete Current Building",
+          "display": "Delete Current Building",
+          "desc": "This command will remove the currently selected building from the list of buildings."
+        },
+        {
+          "name": "Current Building",
+          "display": "Current Building",
+          "desc": "The Current Building allows the user to select a single building to edit."
+        },
+        {
+          "name": "Current Building Values",
+          "display": "Current Building Values",
+          "desc": "The Current Building Values."
+        },
+        {
+          "name": "Buildings",
+          "display": "Buildings",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

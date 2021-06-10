@@ -1,0 +1,104 @@
+{
+  "name": "strike and dip",
+  "display": "strike and dip",
+  "desc": "The strike_and_dip module is used to visualize sampled locations by strike and dip values.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Disk Thickness Percentage",
+          "display": "Disk Thickness Percentage",
+          "desc": "The Disk Thickness Percentage sets the thickness of each disk to a factor of the coordinate extents of the model."
+        },
+        {
+          "name": "Minimum Disk Radius",
+          "display": "Minimum Disk Radius",
+          "desc": "This sets the minimum radius for each disk. The coordinates are in model coordinates."
+        },
+        {
+          "name": "Radius Extent",
+          "display": "Radius Extent",
+          "desc": "The disk radius is based upon a percentage of the x, y, and z extents of the model."
+        },
+        {
+          "name": "Disk Resolution",
+          "display": "Disk Resolution",
+          "desc": "Number of prisms used to make each disk. The greater the number of prisms the more \"round\" the disk. Resolutions based on a factor of four are recommended as they will allow the dip and strike lines to end at the extents of the disk."
+        },
+        {
+          "name": "Include Dip As Data",
+          "display": "Include Dip As Data",
+          "desc": "This allows you to color the Dip lines based upon the dip angle."
+        },
+        {
+          "name": "Display Dip Lines",
+          "display": "Display Dip Lines",
+          "desc": "This toggle turns the Dip lines on and off."
+        },
+        {
+          "name": "Include Strike As Data",
+          "display": "Include Strike As Data",
+          "desc": "This allows you to color the Strike lines based upon the strike"
+        },
+        {
+          "name": "Display Strike Lines",
+          "display": "Display Strike Lines",
+          "desc": "This toggle turns the Strike lines on and off."
+        },
+        {
+          "name": "Connectivity Component",
+          "display": "Connectivity Component",
+          "desc": "The Connectivity Component determines how SAD files are connected."
+        },
+        {
+          "name": "Display Tubes",
+          "display": "Display Tubes",
+          "desc": "This toggle turns the tubes on and off."
+        },
+        {
+          "name": "Tube Radius",
+          "display": "Tube Radius",
+          "desc": "This is the radius for the tubes, set by default to be 50 percent of the disk Radius Extent."
+        },
+        {
+          "name": "Tube Resolution",
+          "display": "Tube Resolution",
+          "desc": "This alters the number of sides each tube has, the more sides the more \"round\" the tubes will look, and possibly the slower they will display."
+        },
+        {
+          "name": "Display Color",
+          "display": "Display Color",
+          "desc": "The Display Color selects the feature to color the disks and tubes by."
+        },
+        {
+          "name": "Solid Disk Color",
+          "display": "Solid Disk Color",
+          "desc": "If the Solid Color feature is chosen as the Display Color, the color can be set using this control."
+        },
+        {
+          "name": "Solid Tube Color",
+          "display": "Solid Tube Color",
+          "desc": "If the Solid Color feature is chosen as the Display Color, the color can be set using this control."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each tube end point as a cell data component.  This allows the user to probe onto the tube and return its center instead of the position on the outside of the tube."
+        }
+      ]
+    }
+  ]
+}

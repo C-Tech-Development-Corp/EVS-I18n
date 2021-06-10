@@ -1,0 +1,6 @@
+{
+  "name": "make single layer",
+  "display": "make single layer",
+  "desc": "The make_single_layer module allows you to subset the geology to a single merged layer.",
+  "categories": []
+}

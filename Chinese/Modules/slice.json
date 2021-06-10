@@ -1,0 +1,59 @@
+{
+  "name": "slice",
+  "display": "slice",
+  "desc": "slice模块允许你创建一个降低维度的输入子集。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Slice Settings",
+      "display": "切面设置",
+      "properties": [
+        {
+          "name": "Slice Type",
+          "display": "切面类型",
+          "desc": "切面类型是如何确定切面的。"
+        },
+        {
+          "name": "X Position",
+          "display": "X位置",
+          "desc": "切面的X位置(与向东切面和可旋转切面一起使用)。"
+        },
+        {
+          "name": "Y Position",
+          "display": "Y位置",
+          "desc": "切面的Z位置(与向北切面和可旋转切面一起使用)。"
+        },
+        {
+          "name": "Z Position",
+          "display": "Z位置",
+          "desc": "切面的Z位置(与水平切面和可旋转切面一起使用)。"
+        },
+        {
+          "name": "Plane Rotation",
+          "display": "平面旋转",
+          "desc": "平面旋转控制允许用户设置可旋转切面的顶部和倾角。"
+        },
+        {
+          "name": "Reset",
+          "display": "重置",
+          "desc": "重置按钮将使切面的位置返回到模型的中心。"
+        }
+      ]
+    },
+    {
+      "name": "Data Mapping",
+      "display": "数据映射",
+      "properties": [
+        {
+          "name": "Nodal Data",
+          "display": "节点数据",
+          "desc": "输入场中的节点数据要包含在输出场中。"
+        }
+      ]
+    }
+  ]
+}

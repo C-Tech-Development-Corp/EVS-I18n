@@ -1,0 +1,73 @@
+{
+  "name": "bounds",
+  "display": "bounds",
+  "desc": "The bounds module generates lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Hull",
+          "display": "Hull",
+          "desc": "The Hull, when on, draws a wireframe around the perimeter extents of the mesh."
+        },
+        {
+          "name": "Edges",
+          "display": "Edges",
+          "desc": "Edges, when on, causes the Imin/Imax, Jmin/Jmax, Kmin/Kmax controls to produce a wireframe representation of the mesh grid at that plane. "
+        },
+        {
+          "name": "Faces",
+          "display": "Faces",
+          "desc": "Faces, when on, causes the Imin/Imax, Jmin/Jmax, Kmin/Kmax controls to produce a solid face representing the location of that plane extent. "
+        },
+        {
+          "name": "I Min",
+          "display": "I Min",
+          "desc": "I Min, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the minimum extent of the I facing plane. "
+        },
+        {
+          "name": "I Max",
+          "display": "I Max",
+          "desc": "I Max, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the maximum extent of the I facing plane. "
+        },
+        {
+          "name": "J Min",
+          "display": "J Min",
+          "desc": "J Min, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the minimum extent of the J facing plane. "
+        },
+        {
+          "name": "J Max",
+          "display": "J Max",
+          "desc": "J Max, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the maximum extent of the J facing plane. "
+        },
+        {
+          "name": "K Min",
+          "display": "K Min",
+          "desc": "K Min, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the minimum extent of the K facing plane. "
+        },
+        {
+          "name": "K Max",
+          "display": "K Max",
+          "desc": "K Max, when on, displays the grid (Edges turned on) or plane (Faces turned on) on the maximum extent of the K facing plane. "
+        },
+        {
+          "name": "Data",
+          "display": "Data",
+          "desc": "Data, when on, makes bounds copy the selected component's nodal data values at node points along the output mesh to the output field. Because the data is present, the bounds lines can be colored by the interpolated data values of the selected nodal data component."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Data has been turned on the Nodal Data Component will allow the user to select the data component to color by."
+        }
+      ]
+    }
+  ]
+}

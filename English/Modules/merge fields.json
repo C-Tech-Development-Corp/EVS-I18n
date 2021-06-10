@@ -1,0 +1,63 @@
+{
+  "name": "merge fields",
+  "display": "merge fields",
+  "desc": "The merge_fields module combines the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Merge Cell Sets When Possible",
+          "display": "Merge Cell Sets When Possible",
+          "desc": "If all input fields have matching cell set types and names, automatically merge them in output."
+        },
+        {
+          "name": "Nodal Data From Field 1",
+          "display": "Nodal Data From Field 1",
+          "desc": "The Nodal Data From Field1 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Cell Data From Field 1",
+          "display": "Cell Data From Field 1",
+          "desc": "The Cell Data From Field1 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Nodal Data From Field 2",
+          "display": "Nodal Data From Field 2",
+          "desc": "The Nodal Data From Field2 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Cell Data From Field 2",
+          "display": "Cell Data From Field 2",
+          "desc": "The Cell Data From Field2 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Nodal Data From Field 3",
+          "display": "Nodal Data From Field 3",
+          "desc": "The Nodal Data From Field3 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Cell Data From Field 3",
+          "display": "Cell Data From Field 3",
+          "desc": "The Cell Data From Field3 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Nodal Data From Field 4",
+          "display": "Nodal Data From Field 4",
+          "desc": "The Nodal Data From Field4 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        },
+        {
+          "name": "Cell Data From Field 4",
+          "display": "Cell Data From Field 4",
+          "desc": "The Cell Data From Field4 that should be included in the output.  Be sure that the order of the components is identical from each input."
+        }
+      ]
+    }
+  ]
+}

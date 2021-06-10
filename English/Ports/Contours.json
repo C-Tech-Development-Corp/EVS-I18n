@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the current module properties."
+        }
+      ]
+    },
+    {
+      "name": "Port Information",
+      "display": "Port Information",
+      "properties": []
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Contour Levels",
+          "display": "Contour Levels",
+          "desc": "The Contour Levels."
+        }
+      ]
+    }
+  ]
+}

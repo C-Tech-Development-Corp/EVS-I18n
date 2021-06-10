@@ -1,0 +1,40 @@
+{
+  "name": "transform field",
+  "display": "transform field",
+  "desc": "The transform_field module is used to translate, rotate or scale the coordinates any field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Transform Settings",
+      "display": "Transform Settings",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "Transform List",
+          "desc": "The list of transformation applied to the input field."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

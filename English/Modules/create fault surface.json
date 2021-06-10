@@ -1,0 +1,58 @@
+{
+  "name": "create fault surface",
+  "display": "create fault surface",
+  "desc": "The create_fault_surface module creates a 3D grid that is aligned to a specified strike and dip.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Strike",
+          "display": "Strike",
+          "desc": "The Strike value is the direction around the Z axis to aling the fault surface.  With the value of zero aligned North-South and rotation clockwise."
+        },
+        {
+          "name": "Dip",
+          "display": "Dip",
+          "desc": "The Dip value allows the fault surface to rotate around the axis defined by the Strike value."
+        },
+        {
+          "name": "Dip Direction",
+          "display": "Dip Direction",
+          "desc": "The Dip Direction controls the direction the Dip rotates around the axis defined by the Strike value."
+        },
+        {
+          "name": "Center Point",
+          "display": "Center Point",
+          "desc": "The Center Point is the location of the center of the fault surface. It is also used as a center of rotation for the fault surface."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "The X Resolution is the number of nodes in the X direction of the grid."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "The Y Resolution is the number of nodes in the Y direction of the grid."
+        },
+        {
+          "name": "Width",
+          "display": "Width",
+          "desc": "The Width field scales the grid in the X direction."
+        },
+        {
+          "name": "Length",
+          "display": "Length",
+          "desc": "The Length field scales the grid in the Y direction."
+        }
+      ]
+    }
+  ]
+}

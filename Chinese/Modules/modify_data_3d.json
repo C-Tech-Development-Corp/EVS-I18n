@@ -1,0 +1,95 @@
+{
+  "name": "modify_data_3d",
+  "display": "modify_data_3d",
+  "desc": "modify_data_3D模块会将其内部半径内的数据更改为一个设置值，并将其外部半径内的原始值和设置的修改值之间的混合数据更改。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Transition Option",
+          "display": "转换选项",
+          "desc": "转换选项控件允许用户选择如何修改值。‘线性’选项使权值为一条直线(线性插值)，从内部权值到零。‘非线性’选项是指从内部加权值到零的平滑过渡(在斜率上没有不连续)。"
+        },
+        {
+          "name": "Anisotropy",
+          "display": "各向异性",
+          "desc": "各向异性是在x-y平面上的变化半径与垂直(z)方向的比值(对于未扭曲，不是z-scaled坐标)。"
+        },
+        {
+          "name": "Pre Altered Z Scale",
+          "display": "预改变Z缩放",
+          "desc": "预改变Z缩放是用于显示目的的Z放大。"
+        },
+        {
+          "name": "Create Output Field",
+          "display": "创建输出场",
+          "desc": "此按钮将输出修改后的数据。"
+        }
+      ]
+    },
+    {
+      "name": "Modification Settings",
+      "display": "修改设置",
+      "properties": [
+        {
+          "name": "X Center",
+          "display": "X 中心",
+          "desc": "X中心滑块控制变化球体的中心。"
+        },
+        {
+          "name": "Y Center",
+          "display": "Y 中心",
+          "desc": "Y中心滑块控制变化球体的中心。"
+        },
+        {
+          "name": "Z Center",
+          "display": "Z 中心",
+          "desc": "Z中心滑块控制变化球体的中心。"
+        },
+        {
+          "name": "Glyph Display Radius",
+          "display": "图元显示半径",
+          "desc": "图元显示半径是标识中心修改位置的球形图元的大小(以单位表示)。"
+        },
+        {
+          "name": "Modification Value",
+          "display": "修改值",
+          "desc": "修改值是（夹断）数据集要改变为的值。"
+        },
+        {
+          "name": "Inner Weighting",
+          "display": "内部权值",
+          "desc": "内部权重是在内部变化半径上的常数值。"
+        },
+        {
+          "name": "Inner Change Radius",
+          "display": "内变化半径",
+          "desc": "内变化半径是在恒定内权重时所影响的区域在x-y平面上的半径。"
+        },
+        {
+          "name": "Outer Change Radius",
+          "display": "外变化半径",
+          "desc": "外变化半径是整个受影响区域在x-y平面上的半径。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Display Points",
+          "display": "显示点",
+          "desc": "控制是否显示受影响的节点(点云)。"
+        },
+        {
+          "name": "Display Component",
+          "display": "显示组件",
+          "desc": "显示组件是用于点云着色的数据组件:修改后数据（modified_data）将显示修改后的数据;原始数据（original_data）将显示未修改的数据;距离（distance）是离中心的距离;变化（change）就是数据的变化量。"
+        }
+      ]
+    }
+  ]
+}

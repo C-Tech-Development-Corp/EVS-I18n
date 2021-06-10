@@ -1,0 +1,104 @@
+{
+  "name": "tubes",
+  "display": "tubes",
+  "desc": "该模块接受一条线或多段线，结合常量或数据来定义半径，创建一个开放或者封闭的管道。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Radius By",
+          "display": "半径依据",
+          "desc": "允许用户选择一个常数半径或者依赖于数据的半径。"
+        },
+        {
+          "name": "Constant Data For Radius",
+          "display": "半径常量数据",
+          "desc": "如果选择了常量半径，则使用此参数来设置半径值。"
+        },
+        {
+          "name": "Cell Data For Radius",
+          "display": "半径单元数据",
+          "desc": "允许您选择单元数据组件来对半径进行缩放。"
+        },
+        {
+          "name": "Nodal Data For Radius",
+          "display": "半径节点数据",
+          "desc": "允许您选择节点数据组件来对半径进行缩放。"
+        },
+        {
+          "name": "Scale Factor",
+          "display": "缩放因子",
+          "desc": "使用缩放因子乘以节点数据来确定半径。"
+        },
+        {
+          "name": "Minimum Radius",
+          "display": "最小半径",
+          "desc": "设置管道半径的最小值。"
+        },
+        {
+          "name": "Tolerance",
+          "display": "公差",
+          "desc": "公差参数决定了相邻线段的节点在合并形成折线之前的最大距离。这也适用于闭合多段线的等值带。闭合的多段线将开始和结束节点合并形成闭合的(环形的)环。"
+        },
+        {
+          "name": "Tube Sides",
+          "display": "管道面",
+          "desc": "管道的表面数目。"
+        },
+        {
+          "name": "Close Tubes",
+          "display": "闭合管道",
+          "desc": "将使得管道端口封闭。但是注意管道本身并不是实体（内部是空洞）。"
+        },
+        {
+          "name": "Connect Tubes",
+          "display": "连接管道",
+          "desc": "打开此开关，由连接线段形成的管道将连接起来。"
+        },
+        {
+          "name": "Percentile",
+          "display": "百分位数",
+          "desc": "百分数允许您控制基于第n个百分比值(相对于最大100%)的管的自动缩放。这可以处理只有几个节点具有极大值的数据集。"
+        },
+        {
+          "name": "Phase",
+          "display": "相位",
+          "desc": "相位值允许您控制管的表观旋转。这是以旋转的角度来指定的。"
+        },
+        {
+          "name": "Phase Determination",
+          "display": "相位测定",
+          "desc": "相位测定用于设置管的排列方式。如果管道接近垂直，垂直拉伸（“Perpendicular Extrusion”）是典型的首选。“Force Z Up”则适合水平管道。"
+        }
+      ]
+    },
+    {
+      "name": "Data Output",
+      "display": "数据输出",
+      "properties": [
+        {
+          "name": "Map Nodal Data",
+          "display": "映射节点数据",
+          "desc": "允许用户选取节点数据组件来着色或者进行后续子集化操作。 "
+        },
+        {
+          "name": "Map Cell Data",
+          "display": "映射单元数据",
+          "desc": "允许用户选取单元数据组件来着色或者进行后续子集化操作。"
+        },
+        {
+          "name": "Include Probing Data",
+          "display": "包含探测数据",
+          "desc": "告诉模块将每个管端点的中心点包括为单元数据组件。这允许用户探测到管道和返回其中心，而不是在管的外面的位置。"
+        }, 
+        {
+          "name": "Include Center Data",
+          "display": "包含中心数据",
+          "desc": "告诉模块将每个图元的中心点包含为单元数据组件。这允许用户探测图元并返回它的中心位置，而不是图元外部的位置。"
+        }
+      ]
+    }
+  ]
+}

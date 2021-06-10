@@ -1,0 +1,63 @@
+{
+  "name": "crop and downsize",
+  "display": "crop and downsize",
+  "desc": "The crop_and_downsize module is used to subset an image, or structured field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Min I",
+          "display": "Min I",
+          "desc": "The Minimum I is the minimum extent for cropping in the I direction."
+        },
+        {
+          "name": "Max I",
+          "display": "Max I",
+          "desc": "The Maximum I is the maximum extent for cropping in the I direction."
+        },
+        {
+          "name": "Down Size I",
+          "display": "Down Size I",
+          "desc": "The Down Size I control will set a factor for decreasing resolution in the I direction."
+        },
+        {
+          "name": "Min J",
+          "display": "Min J",
+          "desc": "The Minimum J is the minimum extent for cropping in the J direction."
+        },
+        {
+          "name": "Max J",
+          "display": "Max J",
+          "desc": "The Maximum J is the maximum extent for cropping in the J direction."
+        },
+        {
+          "name": "Down Size J",
+          "display": "Down Size J",
+          "desc": "The Down Size J control will set a factor for decreasing resolution in the J direction."
+        },
+        {
+          "name": "Min K",
+          "display": "Min K",
+          "desc": "The Minimum K is the minimum extent for cropping in the K direction."
+        },
+        {
+          "name": "Max K",
+          "display": "Max K",
+          "desc": "The Maximum K is the maximum extent for cropping in the K direction."
+        },
+        {
+          "name": "Down Size K",
+          "display": "Down Size K",
+          "desc": "The Down Size K control will set a factor for decreasing resolution in the K direction."
+        }
+      ]
+    }
+  ]
+}

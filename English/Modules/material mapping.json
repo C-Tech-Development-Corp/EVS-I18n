@@ -1,0 +1,390 @@
+{
+  "name": "material mapping",
+  "display": "material mapping",
+  "desc": "This module can re-assign data for the purpose of grouping.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Value Type",
+          "display": "Value Type",
+          "desc": "The Value Type radio selector determines the type of data to be modified."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 1",
+      "display": "Material Map 1",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 2",
+      "display": "Material Map 2",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 3",
+      "display": "Material Map 3",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 4",
+      "display": "Material Map 4",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 5",
+      "display": "Material Map 5",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 6",
+      "display": "Material Map 6",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 7",
+      "display": "Material Map 7",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 8",
+      "display": "Material Map 8",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 9",
+      "display": "Material Map 9",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 10",
+      "display": "Material Map 10",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 11",
+      "display": "Material Map 11",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    },
+    {
+      "name": "Material Map 12",
+      "display": "Material Map 12",
+      "properties": [
+        {
+          "name": "Activate Mapping",
+          "display": "Activate Mapping",
+          "desc": "The Activate Mapping toggle turns on or off the current material mapping."
+        },
+        {
+          "name": "From Value",
+          "display": "From Value",
+          "desc": "The From Value specifies the starting range to map from."
+        },
+        {
+          "name": "To Value",
+          "display": "To Value",
+          "desc": "The To Value specifies the ending range to map from."
+        },
+        {
+          "name": "Map Value",
+          "display": "Map Value",
+          "desc": "The Map Value specifies the desired value to map everything from the From Value to the To Value to."
+        },
+        {
+          "name": "Map Name",
+          "display": "Map Name",
+          "desc": "The Name for the Mapped Material.  This is used when creating the Geology Legend port."
+        }
+      ]
+    }
+  ]
+}

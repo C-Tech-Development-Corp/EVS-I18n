@@ -1,0 +1,50 @@
+{
+  "name": "transform group",
+  "display": "ƭřáñƨƒôř₥ ϱřôúƥ",
+  "desc": "Tλè ƭřáñƨƒôř₥_ϱřôúƥ ₥ôδúℓè ïƨ úƨèδ ƭô ƭřáñƨℓáƭè, řôƭáƭè ôř ƨçáℓè ƭλè çôôřδïñáƭèƨ áñ¥ ñú₥βèř ôƒ ïñƥúƭ ôβJèçƭƨ.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
+        }
+      ]
+    },
+    {
+      "name": "Transform Settings",
+      "display": "Třáñƨƒôř₥ §èƭƭïñϱƨ",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "Třáñƨƒôř₥ £ïƨƭ",
+          "desc": "Tλè ℓïƨƭ ôƒ ƭřáñƨƒôř₥áƭïôñ áƥƥℓïèδ ƭô ƭλè ïñƥúƭ ôβJèçƭƨ."
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
+        },
+        {
+          "name": "Visibility",
+          "display": "Vïƨïβïℓïƭ¥",
+          "desc": "Tλè Vïƨïβïℓïƭ¥ ƭôϱϱℓè ωïℓℓ ƭúřñ ôñ ôř ôƒƒ ƭλè Ʋïƨïβℓè ƨƭáƭè ôƒ ƭλè ôúƭƥúƭ ôβJèçƭƨ."
+        },
+        {
+          "name": "Detached Objects",
+          "display": "Ðèƭáçλèδ ÓβJèçƭƨ",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

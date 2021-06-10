@@ -1,0 +1,119 @@
+{
+  "name": "draw lines",
+  "display": "draw lines",
+  "desc": "The draw_lines module enables you to create both 2D and 3D lines interactively with the mouse.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Probe Action",
+          "display": "Probe Action",
+          "desc": "Allows for the changing of the current line coordinates or for adding a new coordinates at the probed location."
+        },
+        {
+          "name": "Drawing Style",
+          "display": "Drawing Style",
+          "desc": "The Drawing Style allows the user to select coordinates using two different methods.  In Top View Mode: the Viewer must be in Top View; any point in the Viewer can be selected; and the Z coordinate is the Z Top value. In Object Mode: the Viewer can be in any rotation; and only probing on objects will give coordinates."
+        },
+        {
+          "name": "Z Top",
+          "display": "Z Top",
+          "desc": "The Z Top value is the the z value used when creating lines in Top View Mode."
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Coordinate Units",
+          "desc": "The coordinate units control for draw_lines has different behavior than other linked controls.  The first time a point is created the control will unlink and check the coordinate units of additional points against the set units."
+        },
+        {
+          "name": "Display Lines",
+          "display": "Display Lines",
+          "desc": "The Display Lines toggle will turn off visibility of the created lines."
+        },
+        {
+          "name": "Display Glyphs",
+          "display": "Display Glyphs",
+          "desc": "The Display Glyphs toggle will turn off visibility of the created glyphs."
+        },
+        {
+          "name": "Line List",
+          "display": "Line List",
+          "desc": "The list of lines and their coordinates created so far. Selecting the Closed toggle will cause a line segment from the last point added to the first point to be created."
+        },
+        {
+          "name": "Selected Line",
+          "display": "Selected Line",
+          "desc": ""
+        },
+        {
+          "name": "Current Line",
+          "display": "Current Line",
+          "desc": "The Current Line is the line selected from the Lines list."
+        },
+        {
+          "name": "ELF File Name",
+          "display": "ELF File Name",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The number of subdivisions to use for spheres. Larger numbers create more detailed sphere representations."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each glyph as a cell data component.  This allows the user to probe onto the glyph and return its center instead of the position on the outside of the glyph."
+        }
+      ]
+    }
+  ]
+}

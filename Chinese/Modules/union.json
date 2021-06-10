@@ -1,0 +1,81 @@
+{
+  "name": "union",
+  "display": "union
+  "desc": "union是一个功能强大的模块，允许进行大量复杂的串行和并行子集化设置操作，这些操作需要计算和可视化多个分析物和阈值水平的联合体。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Map Components",
+          "display": "映射组件",
+          "desc": "允许用户选择子集化完成后在输出中包含哪些数据组件。"
+        },
+        {
+          "name": "Map Cell Components",
+          "display": "映射单元组件",
+          "desc": "允许用户选择子集化完成后在输出中包含哪些单元数据组件。"
+        },
+        {
+          "name": "Output String",
+          "display": "输出字符串",
+          "desc": "输出字符串包含交集子集的名称和值。"
+        },
+        {
+          "name": "Above Output String",
+          "display": "大于的输出字符串",
+          "desc": "当包含域被设置为大于，则使用此字符串作为标识符。"
+        },
+        {
+          "name": "Output String Delimiter",
+          "display": "输出字符串分隔符",
+          "desc": "当输出字符串由所有子集构成，那么可以选择各个子文本之间的分隔符。"
+        },
+        {
+          "name": "Below Output String",
+          "display": "小于的输出字符串",
+          "desc": "当包含域被设置为小于，则使用此字符串作为标识符。"
+        }
+      ]
+    },
+    {
+      "name": "Subsetting Values",
+      "display": "子集化值",
+      "properties": [
+        {
+          "name": "Subset List",
+          "display": "子集列表",
+          "desc": "用来创建联合体的列表。"
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "子集化水平已经设置",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "允许用户设置如何决定输出的颜色。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "node to cell",
+  "display": "node to cell",
+  "desc": "The node_to_cell module is used to interpolate nodal data components to cell data components.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Node Components To Convert",
+          "display": "Node Components To Convert",
+          "desc": "The Node Components To Convert control allows the user to select which nodal data to convert to cell data."
+        },
+        {
+          "name": "Output Nodal Data",
+          "display": "Output Nodal Data",
+          "desc": "The Output Nodal Data option allows the user to specify how to handle input nodal data in the output."
+        },
+        {
+          "name": "Strip Original Data",
+          "display": "Strip Original Data",
+          "desc": "This has been deprecated - use Output Nodal Data instead"
+        },
+        {
+          "name": "Conversion Type",
+          "display": "Conversion Type",
+          "desc": "The Conversion Type allows the user to specify which type of conversion algorithim to use. The first choice is the average value of the nodes connected to each cell.  The second choice is to use the value that most nodes have in common; if the nodes all have unique values the smallest value is used."
+        }
+      ]
+    }
+  ]
+}

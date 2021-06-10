@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the current module properties."
+        }
+      ]
+    },
+    {
+      "name": "Port Information",
+      "display": "Port Information",
+      "properties": []
+    },
+    {
+      "name": "Values",
+      "display": "Values",
+      "properties": []
+    },
+    {
+      "name": "Values",
+      "display": "Values",
+      "properties": [
+        {
+          "name": "Data",
+          "display": "Data",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

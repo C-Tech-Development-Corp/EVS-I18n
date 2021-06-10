@@ -1,0 +1,40 @@
+{
+  "name": "change_minmax",
+  "display": "çλáñϱè_₥ïñ₥áж",
+  "desc": "Tλè çλáñϱè_₥ïñ₥áж ₥ôδúℓè áℓℓôωƨ ƨèƭƭïñϱ ôƒ ₥áж Ʋáℓúèƨ áβôƲè ƭλè ƭřúè ₥áжï₥ú₥ δáƭá řáñϱè áñδ ₥ïñ Ʋáℓúèƨ βèℓôω ƭλè ƭřúè ₥ïñï₥ú₥ δáƭá řáñϱè.",
+  "categories": [
+    {
+      "name": "Nodal Data Ranges",
+      "display": "Nôδáℓ Ðáƭá Ráñϱèƨ",
+      "properties": [
+        {
+          "name": "Change Nodal Data",
+          "display": "Çλáñϱè Nôδáℓ Ðáƭá",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Cell Data Ranges",
+      "display": "Çèℓℓ Ðáƭá Ráñϱèƨ",
+      "properties": [
+        {
+          "name": "Change Cell Data",
+          "display": "Çλáñϱè Çèℓℓ Ðáƭá",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
+        }
+      ]
+    }
+  ]
+}

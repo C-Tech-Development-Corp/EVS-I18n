@@ -1,0 +1,18 @@
+{
+  "name": "write_lines",
+  "display": "write_lines",
+  "desc": "该模块用于保存一系列由线连接的数据点。这些线以EVS线文件格式存储。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Check For Cell Set Data",
+          "display": "检查单元集数据",
+          "desc": "此开关将使得某个单元集内无变化的单元数据作为单元集数据组件写出。"
+        }
+      ]
+    }
+  ]
+}

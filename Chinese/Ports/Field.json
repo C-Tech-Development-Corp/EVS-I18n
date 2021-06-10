@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "端口信息",
+      "properties": []
+    },
+    {
+      "name": "Statistics",
+      "display": "统计",
+      "properties": [
+        {
+          "name": "Number Of Nodes",
+          "display": "节点数量",
+          "desc": "显示场中节点的数量"
+        },
+        {
+          "name": "Number Of Cell Sets",
+          "display": "单元集的数量",
+          "desc": "显示场中单元集的数量"
+        },
+        {
+          "name": "Total Number Of Cells",
+          "display": "单元总数量",
+          "desc": "显示场中所有单元集的单元总数量。"
+        },
+        {
+          "name": "Number Of Node Data",
+          "display": "节点数据数量",
+          "desc": "显示场中节点数据组件的数量。"
+        },
+        {
+          "name": "Number Of Cell Data",
+          "display": "单元数据数量",
+          "desc": "显示场中单元数据组件的数量。"
+        },
+        {
+          "name": "Coordinate Extents",
+          "display": "坐标范围",
+          "desc": "显示场的坐标范围"
+        }
+      ]
+    }
+  ]
+}

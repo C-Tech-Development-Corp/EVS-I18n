@@ -1,0 +1,58 @@
+{
+  "name": "drill path",
+  "display": "drill path",
+  "desc": "The drill_path module is used to produce a line path through a volume dependent on a starting locations and user defined restrictions.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Initial Drill Position",
+          "display": "Initial Drill Position",
+          "desc": "The Starting point of the drill path"
+        },
+        {
+          "name": "Initial Drill Direction",
+          "display": "Initial Drill Direction",
+          "desc": "The Heading and Dip of the Initial Drill Direction."
+        },
+        {
+          "name": "Max Length",
+          "display": "Max Length",
+          "desc": "The Max Length will prevent users from creating lines that cannot reach their target."
+        },
+        {
+          "name": "Segment List",
+          "display": "Segment List",
+          "desc": "The list of line segments to create."
+        },
+        {
+          "name": "Boring Name",
+          "display": "Boring Name",
+          "desc": "The Boring Name is used when exporting the created drill path as an APDV file"
+        },
+        {
+          "name": "Output Units",
+          "display": "Output Units",
+          "desc": "The Output units is used when exporting the created drill path as an APDV file"
+        },
+        {
+          "name": "Export As APDV",
+          "display": "Export As APDV",
+          "desc": "The Export As APDV file will export the line as an apdv file with data assocatiated with distance down the line."
+        },
+        {
+          "name": "Export As TXT",
+          "display": "Export As TXT",
+          "desc": "The Export As TXT file will export the line as a tab delimited file with data assocatiated with distance down the line."
+        }
+      ]
+    }
+  ]
+}

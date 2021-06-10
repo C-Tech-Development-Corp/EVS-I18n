@@ -1,0 +1,124 @@
+{
+  "name": "illuminated lines",
+  "display": "illuminated lines",
+  "desc": "The Illuminated Lines module uses a texture mapped illumination model on polylines with line halo and animation effects.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component allows you to choose which data component of your incoming lines you wish to color by."
+        },
+        {
+          "name": "Progress",
+          "display": "Progress",
+          "desc": "The Progress slider allows you to control the current animation time in the Progress Loop. The time runs from 0 to the sum of the Animated Length and the Animation Spacing."
+        },
+        {
+          "name": "Animated Length",
+          "display": "Animated Length",
+          "desc": "The Animation Length sets the length of the effect along the polyline."
+        },
+        {
+          "name": "Animation Spacing",
+          "display": "Animation Spacing",
+          "desc": "The Animation Spacing sets the spacing between effects along the line."
+        },
+        {
+          "name": "Progress Loop",
+          "display": "Progress Loop",
+          "desc": "The Progress Loop controls setting the Animation Step by specified increments."
+        },
+        {
+          "name": "Interpolation Mode",
+          "display": "Interpolation Mode",
+          "desc": "In Ramped mode, the interpolation can be selected to start small then get big, or the reverse or both. The style is set using the Ramped Interpolation Style control. Stepped causes abrupt changes in effect."
+        },
+        {
+          "name": "Ramped Interpolation Style",
+          "display": "Ramped Interpolation Style",
+          "desc": "When Interpolation Mode is set to Ramped the Ramped Interpolation Style determines how values are blended."
+        },
+        {
+          "name": "Modulation Type",
+          "display": "Modulation Type",
+          "desc": "If Opacity is selected the line segment varies in opacity from completely transparent to opaque.  If Width is selected the line width is varied between 1 (very thin) to fat, based on the effect modes and shape controls."
+        },
+        {
+          "name": "Reverse Effects",
+          "display": "Reverse Effects",
+          "desc": "As the animation effect is applied between two zones, such as the dash and the space between the dash, this toggle reverses the area where the effect is applied."
+        },
+        {
+          "name": "Halo Width",
+          "display": "Halo Width",
+          "desc": "The width control for the halo effect defines the size of the transparent mask region added to the edge of each line. A value of zero turns off the halo effect."
+        }
+      ]
+    },
+    {
+      "name": "Shading Model",
+      "display": "Shading Model",
+      "properties": [
+        {
+          "name": "Ambient Lighting",
+          "display": "Ambient Lighting",
+          "desc": "This value provides a base shadow value, a constant added to all shading values."
+        },
+        {
+          "name": "Diffuse Lighting",
+          "display": "Diffuse Lighting",
+          "desc": "Pure diffuse reflection term which amounts to shading dependent on light angle."
+        },
+        {
+          "name": "Specular Highlights",
+          "display": "Specular Highlights",
+          "desc": "Amount of specular reflection hi-lights based on light and viewer angle."
+        },
+        {
+          "name": "Specular Focus",
+          "display": "Specular Focus",
+          "desc": "Tightness of specular reflection, low values are dull, wide reflections, high values are small spot reflections."
+        },
+        {
+          "name": "Line Width",
+          "display": "Line Width",
+          "desc": "Controls line width. Normal 1-pixel lines are 1, can be increased in whole increments. Wide lines are drawn in 2D screen space, not full 3D ribbons. If you want full ribbons, use streamline module ribbon mode."
+        },
+        {
+          "name": "Line Opacity",
+          "display": "Line Opacity",
+          "desc": "Variable opacity of all lines. A value of 1.0 is fully opaque, while a value of zero makes lines invisible."
+        },
+        {
+          "name": "Data Color Blending",
+          "display": "Data Color Blending",
+          "desc": " If node data is present, this controls the relative mix of data color and shading color. A value of zero sets full contribution of data color, while at 1.0 no data color is used and the line shade is dominated by illumination effects."
+        },
+        {
+          "name": "Smooth Shading",
+          "display": "Smooth Shading",
+          "desc": "This enables an additional interpolation mode for blended node data colors. In the off state, data is sampled once per line segment. When enabled, linear interpolation is used between end points of each segment. This can be helpful if large gradients are present on low resolution polylines."
+        },
+        {
+          "name": "Anti Alias",
+          "display": "Anti Alias",
+          "desc": "This effect, sometimes called 'smooth lines' blends the drawing of lines to create a smooth effect, reducing the effects of 'jaggies' at pixel resolution."
+        },
+        {
+          "name": "Sort Opacity",
+          "display": "Sort Opacity",
+          "desc": "This mode assists visual quality when opacity or antialiasing modes are used, helping to reduce artifacts caused by non-depth sorted line crossings."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "geology_to_structured",
+  "display": "geology_to_structured",
+  "desc": "geology_to_structured模块从Krig_3D_Geology制作的二维层面创建三维实体层，以实现地质分层的可视化。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Layer Settings",
+      "display": "层设置",
+      "properties": [
+        {
+          "name": "Z Resolution",
+          "display": "Z 分辨率",
+          "desc": "Z分辨率用作建立模型中单元格总数的指示。使用术语指示的原因是模块有可能产生比总数更多的单元。"
+        },
+        {
+          "name": "Minimum Cells Per Layer",
+          "display": "每层最少单元数",
+          "desc": "用于建立每个层的最小单元数(在Z方向)。"
+        },
+        {
+          "name": "Cells Per Layer",
+          "display": "每层单元数",
+          "desc": "当使用比例网格选项时，每个层的单元格数(在Z方向)。"
+        },
+        {
+          "name": "Proportional Gridding",
+          "display": "比例网格化",
+          "desc": "比例网格可以用来设置每个层中创建的最小单元数。或者使单元的数目与层的厚度以及Z的分辨率成比例。"
+        },
+        {
+          "name": "Minimum Layer Thickness",
+          "display": "最小层厚",
+          "desc": "最小层厚迫使薄于指定值的层具有最小厚度，因此不会完全尖灭。"
+        },
+        {
+          "name": "Reverse Surface Hierarchy",
+          "display": "反转面的层级",
+          "desc": "确定将以正常(从上到下)方式定义层还是反向方式定义层(如果开启)。"
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "数据导出",
+      "properties": [
+        {
+          "name": "Geologic Nodal Data",
+          "display": "地质节点数据",
+          "desc": "地质节点数据选项让用户决定为输出场生成哪些数据组件。注意:对于结构化网格，层厚度组件将被导出为单元格数据。"
+        },
+        {
+          "name": "Geologic Cell Data",
+          "display": "地质单元数据",
+          "desc": "地质单元数据选项让用户决定为输出场生成哪些数据组件。"
+        }
+      ]
+    }
+  ]
+}

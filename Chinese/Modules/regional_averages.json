@@ -1,0 +1,33 @@
+{
+  "name": "regional_averages",
+  "display": "regional_averages",
+  "desc": "regional_average模块平均输入场中落入输入区域的节点数据值。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Z Position",
+          "display": "Z位置",
+          "desc": "允许用户设置区域平均输出点的Z轴位置。"
+        },
+        {
+          "name": "Radius",
+          "display": "半径",
+          "desc": "设置输出球体的半径。"
+        },
+        {
+          "name": "Regional ID Component",
+          "display": "区域ID组件",
+          "desc": "区域ID组件从输入的多边形区域中选择哪个单元数据组件用于识别每个区域。"
+        },
+        {
+          "name": "Data For Visualization",
+          "display": "可视化数据",
+          "desc": "数据可视化参数从输入场中选择哪个节点数据组件来为输出球体着色。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "name": "edit horizons",
+  "display": "edit horizons",
+  "desc": "The edit_horizons module is used to give the user fine control over interpolated surfaces.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Use Gradients",
+          "display": "Use Gradients",
+          "desc": "When Use Gradients is on, gradients estimated at the sample points improve the interpolation result."
+        },
+        {
+          "name": "Horizon Point Radius",
+          "display": "Horizon Point Radius",
+          "desc": "The Horizon Point Radius is a distance in coordinate units.  If a data point from the input geology comes within this radius to a point in the horizon point list a warning will be issued and the point will be ignored, since the assumption is the original data takes priority."
+        },
+        {
+          "name": "Horizon Point Behavior",
+          "display": "Horizon Point Behavior",
+          "desc": "The Horizon Point Behavior occurs when a data point from the input geology comes within the Horizon Point Radius of a Horizon Point. The default behavior is to ignore the original data point in favor of the Horizon Point. The other option is ignore the Horizon Point in favor of the original data point."
+        },
+        {
+          "name": "Probe Action",
+          "display": "Probe Action",
+          "desc": "Allows for the changing of the current line coordinates or for adding a new coordinates at the probed location."
+        },
+        {
+          "name": "Horizons",
+          "display": "Horizons",
+          "desc": "The Horizons control allows the user to select which horizon to add points to."
+        },
+        {
+          "name": "Horizon List",
+          "display": "Horizon List",
+          "desc": "The Horizons control allows the user to select which horizon to add points to."
+        },
+        {
+          "name": "Display Selected Horizon Point",
+          "display": "Display Selected Horizon Point",
+          "desc": "The Display Selected Horizon Point toggle will create a set of lines surrounding the currect Horizon Point for visibility"
+        },
+        {
+          "name": "Horizon Point List",
+          "display": "Horizon Point List",
+          "desc": "The list of control points used to change the geologic input."
+        },
+        {
+          "name": "Clear Horizon Points",
+          "display": "Clear Horizon Points",
+          "desc": "The Clear Horizon Points button will clear all created horizon points"
+        },
+        {
+          "name": "Export All Points",
+          "display": "Export All Points",
+          "desc": "Export both input points and horizon points as a GMF."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined. If Node Data is selected the output will be colored by the elevation of each horizon point."
+        },
+        {
+          "name": "Cel Data Component",
+          "display": "Cel Data Component",
+          "desc": "The Color Data Component for the Horizon Point spheres can be either the Geological layer or the Material value of that layer."
+        },
+        {
+          "name": "Horizons To Display",
+          "display": "Horizons To Display",
+          "desc": "The Horizons To Display allows the user to display points from either the currently selected horizon from the Horizon list or all horizons."
+        },
+        {
+          "name": "Point Mapping",
+          "display": "Point Mapping",
+          "desc": "The Point Mapping control allows the user to select to which surface the horizon points are mapped to when exploded."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The Sphere Subdivisions defines how finely the sample spheres are rendered.  Higher values mean smoother spheres but at a higher memory cost."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        }
+      ]
+    }
+  ]
+}

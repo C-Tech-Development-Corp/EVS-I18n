@@ -1,0 +1,28 @@
+{
+  "name": "interp_cell_data",
+  "display": "interp_cell_data",
+  "desc": "该模块使用最近临近点插值算法将单元数据从一个场插值到另外一个场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Include Original Nodal Data",
+          "display": "包含原始节点数据",
+          "desc": "打开此开关将导致目标输入场的所有节点数据被复制到输出场。注意:打开这个开关将导致节点数据被显示，而不是插入的单元数据。"
+        },
+        {
+          "name": "Cell Data To Interpolate",
+          "display": "插值单元数据",
+          "desc": "允许用户选择将输入单元数据场的哪一个单元数据组件插入至目标数据场。"
+        },
+        {
+          "name": "Cell Data To Include",
+          "display": "包含的单元数据",
+          "desc": "列出目标输入场中可以包含在输出中的所有单元数据。该数据将出现在场中插入的数据之后。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "slope aspect splitter",
+  "display": "slope aspect splitter",
+  "desc": "The slope_aspect_splitter module will split an input field into two output fields based upon the subset expression used.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Flat Surface Aspect",
+          "display": "Flat Surface Aspect",
+          "desc": "The value to use for Aspect Value over a flat surface."
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "The N1 variable usable by expressions"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "The N2 variable usable by expressions"
+        },
+        {
+          "name": "Subset Expression",
+          "display": "Subset Expression",
+          "desc": "The expression used to subset the input field."
+        },
+        {
+          "name": "Subset Variables",
+          "display": "Subset Variables",
+          "desc": "Variables available for determining which field to write output."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

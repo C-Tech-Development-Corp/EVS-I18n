@@ -1,0 +1,96 @@
+{
+  "name": "load_evs_field",
+  "display": "load_evs_field",
+  "desc": "Load_EVS_Field将数据集从六种与EVS兼容的文件格式中的任何一种读取到EVS场中。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Low Quality Filename",
+          "display": "低质量的文件名",
+          "desc": "在低输出质量模式下要读取的场文件。"
+        },
+        {
+          "name": "File Creation Date",
+          "display": "文件创建日期",
+          "desc": "如果文件中设置了文件创建日期，则显示该日期。"
+        },
+        {
+          "name": "File Notes",
+          "display": "文件注释",
+          "desc": "如果在文件中设置了文件注释，则显示它们。"
+        },
+        {
+          "name": "Vertical Offset",
+          "display": "垂直偏移",
+          "desc": "垂直偏移通过将输入值乘以Z轴缩放系数，将整个模型在Z轴平移。如果要移动模型以避免出现重合对象时，则此选项非常有用。"
+        }
+      ]
+    },
+    {
+      "name": "Explode And Scale Settings",
+      "display": "炸开和缩放设置",
+      "properties": [
+        {
+          "name": "Explode By",
+          "display": "炸开依据",
+          "desc": "炸开依据选项确定用于炸开层或材料的信息。如果地质层和材料是节点数据组件，那么它们与层级地质模型一起出现。使用单元集选项允许按单元集编号进行炸开。岩性选项只能与Adaptive Indicator Kriged地质模型一起使用。这些模型有一个称为岩性的单元数据组件，它对应于指定给材料区的整数值。"
+        },
+        {
+          "name": "Explode Begins",
+          "display": "炸开开始",
+          "desc": "炸开开始确定将要炸开的第一个地质层或材料。"
+        },
+        {
+          "name": "Explode Ends",
+          "display": "炸开结束",
+          "desc": "炸开结束设置将要炸开的最后一个地质层/材料。该值默认为-1，它将炸开所有的剩余地质层或材料"
+        },
+        {
+          "name": "Cell Sets",
+          "display": "单元集",
+          "desc": "单元集控件允许在输出中关闭选定的单元集。"
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "数据选择",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "颜色依据",
+          "desc": "颜色依据控件允许用户设置如何确定输出的颜色。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "如果将颜色依据设置为节点数据，则节点数据组件选择将哪个节点数据设置为数据映射。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "如果将颜色依据设置为单元数据，则单元数据组件选择将哪个单元数据设置为数据映射。"
+        },
+        {
+          "name": "Copy Flagged Data",
+          "display": "复制标记数据",
+          "desc": "复制标记数据开关允许用户将特殊的标记数据（半径、颜色等）与选定的数据一起保存。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角为模型中两个面或单元之间的角度。"
+        }
+      ]
+    }
+  ]
+}

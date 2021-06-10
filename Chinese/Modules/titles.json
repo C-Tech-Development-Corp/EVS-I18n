@@ -1,0 +1,88 @@
+{
+  "name": "titles",
+  "display": "titles",
+  "desc": "titles模块提供了在查看器中放置文本的简单方法。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Title Type",
+          "display": "标题类型",
+          "desc": "标题类型允许用户在叠加层中的2D标题和模型空间中的3D标题之间进行选择。"
+        },
+        {
+          "name": "X Coordinate",
+          "display": "X坐标",
+          "desc": "X坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
+        },
+        {
+          "name": "Y Coordinate",
+          "display": "Y坐标",
+          "desc": "Y坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
+        },
+        {
+          "name": "Z Coordinate",
+          "display": "Z坐标",
+          "desc": "Z坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
+        },
+        {
+          "name": "X Coordinate 3D",
+          "display": "X坐标3D",
+          "desc": "X坐标指定标题的左下边缘在坐标空间中的位置。"
+        },
+        {
+          "name": "Y Coordinate 3D",
+          "display": "Y坐标3D",
+          "desc": "Y坐标指定标题的左下边缘在坐标空间中的位置。"
+        },
+        {
+          "name": "Z Coordinate 3D",
+          "display": "Z坐标3D",
+          "desc": "Z坐标指定标题的左下边缘在坐标空间中的位置。"
+        },
+        {
+          "name": "Width Height Ratio",
+          "display": "宽高比",
+          "desc": "宽高比允许您拉伸或压缩字体，以调整非正方形查看器引起的失真。"
+        },
+        {
+          "name": "Title Text",
+          "display": "标题文本",
+          "desc": "标题文本是用于标题的文本。"
+        },
+        {
+          "name": "Title Color",
+          "display": "标题颜色",
+          "desc": ""
+        },
+        {
+          "name": "Font Type",
+          "display": "字体类型",
+          "desc": "标签类型允许用户在三种字体类型之间进行选择。前向字体始终与视图对齐。TrueType字体是标准字体。线条字体是影响较小的字体，在生成大量标签时效果更好。"
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "前向样式",
+          "desc": "（Forward Facing ）前向样式允许用户将标签与适当的视图对齐，并更改字体的基本布局。"
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType字体样式",
+          "desc": "TrueType字体样式允许用户更改字体的基本外观。"
+        },
+        {
+          "name": "Line Font Style",
+          "display": "线条字体样式",
+          "desc": "（Line）线条字体样式允许用户更改字体的基本外观。"
+        },
+        {
+          "name": "3D Font Settings",
+          "display": "3D字体设置",
+          "desc": "3D标签设置允许用户将标签与适当的视图对齐。"
+        }
+      ]
+    }
+  ]
+}

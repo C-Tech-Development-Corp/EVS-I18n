@@ -1,0 +1,33 @@
+{
+  "name": "surfmap",
+  "display": "surfmap",
+  "desc": "The module provides a mechanism to drape lines onto surfaces.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Map Mode",
+          "display": "Map Mode",
+          "desc": "The method used to map the input to the surface. Move Nodes To Surface only maps the nodes and does not split the cells of the input. This could result in intersecting geometry with the surface. Map To Surface exactly follows the topology of the surface by splitting cells where necessary."
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z_Offset parameter provides a means to offset the draped lines from the surface so that z-buffering will not make the lines ragged or partially invisible where they intersect the surface."
+        },
+        {
+          "name": "Include Delta Z",
+          "display": "Include Delta Z",
+          "desc": "When checked, additional data is added which is the change in elevation, accounted for z scaling."
+        }
+      ]
+    }
+  ]
+}

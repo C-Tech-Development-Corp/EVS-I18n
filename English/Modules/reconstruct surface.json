@@ -1,0 +1,78 @@
+{
+  "name": "reconstruct surface",
+  "display": "reconstruct surface",
+  "desc": "The module reconstructs a surface from a set of input points.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Reconstruction Method",
+          "display": "Reconstruction Method",
+          "desc": "The Reconstruction method control selects the algorithm to use in reconstruction"
+        },
+        {
+          "name": "Number Of Neighbors",
+          "display": "Number Of Neighbors",
+          "desc": "The number of neighbors of a point to determine the neighborhood radius by."
+        },
+        {
+          "name": "Number Of Samples",
+          "display": "Number Of Samples",
+          "desc": "The number of points to sample to determine the neighborhood radius."
+        },
+        {
+          "name": "Use Squared Radius",
+          "display": "Use Squared Radius",
+          "desc": "The Use Squared Radius toggle determines whether to use Squared Radius for scale-space reconstruction or number of neighbors and samples."
+        },
+        {
+          "name": "Squared Radius",
+          "display": "Squared Radius",
+          "desc": "The alpha value used in alpha shape 3D."
+        },
+        {
+          "name": "Number Of Iterations",
+          "display": "Number Of Iterations",
+          "desc": "The number of iterations to refine the reconstruction."
+        },
+        {
+          "name": "Min Triangle Angle",
+          "display": "Min Triangle Angle",
+          "desc": "The minimal triangle angle in degrees."
+        },
+        {
+          "name": "Max Triangle Radius",
+          "display": "Max Triangle Radius",
+          "desc": "The maximum triangle radius."
+        },
+        {
+          "name": "Approximation Error",
+          "display": "Approximation Error",
+          "desc": "The maximum approximation error."
+        },
+        {
+          "name": "Radius Ratio Bound",
+          "display": "Radius Ratio Bound",
+          "desc": "Radius Ratio Bound candidates incident to surface triangles which are not in the beta-wedge are discarded, if the ratio of their radius and the radius of the surface triangle is larger than `Radius Ratio Bound`"
+        },
+        {
+          "name": "Beta",
+          "display": "Beta",
+          "desc": "beta half the angle of the wedge in which only the radius of triangles counts for the plausibility of candidates."
+        },
+        {
+          "name": "Max Perimeter",
+          "display": "Max Perimeter",
+          "desc": "Max perimeter."
+        },
+        {
+          "name": "Alpha",
+          "display": "Alpha",
+          "desc": "Alpha value."
+        }
+      ]
+    }
+  ]
+}

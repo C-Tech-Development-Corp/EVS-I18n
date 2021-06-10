@@ -1,0 +1,145 @@
+{
+  "name": "overlay aerial",
+  "display": "overlay aerial",
+  "desc": "The overlay_aerial module will take as input a field and then map an image onto the horizontal areas of the grid.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
+        {
+          "name": "Image Quality",
+          "display": "Image Quality",
+          "desc": "The Image Quality allows the user to select the maximum resolution to read the input image in at.  This allows the user to create a coarse image for faster testing and a high resolution image for the final output."
+        },
+        {
+          "name": "Georeferencing Method",
+          "display": "Georeferencing Method",
+          "desc": "The Georeferencing Method controls how an image will be distorted to fit the input surface. The Method is selected by the user but is also controlled by the type of georeferencing file found to be associated with the image file. Please read the help for more detials."
+        },
+        {
+          "name": "Min Extents",
+          "display": "Min Extents",
+          "desc": "The Min Extents allow the user to set the position of the lower left corner of the image, when the Map to Min / Max Georeferencing method is chosen."
+        },
+        {
+          "name": "Max Extents",
+          "display": "Max Extents",
+          "desc": "The Max Extents allow the user to set the position of the upper right corner of the image, when the Map to Min / Max Georeferencing method is chosen."
+        },
+        {
+          "name": "Texture Bottom Surfaces",
+          "display": "Texture Bottom Surfaces",
+          "desc": "The Texture Bottom Surfaces toggle will tell the module to texture all surfaces whose normals are point downward."
+        },
+        {
+          "name": "Map Data",
+          "display": "Map Data",
+          "desc": "The Map Data toggle will cause the module to pass the first nodal data component through to the renderable object.  NOTE: This will cause there to be a blending between the the nodal data color value and the image color."
+        },
+        {
+          "name": "Wall Visibility",
+          "display": "Wall Visibility",
+          "desc": "The Wall Visibility toggle when turned on will display the vertical surfaces or 'Walls'."
+        },
+        {
+          "name": "Border And Wall Color",
+          "display": "Border And Wall Color",
+          "desc": "The Border And Wall Color allows the user to set the color to use for border and walls."
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "Export",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "Convert To Packaged",
+          "desc": "Replace this module with a packaged version of the data."
+        }
+      ]
+    },
+    {
+      "name": "Image Processing",
+      "display": "Image Processing",
+      "properties": [
+        {
+          "name": "Sharpen Image",
+          "display": "Sharpen Image",
+          "desc": "The Sharpen Image toggle will allow the user to sharpen the edges in an image by exaggerating the brightness difference along the edges."
+        },
+        {
+          "name": "Soften Image",
+          "display": "Soften Image",
+          "desc": "The Soften Image toggle will allow the user to soften the edges in an image by reducing the brightness difference along the edges."
+        },
+        {
+          "name": "Enhance Edges",
+          "display": "Enhance Edges",
+          "desc": "Enhances the Edges of the objects and discards other image information."
+        },
+        {
+          "name": "Brightness",
+          "display": "Brightness",
+          "desc": "The Brightness slider can either add or remove brightness from every pixel."
+        },
+        {
+          "name": "Contrast",
+          "display": "Contrast",
+          "desc": "The Contrast slider can either add or remove contrast from every pixel. Making bright spots brighter and dark spots darker"
+        },
+        {
+          "name": "White Balance Red",
+          "display": "White Balance Red",
+          "desc": "The White Balance Red slider affects the red channel of the white balance."
+        },
+        {
+          "name": "White Balance Green",
+          "display": "White Balance Green",
+          "desc": "The White Balance Green slider affects the green channel of the white balance."
+        },
+        {
+          "name": "White Balance Blue",
+          "display": "White Balance Blue",
+          "desc": "The White Balance Blue slider affects the blue channel of the white balance."
+        },
+        {
+          "name": "Gamma Correction Red",
+          "display": "Gamma Correction Red",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the red channel."
+        },
+        {
+          "name": "Gamma Correction Green",
+          "display": "Gamma Correction Green",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the green channel."
+        },
+        {
+          "name": "Gamma Correction Blue",
+          "display": "Gamma Correction Blue",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the blue channel."
+        },
+        {
+          "name": "Reproject Image",
+          "display": "Reproject Image",
+          "desc": "The Reproject Image toggle allows the user to enable Image Projections."
+        },
+        {
+          "name": "Image Projection",
+          "display": "Image Projection",
+          "desc": "The Image Projection allows the user to transform the image from one coordinate system to another."
+        }
+      ]
+    }
+  ]
+}

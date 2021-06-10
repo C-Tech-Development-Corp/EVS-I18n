@@ -1,0 +1,18 @@
+{
+  "name": "transform_group",
+  "display": "transform_group",
+  "desc": "该模块用来平移、旋转或者缩放输入对象的坐标。",
+  "categories": [
+    {
+      "name": "Transform Settings",
+      "display": "变换设置",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "变换列表",
+          "desc": "应用到输入对象中的变换列表。"
+        }
+      ]
+    }
+  ]
+}

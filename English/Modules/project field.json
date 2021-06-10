@@ -1,0 +1,28 @@
+{
+  "name": "project field",
+  "display": "project field",
+  "desc": "The project_field module is used to project the coordinates in any field, from one coordinate system to another.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Field Projection",
+          "display": "Field Projection",
+          "desc": "The Field Projection controls gives a searchable interface for selecting EPSG codes.  EPSG1 should be the coordinate system the field is in currently.  EPSG2 is the desired output coordinate system."
+        },
+        {
+          "name": "Image Projection",
+          "display": "Image Projection",
+          "desc": "The Field Projection controls gives a searchable interface for selecting EPSG codes.  EPSG1 should be the coordinate system the field is in currently.  EPSG2 is the desired output coordinate system."
+        },
+        {
+          "name": "File Tags",
+          "display": "File Tags",
+          "desc": "The File Tags string can be added to files using the REPROJECT option to project the contents of the file into the correct space when read."
+        }
+      ]
+    }
+  ]
+}

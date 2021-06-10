@@ -1,0 +1,28 @@
+{
+  "name": "external_edges",
+  "display": "external_edges",
+  "desc": "该模块提取网格的外边缘",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Extraction Method",
+          "display": "提取方法",
+          "desc": "提取方法决定了如何提取边缘。边缘角选项将选择角度大于指定角度的单元格的所有边。边界边缘选项将提取只被单个单元格使用的所有边缘，这在处理表面边缘时非常有用。线框选项将提取场的所有外部边缘。"
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或单元之间的角度。将最大边缘角度设置为0将使模型中所有外部单元格(元素)的边缘可见。大于最大边缘角的面或单元格之间的交叉线是可见的。模型的外部边缘总是可见的。"
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "数据选择",
+      "properties": []
+    }
+  ]
+}

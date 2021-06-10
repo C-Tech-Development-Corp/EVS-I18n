@@ -1,0 +1,33 @@
+{
+  "name": "footprint",
+  "display": "footprint",
+  "desc": "The footprint module is used to create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "X Resolution determines the number of X cells in the output."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "Y Resolution determines the number of Y cells in the output"
+        },
+        {
+          "name": "Z Position",
+          "display": "Z Position",
+          "desc": "Z Position determines the Z location of the output.  This allows you to position the output at the most convenient elevation."
+        }
+      ]
+    }
+  ]
+}

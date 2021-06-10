@@ -1,0 +1,10 @@
+{
+    "translations": [
+      { "name" : "filename", "display" : "文件名" },
+      { "name" : "open", "display" : "打开" },
+      { "name" : "save", "dispaly" : "保存" },
+      { "name": "run", "display": "运行" },
+      { "name": "off", "display": "关闭" },
+      { "name": "execute", "display": "执行" }
+    ]
+  }

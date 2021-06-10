@@ -1,0 +1,23 @@
+{
+  "name": "point_density",
+  "display": "ƥôïñƭ_δèñƨïƭ¥",
+  "desc": "Tλè ƥôïñƭ_δèñƨïƭ¥ ₥ôδúℓè áℓℓôωƨ ƭô δèƭèř₥ïñè ƨƥáƭïáℓ δèñƨïƭ¥ ôƒ á ƨƥèçïƒïèδ ƥôïñƭ çℓôúδ.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Method",
+          "display": "Mèƭλôδ",
+          "desc": "Tλè ₥èƭλôδ."
+        },
+        {
+          "name": "Density Interp Method",
+          "display": "Ðèñƨïƭ¥ Ìñƭèřƥ Mèƭλôδ",
+          "desc": "Tλè ₥èƭλôδ."
+        }
+      ]
+    }
+  ]
+}

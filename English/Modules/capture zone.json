@@ -1,0 +1,53 @@
+{
+  "name": "capture zone",
+  "display": "capture zone",
+  "desc": "The capture_zone module utilizes streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Seepage Velocity Component",
+          "display": "Seepage Velocity Component",
+          "desc": "The Seepage Velocity control displays all data components (vector and scalar) passed to capture_zone."
+        },
+        {
+          "name": "Well Capture Distance",
+          "display": "Well Capture Distance",
+          "desc": "The Well Capture Distance type-in is used to specify the maximum distance that a streamline must pass near an extraction well before that streamline's integration is terminated and it's original starting location is deemed to have been captured by a well. Setting this value too high may result in regions that are designated as being captured but are not. However, setting it too low may also result in incorrect determination of which (if any) well is responsible for capturing regions. Fortunately, the acceptable bounds for this parameter are rather wide and generally a value corresponding to one nominal cell width (those cells in the region of your wells) is appropriate."
+        },
+        {
+          "name": "Minimum Flow Velocity",
+          "display": "Minimum Flow Velocity",
+          "desc": "The Minimum Flow Velocity type-in is used to specify the minimum velocity that will be considered in the integration. If the magnitude of the velocity field in a region is less than this minimum value, streamlines will end in that region (or will not be produced if the velocity at a starting point is less than the minimum). Setting this to a lower value will more accurately define the FULL extent of the capture zone region. However lower values may increase run time."
+        },
+        {
+          "name": "Export Well Data",
+          "display": "Export Well Data",
+          "desc": "The Export Well Data toggle will use the selected Nodal Data component label as the name of the output data."
+        },
+        {
+          "name": "Segments Per Cell",
+          "display": "Segments Per Cell",
+          "desc": "The Segments per Cell refers to the number of integration steps to be used in each cell (i.e., the number of divisions of the cells) to calculate the streamline."
+        },
+        {
+          "name": "Order",
+          "display": "Order",
+          "desc": "The Order refers to the order of the integration. Higher order integration is more accurate, but executes much slower."
+        },
+        {
+          "name": "Max Segments Total",
+          "display": "Max Segments Total",
+          "desc": "The Max Segments Total refers to the maximum allowable number of streamline segments that will be completed for each streamline. If the number of segments along a streamline exceeds the max number, the streamline is terminated at the end of the last (max) segment."
+        },
+        {
+          "name": "Extinction Angle",
+          "display": "Extinction Angle",
+          "desc": "The Extinction Angle is the maximum allowable angle between successive line segments before integration (streamline generation) should be terminated. "
+        }
+      ]
+    }
+  ]
+}

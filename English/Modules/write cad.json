@@ -1,0 +1,38 @@
+{
+  "name": "write cad",
+  "display": "write cad",
+  "desc": "The write_CAD module provides EVS with vector output of graphical results in industry standard AutoCAD DWG or DXF format.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Append To File",
+          "display": "Append To File",
+          "desc": "When the Append To File toggle is on, the existing file contents will be preserved."
+        },
+        {
+          "name": "Output File Version",
+          "display": "Output File Version",
+          "desc": "The Output File Version specifies which version of CAD to write in. Not used for DGN files."
+        },
+        {
+          "name": "Color Tolerance",
+          "display": "Color Tolerance",
+          "desc": "The Color Tolerance determines how precisely the colors must be represented in the output file. Setting to 0% will cause full colors to be added to the cad palette. Setting to 100% will minimize additional colors, and attempt to match standard palette."
+        },
+        {
+          "name": "Layer Naming",
+          "display": "Layer Naming",
+          "desc": "The Layer Naming specifies how to name the layers or levels created by EVS."
+        },
+        {
+          "name": "Include Cellset Index",
+          "display": "Include Cellset Index",
+          "desc": "The Include Cellset Index toggle will cause layer names to include the cellset index."
+        }
+      ]
+    }
+  ]
+}

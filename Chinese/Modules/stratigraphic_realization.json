@@ -1,0 +1,43 @@
+{
+  "name": "stratigraphic_realization",
+  "display": "stratigraphic_realization",
+  "desc": "修改和构建地层网格数据。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Shift Settings",
+      "display": "变换设置",
+      "properties": [
+        {
+          "name": "Randomness Generator Type",
+          "display": "随机产生器类型",
+          "desc": "随机产生器类型决定了实现偏差模式的性质。"
+        },
+        {
+          "name": "Anisotropy",
+          "display": "各向异性",
+          "desc": ""
+        },
+        {
+          "name": "Seed",
+          "display": "种子",
+          "desc": "种子用于随机数产生器，并使其可再生。"
+        },
+        {
+          "name": "Wavelength",
+          "display": "波长",
+          "desc": "波长影响随机产生器。这个值采用坐标系单位。值越小，输出频率变化越高。"
+        },
+        {
+          "name": "Min Max Confidence Equivalent",
+          "display": "最小最大置信度",
+          "desc": "实现偏离标称克立金结果将被限制在等效最小/最大(羽)范围内。该参数必须介于51.00%和99.995%之间。理论上50%与名义克里金结果相同。"
+        }
+      ]
+    }
+  ]
+}

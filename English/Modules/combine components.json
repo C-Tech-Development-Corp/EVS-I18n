@@ -1,0 +1,48 @@
+{
+  "name": "combine components",
+  "display": "combine components",
+  "desc": "The combine_components module",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Model Components",
+          "display": "Model Components",
+          "desc": "The Model Components control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        },
+        {
+          "name": "Components 1",
+          "display": "Components 1",
+          "desc": "The Components 1 control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        },
+        {
+          "name": "Components 2",
+          "display": "Components 2",
+          "desc": "The Components 2 control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        },
+        {
+          "name": "Components 3",
+          "display": "Components 3",
+          "desc": "The Components 3 control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        },
+        {
+          "name": "Components 4",
+          "display": "Components 4",
+          "desc": "The Components 4 control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        },
+        {
+          "name": "Components 5",
+          "display": "Components 5",
+          "desc": "The Components 5 control allows the user to select which nodal data components to include, from the relative input field, in the output."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "point density",
+  "display": "point density",
+  "desc": "The point_density module allows to determine spatial density of a specified point cloud.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Method",
+          "display": "Method",
+          "desc": "The method."
+        },
+        {
+          "name": "Density Interp Method",
+          "display": "Density Interp Method",
+          "desc": "The method."
+        }
+      ]
+    }
+  ]
+}

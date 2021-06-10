@@ -1,0 +1,58 @@
+{
+  "name": "time value",
+  "display": "time value",
+  "desc": "The time_value module is used to parse a TVF file consisting of dates, values, and (optionally) labels.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Label Options",
+          "display": "Label Options",
+          "desc": "The Label Options control which label is read from the file.  If 'Use Previous' is selected the last set label before the Current Date will be used.  If 'Use Closest' is selected the label closest to the date will be used."
+        },
+        {
+          "name": "Date And Time",
+          "display": "Date And Time",
+          "desc": "The Date and Time of interest."
+        },
+        {
+          "name": "Time Loop",
+          "display": "Time Loop",
+          "desc": "The Time Loop controls setting the Date and Time by specified increments."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the beginning time of the simulation.  This value is set to the first date in the file."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the end time for the simulation.  This value is set to the last date in the file."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for adavancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for adavancement when stepping or running."
+        },
+        {
+          "name": "Current Date And Time Value",
+          "display": "Current Date And Time Value",
+          "desc": "The value interpolated from the file using the set Date And Time."
+        },
+        {
+          "name": "Current Date And Time Label",
+          "display": "Current Date And Time Label",
+          "desc": "The string set from the file using the set Date And Time."
+        }
+      ]
+    }
+  ]
+}

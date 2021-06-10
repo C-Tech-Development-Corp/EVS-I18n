@@ -1,0 +1,23 @@
+{
+  "name": "area_integrate",
+  "display": "area_integrate",
+  "desc": "area_integration模块用于计算整个输入场的面积。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Integrated Area",
+          "display": "整体面积",
+          "desc": "输入场的整体面积。"
+        },
+        {
+          "name": "Area Units",
+          "display": "面积单位",
+          "desc": "输入场单位的平方。"
+        }
+      ]
+    }
+  ]
+}

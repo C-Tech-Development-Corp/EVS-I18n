@@ -1,0 +1,101 @@
+{
+  "name": "load evs field",
+  "display": "load evs field",
+  "desc": "Load_EVS_Field reads a dataset from any of six different EVS compatible file formats into an EVS field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Low Quality Filename",
+          "display": "Low Quality Filename",
+          "desc": "The field file to read when in low output quality mode."
+        },
+        {
+          "name": "File Creation Date",
+          "display": "File Creation Date",
+          "desc": "Display the File Creation Date if it is set in the file."
+        },
+        {
+          "name": "File Notes",
+          "display": "File Notes",
+          "desc": "Display the File Notes if it they are set in the file."
+        },
+        {
+          "name": "Vertical Offset",
+          "display": "Vertical Offset",
+          "desc": "Vertical Offset translates your entire model in Z by the value input multiplied by the Z Exaggeration.  This is useful if you want to move your model to avoid having coincident objects."
+        }
+      ]
+    },
+    {
+      "name": "Explode And Scale Settings",
+      "display": "Explode And Scale Settings",
+      "properties": [
+        {
+          "name": "Explode By",
+          "display": "Explode By",
+          "desc": "The Explode By options determine what information is used to explode the layers or materials. Layer and Material are nodal data components that should be present with any hierarchical geologic model. The Cell Set option allows you to explode by the Cell Set number. The Lithology option is to be used only with Adaptive Indicator Kriged geologic models.  These models have a cell data component called Lithology which corresponds to integer values assigned to material regions."
+        },
+        {
+          "name": "Explode Begins",
+          "display": "Explode Begins",
+          "desc": "Explode Begins determines the first layer or material that will be exploded."
+        },
+        {
+          "name": "Explode Ends",
+          "display": "Explode Ends",
+          "desc": "Explode Ends sets the last layer/material which will be exploded.  This value defaults to -1 which will explode all remaining layers or materials."
+        },
+        {
+          "name": "Cell Sets",
+          "display": "Cell Sets",
+          "desc": "The Cell Sets control allows selected cell sets to be turned off in the output."
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "Data Selection",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If Color By is set to Cell Data the Cell Data Component selects which cell data will set the data map."
+        },
+        {
+          "name": "Copy Flagged Data",
+          "display": "Copy Flagged Data",
+          "desc": "The Copy Flagged Data toggle allows the user to keep special flagged data (radius, color, etc.) along with the selected data"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "extrude",
+  "display": "extrude",
+  "desc": "The extrude module accepts any mesh and adds one to the dimensionality of the input by extruding the mesh in the Z direction.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Extrude By",
+          "display": "Extrude By",
+          "desc": "The Extrude By control allows the user to handle the method of extrusion."
+        },
+        {
+          "name": "Constant Value",
+          "display": "Constant Value",
+          "desc": "If the Extrude By selection is set to Constant the Constant Value will be the height of each cell."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If the Extrude By selection is set to Cell Data Component, the data component of interest can be selected using this control."
+        },
+        {
+          "name": "Node Data Component",
+          "display": "Node Data Component",
+          "desc": "If the Extrude By selection is set to Node Data Component, the data component of interest can be selected using this control."
+        },
+        {
+          "name": "Limit Extrusion",
+          "display": "Limit Extrusion",
+          "desc": "If the Extrude By selection is set to Node Data Component,  you must select 'Positive Extrusions' or 'Negative Extrusions'. Since each node of a triangle or quadrilateral can have different values, it is possible for a single cell to have both positive and negative data values at its nodes. If this type of cell is extruded both directions, the cell topology can become tangled."
+        },
+        {
+          "name": "Subdivisions",
+          "display": "Subdivisions",
+          "desc": "The Subdivisions field determines how many cells vertically to create."
+        },
+        {
+          "name": "Scale Factor",
+          "display": "Scale Factor",
+          "desc": "The Scale Factor is multiplied by the selected Extrude By value to determine the extrude height."
+        },
+        {
+          "name": "Heading Dip Value",
+          "display": "Heading Dip Value",
+          "desc": "The Heading and Dip values are used to align the extruded points."
+        }
+      ]
+    }
+  ]
+}

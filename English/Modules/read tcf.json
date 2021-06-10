@@ -1,0 +1,64 @@
+{
+  "name": "read tcf",
+  "display": "read tcf",
+  "desc": "The Read_TCF module is one of a limited set of Time_Data modules. These modules are specifically designed to create models and animations of data that changes over time.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Log Process Nodal Data",
+          "display": "Log Process Nodal Data",
+          "desc": "The Log Process Nodal Data value when selected will take the log value of the input nodal data."
+        },
+        {
+          "name": "Log Process Cell Data",
+          "display": "Log Process Cell Data",
+          "desc": "The Log Process Cell Data value when selected will take the log value of the input cell data."
+        },
+        {
+          "name": "Date And Time",
+          "display": "Date And Time",
+          "desc": "The Date and Time of interest."
+        },
+        {
+          "name": "Time Loop",
+          "display": "Time Loop",
+          "desc": "The Time Loop controls setting the Date and Time by specified increments."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the beginning time of the simulation.  This value is set to the first date in the file."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the end time for the simulation.  This value is set to the last date in the file."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for advancement when stepping or running."
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "Export",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "Convert To Packaged",
+          "desc": "Replace this module with a packaged version of the data."
+        }
+      ]
+    }
+  ]
+}

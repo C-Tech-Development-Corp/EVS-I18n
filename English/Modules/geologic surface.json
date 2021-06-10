@@ -1,0 +1,80 @@
+{
+  "name": "geologic surface",
+  "display": "geologic surface",
+  "desc": "The geologic_surface module provides complete control of displaying, scaling and exploding one geologic surface from a set of surfaces.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Surface Settings",
+      "display": "Surface Settings",
+      "properties": [
+        {
+          "name": "Surface Offset",
+          "display": "Surface Offset",
+          "desc": "The Surface Z Offset parameter specifies the distance that the surface will be translated in the Z axis before display."
+        },
+        {
+          "name": "Minimum Thickness",
+          "display": "Minimum Thickness",
+          "desc": "The Minimum Thickness parameter determines the minimum spacing between surfaces when hierarchy is imposed."
+        },
+        {
+          "name": "Account For Hierarchy",
+          "display": "Account For Hierarchy",
+          "desc": "The Account for Hierarchy toggle causes geologic surfaces that might otherwise intersect each other to be corrected to account for Geologic Hierarchy."
+        },
+        {
+          "name": "Reverse Hierarchy",
+          "display": "Reverse Hierarchy",
+          "desc": "The Reverse Hierarchy toggle causes hierarchy to be imposed from the bottom up versus the normal top down."
+        },
+        {
+          "name": "Pass Null Through Surfaces",
+          "display": "Pass Null Through Surfaces",
+          "desc": "The Pass Null Through Surfaces toggle causes the Null nodes/cells defined in any surface to be passed to all of the surfaces."
+        },
+        {
+          "name": "Surface Selection",
+          "display": "Surface Selection",
+          "desc": "The Surfaces Selection controls allow the user to select which surface is output for visualization or subsequent processing."
+        }
+      ]
+    },
+    {
+      "name": "Data Settings",
+      "display": "Data Settings",
+      "properties": [
+        {
+          "name": "Nodal Data To Map",
+          "display": "Nodal Data To Map",
+          "desc": "The Nodal Data To Map toggles allow you to control which data components are included in the surfaces."
+        },
+        {
+          "name": "Data Mapping",
+          "display": "Data Mapping",
+          "desc": "The Data Mapping control allow the user to select to which surfaces the nodal data components are mapped. For example, if Top is selected, layer thicknesses are mapped to the surface that corresponds to the top of each layer."
+        },
+        {
+          "name": "Set Min Max",
+          "display": "Set Min Max",
+          "desc": "The Set Min Max control allows the user to either use the min and max of all surfaces, or to set the min and max to that of the selected surface."
+        },
+        {
+          "name": "Cell Data To Map",
+          "display": "Cell Data To Map",
+          "desc": "The Cell Data To Map toggles allow you to control which cell data components are included in the surfaces."
+        }
+      ]
+    }
+  ]
+}

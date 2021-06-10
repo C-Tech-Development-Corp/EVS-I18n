@@ -1,0 +1,405 @@
+{
+  "name": "well_decommission",
+  "display": "well_decommission",
+  "desc": "well_decommission模块对所有可用数据进行分析，并对移除每口井产生的现场评估质量的影响进行量化。 ",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Target Concentration",
+          "display": "目标浓度",
+          "desc": "目标浓度是用于退役分析的子集水平(以实际而非log单位表示)。这通常应该是环保局报告的水平。"
+        },
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "从文件中选择感兴趣的数据进行处理。"
+        },
+        {
+          "name": "Data Priority",
+          "display": "数据优先级",
+          "desc": "钻井退役过程中的数据优先级影响着样本的自适应网格划分。"
+        },
+        {
+          "name": "Run Cycles",
+          "display": "运行循环",
+          "desc": "单击’运行循环‘按钮后，将运行一系列计算，依次将每个监测井放入输入数据文件中。"
+        },
+        {
+          "name": "Run Decommission Cycles",
+          "display": "运行退役循环",
+          "desc": "当未选中时，运行退役循环开关将运行单个基线分析。检查完之后，它将进行一系列计算，依次将每个监测井放入输入数据文件中。"
+        },
+        {
+          "name": "New Variables",
+          "display": "新变量",
+          "desc": "在每次运行之前，新的变量开关将所有专家系统计算的变量重置为零。这允许执行多个计算，而无需手工重新设置这些变量。要更改专家系统计算的变量，开关必须关闭。"
+        }
+      ]
+    },
+    {
+      "name": "Grid Settings",
+      "display": "网格设置",
+      "properties": [
+        {
+          "name": "Grid Coordinates",
+          "display": "网格坐标",
+          "desc": "允许用户定义将在其中完成克里金插值的数据集中的坐标域。最小值和最大值仅在选择了直线网格选项时使用。"
+        },
+        {
+          "name": "X Resolution",
+          "display": "X 分辨率",
+          "desc": "X分辨率指定模型水平域中包含的网格节点的数量。"
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y 分辨率",
+          "desc": "Y分辨率指定将包含在模型垂直域内的网格节点的数量。"
+        },
+        {
+          "name": "Grid Type",
+          "display": "网格类型",
+          "desc": "用于插值的网格类型。当用户希望产生一个由测量数据点的范围定义的不规则边界的模型时，应该使用凸包边界。一个数据集的凸包可以被认为是一个域，通过在数据集中的外部数据点周围拉伸一个橡皮筋来勾画。"
+        },
+        {
+          "name": "Adaptive Gridding",
+          "display": "自适应网格",
+          "desc": "自适应网格切换器自动细化网格，将网格节点放置在所有测量数据点上。自适应网格将产生一个准确地满足所有测量数据点的估计参数分布。"
+        },
+        {
+          "name": "Adaptive Gridding Limit",
+          "display": "自适应网格限制",
+          "desc": "当采样点数量大于设定值时，自适应网格限制值将关闭自适应网格。"
+        },
+        {
+          "name": "Boundary Offset",
+          "display": "边界偏移",
+          "desc": "边界偏移参数将设置插值域的网格坐标范围从数据的实际坐标范围向外扩展的距离。"
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Data Processing",
+          "display": "数据处理",
+          "desc": "允许模块在线型或者对数空间里运行."
+        },
+        {
+          "name": "Data Scaling",
+          "display": "数据缩放",
+          "desc": "数据缩放参数用来指定一个乘数,所有节点数据在进行克里金插值之前会先被乘以该乘数。"
+        },
+        {
+          "name": "Linear Post Clip",
+          "display": "线性后置修剪",
+          "desc": "当对数处理的开关关闭，那么线性后最小值修剪将会用指定的值来替代线性空间中样本值中小于该值的数据。"
+        },
+        {
+          "name": "Log Post Clip",
+          "display": "对数后置修剪",
+          "desc": "当对数处理的开关打开，那么对数后置最小值修剪将会用指定的值来替代对数空间中样本值中小于该值的数据。"
+        },
+        {
+          "name": "LT Multiplier",
+          "display": "小于号系数",
+          "desc": "样本数据中‘<’标志代表的乘数值。"
+        },
+        {
+          "name": "Detection Limit",
+          "display": "检测限",
+          "desc": "检测限值会影响文件中那些被写成‘ND’或者其他未能检测到数据标志的值（关于标志的写法参看APDV文件格式帮助）。当模块遇到此标志时，会插入一个数值，该值等于‘检测限’乘以‘小于号系数’。"
+        },
+        {
+          "name": "Collapse Method",
+          "display": "折叠方法",
+          "desc": "折叠方法允许用户使用四种不同的方法从最小Z值和最大Z值中指定的间隔内提取数据。应该注意,如果多个样品发生在相同的x, y,和z坐标(重复的样本),这些样本的平均值计算只取其中一个,然后提取方法将被应用到指定的深度区间其他样品。"
+        },
+        {
+          "name": "Tolerance",
+          "display": "公差",
+          "desc": "公差参数进一步扩展了重合点的定义。它允许公差范围（xy轴向）内所有点被视为重合。"
+        },
+        {
+          "name": "Collapse Min Z",
+          "display": "折叠最小Z值",
+          "desc": "折叠范围的最低深度"
+        },
+        {
+          "name": "Collapse Max Z",
+          "display": "Collapse Max Z",
+          "desc": "折叠范围的最高深度"
+        },
+        {
+          "name": "Slice Position",
+          "display": "切面位置",
+          "desc": "切面位置与切面折叠法一起使用。Krig_2D将寻找最小Z值和最大Z 值范围内，切面上下最近的两个数据点，并计算这两个点的平均值用于克里金分析的输入。"
+        },
+        {
+          "name": "Post Clip Min",
+          "display": "后剪切最小值",
+          "desc": "指定模块输出数据场中最小的节点值。"
+        },
+        {
+          "name": "Post Clip Max",
+          "display": "后剪切最大值",
+          "desc": "指定模块输出数据场中最大的节点值。"
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "克里金设置",
+      "properties": [
+        {
+          "name": "Reach",
+          "display": "范围",
+          "desc": "该字段定义了从任何给定模型节点出发的径向距离(用户单位)，在该范围内，克里金插值模块将查找样本数据点，用于该节点上的模型参数估计。将该字段设置为0将导致模块计算一个特定的值，该值大约是数据集中任意两个数据点之间最长距离的三分之二。"
+        },
+        {
+          "name": "Points In Reach",
+          "display": "范围内点数量",
+          "desc": "定义了在模型节点进行参数估计时将考虑的数据点的最大数量(在指定的范围内)。此值不用于最近邻近点插值或当样本数量低于使用所有数据阈值时。"
+        },
+        {
+          "name": "Quadrant Search",
+          "display": "四分搜索",
+          "desc": "选择四分搜索时，对插值点周围的每个四边形进行搜索。在每个四边形中选择最大点数(最多为总点数的四分之一)。"
+        },
+        {
+          "name": "Use All Points",
+          "display": "使用所有点",
+          "desc": "使用所有点开关使模块包含最大限值内的样本。如果样本数量超过限值，则使用范围和范围中的点数量。"
+        },
+        {
+          "name": "All Points Limit",
+          "display": "所有点限值",
+          "desc": "所有点限值是插值时使用的最大点数。如果文件中的样本数多于此值，则使用范围和范围中的点数量。"
+        },
+        {
+          "name": "Min Max Plume Confidence",
+          "display": "最小最大羽置信度",
+          "desc": "用于指定克里金模型周围的区间，估算克里金置信度或不确定性将适用。"
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "变差函数和各向异性",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Sample Settings",
+      "display": "样本设置",
+      "properties": [
+        {
+          "name": "Datamap",
+          "display": "数据映射",
+          "desc": "数据映射指的是用来映射的最大最小值。这并不会改变文件中的数据值。"
+        },
+        {
+          "name": "Display Spheres",
+          "display": "显示圆球",
+          "desc": "该开关可以控制是否显示样本点圆球。"
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "标签设置",
+      "properties": [
+        {
+          "name": "Features To Label",
+          "display": "标签内容",
+          "desc": "该选项允许用户选择标签显示的内容。"
+        },
+        {
+          "name": "Label Type",
+          "display": "标签类型",
+          "desc": "标签类型允许用户在三种字体类型之间进行选择。Foward Facing字体将始终与视图对齐。TrueType字体是标准字体。Line字体是影响较小的字体，在生成大量标签时表现得更好。"
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType 字体样式",
+          "desc": "TrueType字体样式允许用户改变字体的基本外观。"
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line 字体样式",
+          "desc": "Line字体样式允许用户更改字体的基本外观。"
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D 标签设置",
+          "desc": "3D标签设置允许用户将标签对齐到适当的视图。"
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing 样式",
+          "desc": "Forward Facing样式允许用户将标签对齐到适当的视图，并更改字体的基本布局。"
+        },
+        {
+          "name": "Label Color",
+          "display": "标签颜色",
+          "desc": "标签颜色允许设置每个标签的颜色。"
+        },
+        {
+          "name": "Label Angle",
+          "display": "标签角度",
+          "desc": "标签角度字段决定了在样品周围的圆环中放置标签的位置。例如，如果值为0，则表示将标签放置在样品的右侧，如果值为90，则表示将标签放置在样品的正上方。"
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "标签数字格式",
+          "desc": "标签数字格式控件允许用户设置显示在标签中的数字如何格式化。"
+        },
+        {
+          "name": "Top Offset",
+          "display": "顶部偏移",
+          "desc": "顶部偏移量字段是标题(钻井或者钻孔编号标签)在z方向上的偏移量。这可以提高或降低您的标题，并添加到Z偏移量，以确定标题的Z方向位置。"
+        },
+        {
+          "name": "Radial Offset",
+          "display": "径向偏移",
+          "desc": "径向偏移量，它决定了放置样本标签的径向距离，值1表示将球面半径添加到样本的XYZ位置并将标签放置在那里。"
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z偏移",
+          "desc": "将Z偏移量添加到已标记样本的Z坐标中，使标签在Z方向上升高或降低。"
+        },
+        {
+          "name": "X Blank",
+          "display": "X空白",
+          "desc": "X空白字段帮助创建一个3D框，该框只允许在其中显示最高值的标签。如果框中有多个具有相同最大值的样本，则显示的标签基于所处理的顺序，而不一定是文件中定义的顺序。"
+        },
+        {
+          "name": "Y Blank",
+          "display": "Y空白",
+          "desc": "Y空白字段帮助创建一个3D框，该框只允许在其中显示最高值的标签。如果框中有多个具有相同最大值的样本，则显示的标签基于所处理的顺序，而不一定是文件中定义的顺序。"
+        },
+        {
+          "name": "Z Blank",
+          "display": "Z空白",
+          "desc": "z空白字段帮助创建一个3D框，该框只允许在其中显示最高值的标签。如果框中有多个具有相同最大值的样本，则显示的标签基于所处理的顺序，而不一定是文件中定义的顺序。"
+        },
+        {
+          "name": "Favor Min Value",
+          "display": "支持最小值",
+          "desc": "与X、Y和Z空白字段一起使用。这将切换这些字段的行为，以显示框内的最低值。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Sphere Display Component",
+          "display": "圆球显示组件",
+          "desc": "改变圆球的着色组件依据。"
+        },
+        {
+          "name": "Mass Scale Factor",
+          "display": "质量比例因子",
+          "desc": "The Mass Scale Factor is applied to the Deviation of the Min Mass, the Nominal Mass, and the Max Mass. It is used to scale these values, into more useful units.质量比例因子应用于最小质量、名义质量和最大质量的偏差。它用于将这些值缩放为更有用的单位。"
+        },
+        {
+          "name": "Min Plume Visible",
+          "display": "最小羽可见性",
+          "desc": "该值用于切换最小羽的可见性"
+        },
+        {
+          "name": "Min Plume",
+          "display": "最小羽",
+          "desc": "该值控制最小羽的颜色"
+        },
+        {
+          "name": "Nominal Plume Visible",
+          "display": "名义羽可见性",
+          "desc": "该开关控制名义羽的可见性。"
+        },
+        {
+          "name": "Nominal Plume",
+          "display": "名义羽",
+          "desc": "该值控制名义羽的颜色。"
+        },
+        {
+          "name": "Max Plume Visible",
+          "display": "最大羽可见性",
+          "desc": "该开关控制最大羽的可见性。"
+        },
+        {
+          "name": "Max Plume",
+          "display": "最大羽",
+          "desc": "该值控制最大羽的颜色。"
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "图元设置",
+      "properties": [
+        {
+          "name": "Glyph Size",
+          "display": "图元尺寸",
+          "desc": "图元尺寸值用于在各个方向缩放图元。默认值是根据您的输入数据自动计算的。"
+        },
+        {
+          "name": "Priority",
+          "display": "优先级",
+          "desc": "优先级将反转缩放，使得最小的样本值具有最大的尺寸"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "最小缩放因子",
+          "desc": "最小缩放因子以最小优先级对样本值进行缩放"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "最大缩放因子",
+          "desc": "最大缩放因子以最小优先级对样本值进行缩放"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "使用对数数据",
+          "desc": "将强制图元大小基于所选数据的对数值。"
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "产生图元",
+          "desc": "该选项允许用户选择自动产生的图元类型。"
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "圆球细分",
+          "desc": "定义了样本圆球的渲染精细度。值越大则圆球越平滑，但是会消耗更多的内存。"
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "图元分辨率",
+          "desc": "定义产生的圆锥、多段线、圆筒和圆片的分辨率。"
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "主轴因子",
+          "desc": "图元主轴的缩放因子。"
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "次轴因子",
+          "desc": "图元次轴的缩放因子。"
+        },
+        {
+          "name": "Roll",
+          "display": "卷曲度",
+          "desc": "图元绕主轴的卷曲度。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "thin fence",
+  "display": "thin fence",
+  "desc": "Thin_fence creates a fence diagram along a user defined (x, y) path.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Clean Fence Boundaries",
+          "display": "Clean Fence Boundaries",
+          "desc": "The Clean Fence Boundaries toggle attempts to merge all cells between each fence segment (created by each line segment of your 2D input). Occasionally the output will look better with it off, but usually it is better left on."
+        },
+        {
+          "name": "Straighten To 2D",
+          "display": "Straighten To 2D",
+          "desc": "The Straighten to 2D toggle is used to project your 3D fence to a 2D representation. Where each samples x value becomes the distance to the line passed into the Input Line port."
+        },
+        {
+          "name": "Straightened Plane",
+          "display": "Straightened Plane",
+          "desc": "The Straightened Plane allows the user to set the plane the straightened samples are in.  This requires samples that have been Straightened to 2D."
+        },
+        {
+          "name": "Nodal Data Components",
+          "display": "Nodal Data Components",
+          "desc": "The Node Data Components toggles allow you to select which nodal data to include in the fence."
+        },
+        {
+          "name": "Cell Data Components",
+          "display": "Cell Data Components",
+          "desc": "The Cell Data Components toggles allow you to select which cell data to include in the fence."
+        }
+      ]
+    }
+  ]
+}

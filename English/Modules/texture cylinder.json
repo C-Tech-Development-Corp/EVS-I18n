@@ -1,0 +1,68 @@
+{
+  "name": "texture cylinder",
+  "display": "texture cylinder",
+  "desc": "The texture_cylinder module provides a means to (texture map) project images onto a cylinder.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Switch Horizontal For Vertical",
+          "display": "Switch Horizontal For Vertical",
+          "desc": "The Switch Horizontal For Vertical toggle handles images which has been produced using a different scanning order."
+        },
+        {
+          "name": "Flip Horizontal",
+          "display": "Flip Horizontal",
+          "desc": "The Flip Horizontal toggle will reverse the order of each pixel in the incoming image in the horizontal direction."
+        },
+        {
+          "name": "Flip Vertical",
+          "display": "Flip Vertical",
+          "desc": "The Flip Vertical toggle will reverse the order of each pixel in the incoming image in the vertical direction."
+        },
+        {
+          "name": "Horizontal Scale Factor",
+          "display": "Horizontal Scale Factor",
+          "desc": "The Horizontal Scale Factor slider sets a factor for enlarging or shrinking the image. It represents an East/West scaling."
+        },
+        {
+          "name": "Vertical Scale Factor",
+          "display": "Vertical Scale Factor",
+          "desc": "The Vertical Scale Factor slider sets a factor for enlarging or shrinking the image. It represents a North/South scaling."
+        },
+        {
+          "name": "Angular Shift",
+          "display": "Angular Shift",
+          "desc": "The Angular Shift slider controls the rotation (in degrees) of the texture around the cylinder."
+        },
+        {
+          "name": "Vertical Shift",
+          "display": "Vertical Shift",
+          "desc": "The Vertical Shift slider controls the vertical position of the texture on the cylinder."
+        },
+        {
+          "name": "Cylinder Center",
+          "display": "Cylinder Center",
+          "desc": "The Cylinder Center is value of the center of the cylinder to use in the texture mapping process."
+        },
+        {
+          "name": "Cylinder Z Min",
+          "display": "Cylinder Z Min",
+          "desc": "The Cylinder Z Min is the value of the minimum of the cylinder vertical extent to use in the texture mapping process."
+        },
+        {
+          "name": "Cylinder Z Max",
+          "display": "Cylinder Z Max",
+          "desc": "The Cylinder Z Max is the value of the maximum of the cylinder vertical extent to use in the texture mapping process."
+        }
+      ]
+    }
+  ]
+}

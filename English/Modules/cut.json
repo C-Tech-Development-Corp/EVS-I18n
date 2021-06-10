@@ -1,0 +1,92 @@
+{
+  "name": "cut",
+  "display": "cut",
+  "desc": "The cut module allows you to create a subset of your input which is of the same dimensionality.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Cut Settings",
+      "display": "Cut Settings",
+      "properties": [
+        {
+          "name": "Cut Type",
+          "display": "Cut Type",
+          "desc": "The Cut Type is how the cutting plane is specified. "
+        },
+        {
+          "name": "Cut Direction",
+          "display": "Cut Direction",
+          "desc": "The Cut Direction is used to determine whether the mesh above or below the cutting plane is sent to the output port."
+        },
+        {
+          "name": "X Position",
+          "display": "X Position",
+          "desc": "The X Position of the cut plane(used with Easting and Rotatable)."
+        },
+        {
+          "name": "Y Position",
+          "display": "Y Position",
+          "desc": "The Y position of the cut plane(used with Northing and Rotatable)."
+        },
+        {
+          "name": "Z Position",
+          "display": "Z Position",
+          "desc": "The Z Position of the cut plane(used with Horizontal and Rotatable)."
+        },
+        {
+          "name": "Plane Rotation",
+          "display": "Plane Rotation",
+          "desc": "The Plane Rotation control allows the user to set both the Head and the Dip of the Rotatable Cut Plane"
+        },
+        {
+          "name": "Reset",
+          "display": "Reset",
+          "desc": "The Reset button will cause the Position of the cut plane to return to the center of the model."
+        }
+      ]
+    },
+    {
+      "name": "Data Mapping",
+      "display": "Data Mapping",
+      "properties": [
+        {
+          "name": "Nodal Data",
+          "display": "Nodal Data",
+          "desc": "The Nodal Data from the Input Field to include in the Output Field"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

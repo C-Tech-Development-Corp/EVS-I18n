@@ -1,0 +1,28 @@
+{
+  "name": "horizon ranking",
+  "display": "horizon ranking",
+  "desc": "The horizon_ranking module is used to give the user control over individual surface priorities and rankings.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Horizon Rankings",
+          "display": "Horizon Rankings",
+          "desc": "The Horizon Rankings control allows the user to control individual surface priorities and rankings."
+        },
+        {
+          "name": "Top To Bottom",
+          "display": "Top To Bottom",
+          "desc": "The Top to Bottom button returns the rankings to their default values (1 on top)."
+        },
+        {
+          "name": "Bottom To Top",
+          "display": "Bottom To Top",
+          "desc": "The Bottom to Top button reverses the ranking and is equivalent to reversed hierarchy."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "change minmax",
+  "display": "change minmax",
+  "desc": "The change_minmax module allows setting of max values above the true maximum data range and min values below the true minimum data range.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Nodal Data Ranges",
+      "display": "Nodal Data Ranges",
+      "properties": [
+        {
+          "name": "Change Nodal Data",
+          "display": "Change Nodal Data",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Cell Data Ranges",
+      "display": "Cell Data Ranges",
+      "properties": [
+        {
+          "name": "Change Cell Data",
+          "display": "Change Cell Data",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the current module properties."
+        }
+      ]
+    },
+    {
+      "name": "Port Information",
+      "display": "Port Information",
+      "properties": []
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Pickable",
+          "display": "Pickable",
+          "desc": "Controls whether the object can be picked interactively in the viewer."
+        },
+        {
+          "name": "Opacity",
+          "display": "Opacity",
+          "desc": "Controls the opacity of the object."
+        },
+        {
+          "name": "Faces To Display",
+          "display": "Faces To Display",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Face Culling",
+          "display": "Face Culling",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        },
+        {
+          "name": "Node Data Datamap",
+          "display": "Node Data Datamap",
+          "desc": "Controls how the color is mapped onto the resulting object based off the data contained within the renderable."
+        },
+        {
+          "name": "Cell Data Datamap",
+          "display": "Cell Data Datamap",
+          "desc": "Controls how the color is mapped onto the resulting object based off the data contained within the renderable."
+        },
+        {
+          "name": "Object Secondary Color",
+          "display": "Object Secondary Color",
+          "desc": "Sets the Objects Secondary Color."
+        },
+        {
+          "name": "Normals Generation",
+          "display": "Normals Generation",
+          "desc": "Controls how normals are generated for surfaces.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "Rendering Priority",
+          "desc": "Controls the rendering priority of the object.  Higher values will cause the renderable to have preferential treatment over other renderables in the same space."
+        }
+      ]
+    },
+    {
+      "name": "Advanced Properties",
+      "display": "Advanced Properties",
+      "properties": [
+        {
+          "name": "Auto Orient Normals",
+          "display": "Auto Orient Normals",
+          "desc": "Recompute new normals and reorient all triangles to face outward when possible."
+        },
+        {
+          "name": "Force Consistent Normals",
+          "display": "Force Consistent Normals",
+          "desc": "Flip normals on adjancent triangles to make surface normals consistent."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
+        {
+          "name": "Use Alternate Object",
+          "display": "Use Alternate Object",
+          "desc": "Determines whether an alternate, simple rendering is used while rotating to improve performance while interacting with the Viewer."
+        }
+      ]
+    },
+    {
+      "name": "Rendering Modes",
+      "display": "Rendering Modes",
+      "properties": [
+        {
+          "name": "Point Display Mode",
+          "display": "Point Display Mode",
+          "desc": "Controls how points are rendered in the Viewer.  NOTE: Not all options are supported by most graphics cards."
+        },
+        {
+          "name": "Line Display Mode",
+          "display": "Line Display Mode",
+          "desc": "Controls how lines are rendered in the Viewer.  NOTE: Not all options are supported by most graphics cards."
+        },
+        {
+          "name": "Hide Cell Outlines",
+          "display": "Hide Cell Outlines",
+          "desc": "Determines whether the outlines of cells are included in the rendering when using an appropriate Line Display Mode, or whether we only display actual line and polyline cells."
+        },
+        {
+          "name": "Surface Display Mode",
+          "display": "Surface Display Mode",
+          "desc": "Controls how surfaces are rendered in the Viewer."
+        },
+        {
+          "name": "Volume Display Mode",
+          "display": "Volume Display Mode",
+          "desc": "Controls how volumes are rendered in the Viewer."
+        },
+        {
+          "name": "Bounds Display Mode",
+          "display": "Bounds Display Mode",
+          "desc": "Controls how the boundaries of objects are rendered in the Viewer."
+        }
+      ]
+    },
+    {
+      "name": "Surface Properties",
+      "display": "Surface Properties",
+      "properties": [
+        {
+          "name": "Ambient",
+          "display": "Ambient",
+          "desc": "The Ambient value affects the brightness of objects with respect to ambient (non-directional or Lambertian reflection) lighting."
+        },
+        {
+          "name": "Diffuse",
+          "display": "Diffuse",
+          "desc": "The Diffuse value affects the brightness of objects with respect to diffuse (directional or specular reflection) lighting."
+        },
+        {
+          "name": "Specular",
+          "display": "Specular",
+          "desc": "The Specular value determines the brightness and focus of white specular highlights on objects whose surface normal reflects the directional light source back to the viewer. This could also be considered shininess"
+        },
+        {
+          "name": "Gloss",
+          "display": "Gloss",
+          "desc": "The Gloss value determines the brightness on objects whose surface normal reflects the directional light source back to the viewer. This could also be considered shininess."
+        }
+      ]
+    },
+    {
+      "name": "Point And Line Properties",
+      "display": "Point And Line Properties",
+      "properties": [
+        {
+          "name": "Line Style",
+          "display": "Line Style",
+          "desc": "The Line Style affects how lines are drawn."
+        },
+        {
+          "name": "Line Thickness",
+          "display": "Line Thickness",
+          "desc": "The Line Thickness sets the width of lines in pixels, and can be set to values ranging from 0 to 25. Zero is a special fast version of one pixel wide."
+        },
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "Glyph Size applies only to special geometries."
+        },
+        {
+          "name": "Subdivision",
+          "display": "Subdivision",
+          "desc": "The Subdivision value controls the number of element subdivisions to be performed before drawing of lines along surfaces (grids). The higher the number, the more accurately the lines will be placed through the data. Higher accuracy does not always cause the lines to become smoother, depending on the data distribution."
+        },
+        {
+          "name": "Smooth Lines",
+          "display": "Smooth Lines",
+          "desc": "The Smooth Lines toggle creates a (sometimes) pleasing display of lines. The jagged display along pixel divisions is darkened and blurred to create a somewhat smoother (softer) appearance. Smooth lines produces thicker anti-aliased lines."
+        }
+      ]
+    },
+    {
+      "name": "Texture Settings",
+      "display": "Texture Settings",
+      "properties": [
+        {
+          "name": "Interpolation",
+          "display": "Interpolation",
+          "desc": ""
+        },
+        {
+          "name": "Tile",
+          "display": "Tile",
+          "desc": ""
+        },
+        {
+          "name": "Blending",
+          "display": "Blending",
+          "desc": ""
+        },
+        {
+          "name": "Type",
+          "display": "Type",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Pickable",
+          "display": "Pickable",
+          "desc": "Controls whether the object can be picked interactively in the viewer."
+        },
+        {
+          "name": "Opacity",
+          "display": "Opacity",
+          "desc": "Controls the opacity of the object."
+        },
+        {
+          "name": "Faces To Display",
+          "display": "Faces To Display",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Face Culling",
+          "display": "Face Culling",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Normals Generation",
+          "display": "Normals Generation",
+          "desc": "Controls how normals are generated for surfaces.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "Rendering Priority",
+          "desc": "Controls the rendering priority of the object.  Higher values will cause the renderable to have preferential treatment over other renderables in the same space."
+        },
+        {
+          "name": "Object Secondary Color",
+          "display": "Object Secondary Color",
+          "desc": "Sets the Objects Secondary Color."
+        }
+      ]
+    },
+    {
+      "name": "Advanced Properties",
+      "display": "Advanced Properties",
+      "properties": [
+        {
+          "name": "Use Alternate Object",
+          "display": "Use Alternate Object",
+          "desc": "Determines whether an alternate, simple rendering is used while rotating to improve performance while interacting with the Viewer."
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Opacity",
+          "display": "Opacity",
+          "desc": "Controls the opacity of the object."
+        },
+        {
+          "name": "Face Culling",
+          "display": "Face Culling",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Normals Generation",
+          "display": "Normals Generation",
+          "desc": "Controls how normals are generated for surfaces.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
+        },
+        {
+          "name": "Glyph Normals",
+          "display": "Glyph Normals",
+          "desc": "Controls how normals are generated for glyphs, including spheres.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "Rendering Priority",
+          "desc": "Controls the rendering priority of the object.  Higher values will cause the renderable to have preferential treatment over other renderables in the same space."
+        },
+        {
+          "name": "Node Data Datamap",
+          "display": "Node Data Datamap",
+          "desc": "Controls how the color is mapped onto the resulting object based off the data contained within the renderable."
+        },
+        {
+          "name": "Cell Data Datamap",
+          "display": "Cell Data Datamap",
+          "desc": "Controls how the color is mapped onto the resulting object based off the data contained within the renderable."
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        }
+      ]
+    },
+    {
+      "name": "General Properties",
+      "display": "General Properties",
+      "properties": [
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Pickable",
+          "display": "Pickable",
+          "desc": "Controls whether the object can be picked interactively in the viewer."
+        },
+        {
+          "name": "Opacity",
+          "display": "Opacity",
+          "desc": "Controls the opacity of the object."
+        },
+        {
+          "name": "Faces To Display",
+          "display": "Faces To Display",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Face Culling",
+          "display": "Face Culling",
+          "desc": "Controls which faces of the object are displayed."
+        },
+        {
+          "name": "Object Secondary Color",
+          "display": "Object Secondary Color",
+          "desc": "Sets the Objects Secondary Color."
+        },
+        {
+          "name": "Normals Generation",
+          "display": "Normals Generation",
+          "desc": "Controls how normals are generated for surfaces.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "Rendering Priority",
+          "desc": "Controls the rendering priority of the object.  Higher values will cause the renderable to have preferential treatment over other renderables in the same space."
+        }
+      ]
+    }
+  ]
+}

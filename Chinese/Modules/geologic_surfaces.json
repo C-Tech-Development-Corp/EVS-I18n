@@ -1,0 +1,74 @@
+{
+  "name": "geologic_surfaces",
+  "display": "geologic_surfaces",
+  "desc": "模块提供了从一组层面中提取其中一个或者多个，进行显示、缩放和爆炸的完整控制。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+      {
+      "name": "Surface Settings",
+      "display": "面设置",
+      "properties": [
+        {
+          "name": "Surface Offset",
+          "display": "面偏移",
+          "desc": "该参数指定在面显示之前，其在Z轴上平移的距离。"
+        },
+        {
+          "name": "Minimum Thickness",
+          "display": "最小厚度",
+          "desc": "最小厚度参数决定了在构建层级时，面之间的最小间距。"
+        },
+        {
+          "name": "Account For Hierarchy",
+          "display": "层级对应",
+          "desc": "该开关将对地质层面进行更正，以符合地质层次结构，否则可能会相互交叉。"
+        },
+        {
+          "name": "Reverse Hierarchy",
+          "display": "层级反转",
+          "desc": "该开关会导致从下往上构建层级结构，而不是从上往下构建正常的层级结构。"
+        },
+        {
+          "name": "Pass Null Through Surfaces",
+          "display": "通过面传递空值",
+          "desc": "该开关会使得在任何面中定义的空节点/单元被传递到所有层面。"
+        },
+        {
+          "name": "Surface Selection",
+          "display": "面选择",
+          "desc": "该控件允许用户选择输出哪些面进行可视化或后续处理。"
+        }
+      ]
+    },
+    {
+      "name": "Data Settings",
+      "display": "数据设置",
+      "properties": [
+        {
+          "name": "Nodal Data To Map",
+          "display": "节点数据映射",
+          "desc": "该选项允许您控制哪些数据组件包含在表面中。"
+        },
+        {
+          "name": "Data Mapping",
+          "display": "数据映射",
+          "desc": "数据映射控件允许用户选择将节点数据组件映射到哪些表面。例如，如果选择Top，则将层厚度映射到对应于每个层顶部的表面"
+        },
+        {
+          "name": "Set Min Max",
+          "display": "最小最大值设置",
+          "desc": "设置最小最大值控件允许用户使用所有面的最小值和最大值，或者将最小值和最大值设置为所选面的最小值和最大值。"
+        },
+        {
+          "name": "Cell Data To Map",
+          "display": "单元数据映射",
+          "desc": "该选项允许您控制哪些单元数据组件包含在表面中。"
+        }
+      ]
+    }
+  ]
+}

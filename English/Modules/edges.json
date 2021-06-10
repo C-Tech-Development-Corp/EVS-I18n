@@ -1,0 +1,28 @@
+{
+  "name": "edges",
+  "display": "edges",
+  "desc": "The edges module produces a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By choice allows the user to select how to color the output edges."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Nodal Data is selected in the Color By choice, the Nodal Data Component will allow the user to select the data component to color by."
+        }
+      ]
+    }
+  ]
+}

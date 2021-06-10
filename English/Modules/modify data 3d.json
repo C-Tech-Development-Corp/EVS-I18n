@@ -1,0 +1,100 @@
+{
+  "name": "modify data 3d",
+  "display": "modify data 3d",
+  "desc": "The modify_data_3D module will alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Transition Option",
+          "display": "Transition Option",
+          "desc": "The Transition Option control allows the user to select how the values are modified. Linear causes the weighting to be a straight line (linear interpolation) from the Inner Weighting value to zero at the outer change radius. Non-Linear is a smooth transition (no discontinuities in slope) from the Inner Weighting value to zero at the outer change radius."
+        },
+        {
+          "name": "Anisotropy",
+          "display": "Anisotropy",
+          "desc": "The Anisotropy is the ratio of the change radius in the x-y plane to the vertical (z) direction (for undistorted..not z-scaled coordinates)."
+        },
+        {
+          "name": "Pre Altered Z Scale",
+          "display": "Pre Altered Z Scale",
+          "desc": "Pre-Altered Z Scaling is the z-exaggeration you are using for display purposes."
+        },
+        {
+          "name": "Create Output Field",
+          "display": "Create Output Field",
+          "desc": "Create Modified Output Field button causes the modified data to be output."
+        }
+      ]
+    },
+    {
+      "name": "Modification Settings",
+      "display": "Modification Settings",
+      "properties": [
+        {
+          "name": "X Center",
+          "display": "X Center",
+          "desc": "The X Center slider controls the center of the change sphere."
+        },
+        {
+          "name": "Y Center",
+          "display": "Y Center",
+          "desc": "The Y Center slider controls the center of the change sphere."
+        },
+        {
+          "name": "Z Center",
+          "display": "Z Center",
+          "desc": "The Z Center slider controls the center of the change sphere."
+        },
+        {
+          "name": "Glyph Display Radius",
+          "display": "Glyph Display Radius",
+          "desc": "Glyph Display Radius is the size (in your units) of the spherical glyph that identifies the center modification location."
+        },
+        {
+          "name": "Modification Value",
+          "display": "Modification Value",
+          "desc": "The Modification Value is the value to change (clamp) the data set."
+        },
+        {
+          "name": "Inner Weighting",
+          "display": "Inner Weighting",
+          "desc": "The Inner Weighting is the constant value over the inner change radius."
+        },
+        {
+          "name": "Inner Change Radius",
+          "display": "Inner Change Radius",
+          "desc": "The Inner Change Radius is the radius in the x-y plane of the region affected at the constant Inner Weighting."
+        },
+        {
+          "name": "Outer Change Radius",
+          "display": "Outer Change Radius",
+          "desc": "The Outer Change Radius is the radius in the x-y plane of the total region affected."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Display Points",
+          "display": "Display Points",
+          "desc": "The Display Points toggle controls whether the affected nodes (cloud of points) will be displayed."
+        },
+        {
+          "name": "Display Component",
+          "display": "Display Component",
+          "desc": "The Display Component is the data component that is used for coloring the cloud of points: modified_data will show the data as modified; original_data will show the data as it is unmodified; distance is the from the center; and change is the amount of change to the data."
+        }
+      ]
+    }
+  ]
+}

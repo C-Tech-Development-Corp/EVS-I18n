@@ -1,0 +1,28 @@
+{
+  "name": "project_field",
+  "display": "project_field",
+  "desc": "project_field模块用于将任何场中的坐标从一个坐标系投影到另一个。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Field Projection",
+          "display": "场投影",
+          "desc": "场投影控件为选择EPSG代码提供了一个可搜索的界面。EPSG1应该是该字段当前所在的坐标系。EPSG2是需要的输出坐标系。"
+        },
+        {
+          "name": "Image Projection",
+          "display": "图片投影",
+          "desc": "场投影控件为选择EPSG代码提供了一个可搜索的界面。EPSG1应该是该字段当前所在的坐标系。EPSG2是需要的输出坐标系。"
+        },
+        {
+          "name": "File Tags",
+          "display": "文件标签",
+          "desc": "可以使用REPROJECT选项将文件标记字符串添加到文件中，以便在读取时将文件的内容投影到正确的空间中。"
+        }
+      ]
+    }
+  ]
+}

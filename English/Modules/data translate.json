@@ -1,0 +1,69 @@
+{
+  "name": "data translate",
+  "display": "data translate",
+  "desc": "The data_translate module accepts nearly any mesh and translates the grid in x, y, or z based upon either a nodal or cell data component or a constant.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Translation Method",
+          "display": "Translation Method",
+          "desc": "The Translation Method allows the user to choose between setting the coordinates or translating the coordinates."
+        },
+        {
+          "name": "Translation By",
+          "display": "Translation By",
+          "desc": "The Translation By control allows the user to set the basis for translation."
+        },
+        {
+          "name": "Constant Value",
+          "display": "Constant Value",
+          "desc": "The Constant Value is a set value to translate by when the Constant option is selected."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "The Cell Data component allows the user to set a variable data component to translate by when Translate By is set to Cell Data Component."
+        },
+        {
+          "name": "Node Data Component",
+          "display": "Node Data Component",
+          "desc": "The Node Data component allows the user to set a variable data component to translate by when Translate By is set to Node Data Component."
+        },
+        {
+          "name": "Translation In",
+          "display": "Translation In",
+          "desc": "The Translation In control allows the user to set the axis of translation."
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "Data Selection",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If Color By is set to Cell Data the Cell Data Component selects which cell data will set the data map."
+        }
+      ]
+    }
+  ]
+}

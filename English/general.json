@@ -1,0 +1,10 @@
+{
+    "translations": [
+      { "name" : "filename", "display" : "Filename" },
+      { "name" : "open", "display" : "Open" },
+      { "name" : "save", "dispaly" : "Save" },
+      { "name": "run", "display": "Run" },
+      { "name": "off", "display": "Off" },
+      { "name": "execute", "display": "Execute" }
+    ]
+  }

@@ -1,0 +1,124 @@
+{
+  "name": "texture walls",
+  "display": "texture walls",
+  "desc": "The texture_walls module provides a means to project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Azimuth Inclination",
+          "display": "Azimuth Inclination",
+          "desc": "The Azimuth defines the compass direction from the camera eye point towards the model.  Inclination defines the angle from the camera's eye point towards the model. These values in this case apply to the orientation of the image itself."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "Roll describes the rotation of the camera itself along it's direction of view."
+        },
+        {
+          "name": "Mirror",
+          "display": "Mirror",
+          "desc": "The Mirror toggle will change the behaviour of the module in cases where the size of the image is smaller than that of the surface it is being mapped onto.  When this toggle is turned off the image will just repeat when the image reaches its maximum resolution. If this toggle is turned on the image will instead flip over when it reaches its maximum resolution.  This can make a more seamless texture when using certain images."
+        },
+        {
+          "name": "X Size",
+          "display": "X Size",
+          "desc": "The X Size value will scale the size of the image in the x direction."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "This X Offset value will cause the image to shift in the x direction when being mapped onto the surface."
+        },
+        {
+          "name": "Y Size",
+          "display": "Y Size",
+          "desc": "The Y Size value will scale the size of the image in the y direction."
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset value will cause the image to shift in the y direction when being mapped onto the surface."
+        },
+        {
+          "name": "Map Data",
+          "display": "Map Data",
+          "desc": "The Map Data toggle when turned on will cause the first nodal data component to be displayed along with the image.  NOTE: Since the data value is represented as a color in the display the same as the image, there will be a blending of the two when this option is used."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    },
+    {
+      "name": "Image Processing",
+      "display": "Image Processing",
+      "properties": [
+        {
+          "name": "Sharpen Image",
+          "display": "Sharpen Image",
+          "desc": "The Sharpen Image toggle will allow the user to sharpen the edges in an image by exaggerating the brightness difference along the edges."
+        },
+        {
+          "name": "Soften Image",
+          "display": "Soften Image",
+          "desc": "The Soften Image toggle will allow the user to soften the edges in an image by reducing the brightness difference along the edges."
+        },
+        {
+          "name": "Enhance Edges",
+          "display": "Enhance Edges",
+          "desc": "Enhances the Edges of the objects and discards other image information."
+        },
+        {
+          "name": "Brightness",
+          "display": "Brightness",
+          "desc": "The Brightness slider can either add or remove brightness from every pixel."
+        },
+        {
+          "name": "Contrast",
+          "display": "Contrast",
+          "desc": "The Contrast slider can either add or remove contrast from every pixel. Making bright spots brighter and dark spots darker"
+        },
+        {
+          "name": "White Balance Red",
+          "display": "White Balance Red",
+          "desc": "The White Balance Red slider affects the red channel of the white balance."
+        },
+        {
+          "name": "White Balance Green",
+          "display": "White Balance Green",
+          "desc": "The White Balance Green slider affects the green channel of the white balance."
+        },
+        {
+          "name": "White Balance Blue",
+          "display": "White Balance Blue",
+          "desc": "The White Balance Blue slider affects the blue channel of the white balance."
+        },
+        {
+          "name": "Gamma Correction Red",
+          "display": "Gamma Correction Red",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the red channel."
+        },
+        {
+          "name": "Gamma Correction Green",
+          "display": "Gamma Correction Green",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the green channel."
+        },
+        {
+          "name": "Gamma Correction Blue",
+          "display": "Gamma Correction Blue",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the blue channel."
+        }
+      ]
+    }
+  ]
+}

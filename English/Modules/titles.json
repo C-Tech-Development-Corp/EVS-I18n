@@ -1,0 +1,93 @@
+{
+  "name": "titles",
+  "display": "titles",
+  "desc": "The titles module provides a straightforward means to place text in the Viewer.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Title Type",
+          "display": "Title Type",
+          "desc": "The Title Type allows the user to choose between a 2D title in the overlay, or a 3D title that is in the model space."
+        },
+        {
+          "name": "X Coordinate",
+          "display": "X Coordinate",
+          "desc": "The X Coordinate specifies the location of the lower left edge of the title in 2D overlay space (i.e. from -1.0 to 1.0)."
+        },
+        {
+          "name": "Y Coordinate",
+          "display": "Y Coordinate",
+          "desc": "The Y Coordinate specifies the location of the lower left edge of the title in 2D overlay space (i.e. from -1.0 to 1.0)."
+        },
+        {
+          "name": "Z Coordinate",
+          "display": "Z Coordinate",
+          "desc": "The Z Coordinate specifies the location of the lower left edge of the title in 2D overlay space (i.e. from -1.0 to 1.0)."
+        },
+        {
+          "name": "X Coordinate 3D",
+          "display": "X Coordinate 3D",
+          "desc": "The X Coordinate specifies the location of the lower left edge of the title in coordinate space."
+        },
+        {
+          "name": "Y Coordinate 3D",
+          "display": "Y Coordinate 3D",
+          "desc": "The Y Coordinate specifies the location of the lower left edge of the title in coordinate space."
+        },
+        {
+          "name": "Z Coordinate 3D",
+          "display": "Z Coordinate 3D",
+          "desc": "The Z Coordinate specifies the location of the lower left edge of the title in coordinate space."
+        },
+        {
+          "name": "Width Height Ratio",
+          "display": "Width Height Ratio",
+          "desc": "The Width Height Ratio allows you to stretch or compress the font to adjust for non-square Viewer induced distortions."
+        },
+        {
+          "name": "Title Text",
+          "display": "Title Text",
+          "desc": "The Tile Text is the text to use for the Title."
+        },
+        {
+          "name": "Title Color",
+          "display": "Title Color",
+          "desc": ""
+        },
+        {
+          "name": "Font Type",
+          "display": "Font Type",
+          "desc": "The Label Type allows the user to select between three font types. Forward Facing Fonts will always be aligned to the View.  TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "3D Font Settings",
+          "display": "3D Font Settings",
+          "desc": "3D Label Settings allow the user to align the labels to an appropriate view."
+        }
+      ]
+    }
+  ]
+}

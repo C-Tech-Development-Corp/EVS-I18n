@@ -1,0 +1,33 @@
+{
+  "name": "material to cellsets",
+  "display": "material to cellsets",
+  "desc": "This module takes a field's output and recreates the cell sets based on nodal data.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Data Type",
+          "display": "Data Type",
+          "desc": "The Data Type selects either nodal or cell data to be used to create cell sets."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data from the input field that is used to set cell sets."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "The Data from the input field that is used to set cell sets."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "The Data from the input field that is used to set cell sets."
+        }
+      ]
+    }
+  ]
+}

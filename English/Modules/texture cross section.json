@@ -1,0 +1,114 @@
+{
+  "name": "texture cross section",
+  "display": "texture cross section",
+  "desc": "The texture_cross_section module provides a means to (texture map) project images from a fence onto a surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Starting Percent",
+          "display": "Starting Percent",
+          "desc": "The Starting Percent slider controls how far along an image to start mapping onto the input surface."
+        },
+        {
+          "name": "Starting Z Extents",
+          "display": "Starting Z Extents",
+          "desc": "The Starting Z Extents are the vertical range of the input field at the start of the image, these can be altered to change how the image is mapped onto the output."
+        },
+        {
+          "name": "Control Point List",
+          "display": "Control Point List",
+          "desc": "The list of control points used to match pixels to the model"
+        },
+        {
+          "name": "Ending Percent",
+          "display": "Ending Percent",
+          "desc": "The Ending Percent slider controls how far along an image to end mapping onto the input surface."
+        },
+        {
+          "name": "Ending Z Extents",
+          "display": "Ending Z Extents",
+          "desc": "The Ending Z Extents are the vertical range of the input field at the end of the image, these can be altered to change how the image is mapped onto the output."
+        }
+      ]
+    },
+    {
+      "name": "Image Processing",
+      "display": "Image Processing",
+      "properties": [
+        {
+          "name": "Flip Horizontal",
+          "display": "Flip Horizontal",
+          "desc": "The Flip Horizontal toggle will cause the input image to be read from right to left instead of left to right"
+        },
+        {
+          "name": "Flip Vertical",
+          "display": "Flip Vertical",
+          "desc": "The Flip Vertical toggle will cause the input image to be read from bottom to top instead of top to bottom"
+        },
+        {
+          "name": "Sharpen Image",
+          "display": "Sharpen Image",
+          "desc": "The Sharpen Image toggle will allow the user to sharpen the edges in an image by exaggerating the brightness difference along the edges."
+        },
+        {
+          "name": "Soften Image",
+          "display": "Soften Image",
+          "desc": "The Soften Image toggle will allow the user to soften the edges in an image by reducing the brightness difference along the edges."
+        },
+        {
+          "name": "Enhance Edges",
+          "display": "Enhance Edges",
+          "desc": "Enhances the Edges of the objects and discards other image information."
+        },
+        {
+          "name": "Brightness",
+          "display": "Brightness",
+          "desc": "The Brightness slider can either add or remove brightness from every pixel."
+        },
+        {
+          "name": "Contrast",
+          "display": "Contrast",
+          "desc": "The Contrast slider can either add or remove contrast from every pixel. Making bright spots brighter and dark spots darker"
+        },
+        {
+          "name": "White Balance Red",
+          "display": "White Balance Red",
+          "desc": "The White Balance Red slider affects the red channel of the white balance."
+        },
+        {
+          "name": "White Balance Green",
+          "display": "White Balance Green",
+          "desc": "The White Balance Green slider affects the green channel of the white balance."
+        },
+        {
+          "name": "White Balance Blue",
+          "display": "White Balance Blue",
+          "desc": "The White Balance Blue slider affects the blue channel of the white balance."
+        },
+        {
+          "name": "Gamma Correction Red",
+          "display": "Gamma Correction Red",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the red channel."
+        },
+        {
+          "name": "Gamma Correction Green",
+          "display": "Gamma Correction Green",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the green channel."
+        },
+        {
+          "name": "Gamma Correction Blue",
+          "display": "Gamma Correction Blue",
+          "desc": "The Gamma Correction Red slider affects the gamma value for the blue channel."
+        }
+      ]
+    }
+  ]
+}

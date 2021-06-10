@@ -1,0 +1,76 @@
+{
+  "name": "external kriging",
+  "display": "external kriging",
+  "desc": "The external_kriging will output both data and a grid in the simple GeoEAS format.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Translate Coordinates",
+          "display": "Translate Coordinates",
+          "desc": "The Translate Coordinates toggle when turned on, translates the entire model back to the origin based on the values input.  If the input values are left at 0.0 the values will be calculated based on the centroid of the model."
+        },
+        {
+          "name": "Translate Values",
+          "display": "Translate Values",
+          "desc": "If the Translate Coordinates toggle is turned on, translates the entire model back to the origin based on the Translate Values input.  If the input values are left at 0.0 the values will be calculated based on the centroid of the model."
+        }
+      ]
+    },
+    {
+      "name": "Export Data",
+      "display": "Export Data",
+      "properties": [
+        {
+          "name": "Exponentiate Exported Log Data",
+          "display": "Exponentiate Exported Log Data",
+          "desc": "If any nodal data is log processed then turning this toggle on will exponentiate it before export."
+        },
+        {
+          "name": "Export Nodal Data For Output",
+          "display": "Export Nodal Data For Output",
+          "desc": "The Export Nodal Data For Output control allows the user to selecte the nodal data for output"
+        },
+        {
+          "name": "Export Data Filename",
+          "display": "Export Data Filename",
+          "desc": "The Filename for the exported data."
+        }
+      ]
+    },
+    {
+      "name": "Export Grid Requires Grid",
+      "display": "Export Grid Requires Grid",
+      "properties": [
+        {
+          "name": "Exponentiate Log Grid Data",
+          "display": "Exponentiate Log Grid Data",
+          "desc": "If there is data on the grid that has been log processed, this toggle will cause it to be exponentiated when exported."
+        },
+        {
+          "name": "Nodal Data For Grid Output",
+          "display": "Nodal Data For Grid Output",
+          "desc": "Select the Nodal Data For Grid Output."
+        },
+        {
+          "name": "Export Grid Filename",
+          "display": "Export Grid Filename",
+          "desc": "The filename of the exported grid."
+        }
+      ]
+    },
+    {
+      "name": "Import Data Requires Grid",
+      "display": "Import Data Requires Grid",
+      "properties": [
+        {
+          "name": "Import Data Filename",
+          "display": "Import Data Filename",
+          "desc": "The data file to import."
+        }
+      ]
+    }
+  ]
+}

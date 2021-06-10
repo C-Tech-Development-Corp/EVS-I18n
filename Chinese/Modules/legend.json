@@ -1,0 +1,292 @@
+{
+  "name": "legend",
+  "display": "legend",
+  "desc": "Legend模块用于在查看器窗口中放置色标条。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Legend Type",
+          "display": "图例类型",
+          "desc": "图例类型允许用户在覆盖层中的2D图例或模型空间中的3D图例之间进行选择。"
+        }
+      ]
+    },
+    {
+      "name": "Label Options",
+      "display": "标签选项",
+      "properties": [
+        {
+          "name": "Labels On",
+          "display": "打开标签",
+          "desc": "打开标签开关用于指定数据标签是否与图例一起显示。"
+        },
+        {
+          "name": "Label Min",
+          "display": "最小标签",
+          "desc": "最小标签开关将标签放置在数据的底部（最小）。这仅适用于线性或对数非格式化。"
+        },
+        {
+          "name": "Label Max",
+          "display": "最大标签",
+          "desc": "最大标签开关将标签放置在数据的顶部（最大）。 这仅适用于线性或对数非格式化。"
+        },
+        {
+          "name": "Label Color",
+          "display": "标签颜色",
+          "desc": "设置每个标签的颜色。"
+        },
+        {
+          "name": "Label Type",
+          "display": "标签类型",
+          "desc": "标签类型允许用户在数据生成的标签或用户指定的标签之间进行选择。"
+        },
+        {
+          "name": "Logarithmic Decades",
+          "display": "十进位对数",
+          "desc": "当对数据进行对数处理时，十进位对数决定颜色尺度棒中标签增量的数量。如果选择对数处理，则使用每十进制对数值的标签。如果选择非格式化，则使用间隔数。"
+        },
+        {
+          "name": "Labels Per Log Decade",
+          "display": "每十进制对数标签",
+          "desc": "如果为十进位对数选择了对数选项，则可以使用此值设置每十进制的增量"
+        },
+        {
+          "name": "Number Of Intervals",
+          "display": "间隔数",
+          "desc": "如果数据是在线性空间中处理的，或十进位对数选择了非格式化选项，则可以使用此值设置颜色尺度棒的总增量。"
+        },
+        {
+          "name": "Type In Labels",
+          "display": "输入标签",
+          "desc": "如果选择输入标签选项进行标签处理，则可以使用此控件设置标签。"
+        },
+        {
+          "name": "Centered Type In Labels",
+          "display": "标签居中",
+          "desc": ""
+        },
+        {
+          "name": "Title",
+          "display": "标题",
+          "desc": "为图例设置的指定标题。当基于标题设置为用户设定时，使用此选项。"
+        },
+        {
+          "name": "Units",
+          "display": "单位",
+          "desc": "在每个标签末尾添加单位。"
+        },
+        {
+          "name": "Units Display",
+          "display": "单位显示",
+          "desc": "单位显示将影响图例单位的显示位置，是放在每个数值后还是添加到标题上。"
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "格式化标签号",
+          "desc": "格式化标签号控件允许用户设置如何格式化变成标签的数字。"
+        },
+        {
+          "name": "Decimal Precision",
+          "display": "小数精度",
+          "desc": "创建标签时使用的精度。"
+        },
+        {
+          "name": "Label Offset",
+          "display": "标签偏移量",
+          "desc": "标签偏移量是创建标签到图例的距离。"
+        },
+        {
+          "name": "Title Offset",
+          "display": "标题偏移量",
+          "desc": "标题偏移量是创建标题到图例的距离。"
+        },
+        {
+          "name": "Format Character",
+          "display": "格式符",
+          "desc": "格式符指定如何格式化图例上的数字。"
+        },
+        {
+          "name": "Font Type",
+          "display": "字体类型",
+          "desc": "标签类型允许用户在三种字体类型之间进行选择。前向字体始终与视图对齐。TrueType字体是标准字体。线条字体是影响较小的字体，在生成大量标签时效果更好。"
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType字体样式",
+          "desc": "TrueType字体样式允许用户更改字体的基本外观。"
+        },
+        {
+          "name": "Line Font Style",
+          "display": "线条字体样式",
+          "desc": "线条字体样式允许用户更改字体的基本外观。"
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D标签设置",
+          "desc": "3D标签设置允许用户将标签与适当的视图对齐。"
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "前向样式",
+          "desc": "前向样式允许用户将标签与适当的视图对齐，并更改字体的基本布局。"
+        },
+        {
+          "name": "Width Height Aspect",
+          "display": "宽高特征",
+          "desc": "宽高特征确定标签文本的宽高比。较小的宽高比将创建窄文本，较大的宽高比将创建宽文本。"
+        },
+        {
+          "name": "Position Around Scale",
+          "display": "比例尺位置",
+          "desc": "比例尺位置允许用户选择在哪个色标折线处写入标签。对于2D图例，前面、中间和后面选项是没有意义的。"
+        },
+        {
+          "name": "Prepend Min",
+          "display": "预置最小值",
+          "desc": "预置最小值字符串放在图例中最小值的标签之前。"
+        },
+        {
+          "name": "Prepend Max",
+          "display": "预置最大值",
+          "desc": "预置最大值字符串放在图例中最大值的标签之前。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Datamap Min",
+          "display": "数据映射最小值",
+          "desc": "设置色标时，数据映射最小值用于覆盖输入的默认最小范围。"
+        },
+        {
+          "name": "Datamap Max",
+          "display": "数据映射最大值",
+          "desc": "设置色标时，数据映射最大值用于覆盖输入的默认最大范围。"
+        },
+        {
+          "name": "Flip Legend",
+          "display": "翻转图例",
+          "desc": "翻转图例开关使图例倒置，从而将较高的值放在底部。"
+        },
+        {
+          "name": "Boundary Lines",
+          "display": "边界线",
+          "desc": "边界线开关指定是否围绕图例比例尺绘制边界框。"
+        },
+        {
+          "name": "Value Markers",
+          "display": "值标记",
+          "desc": "值标记开关指定是否在每个标签位置绘制刻度线。"
+        },
+        {
+          "name": "Boundary",
+          "display": "边界",
+          "desc": "边界值使图例偏离边界线。边界线在垂直与图例定向的方向上偏移。例如，如果图例沿X方向定向，则边界在Y和Z方向中偏移。"
+        },
+        {
+          "name": "Boundary Color",
+          "display": "边界颜色",
+          "desc": "边界颜色设置围绕并分割图例的线条颜色"
+        },
+        {
+          "name": "Display Scale In Output",
+          "display": "输出显示比例",
+          "desc": "输出显示比例开关指定是否在图例的输出对象端口中输出图例的彩色部分。"
+        },
+        {
+          "name": "Force Gradiated Colors",
+          "display": "强制渐变颜色",
+          "desc": "强制渐变颜色开关将导致图例在传递等高线数据时显示渐变颜色而不是纯色突变。"
+        },
+        {
+          "name": "Offset In Z Only",
+          "display": "仅在Z方向偏移",
+          "desc": "仅在Z方向偏移开关指定是否(打开时)只在Z方向偏移边界。"
+        }
+      ]
+    },
+    {
+      "name": "Legend 2D Options",
+      "display": "2D图例选项",
+      "properties": [
+        {
+          "name": "Legend Direction 2D",
+          "display": "2D图例方向",
+          "desc": "2D图例方向允许用户在创建2D图例时设置图例的方向."
+        },
+        {
+          "name": "Horizontal Position",
+          "display": "水平位置",
+          "desc": "绘制图例的起始水平位置。该值在屏幕坐标中，而不是模型坐标中。"
+        },
+        {
+          "name": "Vertical Position",
+          "display": "垂直位置",
+          "desc": "绘制图例的起始垂直位置。该值在屏幕坐标中，而不是模型坐标中。"
+        },
+        {
+          "name": "Screen Depth",
+          "display": "屏幕深度",
+          "desc": "绘制图例的起始屏幕深度。此控件用于确定将图例放置在模型的前面还是后面。"
+        },
+        {
+          "name": "Legend Size 2D",
+          "display": "2D图例大小",
+          "desc": "屏幕空间中图例的大小。"
+        },
+        {
+          "name": "Aspect Ratio 2d",
+          "display": "2d宽高比",
+          "desc": "宽高比将图例的大小限制为2D图例大小的百分比。"
+        }
+      ]
+    },
+    {
+      "name": "Legend 3D Options",
+      "display": "3D图例选项",
+      "properties": [
+        {
+          "name": "Legend Direction 3D",
+          "display": "3D图例方向"
+          "desc": "3D图例方向允许用户在创建3D图例时设置图例的方向。"
+        },
+        {
+          "name": "X Origin",
+          "display": "X 原点",
+          "desc": "绘制图例的起始X坐标。"
+        },
+        {
+          "name": "Y Origin",
+          "display": "Y 原点",
+          "desc": "绘制图例的起始Y坐标。"
+        },
+        {
+          "name": "Z Origin",
+          "display": "Z 原点",
+          "desc": "绘制图例的起始Z坐标。"
+        },
+        {
+          "name": "Legend Size",
+          "display": "图例大小",
+          "desc": "坐标空间中图例的大小。"
+        },
+        {
+          "name": "Aspect Ratio",
+          "display": "宽高比",
+          "desc": "宽高比将图例的宽度限制为图例大小的百分比。"
+        },
+        {
+          "name": "Width To Depth Aspect Ratio",
+          "display": "宽深比",
+          "desc": "宽深比将图例的深度限制为图例大小的百分比。"
+        }
+      ]
+    }
+  ]
+}

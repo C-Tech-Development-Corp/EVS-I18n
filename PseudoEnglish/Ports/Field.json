@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "Þôřƭ Ìñƒôř₥áƭïôñ",
+      "properties": []
+    },
+    {
+      "name": "Statistics",
+      "display": "§ƭáƭïƨƭïçƨ",
+      "properties": [
+        {
+          "name": "Number Of Nodes",
+          "display": "Nú₥βèř Óƒ Nôδèƨ",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè ñú₥βèř ôƒ ñôδèƨ ïñ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Number Of Cell Sets",
+          "display": "Nú₥βèř Óƒ Çèℓℓ §èƭƨ",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè ñú₥βèř ôƒ çèℓℓ ƨèƭƨ ïñ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Total Number Of Cells",
+          "display": "Tôƭáℓ Nú₥βèř Óƒ Çèℓℓƨ",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè ƭôƭáℓ ñú₥βèř ôƒ çèℓℓƨ ïñ áℓℓ çèℓℓ ƨèƭƨ ôƒ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Number Of Node Data",
+          "display": "Nú₥βèř Óƒ Nôδè Ðáƭá",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè ñú₥βèř ôƒ ñôδáℓ δáƭá çô₥ƥôñèñƭƨ ïñ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Number Of Cell Data",
+          "display": "Nú₥βèř Óƒ Çèℓℓ Ðáƭá",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè ñú₥βèř ôƒ çèℓℓ δáƭá çô₥ƥôñèñƭƨ ïñ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Çôôřδïñáƭè Ûñïƭƨ",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè çôôřδïñáƭè úñïƭƨ ïñ ƭλè ƒïèℓδ."
+        },
+        {
+          "name": "Coordinate Extents",
+          "display": "Çôôřδïñáƭè Éжƭèñƭƨ",
+          "desc": "Ðïƨƥℓá¥ƨ ƭλè çôôřδïñáƭè èжƭèñƭƨ ôƒ ƭλè ƒïèℓδ."
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè çúřřèñƭ ₥ôδúℓè ƥřôƥèřƭïèƨ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "external_faces",
+  "display": "external_faces",
+  "desc": "external_faces模块提取2D或者3D渲染对象的外表面",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Data Selection",
+      "display": "数据选择",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "允许用户设置输出场的颜色由何决定。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        },
+        {
+          "name": "Remove Internal Layer Boundaries",
+          "display": "移除内部层边界",
+          "desc": "允许用户合并单元格集，以删除不可见的内部层边界。"
+        },
+        {
+          "name": "Keep Cell Sets",
+          "display": "保留单元集",
+          "desc": "如果移除内部层边界开关打开，则该选项允许用户在计算外部面后将合并场的单元格分割回原始单元集。"
+        }
+      ]
+    }
+  ]
+}

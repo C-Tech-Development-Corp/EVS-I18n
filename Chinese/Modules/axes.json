@@ -1,0 +1,388 @@
+{
+  "name": "axes",
+  "display": "axes",
+  "desc": "坐标轴模块用来在查看器中放置一个3D的坐标轴，它会根据模型数据或者用户定义的限值自动缩放。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Spatial Definition",
+      "display": "空间定义",
+      "properties": [
+        {
+          "name": "Round Extents",
+          "display": "调整范围",
+          "desc": "调整范围可以增加模型的范围，使得xyz轴的范围在逻辑最小值处向下取整，在最大值处向上取整。"
+        },
+        {
+          "name": "Offset Factor",
+          "display": "偏离系数",
+          "desc": "偏离系数是大于数据范围的百分比。"
+        },
+        {
+          "name": "Axes Extents",
+          "display": "轴范围",
+          "desc": "轴范围用来指定坐标轴的范围。"
+        },
+        {
+          "name": "Display X Label",
+          "display": "展示 X 标签",
+          "desc": "允许用户选择X轴的最小或者最大范围处放置标签"
+        },
+        {
+          "name": "Display Y Label",
+          "display": "展示 Y 标签",
+          "desc": "允许用户选择Y轴的最小或者最大范围处放置标签"
+        },
+        {
+          "name": "Display Z Label",
+          "display": "展示 Z 标签",
+          "desc": "允许用户选择Z轴的最小或者最大范围处放置标签"
+        },
+        {
+          "name": "Set Center",
+          "display": "设置中心",
+          "desc": "允许你指定任何你想要的中心，而不是由模块指定的中心。"
+        },
+        {
+          "name": "Center Coordinates",
+          "display": "中心坐标",
+          "desc": "中心坐标允许用户设置每个轴中心的实际坐标。"
+        },
+        {
+          "name": "Minor To Major Intervals",
+          "display": "次间隔数",
+          "desc": "用来确定每个主间隔之间的次间隔数。"
+        },
+        {
+          "name": "Set Interval",
+          "display": "设置间隔",
+          "desc": "设置间隔允许您覆盖专家系统的间隔、参考点和最大间隔数。"
+        },
+        {
+          "name": "Interval Spacing",
+          "display": "间隔距离",
+          "desc": "当‘设置间隔’选项勾选后，可以使用间隔距离。此控件允许用户设置xyz轴上每条分隔线的间距。"
+        },
+        {
+          "name": "Interval Reference Point",
+          "display": "间隔参照点",
+          "desc": "当‘设置间隔’选项勾选后，可以使用间隔参照点。该控件允许用户设置间隔线的起始点。"
+        },
+        {
+          "name": "Max Intervals",
+          "display": "最大间隔",
+          "desc": "当‘设置间隔’选项勾选后，最大间隔将会限制创建的间隔数量。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Draw Box",
+          "display": "绘制框体",
+          "desc": "绘制框体开关用于指定轴应该作为数据域周围的框体来绘制，还是作为单个X、Y和Z线来绘制。"
+        },
+        {
+          "name": "Draw Ticks",
+          "display": "绘制刻度",
+          "desc": "绘制刻度开关用来沿着坐标轴绘制间隔的标记。"
+        },
+        {
+          "name": "Box Line Width",
+          "display": "框线宽度",
+          "desc": "框线宽度决定了框线的厚度。0(和1)表示单个像素宽的线，较大的数字表示更宽的线。注意，软件渲染器只支持奇数1、3、5等。"
+        },
+        {
+          "name": "Display Major",
+          "display": "显示主刻度",
+          "desc": "用来确定是否显示刻度线标记和标签。"
+        },
+        {
+          "name": "Display Minor",
+          "display": "显示次刻度",
+          "desc": "用来确定是否显示刻度线标记和标签。"
+        },
+        {
+          "name": "Major Gridline Style",
+          "display": "主网格线样式",
+          "desc": "主网格线的显示样式。"
+        },
+        {
+          "name": "Minor Gridline Style",
+          "display": "次网格线样式",
+          "desc": "次网格线的显示样式。"
+        },
+        {
+          "name": "Major Line Width",
+          "display": "主线宽度",
+          "desc": "允许用户设置主网格线的宽度(以像素为单位)。注意，软件渲染器只支持奇数1、3、5等。"
+        },
+        {
+          "name": "Minor Line Width",
+          "display": "次线宽度",
+          "desc": "允许用户设置次网格线的宽度(以像素为单位)。注意，软件渲染器只支持奇数1、3、5等。"
+        },
+        {
+          "name": "Display XY Grid At Min",
+          "display": "最小处显示XY网格",
+          "desc": "确定网格线是否在最小Z范围显示XY网格。"
+        },
+        {
+          "name": "Display XY Grid At Max",
+          "display": "最大处显示XY网格",
+          "desc": "确定网格线是否在最大Z范围显示XY网格。"
+        },
+        {
+          "name": "Display XZ Grid At Min",
+          "display": "最小处显示XZ网格",
+          "desc": "确定网格线是否在最小Y范围显示XZ网格。"
+        },
+        {
+          "name": "Display XZ Grid At Max",
+          "display": "最大处显示XZ网格",
+          "desc": "确定网格线是否在最大Y范围显示XZ网格。"
+        },
+        {
+          "name": "Display YZ Grid At Min",
+          "display": "最小处显示YZ网格",
+          "desc": "确定网格线是否在最小X范围显示YZ网格。"
+        },
+        {
+          "name": "Display YZ Grid At Max",
+          "display": "最大处显示YZ网格",
+          "desc": "确定网格线是否在最大X范围显示YZ网格。"
+        }
+      ]
+    },
+    {
+      "name": "All Axes Settings",
+      "display": "所有轴设置",
+      "properties": [
+        {
+          "name": "Display Axes",
+          "display": "显示轴",
+          "desc": "此开关将打开或者关闭所有坐标轴的可见性。"
+        },
+        {
+          "name": "Axes Color",
+          "display": "轴颜色",
+          "desc": "允许用户设置所有轴的颜色。"
+        },
+        {
+          "name": "Label Type",
+          "display": "标签类型",
+          "desc": "标签类型允许用户在三种字体类型之间进行选择。“Forward Facing”字体将始终与视图对齐。“TrueType”字体是标准字体。“Line”字体是影响较小的字体，在生成大量标签时表现得更好。"
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType 字体样式",
+          "desc": "允许用户改变该字体的基础外观。"
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line 字体样式",
+          "desc": "允许用户改变该字体的基础外观。"
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing 字体样式",
+          "desc": "允许用户改变该字体的基础外观。"
+        },
+        {
+          "name": "Title Height Factor",
+          "display": "标题高度因子",
+          "desc": "标题高度值允许用户设置标题在每个轴上的高度，作为标记标签高度的百分比。"
+        },
+        {
+          "name": "Title Offset",
+          "display": "标题偏移",
+          "desc": "标题偏移量是名称与坐标轴框角之间的偏移距离。此值影响所有轴。"
+        },
+        {
+          "name": "Tick Label Height",
+          "display": "刻度标签高度",
+          "desc": "刻度标签高度值允许用户将每个轴上的刻度标签的高度设置为占总轴范围的百分比。"
+        },
+        {
+          "name": "Tick Label Precision",
+          "display": "刻度标签精度",
+          "desc": "标记精度是一个整数滑块，它决定如何确定标记位置(数值)。对于0或更大的值，它决定小数点的数目。如果这个数字是负数，函数将尝试根据这个值自动确定要使用的最佳小数点数目。通过更改这个负数，您可以控制所有轴的自动转换中使用的小数点的数目。"
+        },
+        {
+          "name": "Tick Scale",
+          "display": "刻度缩放",
+          "desc": "影响刻度标记的相对大小和所有轴的标签偏移量。"
+        },
+        {
+          "name": "Tick Label Offset",
+          "display": "刻度标签偏移",
+          "desc": "是刻度标签与刻度标记结束之间的偏移距离。该值将被设置为所有轴。"
+        },
+        {
+          "name": "Show Labels",
+          "display": "显示标签",
+          "desc": "此开关将打开或者关闭所有坐标轴的标签。"
+        },
+        {
+          "name": "Automatic Text Placement",
+          "display": "自动文本放置",
+          "desc": "自动文本放置自动处理标签选项基于中心选择的选项。此切换不影响“Forward Facing”的字体样式。"
+        },
+        {
+          "name": "Set Axes Origin",
+          "display": "设置轴起始点",
+          "desc": "允许您更改标签(例如，让x、y和z的标签从0开始)。"
+        },
+        {
+          "name": "Axes Origin",
+          "display": "轴起始点",
+          "desc": "允许您更改标签(例如，在x、y和z中使用从0开始的标签制作坐标轴)。"
+        }
+      ]
+    },
+    {
+      "name": "X Axis Settings",
+      "display": "X 轴设置",
+      "properties": [
+        {
+          "name": "Display Axis",
+          "display": "显示轴",
+          "desc": "允许用户打开或关闭轴的可见性。"
+        },
+        {
+          "name": "Axis Color",
+          "display": "轴颜色",
+          "desc": "允许用户设置整个轴的颜色和该轴的标签。"
+        },
+        {
+          "name": "Title Name",
+          "display": "标题名称",
+          "desc": "允许用户为轴设置标签。"
+        },
+        {
+          "name": "Title Offset",
+          "display": "标题偏移",
+          "desc": "标题偏移量是指标题名与坐标轴框的角之间的偏移距离。"
+        },
+        {
+          "name": "Tick Label Precision",
+          "display": "刻度标签精度",
+          "desc": "刻度标签精度是一个整数滑块，它决定如何确定刻度标签。对于0或更大的值，它决定小数点的数目。如果这个数字是负数，函数将尝试根据这个值自动确定要使用的最佳小数点数目。通过更改这个负数，您可以控制在自动转换中使用的小数点的数量。"
+        },
+        {
+          "name": "Tick Label Offset",
+          "display": "刻度标签偏移",
+          "desc": "是刻度标签与刻度标记结束之间的偏移距离。"
+        },
+        {
+          "name": "Show Labels",
+          "display": "显示标签",
+          "desc": "“显示标签”切换将允许用户沿轴打开或关闭标签。"
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D 标签设置",
+          "desc": "3D标签设置允许用户将标签对齐到适当的视图。当自动放置文本时，这是禁用的。"
+        }
+      ]
+    },
+    {
+      "name": "Y Axis Settings",
+      "display": "Y 轴设置",
+      "properties": [
+        {
+          "name": "Display Axis",
+          "display": "显示轴",
+          "desc": "允许用户打开或关闭轴的可见性。"
+        },
+        {
+          "name": "Axis Color",
+          "display": "轴颜色",
+          "desc": "允许用户设置整个轴的颜色和该轴的标签。"
+        },
+        {
+          "name": "Title Name",
+          "display": "标题名称",
+          "desc": "允许用户为轴设置标签。"
+        },
+        {
+          "name": "Title Offset",
+          "display": "标题偏移",
+          "desc": "标题偏移量是指标题名与坐标轴框的角之间的偏移距离。"
+        },
+        {
+          "name": "Tick Label Precision",
+          "display": "刻度标签精度",
+          "desc": "刻度标签精度是一个整数滑块，它决定如何确定刻度标签。对于0或更大的值，它决定小数点的数目。如果这个数字是负数，函数将尝试根据这个值自动确定要使用的最佳小数点数目。通过更改这个负数，您可以控制在自动转换中使用的小数点的数量。"
+        },
+        {
+          "name": "Tick Label Offset",
+          "display": "刻度标签偏移",  
+          "desc": "是刻度标签与刻度标记结束之间的偏移距离。"
+        },
+        {
+          "name": "Show Labels",
+          "display": "显示标签",
+          "desc": "“显示标签”切换将允许用户沿轴打开或关闭标签。"
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D 标签设置",
+          "desc": "3D标签设置允许用户将标签对齐到适当的视图。当自动放置文本时，这是禁用的。"
+        }
+      ]
+    },
+    {
+      "name": "Z Axis Settings",
+      "display": "Z 轴设置",
+      "properties": [
+        {
+          "name": "Display Axis",
+          "display": "显示轴",
+          "desc": "允许用户打开或关闭轴的可见性。"
+        },
+        {
+          "name": "Axis Color",
+          "display": "轴颜色",
+          "desc": "允许用户设置整个轴的颜色和该轴的标签。"
+        },
+        {
+          "name": "Title Name",
+          "display": "标题名称",
+          "desc": "允许用户为轴设置标签。"
+        },
+        {
+          "name": "Title Offset",
+          "display": "标题偏移",
+          "desc": "标题偏移量是指标题名与坐标轴框的角之间的偏移距离。"
+        },
+        {
+          "name": "Tick Label Precision",
+          "display": "刻度标签精度",
+          "desc": "刻度标签精度是一个整数滑块，它决定如何确定刻度标签。对于0或更大的值，它决定小数点的数目。如果这个数字是负数，函数将尝试根据这个值自动确定要使用的最佳小数点数目。通过更改这个负数，您可以控制在自动转换中使用的小数点的数量。"
+        },
+        {
+          "name": "Tick Label Offset",
+          "display": "刻度标签偏移",
+          "desc": "是刻度标签与刻度标记结束之间的偏移距离。 "
+        },
+        {
+          "name": "Show Labels",
+          "display": "显示标签",
+          "desc": "“显示标签”切换将允许用户沿轴打开或关闭标签。"
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D 标签设置",
+          "desc": "3D标签设置允许用户将标签对齐到适当的视图。当自动放置文本时，这是禁用的。"
+        }
+      ]
+    }
+  ]
+}

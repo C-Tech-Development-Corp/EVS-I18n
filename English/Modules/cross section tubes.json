@@ -1,0 +1,99 @@
+{
+  "name": "cross section tubes",
+  "display": "cross section tubes",
+  "desc": "The cross_section_tubes module is used to produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Radius By",
+          "display": "Radius By",
+          "desc": "The Radius By choice allows the user to choose constant or data dependent radius scaling."
+        },
+        {
+          "name": "Constant Data For Radius",
+          "display": "Constant Data For Radius",
+          "desc": "If Radius By is set to Constant, the Constant Data For Radius can be set using this control."
+        },
+        {
+          "name": "Cell Data For Radius",
+          "display": "Cell Data For Radius",
+          "desc": "The Cell Data for Radius allows you to choose the cell data component for scaling."
+        },
+        {
+          "name": "Nodal Data For Radius",
+          "display": "Nodal Data For Radius",
+          "desc": "The Nodal Data for Radius allows you to choose the nodal data component for scaling."
+        },
+        {
+          "name": "Scale Factor",
+          "display": "Scale Factor",
+          "desc": "The Scale Factor value is multiplied by the nodal data to determine the radius."
+        },
+        {
+          "name": "Minimum Radius",
+          "display": "Minimum Radius",
+          "desc": "The Minimum Radius control sets the minimum tube radius."
+        },
+        {
+          "name": "Tolerance",
+          "display": "Tolerance",
+          "desc": "The Tolerance parameter determines the maximum distance between nodes of adjacent line segments before those line's nodes should be merged to form a polyline. This also applies to closed polyline contours. Closed polylines will have their starting and ending nodes merged to form closed (torroidal) annuli."
+        },
+        {
+          "name": "Close Tubes",
+          "display": "Close Tubes",
+          "desc": "The Close Tubes toggle causes the tubes to have solid ends. However the tubes are not solid objects (they are hollow)."
+        },
+        {
+          "name": "Connect Tubes",
+          "display": "Connect Tubes",
+          "desc": "If the Connect Tubes toggle is on, tubes formed by connecting line segments will connect together."
+        },
+        {
+          "name": "Percentile",
+          "display": "Percentile",
+          "desc": "The Percentile value allows you to control the automatic scaling of tubes based on the nth percentile value (versus the maximum 100th%).  This addresses datasets where there are only a few nodes with extremely high values."
+        },
+        {
+          "name": "Phase",
+          "display": "Phase",
+          "desc": "The Phase value allows you to control the apparent rotation of tubes. This is specified in degrees of rotation."
+        },
+        {
+          "name": "Phase Determination",
+          "display": "Phase Determination",
+          "desc": "The Phase Determination is used to set how the tubes are aligned. Perpendicular Extrusion is typically preferred if tubes approach vertical. Force Z Up works better for horizontal tubes."
+        }
+      ]
+    },
+    {
+      "name": "Data Output",
+      "display": "Data Output",
+      "properties": [
+        {
+          "name": "Map Nodal Data",
+          "display": "Map Nodal Data",
+          "desc": "The Map Nodal Data options allow the user to select those nodal data components that are used for coloring or subsequent subsetting operations. "
+        },
+        {
+          "name": "Map Cell Data",
+          "display": "Map Cell Data",
+          "desc": "The Map Cell Data options allow the user to select those cell data components that are used for coloring or subsequent subsetting operations. "
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each tube end point as a cell data component.  This allows the user to probe onto the tube and return its center instead of the position on the outside of the tube."
+        }
+      ]
+    }
+  ]
+}

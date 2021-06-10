@@ -1,0 +1,28 @@
+{
+  "name": "orthoslice",
+  "display": "orthoslice",
+  "desc": "orthoslice模块显示南北(垂直)、东西(垂直)和水平的切片位置。orthoslice模块通过提取一个切片平面来对一个结构化场进行子集，该切片平面只能正交于X、Y或Z轴。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Axis",
+          "display": "轴",
+          "desc": "轴选择器选择垂直于哪个轴(I, J, K)切片。默认值为i。如果字段是1D或2D，仍然显示三个值。选择对输入数据有意义的值。"
+        },
+        {
+          "name": "Cell Data Selection",
+          "display": "单元数据选择",
+          "desc": "单元数据选择决定单元格数据应该从节点表面的哪一侧获取。由于orthoslice在单元层之间进行切片，数据必须从一边或另一边选择"
+        },
+        {
+          "name": "Plane",
+          "display": "平面",
+          "desc": "平面滑块选择从输入中提取哪个平面。这类似于slice中的位置滑块，但是由于输入是一个场，所以选择基于感兴趣轴的节点数。因此，范围为0到轴的最大节点数。例如，对于通过尺寸为20 x 20 x 10的网格的orthoslice, x和y方向的范围将是0到20。"
+        }
+      ]
+    }
+  ]
+}

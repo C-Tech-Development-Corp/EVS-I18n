@@ -1,0 +1,100 @@
+{
+  "name": "seepage_velocity",
+  "display": "seepage_velocity",
+  "desc": "seepage_velocity模块对地下水流矢量场进行可视化计算。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Head Data Component",
+          "display": "水头数据组件",
+          "desc": "水头数据组件允许用户选择哪个数据组件作为水头值。"
+        }
+      ]
+    },
+    {
+      "name": "Material Presets",
+      "display": "材料预设",
+      "properties": [
+        {
+          "name": "Common Material Settings",
+          "display": "常用材料设置",
+          "desc": "常用材料设置是预先设置的电导率值，可以应用到当前选定的材料。"
+        },
+        {
+          "name": "Preserve Original Name",
+          "display": "保留原始名称",
+          "desc": "如果选择了保留原始名称，当前所选材质的预设名称将是原始名称和所选常用材质的名称。如果关闭，输出名称将只是常用材质名称。"
+        },
+        {
+          "name": "Apply To Current Material",
+          "display": "应用到当前材料",
+          "desc": "‘应用到当前材料’按钮将采用当前设置的电导率值和常用材质名称，并将其应用到当前选择的材质上。"
+        }
+      ]
+    },
+    {
+      "name": "Material Properties",
+      "display": "材料属性",
+      "properties": [
+        {
+          "name": "Current Material",
+          "display": "当前材料",
+          "desc": "当前材料允许用户选择单个材质进行编辑。"
+        },
+        {
+          "name": "Materials",
+          "display": "材料",
+          "desc": ""
+        },
+        {
+          "name": "Preset Name",
+          "display": "预设名称",
+          "desc": ""
+        },
+        {
+          "name": "Output Conductivity Units",
+          "display": "输出电导率单位",
+          "desc": "电导率单位允许您选择每个地质层在所有三个方向(x、y、z)的电导率单位。你可以选择任何单位(不管你的水头和坐标单位)和适当的转换将为你。"
+        },
+        {
+          "name": "Conductivity In X Log Space",
+          "display": "X对数空间电导率",
+          "desc": "电导率在X对数空间允许用户设置log10空间的电导率。"
+        },
+        {
+          "name": "Conductivity In X Linear Space",
+          "display": "X线型空间电导率",
+          "desc": "在X线性空间的电导率允许用户在线性空间设置电导率。"
+        },
+        {
+          "name": "Conductivity In Y Log Space",
+          "display": "Y对数空间电导率",
+          "desc": "电导率在Y对数空间允许用户设置log10空间的电导率。"
+        },
+        {
+          "name": "Conductivity In Y Linear Space",
+          "display": "Y线型空间电导率",
+          "desc": "在Y线性空间的电导率允许用户在线性空间设置电导率。"
+        },
+        {
+          "name": "Conductivity In Z Log Space",
+          "display": "Z对数空间电导率",
+          "desc": "电导率在Z对数空间允许用户设置log10空间的电导率。"
+        },
+        {
+          "name": "Conductivity In Z Linear Space",
+          "display": "Z线型空间电导率",
+          "desc": "在Z线性空间的电导率允许用户在线性空间设置电导率。"
+        },
+        {
+          "name": "Effective Porosity",
+          "display": "有效孔隙度",
+          "desc": "有效孔隙度允许用户设置当前材料的孔隙度。"
+        }
+      ]
+    }
+  ]
+}

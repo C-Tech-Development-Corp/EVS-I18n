@@ -1,0 +1,28 @@
+{
+  "name": "application_properties",
+  "display": "application_properties",
+  "desc": "全局应用属性",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Render Method",
+          "display": "渲染方法",
+          "desc": ""
+        },
+        {
+          "name": "Application Loading",
+          "display": "应用加载",
+          "desc": ""
+        },
+        {
+          "name": "Smooth Lines",
+          "display": "平滑线",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

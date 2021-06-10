@@ -1,0 +1,80 @@
+{
+  "name": "read_wavefront_obj",
+  "display": "read_wavefront_obj",
+  "desc": "模块读取wavefront obj文件并展示。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Texture Options",
+      "display": "纹理选项",
+      "properties": [
+        {
+          "name": "Image Quality",
+          "display": "图片质量",
+          "desc": "图像质量允许用户选择在at读取输入图像的最大分辨率。这允许用户创建一个粗糙的图像，以更快的测试和一个高分辨率的图像，以最终的输出。"
+        },
+        {
+          "name": "Read Alpha Channel",
+          "display": "读取α轨道",
+          "desc": "当切换到关闭位置时，这个开关将阻止模块读取图像alpha通道到内存中。"
+        },
+        {
+          "name": "Sharpen Image",
+          "display": "锐化图片",
+          "desc": "锐化图像开关将增加图像细节的可见性。"
+        },
+        {
+          "name": "Soften Image",
+          "display": "柔化图片",
+          "desc": "柔化图像开关通过应用低强度像素平均使图像更平滑。"
+        },
+        {
+          "name": "Edge Enhance",
+          "display": "边缘增强",
+          "desc": "边缘增强使得增强对象的边缘并放弃其他图像信息。"
+        },
+        {
+          "name": "Brightness",
+          "display": "亮度",
+          "desc": "打开时，可以调整图像的亮度。"
+        },
+        {
+          "name": "Contrast",
+          "display": "对比度",
+          "desc": "打开时，可以调整图像的对比度。"
+        }
+      ]
+    },
+    {
+      "name": "Transform Settings",
+      "display": "变换设置",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "变换列表",
+          "desc": "应用于输入场的变换列表。"
+        }
+      ]
+    },
+    {
+      "name": "Export Settings",
+      "display": "导出设置",
+      "properties": [
+        {
+          "name": "Export",
+          "display": "导出",
+          "desc": "输出EVS纹理场文件的文件名(*.eft)。"
+        },
+        {
+          "name": "Convert To Packaged",
+          "display": "转换为压缩包",
+          "desc": "将此模块替换为数据的压缩包版本。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "export pdf scene",
+  "display": "export pdf scene",
+  "desc": "The export pdf scene module provides EVS with vector output of 3D models for the C Tech PDF Converter.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Include Preview Image",
+          "display": "Include Preview Image",
+          "desc": "When selected, a preview image is written into the CTWS file for easier display while file browsing in Windows Explorer and EVS."
+        },
+        {
+          "name": "Texture Format",
+          "display": "Texture Format",
+          "desc": "The Texture Format options control out textures are compressed. Large textures can be compressed as JPEG files for smaller size, or forced to PNG for best quality."
+        },
+        {
+          "name": "JPEG Quality",
+          "display": "JPEG Quality",
+          "desc": "The JPEG Quality value affects the (*.jpg) output files. Higher qualities result in less LOSS to the image but create much larger files. "
+        }
+      ]
+    },
+    {
+      "name": "Scene Information",
+      "display": "Scene Information",
+      "properties": [
+        {
+          "name": "Author",
+          "display": "Author",
+          "desc": "The Author field allows the user to set the author name on the output scene."
+        },
+        {
+          "name": "Organization",
+          "display": "Organization",
+          "desc": "The Organization field allows the user to set the organization name on the output scene."
+        },
+        {
+          "name": "Description",
+          "display": "Description",
+          "desc": "The Description field allows the user to set the description in the output scene."
+        },
+        {
+          "name": "Restrictions",
+          "display": "Restrictions",
+          "desc": "The Restrictions field allows the user to set the restrictions displayed in the output scene."
+        },
+        {
+          "name": "Project",
+          "display": "Project",
+          "desc": "The Project field allows the user to set the project displayed in the output scene."
+        },
+        {
+          "name": "Status",
+          "display": "Status",
+          "desc": "The Restrictions field allows the user to set the status displayed in the output scene."
+        }
+      ]
+    }
+  ]
+}

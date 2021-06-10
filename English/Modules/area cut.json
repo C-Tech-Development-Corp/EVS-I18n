@@ -1,0 +1,23 @@
+{
+  "name": "area cut",
+  "display": "area cut",
+  "desc": "area_cut uses a surface representing a region to map data to a field. This allows downstream modules to cut inside or outside of the area.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Nested Surface Cutting",
+          "display": "Nested Surface Cutting",
+          "desc": "The Nested Surface Cutting toggle allows you to cut doughnut like shapes if you have polygons INSIDE of other polygons."
+        },
+        {
+          "name": "Maximum Edge Angle",
+          "display": "Maximum Edge Angle",
+          "desc": "The Maximum Edge Angle is defined as the angle between two faces or cells in the model. Intersections between faces or cells with angles greater than the Max Edge Angle will be cut. This should not need to be modified unless your cutting area is highly non-planar (3D). If the cutting results seem aberrant, you should try adjusting this."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "image transition",
+  "display": "image transition",
+  "desc": "The image_transition module receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Transition Method",
+          "display": "Transition Method",
+          "desc": "The Transition Method tells the module how to fade from one image to the next."
+        },
+        {
+          "name": "Transition Percent",
+          "display": "Transition Percent",
+          "desc": "The Transition Percent slider adjust how much of the right image will be visible."
+        },
+        {
+          "name": "Reverse Wipe Direction",
+          "display": "Reverse Wipe Direction",
+          "desc": "TheReverse Wipe Direction toggle reverses the direction a wipe is performed. If Wipe from Left->Right is the current method, and this toggle is on, the wipe will be performed from right to left."
+        }
+      ]
+    }
+  ]
+}

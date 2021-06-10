@@ -1,0 +1,53 @@
+{
+  "name": "scat to unif",
+  "display": "scat to unif",
+  "desc": "The scat_to_unif module is used to convert scattered sample data into a three-dimensional uniform field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "I Dimension",
+          "display": "I Dimension",
+          "desc": "The I Dimension is the resolution of the grid in the X direction."
+        },
+        {
+          "name": "J Dimension",
+          "display": "J Dimension",
+          "desc": "The J Dimension is the resolution of the grid in the Y direction."
+        },
+        {
+          "name": "K Dimension",
+          "display": "K Dimension",
+          "desc": "The K Dimension is the resolution of the grid in the Z direction."
+        },
+        {
+          "name": "Search Distance X",
+          "display": "Search Distance X",
+          "desc": "Distance along X axis to search for input data points."
+        },
+        {
+          "name": "Search Distance Y",
+          "display": "Search Distance Y",
+          "desc": "Distance along Y axis to search for input data points."
+        },
+        {
+          "name": "Search Distance Z",
+          "display": "Search Distance Z",
+          "desc": "Distance along Z axis to search for input data points."
+        },
+        {
+          "name": "Data For Interpolation",
+          "display": "Data For Interpolation",
+          "desc": "The Data For Interpolation allows the user to select the nodal data from the input field to interpolate to the created TIN."
+        },
+        {
+          "name": "Interpolation Order",
+          "display": "Interpolation Order",
+          "desc": "The Interpolation Order controls the order of interpolation done on the adjacent nodes. "
+        }
+      ]
+    }
+  ]
+}

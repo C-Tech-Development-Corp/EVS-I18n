@@ -1,0 +1,33 @@
+{
+  "name": "orthoslice",
+  "display": "orthoslice",
+  "desc": "The orthoslice module displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Axis",
+          "display": "Axis",
+          "desc": "The axis selector chooses which axis (I, J, K) the orthoslice is perpendicular to. The default is I. If the field is 1D or 2D, three values are still displayed. Select the values meaningful for the input data."
+        },
+        {
+          "name": "Cell Data Selection",
+          "display": "Cell Data Selection",
+          "desc": "The Cell Data Selection determines which side of the nodal surface the cell data should taken from. Since orthoslice slices between layers of cells, the data must be selected from one side or the other."
+        },
+        {
+          "name": "Plane",
+          "display": "Plane",
+          "desc": "The plane slider selects which plane to extract from the input. This is similar to the position slider in slice but, since the input is a field, the selection is based on the nodal dimensions of the axis of interest. Therefore, the range is 0 to the maximum nodal dimension of the axis. For example, for an orthoslice through a grid with dimension 20 x 20 x 10, the range in the x and y directions would be 0 to 20."
+        }
+      ]
+    }
+  ]
+}

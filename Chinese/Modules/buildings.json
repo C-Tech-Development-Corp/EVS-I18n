@@ -1,0 +1,120 @@
+{
+  "name": "buildings",
+  "display": "buildings",
+  "desc": "该模块读取C Tech的.bldg文件并创建各种3D对象。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Import File",
+          "display": "导入文件",
+          "desc": "导入一个已经存在的*.bldg文件。"
+        },
+        {
+          "name": "Building Height Scale",
+          "display": "建筑物高度缩放比例",
+          "desc": "将垂直缩放每一建筑的高度。"
+        },
+        {
+          "name": "Export File",
+          "display": "导出文件",
+          "desc": "导出当前建筑物为一个.bldg文件。"
+        }
+      ]
+    },
+    {
+      "name": "Default Building Settings",
+      "display": "默认建筑物设置",
+      "properties": [
+        {
+          "name": "Default Name",
+          "display": "默认名称",
+          "desc": "每一个新添加的建筑物的默认名称。"
+        },
+        {
+          "name": "Increment Building Id",
+          "display": "递增建筑物id",
+          "desc": "新建筑的id将大于列表上最后一个建筑的id。"
+        },
+        {
+          "name": "Default Offset",
+          "display": "默认偏移量",
+          "desc": "每个新建筑物的垂直偏移量。"
+        },
+        {
+          "name": "Default Height",
+          "display": "默认高度",
+          "desc": "每个新建筑物的高度值。"
+        },
+        {
+          "name": "Default Width",
+          "display": "默认宽度",
+          "desc": "每个新建筑物的宽度值。"
+        },
+        {
+          "name": "Default Length",
+          "display": "默认长度",
+          "desc": "每个新建筑物的长度值。"
+        },
+        {
+          "name": "Default Azimuth",
+          "display": "默认方位",
+          "desc": "每个新建筑物的方位。"
+        },
+        {
+          "name": "Default Type",
+          "display": "默认类型",
+          "desc": "每个新建筑物的类型。"
+        },
+        {
+          "name": "Default Id",
+          "display": "默认Id",
+          "desc": "每个新建筑物的的id。"
+        },
+        {
+          "name": "Default Color",
+          "display": "默认颜色",
+          "desc": "每个新建筑物的颜色。"
+        }
+      ]
+    },
+    {
+      "name": "Building Settings",
+      "display": "建筑物设置",
+      "properties": [
+        {
+          "name": "Probe Action",
+          "display": "探测动作",
+          "desc": "允许改变建筑的中心或在探测位置增加新建筑。仅当连接查看器时可用。"
+        },
+        {
+          "name": "Outline Current Building",
+          "display": "当前建筑物的轮廓",
+          "desc": "打开或关闭显示正在编辑的当前建筑的边框。"
+        },
+        {
+          "name": "Delete Current Building",
+          "display": "删除当前建筑物",
+          "desc": "此命令将从建筑物列表中删除当前选择的建筑物。"
+        },
+        {
+          "name": "Current Building",
+          "display": "当前建筑物",
+          "desc": "允许用户选择一个要编辑的建筑。"
+        },
+        {
+          "name": "Current Building Values",
+          "display": "当前建筑物值",
+          "desc": "当前建筑物值"
+        },
+        {
+          "name": "Buildings",
+          "display": "建筑物",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

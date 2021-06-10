@@ -1,0 +1,74 @@
+{
+  "name": "adaptive indicator krig",
+  "display": "adaptive indicator krig",
+  "desc": "An alternative geologic modeling concept that uses the indicator method for assigning each node's material in a grid based on data.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Deprecated Module",
+          "display": "Deprecated Module",
+          "desc": "This module has been replaced by indicator_geology."
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "Krig Settings",
+      "properties": [
+        {
+          "name": "Estimation Type",
+          "display": "Estimation Type",
+          "desc": "The Estimation Type will allow the user to select from between the Nearest Neighbor and Kriging algorithms."
+        },
+        {
+          "name": "Reach",
+          "display": "Reach",
+          "desc": "The Reach input field defines the radial distance (in user units) from any given model node that the kriging module will look for data points to be included in the estimation of the model parameter at that node. Setting the reach to 0 will result in the module calculating a reach value which is approximately two-thirds of the longest distance between any two data points in the data set."
+        },
+        {
+          "name": "Points In Reach",
+          "display": "Points In Reach",
+          "desc": "The Points In Reach value defines the maximum number of data points (within the specified reach) that will be considered for the parameter estimation at a model node. This value is not used for Nearest Neighbor interpolation or when the number of samples falls below the Use All Data threshold."
+        },
+        {
+          "name": "Octant Search",
+          "display": "Octant Search",
+          "desc": "When the Octant Search toggle is selected searching is performed for each of the eight Octants surrounding the point to be kriged. Within each octant a maximum number of points (up to one-fourth of the total points) are selected. Then, points are taken sequentially from each octant up to the maximum number of total points or until all octant's points have been used."
+        },
+        {
+          "name": "Use All Points",
+          "display": "Use All Points",
+          "desc": "The Use All Points toggle causes the module to include samples up to the All Points Limit value.  If the number of samples exceeds the limit value the Reach and Points In Reach settings are used."
+        },
+        {
+          "name": "All Points Limit",
+          "display": "All Points Limit",
+          "desc": "The All Points Limit is the maximum number of points to use when interpolating.  If there are more samples in the file than this value the Reach and Points In Reach settings will be used."
+        },
+        {
+          "name": "PGF Refine Distance",
+          "display": "PGF Refine Distance",
+          "desc": "Understanding the PGF Refine Distance parameter requires an understanding of the basics of indicator kriging with a .PGF file as input.  Please reference the module help for more details."
+        },
+        {
+          "name": "Max Points Per Interval",
+          "display": "Max Points Per Interval",
+          "desc": "The Max Points Per Interval is used to cap the number of points created between samples in pgf data."
+        },
+        {
+          "name": "Maximum Refined Points",
+          "display": "Maximum Refined Points",
+          "desc": "The Maximum Refined Points sets a limit on the total number of points created when refining a *.pgf file.  If the number of points generated, along with the original number of file samples, are greater than this value an error will be reported."
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "Variogram And Anisotropy",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

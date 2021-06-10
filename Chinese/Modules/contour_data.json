@@ -1,0 +1,78 @@
+{
+  "name": "contour_data",
+  "display": "contour_data",
+  "desc": "提供了一种途径，用等值色带来给表面或者空间体着色。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        },
+        {
+          "name": "Contour By",
+          "display": "等值带划分依据",
+          "desc": "选择何种数据来划分等值带。"
+        },
+        {
+          "name": "Prepend Contoured String",
+          "display": "预设等值字符串",
+          "desc": "在选中时，把\“countoured\”字符串添加到输出数据组件。这允许用户指示数据已被模块跨区域修改。"
+        },
+        {
+          "name": "Contour Component",
+          "display": "等值带组件",
+          "desc": "是指将用于创建轮廓的节点数据组件。"
+        },
+        {
+          "name": "Cell Contour Component",
+          "display": "单元等值带组件",
+          "desc": "是指将用于创建等值带的单元数据组件。"
+        },
+        {
+          "name": "Band Data",
+          "display": "色带数据",
+          "desc": "色带数据使用三种选项中的一种来分配每个等值带的颜色。最小色带选择的颜色(根据你的数据映射)将由每个色带的最小值决定。平均色带颜色选择(根据你的数据映射)将由每个色带的平均值决定。最大色带颜色选择(根据你的数据映射)将由每个色带的最大值决定。"
+        },
+        {
+          "name": "Contour Distribution",
+          "display": "等值带分布",
+          "desc": "允许用户选择是自动生成等值带水平还是手动设置等值带水平。"
+        },
+        {
+          "name": "Logarithmic Decades",
+          "display": "对数分度",
+          "desc": "当数据经过对数处理后，对数分度决定了等值带的数目。如果选择对数选项，则使用每对数分度等值带选项数值。如果选择未格式化选项，则使用等值带数。"
+        },
+        {
+          "name": "Contours Per Log Decade",
+          "display": "每对数分度等值带值",
+          "desc": "如果选择了对数选项，则可以用这个值设置每分度的增量。"
+        },
+        {
+          "name": "Number Of Contours",
+          "display": "等值带数",
+          "desc": "对数据进行对数处理时，等值带数指分度等值带数。如果数据是线性处理的，等值带的数目是指要绘制的等值带的总数。"
+        },
+        {
+          "name": "Minimum Contour Level",
+          "display": "最小等值带水平",
+          "desc": "显示等值带组件的最小值。"
+        },
+        {
+          "name": "User Contour Levels",
+          "display": "用户等值带水平",
+          "desc": "用户定义的等值带水平"
+        },
+        {
+          "name": "Maximum Contour Level",
+          "display": "最大等值带水平",
+          "desc": "显示等值带组件的最大值。"
+        }
+      ]
+    }
+  ]
+}

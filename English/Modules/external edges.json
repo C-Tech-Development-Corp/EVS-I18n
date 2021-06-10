@@ -1,0 +1,33 @@
+{
+  "name": "external edges",
+  "display": "external edges",
+  "desc": "The external_edges module extracts the outer edges of a mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Extraction Method",
+          "display": "Extraction Method",
+          "desc": "The Extraction Method determines how edges are extracted. Edge Angle chooses all edges of cells with an angle greater than specified angle. Boundary Edges extract all edges only used by a single cell, which is useful when doing edges of a surface. Wireframe extracts all external edges of the field."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model. Setting Max Edge Angle to 0 causes all external cell (element) edges in the model to be visible. Intersections between faces or cells with angles greater than the Max Edge Angle are visible. Exterior model edges are always visible."
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "Data Selection",
+      "properties": []
+    }
+  ]
+}

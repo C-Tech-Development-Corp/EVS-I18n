@@ -1,0 +1,537 @@
+{
+  "name": "post samples",
+  "display": "post samples",
+  "desc": "Display your input data.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component is used to select which file data component to process for display."
+        },
+        {
+          "name": "Suppress Output",
+          "display": "Suppress Output",
+          "desc": "Suppress Output is used to prevent updates and warning from being output.  This is useful if running the module in a loop."
+        }
+      ]
+    },
+    {
+      "name": "Sample Settings",
+      "display": "Sample Settings",
+      "properties": [
+        {
+          "name": "Log Process",
+          "display": "Log Process",
+          "desc": "Process to compute the log (base 10) of the data value."
+        },
+        {
+          "name": "Linear Post Clip",
+          "display": "Linear Post Clip",
+          "desc": "When the Log Process toggle is turned off the Linear Post Clip Min will be used after data processing to replace any sample property value that is less than the specified number in linear space."
+        },
+        {
+          "name": "Log Post Clip",
+          "display": "Log Post Clip",
+          "desc": "When the Log Process toggle is turned on the Log Post Clip Min will be used after data processing to replace any sample property value that is less than the specified number in log space."
+        },
+        {
+          "name": "Datamap",
+          "display": "Datamap",
+          "desc": "The Datamap refers the min and max values that are used by the datamap. This does not change data values from the file."
+        },
+        {
+          "name": "Detection Limit",
+          "display": "Detection Limit",
+          "desc": "The Detection Limit value affects any file values set with the 'ND' or other non-detect flags (for a list of these flags open the help for the APDV file format). When the module encounters this flag in the file it will insert the a value equal to (Detection Limit * LT Multiplier)."
+        },
+        {
+          "name": "Less Than Multiplier",
+          "display": "Less Than Multiplier",
+          "desc": "The Less Than Multiplier is the value that any sample with the '<' less than flag."
+        },
+        {
+          "name": "Default Coordinate Units",
+          "display": "Default Coordinate Units",
+          "desc": ""
+        },
+        {
+          "name": "Display Samples",
+          "display": "Display Samples",
+          "desc": "The Display Samples toggle will prevent the samples from being displayed."
+        },
+        {
+          "name": "Sphere Count Limit",
+          "display": "Sphere Count Limit",
+          "desc": "The Sphere Count Limit value determines the maximum number of spheres to create.  If the number of samples (spheres to be generated) exceeds this value, the module will turn spheres off and generate (more efficient) colored tubes instead."
+        },
+        {
+          "name": "Maximum Sample Threshold",
+          "display": "Maximum Sample Threshold",
+          "desc": "The Maximum Sample Threshold will set the maximum number of samples from the input file to allow.  If the file contains more than this amount an error will occur."
+        },
+        {
+          "name": "Synthetic Only",
+          "display": "Synthetic Only",
+          "desc": "The Synthetic Only toggle is used when reading created drill guide files.  This toggle will cause only synthetic drill guide samples to be displayed instead of both the synthetic samples and original samples."
+        },
+        {
+          "name": "Display Screens As",
+          "display": "Display Screens As",
+          "desc": "Display Interval As controls how the well screens will be displayed. If the Spheres option is selected, spheres are evenly distributed through the well screen based off the Max Gap parameter in the AIDV data file. If Tubes is selected the well screen will be displayed as a tube from the top of the well screen to the bottom. If Wires is selected the well screen will be displayed as a line from the top of the well screen to the bottom."
+        },
+        {
+          "name": "Screen Tube Resolution",
+          "display": "Screen Tube Resolution",
+          "desc": "The Tube Resolution value changes the number of divisions used to make each well screen tube. The higher the resolution the smother or more circular each tube will be."
+        },
+        {
+          "name": "Close Screen Tubes",
+          "display": "Close Screen Tubes",
+          "desc": "The Close Tubes toggle if turned on will place a disc, of the same resolution as the tube, inside the top and bottom of the tube. This gives the well screen tubes a more solid visualization. "
+        },
+        {
+          "name": "Connect Screen Lines",
+          "display": "Connect Screen Lines",
+          "desc": "The Connect Screen Lines toggle is used for non-vertical intervals. The best way to visualize this function is to use an example of multiple non-vertical screens. A cell will be created between the first and second screen and another cell will be created between the second and third screen. Because these are necessarily separate cells the ends between the cells may not be coincident. This is especially evident when looking at borings with large changes in angle between screens, or kinks. To merge these cells into a single tube the separate ends are averaged causing a distorted, but more efficient and seamless tube."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Priority",
+          "display": "Priority",
+          "desc": "The Priority of the glyph will reverse the scaling so that the smallest sample values have the largest size"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "Minimum Scale Factor",
+          "desc": "The Minimum Scale Factor scales the sample values with the least Priority"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "Maximum Scale Factor",
+          "desc": "The Maximum Scale Factor scales the sample values with the greatest Priority"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "Use Log Data",
+          "desc": "The Use Log Data toggle will force the size of the glyph to be based on the log10 of the selected data."
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The Sphere Subdivisions defines how finely the sample spheres are rendered.  Higher values mean smoother spheres but at a higher memory cost."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        }
+      ]
+    },
+    {
+      "name": "Subsetting Settings",
+      "display": "Subsetting Settings",
+      "properties": [
+        {
+          "name": "Drop Samples Below",
+          "display": "Drop Samples Below",
+          "desc": "The Drop Samples Below value will allow the user to remove any sample below the set value."
+        },
+        {
+          "name": "Drop Samples Above",
+          "display": "Drop Samples Above",
+          "desc": "The Drop Samples Above value will allow the user to remove any sample above the set value."
+        },
+        {
+          "name": "Spatial Subsetting",
+          "display": "Spatial Subsetting",
+          "desc": "Selec the type of Spatial Subsetting to perform."
+        },
+        {
+          "name": "Rectangular Region",
+          "display": "Rectangular Region",
+          "desc": "The Rectangular Region is the domain when subsetting using Rectangular Region."
+        },
+        {
+          "name": "Circular Region Center",
+          "display": "Circular Region Center",
+          "desc": "The Circular Region Center is used to set the coordinates of the center of the Circular Region for subsetting."
+        },
+        {
+          "name": "Circular Sub Size",
+          "display": "Circular Sub Size",
+          "desc": "The Circular Sub Size is used to set the Size of the circle for the Circular Region for subsetting."
+        },
+        {
+          "name": "Subset Outside Of Region",
+          "display": "Subset Outside Of Region",
+          "desc": "The Subset Outside Of Region toggle will cause the Spatial Subsetting to subset everything outside of the set region."
+        },
+        {
+          "name": "Distance To Line",
+          "display": "Distance To Line",
+          "desc": "The Distance To Line value is used to subset the samples to within a distance from the line passed into the Subsetting Feature port."
+        },
+        {
+          "name": "Straighten To 2D",
+          "display": "Straighten To 2D",
+          "desc": "The Straighten to 2D toggle is used to project your 3D borings to a 2D representation. Where each samples x value becomes the distance to the line passed into the Subsetting Feature port."
+        },
+        {
+          "name": "Straightened Plane",
+          "display": "Straightened Plane",
+          "desc": "The Straightened Plane allows the user to set the plane the straightened samples are in.  This requires a line passed into the Subsetting Feature, and samples that have been Straightened to 2D."
+        }
+      ]
+    },
+    {
+      "name": "Collapse To 2D",
+      "display": "Collapse To 2D",
+      "properties": [
+        {
+          "name": "Collapse 3D To 2D",
+          "display": "Collapse 3D To 2D",
+          "desc": "The Collapse 3D To 2D toggle will cause the module to extract"
+        },
+        {
+          "name": "Collapse Method",
+          "display": "Collapse Method",
+          "desc": "The Average Collapse Method will create a sample with the average of all data values on a boring within the Z Min and Z Max extents. The Max Collapse Method will create a sample with the maximum value of all data values on a boring within the Z Min and Z Max extents. The Slice Collapse Method will create a sample with the interpolated value of the data values closest to the slice position on a boring within the Z Min and Z Max extents. The Min Collapse Method will create a sample with the minimum of all data values on a boring within the Z Min and Z Max extents."
+        },
+        {
+          "name": "Collapse Z Min",
+          "display": "Collapse Z Min",
+          "desc": "The Collapse Z Min will restrict the vertical domain from which to draw sample values to collapse."
+        },
+        {
+          "name": "Collapse Z Max",
+          "display": "Collapse Z Max",
+          "desc": "The Collapse Z Max will restrict the vertical domain from which to draw sample values to collapse."
+        },
+        {
+          "name": "Collapse Slice Position",
+          "display": "Collapse Slice Position",
+          "desc": "The Collapse Slice Position is the Z coordinate used to find the nearest sample along a boring when using the Slice Collapse Method."
+        },
+        {
+          "name": "Collapse Tolerance",
+          "display": "Collapse Tolerance",
+          "desc": ""
+        },
+        {
+          "name": "Sample Z Position",
+          "display": "Sample Z Position",
+          "desc": "The Sample Z Position can either be assigned by the Collapse method (i.e. Max will set the Z value to the same Z value as the max sample), or the spheres can be positioned by their data value."
+        }
+      ]
+    },
+    {
+      "name": "Geology Settings",
+      "display": "Geology Settings",
+      "properties": [
+        {
+          "name": "Min Thickness",
+          "display": "Min Thickness",
+          "desc": "The Min Thickness is the smallest thickness, in user coordinate units, that a geological layer can have."
+        },
+        {
+          "name": "Reverse Hierarchy",
+          "display": "Reverse Hierarchy",
+          "desc": "The Reverse Hierarchy toggle will reverse the hierarchy of the geology. Normal hierarchy will push down any layer that tries to rise through the one above it. Reverse hierarchy will pull up any layer that dips into the one below it."
+        },
+        {
+          "name": "PGF Refine Distance",
+          "display": "PGF Refine Distance",
+          "desc": "The PGF Refine Distance is used when pgf files are displayed as spheres. At minimum there is a sphere at the top and bottom of each layer, the refine distance will add spheres between those two spheres until no sphere is more than the refine distance apart."
+        },
+        {
+          "name": "Max Points Per Interval",
+          "display": "Max Points Per Interval",
+          "desc": "The Max Points Per Interval is used to cap the number of points created between samples in pgf data."
+        },
+        {
+          "name": "Color Data Component",
+          "display": "Color Data Component",
+          "desc": "The Color Data Component for the sample spheres can be either the geological layer, the material value of that layer, or the elevation of the spheres."
+        }
+      ]
+    },
+    {
+      "name": "Time Settings",
+      "display": "Time Settings",
+      "properties": [
+        {
+          "name": "File Is Time Domain",
+          "display": "File Is Time Domain",
+          "desc": "The File is Time Domain toggle turns on date interpolation for time domain analyte (e.g. chemistry) files."
+        },
+        {
+          "name": "Specify Date By Component",
+          "display": "Specify Date By Component",
+          "desc": "The Specify Date by Component toggle will cause the Date field to be ignored and the date to be selected using the Data Component."
+        },
+        {
+          "name": "Date",
+          "display": "Date",
+          "desc": "The Date field is the date being interpolated to, for example if you have an analyte value of 2 on 1/01/05 and a value of 4 on 1/03/05 and the date is set to 1/02/05 with Direct Interpolation the value should be set to 3. The Date can be either set here or passed in via the Date port."
+        },
+        {
+          "name": "Analyte Name",
+          "display": "Analyte Name",
+          "desc": "The Analyte Name field is used for AIDV and APDV time files as the dates take up the spots in these files usually reserved for analyte names."
+        },
+        {
+          "name": "Default Analyte Units",
+          "display": "Default Analyte Units",
+          "desc": ""
+        },
+        {
+          "name": "Interpolation Method",
+          "display": "Interpolation Method",
+          "desc": "There are 5 different Interpolation methods that are available, each interpolation method is used to define how to interpolate when given non-detects in a file.\n1) Direct Interpolation Only: This is the most basic interpolation method, and the most accurate in terms of representing the data as it has been entered. This method looks at the two dates surrounding the input Date. If either date, or both dates, have non-detects as values, the value for that sample will be a non-detect and no interpolation will occur. If neither date has a non-detect value it will interpolate between them.\n2) Interpolate Only: This method will look at the two dates surrounding the input Date. If the date before the input Date is a non-detect it will continue to look backwards through each time column until it finds a date with a value that is not a non-detect. If the date after the input Date is a non-detect I will look forward through the time columns until it finds a date that is not a non-detect. If either search fails to find a useable dates then it will set the value for that time to a non-detect value. Else it will interpolate between the two found dates. This is useful for files that have a small amount of non-detects.\n3) Interpolate and Extrapolate Beyond: This method will look at the two dates surrounding the input Date. If the date before the input Date is a non-detect it will continue to look backwards through each time column until it finds a date with a value that is not a non-detect. If the date after the input Date is a non-detect I will look forward through the time columns until it finds a date that is not a non-detect. If it does not find a date with a non-detect after the input Date, it will extrapolate beyond the last useable date to the input Date.\n4) Interpolate and Extrapolate: This method will look at the two dates surrounding the input Date. If the date before the input Date is a non-detect it will continue to look backwards through each time column until it finds a date with a value that is not a non-detect. If it fails to find one it will extrapolate the first value backwards to the input Date. If the date after the input Date is a non-detect I will look forward through the time columns until it finds a date that is not a non-detect. It will also extrapolate beyond the last valid date in the file.\n5) Interpolate and Shrink to Non-Detect: This method will look at the two dates surrounding the input Date. It will shrink the size of the sphere when interpolating to a non-detect from a valid value, and will grow the size of the sample sphere when interpolating to a valid value from a non-detect. If the Non-Linear Shrink toggle is selected the size of the sphere will be determined by a cosine interpolation instead of a linear one. In the case of interpolating to a non-detect from a valid value, this causes the size of the sphere to shrink very slowly at first and then to shrink more quickly as the date approaches the non-detect date."
+        },
+        {
+          "name": "Use Nearest Measured",
+          "display": "Use Nearest Measured",
+          "desc": "The Use Nearest Measured Data toggle causes the sample at the interpolated date, to have the same value as the nearest measured date and not an interpolated value."
+        },
+        {
+          "name": "Non Linear Shrink",
+          "display": "Non Linear Shrink",
+          "desc": "If the Non-Linear Shrink toggle is selected the size of the sphere will be determined by a cosine interpolation instead of a linear one."
+        }
+      ]
+    },
+    {
+      "name": "Boring Tube Settings",
+      "display": "Boring Tube Settings",
+      "properties": [
+        {
+          "name": "Display As",
+          "display": "Display As",
+          "desc": "Use Display As to change how the Boring tube is displayed, you can either turn off the tube entirely, display it as a tube, or display it as a wire."
+        },
+        {
+          "name": "Tube Ratio",
+          "display": "Tube Ratio",
+          "desc": "The Tube Ratio field is a double value between 0.0 and 100.0 that sets what percentage of the sample sphere minimum Size the tube Size will be. For example if you have sample spheres with a minimum Size of 10 and the Tube ratio is set to .7, then the Size of each tube will be 7."
+        },
+        {
+          "name": "Tube Resolution",
+          "display": "Tube Resolution",
+          "desc": "The Tube Resolution indicates how many faces will be used to create each tube; increasing this number will result in rounder tubes, but will use more memory. The minimum value for this field is 2 which creates plane like tubes, 3 will create triangular shaped tubes, 4 will be square, etc..."
+        },
+        {
+          "name": "Tube Top",
+          "display": "Tube Top",
+          "desc": "The Tube Top value will set top elevation for each tube. If this value has been specified in the file, the file value will be used instead of this value."
+        },
+        {
+          "name": "Main Color",
+          "display": "Main Color",
+          "desc": "Each boring tube is divided using two colors, the Main Color sets the first of these."
+        },
+        {
+          "name": "Secondary Color",
+          "display": "Secondary Color",
+          "desc": "Each boring tube is divided using two colors, the Secondary Color sets the second of these."
+        },
+        {
+          "name": "Color Separation",
+          "display": "Color Separation",
+          "desc": "The Color Separation defines the length both the Main Color and the Secondary Color will go to before switching to the other. This can be used as a visual clue as to the vertical scale of the model."
+        },
+        {
+          "name": "Phase",
+          "display": "Phase",
+          "desc": "The Phase value allows you to control the apparent rotation of tubes. This is specified in degrees of rotation."
+        },
+        {
+          "name": "Close Tubes",
+          "display": "Close Tubes",
+          "desc": "The Close Tubes toggle will cause there to be a cap on the top and bottom of each tube that is the same resolution of the tube, giving each tube a solid look."
+        },
+        {
+          "name": "Connect Lines",
+          "display": "Connect Lines",
+          "desc": "The Connect Lines toggle is used for non-vertical borings. The best way to visualize this function is to use an example of 3 non-vertical samples. A cell will be created between the first and second sample and another cell will be created between the second and third sample. Because these are necessarily separate cells the ends between the cells may not be coincident. This is especially evident when looking at borings with large changes in angle between samples, or kinks. To merge these cells into a single tube the separate ends are averaged causing a distorted, but more efficient and seamless tube."
+        }
+      ]
+    },
+    {
+      "name": "Color Tube Settings",
+      "display": "Color Tube Settings",
+      "properties": [
+        {
+          "name": "Display As",
+          "display": "Display As",
+          "desc": "Use Display As to change how the Color Tube is displayed, you can either turn off the tube entirely, display it as a tube, or display it as a wire."
+        },
+        {
+          "name": "Tube Ratio",
+          "display": "Tube Ratio",
+          "desc": "The Tube Ratio field sets what percentage of the sample sphere minimum Size the tube Size will be. For example if you have sample spheres with a minimum Size of 10 and the Tube ratio is set to 70, then the Size of each tube will be 7."
+        },
+        {
+          "name": "Tube Resolution",
+          "display": "Tube Resolution",
+          "desc": "The Tube Resolution indicates how many faces will be used to create each tube; increasing this number will result in rounder tubes, but will use more memory. The minimum value for this field is 2 which creates plane like tubes, 3 will create triangular shaped tubes, 4 will be square, etc..."
+        },
+        {
+          "name": "Max Variation",
+          "display": "Max Variation",
+          "desc": "The Max Variation value is a tool used to correct color blending between samples. "
+        },
+        {
+          "name": "Phase",
+          "display": "Phase",
+          "desc": "The Phase value allows you to control the apparent rotation of tubes. This is specified in degrees of rotation."
+        },
+        {
+          "name": "Close Color Tubes",
+          "display": "Close Color Tubes",
+          "desc": "The Close Tubes toggle will cause there to be a cap on the top and bottom of each tube that is the same resolution of the tube, giving each tube a solid look."
+        },
+        {
+          "name": "Connect Color Tube Lines",
+          "display": "Connect Color Tube Lines",
+          "desc": "The Connect Lines toggle is used for non-vertical borings. The best way to visualize this function is to use an example of 3 non-vertical samples. A cell will be created between the first and second sample and another cell will be created between the second and third sample. Because these are necessarily separate cells the ends between the cells may not be coincident. This is especially evident when looking at borings with large changes in angle between samples, or kinks. To merge these cells into a single tube the separate ends are averaged causing a distorted, but more efficient and seamless tube."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "Features To Label",
+          "display": "Features To Label",
+          "desc": "The Features To Label value allows the user to select the type of labeling performed."
+        },
+        {
+          "name": "PGF Labeling",
+          "display": "PGF Labeling",
+          "desc": "PGF Labeling allows the user to specify where each label will occur."
+        },
+        {
+          "name": "PGF Format",
+          "display": "PGF Format",
+          "desc": "The PGF Format control allows the user to select between material value, material name, or both."
+        },
+        {
+          "name": "Label Type",
+          "display": "Label Type",
+          "desc": "The Label Type allows the user to select between three font types. Forward Facing Fonts will always be aligned to the View.  TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D Label Settings",
+          "desc": "3D Label Settings allow the user to align the labels to an appropriate view."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font."
+        },
+        {
+          "name": "Label Color",
+          "display": "Label Color",
+          "desc": "Label Color allows the color for every label to be set."
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "Format Label Numbers",
+          "desc": "The Format Label Numbers control allows the user to set how numbers that are turned into labels will be formatted."
+        },
+        {
+          "name": "Top Offset",
+          "display": "Top Offset",
+          "desc": "The Top Offset field is the title (the well or boring ID label) offset in the z direction. This can raise or lower your title and is added to the Z offset to determine the z location of the title."
+        },
+        {
+          "name": "Radial Offset",
+          "display": "Radial Offset",
+          "desc": "The Radial Offset field is the radial offset, this determines how far from the sample to place the label, a value of 1 means to add the Size of the sphere to the XYZ location of the sample and place the label there."
+        },
+        {
+          "name": "Label Angle",
+          "display": "Label Angle",
+          "desc": "The Label Angle field determines where in a circle around the sample to place the label. For example a value of zero means place the labels to the direct right of the sample, a value of 90 would place the label directly above the sample."
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset is added to the Z coordinate in labeled sample to raise or lower the labels in the Z direction."
+        },
+        {
+          "name": "X Blank",
+          "display": "X Blank",
+          "desc": "The X Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Y Blank",
+          "display": "Y Blank",
+          "desc": "The Y Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Z Blank",
+          "display": "Z Blank",
+          "desc": "The Z Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Favor Min Value",
+          "display": "Favor Min Value",
+          "desc": "The Favor Min Value is used along with the X, Y, and Z Blanking fields.  This will switch the behavior of those fields to display the lowest value inside the box."
+        }
+      ]
+    }
+  ]
+}

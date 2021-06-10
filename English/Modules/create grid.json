@@ -1,0 +1,63 @@
+{
+  "name": "create grid",
+  "display": "create grid",
+  "desc": "The create_grid module produces a 2D or 3D uniform grid.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Grid Type",
+          "display": "Grid Type",
+          "desc": "The Grid Type control allows the user to select between creating a 2D or 3D grid."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "The X Resolution is the number of nodes in the x direction."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "The Y Resolution is the number of nodes in the y direction."
+        },
+        {
+          "name": "Z Resolution",
+          "display": "Z Resolution",
+          "desc": "The Z Resolution is the number of nodes in the z direction."
+        },
+        {
+          "name": "Grid Rotation",
+          "display": "Grid Rotation",
+          "desc": "The Grid Rotation allows you to rotate the grid about its center point by a set Azimuth and Inclination."
+        },
+        {
+          "name": "Center Point",
+          "display": "Center Point",
+          "desc": "The Center Point is the location of the center of the grid. It is also used as a center of rotation for the grid."
+        },
+        {
+          "name": "I Size",
+          "display": "I Size",
+          "desc": "The I Size value controls the size of the grid in the x direction before rotation."
+        },
+        {
+          "name": "J Size",
+          "display": "J Size",
+          "desc": "The I Size value controls the size of the grid in the y direction before rotation."
+        },
+        {
+          "name": "K Size",
+          "display": "K Size",
+          "desc": "The I Size value controls the size of the grid in the z direction before rotation."
+        }
+      ]
+    }
+  ]
+}

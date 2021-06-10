@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "name": "Z Scale",
+      "display": "Z Scale",
+      "desc": "Z scale is the scaling factor for vertical (z) coordinates."
+    },
+    {
+      "name": "Explode",
+      "display": "Explode",
+      "desc": "The Explode value is the distance between exploded layers, cell sets or materials.  For example, an explode distance of 20 will separate each geologic layer by 20 feet from the layer above it and the layer below it. Note that the explode distance incorporates the scale factor, so that if a scaling factor of 5 is specified for a 10 foot thick layer to which an explode factor of 20 is applied, the geologic layers will be separated by 100 feet."
+    },
+    {
+      "name": "Output Quality",
+      "display": "Output Quality",
+      "desc": ""
+    },
+    {
+      "name": "Configuration Executed",
+      "display": "Configuration Executed",
+      "desc": ""
+    },
+    {
+      "name": "Allow Run",
+      "display": "Allow Run",
+      "desc": "The Allow Run toggle controls whether the module will run when applications are loaded or data changes. When this is on, the module runs when applications are loaded or the Execute button is pushed (or the geology input changes). When it is off, the module will not run unless Execute is pressed."
+    },
+    {
+      "name": "Filename",
+      "display": "Filename",
+      "desc": "The filename containing the data to interpolate onto the created grid."
+    },
+    {
+      "name": "Execute",
+      "display": "Execute",
+      "desc": "The Execute button forces the module to run. If this has been pressed and the application saved, it will cause the module to run when the application is loaded."
+    },
+    {
+      "name": "Port Name",
+      "display": "Port Name",
+      "desc": "Displays the name of output port used in this connection."
+    },
+    {
+      "name": "Port Description",
+      "display": "Port Description",
+      "desc": "Displays the description of output port used in this connection."
+    },
+    {
+      "name": "Port Type",
+      "display": "Port Type",
+      "desc": "Displays the type of output port used in this connection."
+    },
+    {
+      "name": "Port Subtypes",
+      "display": "Port Subtypes",
+      "desc": "Displays the current subtypes of output port used in this connection."
+    },
+    {
+      "name": "Node Data",
+      "display": "Node Data",
+      "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+    },
+    {
+      "name": "Cell Data",
+      "display": "Cell Data",
+      "desc": "If Color By is set to Cell Data the Cell Data Component selects which cell data will set the data map."
+    },
+    {
+      "name": "Vector Component",
+      "display": "Vector Component",
+      "desc": "If Color By is set to either Node Data or Cell Data the Vector Component allows the user to use just a single component of a vector data to set the data map."
+    },
+    {
+      "name": "Use Vector Magnitude",
+      "display": "Use Vector Magnitude",
+      "desc": "If Color By is set to either Node Data or Cell Data the User Vector Magnitude allows the user to use the magnitude of a vector data to set the data map."
+    },
+    {
+      "name": "Object Color",
+      "display": "Object Color",
+      "desc": "If there is no data associated with the model, the default color can be set with these controls."
+    },
+    {
+      "name": "Color Type",
+      "display": "Color Type",
+      "desc": "The Color Type control allows the user to set how the color of the output should be determined."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "float math",
+  "display": "float math",
+  "desc": "The float_math module provides a simple means to perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Expression",
+          "display": "Expression",
+          "desc": "The Expression allows the user to control the sequence of Variables used to create the output double value."
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "The N1 field is a double value that can be used as the variable {N1} in the expression."
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "The N2 field is a double value that can be used as the variable {N2} in the expression."
+        },
+        {
+          "name": "N3",
+          "display": "N3",
+          "desc": "The N3 field is a double value that can be used as the variable {N3} in the expression."
+        },
+        {
+          "name": "N4",
+          "display": "N4",
+          "desc": "The N4 field is a double value that can be used as the variable {N4} in the expression."
+        },
+        {
+          "name": "Result",
+          "display": "Result",
+          "desc": "The Result is the output double value created by resolving the Expression."
+        }
+      ]
+    }
+  ]
+}

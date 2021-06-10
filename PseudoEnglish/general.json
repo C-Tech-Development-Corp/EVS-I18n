@@ -1,0 +1,10 @@
+{
+    "translations": [
+      { "name" : "filename", "display" : "Fïℓèñá₥è" },
+      { "name" : "open", "display" : "Óƥèñ" },
+      { "name" : "save", "dispaly" : "§áƲè" },
+      { "name": "run", "display": "Rúñ" },
+      { "name": "off", "display": "Óƒƒ" },
+      { "name": "execute", "display": "Éжèçúƭè" }
+    ]
+  }

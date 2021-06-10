@@ -1,0 +1,38 @@
+{
+  "name": "loop",
+  "display": "loop",
+  "desc": "The loop module iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane..",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Current Value",
+          "display": "Current Value",
+          "desc": "The Current Value of interest."
+        },
+        {
+          "name": "Loop",
+          "display": "Loop",
+          "desc": "The Loop controls setting the Current Value by specified increments."
+        },
+        {
+          "name": "Starting Value",
+          "display": "Starting Value",
+          "desc": "The Starting Value is the beginning value for the simulation."
+        },
+        {
+          "name": "Ending Value",
+          "display": "Ending Value",
+          "desc": "The Ending Value is the end value for the simulation."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor for the increment for advancement when stepping or running."
+        }
+      ]
+    }
+  ]
+}

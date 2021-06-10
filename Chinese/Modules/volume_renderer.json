@@ -1,0 +1,93 @@
+{
+  "name": "volume_renderer",
+  "display": "volume_renderer",
+  "desc": "Volume_renderer直接使用背对背(BTF)或光线追踪体绘制技术渲染三维均匀场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "要渲染的节点数据组件。"
+        },
+        {
+          "name": "Range 1 Cut Off Value",
+          "display": "范围1 剪断值",
+          "desc": "范围1切断值滑块允许定位的断点的两个数据范围进行调整。默认情况下，它被设置为输入节点数据范围的中点。数据映射中的第一个范围从最小数据值到断点。数据映射中的第二个范围从断点到最大数据值。此滑块的范围与您的数据或数据最小值和数据最大值的范围匹配。"
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "子集化水平已设置",
+          "desc": ""
+        },
+        {
+          "name": "Data Min",
+          "display": "最小数据",
+          "desc": "所选数据组件的最小值。"
+        },
+        {
+          "name": "Data Max",
+          "display": "最大数据",
+          "desc": "所选数据组件的最大值。"
+        },
+        {
+          "name": "Minimum Opacity Range 1",
+          "display": "范围 1 最小不透明度",
+          "desc": "第一个数据范围的最小不透明度。"
+        },
+        {
+          "name": "Minimum Color Range 1",
+          "display": "范围 1 最小值颜色",
+          "desc": "第一个数据最小范围的映射颜色。"
+        },
+        {
+          "name": "Maximum Opacity Range 1",
+          "display": "范围 1 最大不透明度",
+          "desc": "第一个数据范围的最大不透明度。我们建议在大多数情况下，这个值应该等于范围2的最小不透明度。"
+        },
+        {
+          "name": "Maximum Color Range 1",
+          "display": "范围 1 最大值颜色",
+          "desc": "第一个数据最大范围的映射颜色。"
+        },
+        {
+          "name": "Range 2 Min Values",
+          "display": "范围 2 最小值",
+          "desc": "范围2最小值将控制如何为第二个范围的不透明度和颜色设置相对于范围1的最大颜色和不透明度。"
+        },
+        {
+          "name": "Minimum Opacity Range 2",
+          "display": "范围 2 最小不透明度",
+          "desc": "第二个数据范围的最小不透明度。"
+        },
+        {
+          "name": "Minimum Color Range 2",
+          "display": "范围 2 最小值颜色",
+          "desc": "第二个数据最小范围的映射颜色。"
+        },
+        {
+          "name": "Maximum Opacity Range 2",
+          "display": "范围 2 最大不透明度",
+          "desc": "第二个数据范围的最大不透明度。"
+        },
+        {
+          "name": "Maximum Color Range 2",
+          "display": "范围 2 最大值颜色",
+          "desc": "第二个数据最大范围的映射颜色。"
+        },
+        {
+          "name": "Render Type",
+          "display": "渲染类型",
+          "desc": "渲染类型控件允许用户在BTF纹理(只用于OpenGL渲染)和光线追踪渲染之间进行选择。光线追踪提供了最高质量的体渲染，但它可能比BTF慢100倍，这取决于您的硬件和查看器(输出)的分辨率。这两种模式将产生相似的结果，但有明显不同的外观。"
+        },
+        {
+          "name": "Coarse",
+          "display": "粗糙",
+          "desc": "粗糙开关提供了一个低分辨率的软件渲染的快速版本。这对于设置参数很有用，但不建议用于最终输出。"
+        }
+      ]
+    }
+  ]
+}

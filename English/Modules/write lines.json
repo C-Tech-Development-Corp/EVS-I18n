@@ -1,0 +1,18 @@
+{
+  "name": "write lines",
+  "display": "write lines",
+  "desc": "The write_lines module is used to save a series of points with data connected by lines. These lines are stored in the EVS Line File format.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Check For Cell Set Data",
+          "display": "Check For Cell Set Data",
+          "desc": "The Check For Cell Set Data toggle will cause any cell data that is constant throughout its cell set to be written as a cell set data component."
+        }
+      ]
+    }
+  ]
+}

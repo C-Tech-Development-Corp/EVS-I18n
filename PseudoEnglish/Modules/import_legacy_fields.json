@@ -1,0 +1,18 @@
+{
+  "name": "import_legacy_fields",
+  "display": "ï₥ƥôřƭ_ℓèϱáç¥_ƒïèℓδƨ",
+  "desc": "ï₥ƥôřƭ_ℓèϱáç¥_ƒïèℓδƨ",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "File List",
+          "display": "Fïℓè £ïƨƭ",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

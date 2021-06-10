@@ -1,0 +1,23 @@
+{
+  "name": "triangulate polygons",
+  "display": "triangulate polygons",
+  "desc": "triangulate_polygons converts a closed polyline into a triangulated surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Tolerance",
+          "display": "Tolerance",
+          "desc": "The Tolerance control allows the user to set the distance between points for closing a polygon."
+        }
+      ]
+    }
+  ]
+}

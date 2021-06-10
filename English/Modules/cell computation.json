@@ -1,0 +1,81 @@
+{
+  "name": "cell computation",
+  "display": "cell computation",
+  "desc": "This module uses a Python script to manipulate the cell data values of a field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Cell Computation Variables 1",
+          "display": "Cell Computation Variables 1",
+          "desc": "The Variables to use to set the values during computation."
+        },
+        {
+          "name": "Cell Computation Variables 2",
+          "display": "Cell Computation Variables 2",
+          "desc": "The Variables to use to set the values during computation."
+        }
+      ]
+    },
+    {
+      "name": "Output",
+      "display": "Output",
+      "properties": [
+        {
+          "name": "Data Definitions",
+          "display": "Data Definitions",
+          "desc": "The data you wish to generate in addition to coordinates."
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "Variables",
+      "properties": [
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "Number passed into script."
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "Number passed into script."
+        },
+        {
+          "name": "N3",
+          "display": "N3",
+          "desc": "Number passed into script."
+        },
+        {
+          "name": "N4",
+          "display": "N4",
+          "desc": "Number passed into script."
+        }
+      ]
+    },
+    {
+      "name": "Script Operations",
+      "display": "Script Operations",
+      "properties": [
+        {
+          "name": "Edit Script In Editor",
+          "display": "Edit Script In Editor",
+          "desc": "This opens a script editor for the selected Python script."
+        },
+        {
+          "name": "Create Default Script",
+          "display": "Create Default Script",
+          "desc": "This creates a default script file, and assigns it to the Filename parameter."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "端口信息",
+      "properties": []
+    },
+    {
+      "name": "General Properties",
+      "display": "通用属性",
+      "properties": [
+        {
+          "name": "Contour Levels",
+          "display": "等值刻度",
+          "desc": "等值线的刻度值。"
+        }
+      ]
+    }
+  ]
+}

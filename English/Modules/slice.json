@@ -1,0 +1,65 @@
+{
+  "name": "slice",
+  "display": "slice",
+  "desc": "The slice module allows you to create a subset of your input which is of reduced dimensionality.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        }
+      ]
+    },
+    {
+      "name": "Slice Settings",
+      "display": "Slice Settings",
+      "properties": [
+        {
+          "name": "Slice Type",
+          "display": "Slice Type",
+          "desc": "The Slice Type is how the slicing plane is specified."
+        },
+        {
+          "name": "X Position",
+          "display": "X Position",
+          "desc": "The X Position of the slice(used with Slice Easting and Rotatable)."
+        },
+        {
+          "name": "Y Position",
+          "display": "Y Position",
+          "desc": "The Y position of the slice(used with Slice Northing and Rotatable)."
+        },
+        {
+          "name": "Z Position",
+          "display": "Z Position",
+          "desc": "The Z Position of the slice(used with Slice Horizontal and Rotatable)."
+        },
+        {
+          "name": "Plane Rotation",
+          "display": "Plane Rotation",
+          "desc": "The Plane Rotation control allows the user to set both the Head and the Dip of the Rotatable Slice"
+        },
+        {
+          "name": "Reset",
+          "display": "Reset",
+          "desc": "The Reset button will cause the Position of the slice to return to the center of the model."
+        }
+      ]
+    },
+    {
+      "name": "Data Mapping",
+      "display": "Data Mapping",
+      "properties": [
+        {
+          "name": "Nodal Data",
+          "display": "Nodal Data",
+          "desc": "The Nodal Data from the Input Field to include in the Output Field"
+        }
+      ]
+    }
+  ]
+}

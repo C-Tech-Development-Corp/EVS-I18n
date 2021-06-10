@@ -1,0 +1,23 @@
+{
+  "name": "gradient",
+  "display": "gradient",
+  "desc": "The gradient module calculates the vector gradient field of a scalar data component at every node in a mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Gradient Component",
+          "display": "Gradient Component",
+          "desc": "The Gradient Component is the scalar data component to be used by gradient. Again, the data component selected must be scalar or an error will occur."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "regional averages",
+  "display": "regional averages",
+  "desc": "The regional_average module averages nodal data values from the input field that fall into the input regions.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Z Position",
+          "display": "Z Position",
+          "desc": "The Z Position allows the user to set the vertical position of the regional average output points."
+        },
+        {
+          "name": "Radius",
+          "display": "Radius",
+          "desc": "The Radius field sets the radius of the renderable output spheres."
+        },
+        {
+          "name": "Regional ID Component",
+          "display": "Regional ID Component",
+          "desc": "The Regional ID Component selects which cell data component from the polygon regions input should be used to identify each region."
+        },
+        {
+          "name": "Data For Visualization",
+          "display": "Data For Visualization",
+          "desc": "The Data for Visualization parameter selects which nodal data component from the input field to color the output spheres by."
+        }
+      ]
+    }
+  ]
+}

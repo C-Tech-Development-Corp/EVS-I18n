@@ -1,0 +1,86 @@
+{
+  "name": "cut",
+  "display": "cut",
+  "desc": "cut模块允许你创建一个输入场子集，并且维度和输入场相同。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Cut Settings",
+      "display": "切割设置",
+      "properties": [
+        {
+          "name": "Cut Type",
+          "display": "切割类型",
+          "desc": "切割类型是指如何指定切割面。"
+        },
+        {
+          "name": "Cut Direction",
+          "display": "切割方向",
+          "desc": "切割方向用来决定切割面的网格上方还是下方发送至输出端口。"
+        },
+        {
+          "name": "X Position",
+          "display": "X 位置",
+          "desc": "切割面的x位置（用于向东切割和旋转切割）。"
+        },
+        {
+          "name": "Y Position",
+          "display": "Y 坐标",
+          "desc": "切割面的x位置（用于向北切割和旋转切割）。"
+        },
+        {
+          "name": "Z Position",
+          "display": "Z 位置",
+          "desc": "切割面的z位置（用于水平切割和旋转切割）。"
+        },
+        {
+          "name": "Plane Rotation",
+          "display": "切割面旋转",
+          "desc": "切割面旋转控件允许用户设置切割面的方位和倾角。"
+        },
+        {
+          "name": "Reset",
+          "display": "重置",
+          "desc": "重置按钮将使得切割面的位置返回模型的中心。"
+        }
+      ]
+    },
+    {
+      "name": "Data Mapping",
+      "display": "数据映射",
+      "properties": [
+        {
+          "name": "Nodal Data",
+          "display": "节点数据",
+          "desc": "输入场中的节点数据包含在输出场中。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "该控件允许用户选择输出模型依据哪种属性来着色。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        }
+      ]
+    }
+  ]
+}

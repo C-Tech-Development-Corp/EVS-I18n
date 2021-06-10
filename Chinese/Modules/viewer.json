@@ -1,0 +1,468 @@
+{
+  "name": "viewer",
+  "display": "查看器",
+  "desc": "The Viewer displays all 3D models.查看器展示所有的3D模型。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Show Contents",
+          "display": "展示内容",
+          "desc": ""
+        },
+        {
+          "name": "Azimuth And Inclination",
+          "display": "方位角和倾斜角",
+          "desc": "方位角和倾斜角允许用户设置查看器的方向"
+        },
+        {
+          "name": "Set To Top View",
+          "display": "设置为顶视图",
+          "desc": "查看器将会缩放以适应整个模型，并从上到下居中显示。"
+        },
+        {
+          "name": "Zoom To Fit",
+          "display": "缩放至适合",
+          "desc": "缩放以适应整个模型，并围绕场景的质心重新居中。"
+        },
+        {
+          "name": "Picked Object",
+          "display": "选中对象",
+          "desc": "显示在查看器中被选中的当前对象。可以通过按住Ctrl键并单击查看器中的对象来更新。"
+        },
+        {
+          "name": "Picked Coordinate",
+          "display": "选中坐标",
+          "desc": "显示查看器中选中的当前对象的坐标。可以通过按住Ctrl键并单击查看器中的对象来更新坐标。"
+        },
+        {
+          "name": "Center On Picked",
+          "display": "Center On Picked",
+          "desc": "如果在查看器中选中了某个对象，点击该按钮则使得查看器的中心设置为该选中对象。"
+        },
+        {
+          "name": "Show Viewer Center",
+          "display": "展示查看器中心",
+          "desc": "在当前查看器中心点展示一个指示标志"
+        },
+        {
+          "name": "Perspective Mode",
+          "display": "透视图模式",
+          "desc": "透视图是一个重要的特性，它在默认情况下是关闭的。通常我们使用非透视视图，它将平行线显示为平行线。不管物体与观察者之间的距离有多远，它们的大小都是一样的。透视图提供的视图可以与通过广角镜头的照相机视图相比较。它有时似乎更真实，但可能不那么科学(定量)。透视图选项与视场一起使用。通常，对象将以45度透视图和默认视图显示相同的大小(但失真)。更小的视场就像放大显示，减少了透视效果。您可以通过调整视口大小、改变比例、放大/缩小或转换对象来补偿视场的变化。"
+        },
+        {
+          "name": "Field Of View",
+          "display": "视场",
+          "desc": "在透视模式下，视场用于补偿失真。"
+        },
+        {
+          "name": "Renderer",
+          "display": "渲染器",
+          "desc": "渲染器控件提供了OpenGL或软件渲染。OpenGL渲染器是一个高性能的渲染器，它是Windows操作系统的本地渲染器，是默认选项。对于大多数对象，OpenGL渲染提供了比软件渲染器更快的渲染性能。然而，软件渲染器提供了OpenGL渲染器没有的一些功能，因此是某些操作的理想选项。具体来说，球体是在软件渲染器中计算的，它比OpenGL更快速、更有效，OpenGL可以渲染许多方面的对象。如果你正在可视化大量的球体，你应该选择软件渲染选项。另一个重要的区别是，当你的视图有多个透明对象时，软件渲染器支持深度排序。"
+        },
+        {
+          "name": "Auto Fit Scene",
+          "display": "自动适应场景",
+          "desc": "自动适应场景控件告诉查看器什么样的更改将使查看器正常化。"
+        }
+      ]
+    },
+    {
+      "name": "Window Size",
+      "display": "窗口尺寸",
+      "properties": [
+        {
+          "name": "Window Sizing",
+          "display": "窗口大小",
+          "desc": "如何展示查看器中内容的大小的方法。"
+        },
+        {
+          "name": "Viewer Width",
+          "display": "查看器宽度",
+          "desc": "查看器中渲染部分的宽度，以像素为单位。"
+        },
+        {
+          "name": "Viewer Height",
+          "display": "查看器高度",
+          "desc": "查看器中渲染部分的高度，以像素为单位。"
+        },
+        {
+          "name": "Viewer Actual Width",
+          "display": "查看器实际宽度",
+          "desc": "查看器中渲染部分的宽度，以像素为单位。"
+        },
+        {
+          "name": "Viewer Actual Height",
+          "display": "查看器实际高度",
+          "desc": "查看器中渲染部分的高度，以像素为单位。"
+        },
+        {
+          "name": "Video Safe Area",
+          "display": "视频安全区域",
+          "desc": "当为DVD或视频创建动画时，使用视频安全区控制。它显示了几种标准视频格式中可用于文本和动画目的的区域。这允许你正确设置你的动画，以获得在多种电视上最好的输出。"
+        }
+      ]
+    },
+    {
+      "name": "Output Image",
+      "display": "输出图片",
+      "properties": [
+        {
+          "name": "View Scale",
+          "display": "视图比例",
+          "desc": "生成图片时相对于查看器的高度和宽度的比例。在设置实际宽度和高度时，值被截断为整数。"
+        },
+        {
+          "name": "Auto Scale Forward Facing Font",
+          "display": "自动缩放前向字体",
+          "desc": "当该开关被打开，图片中所有的前向字体将会基于输出图片的尺寸进行自动缩放。"
+        },
+        {
+          "name": "Anti Aliasing",
+          "display": "抗锯齿",
+          "desc": "抗锯齿开关打开后，将应用4x4抗锯齿方法输出图像。这将使图像的渲染大小加倍，然后过滤和子集化到图片的实际宽度和高度。这一过程降低了细纹的亮度，但它也平滑了细纹并显著降低了锯齿。"
+        },
+        {
+          "name": "Anti Aliasing Weight Factor",
+          "display": "抗锯齿权重因子",
+          "desc": "抗锯齿权重因子用于抗锯齿时的图像。当反锯齿发生时，图像最初被渲染为目标大小的两倍。每个像素的颜色值，然后内插使用的16像素的值，形成一个框围绕它。当决定最终颜色时，权重因子使紧挨着像素的四个像素具有更大的权重。一个更高的权重因子减少了抗锯齿的影响。"
+        },
+        {
+          "name": "Mask Background",
+          "display": "背景遮罩",
+          "desc": "背景遮罩开关允许您创建一个具有透明背景的图像。有关此功能所需的条件，请参阅查看器模块的帮助。"
+        },
+        {
+          "name": "Mask Color",
+          "display": "颜色遮罩",
+          "desc": "输出图片的遮罩颜色。"
+        },
+        {
+          "name": "JPEG Quality",
+          "display": "JPEG 质量",
+          "desc": "JPEG质量值影响(*.jpg)输出文件。高质量可以减少图像的损失，但会导致更大的图片体积。"
+        },
+        {
+          "name": "Image Filename",
+          "display": "图片文件名",
+          "desc": "创建图片时使用的图像格式。"
+        }
+      ]
+    },
+    {
+      "name": "Distance Tool",
+      "display": "距离工具",
+      "properties": [
+        {
+          "name": "Measure Distance",
+          "display": "测量距离",
+          "desc": "打开测量距离工具开关，用户可以探测查看器中的两个位置，并返回关于每个点的详细信息，以及关于连接两个位置的线的信息。"
+        },
+        {
+          "name": "First Point Location",
+          "display": "第一点位置",
+          "desc": "第一点探测使用CTRL +左键点击。可以更改此坐标值以更改线值，但这会使探测到的数据和对象无效。"
+        },
+        {
+          "name": "Second Point Location",
+          "display": "第二点位置",
+          "desc": "第二点探测使用CTRL +左键点击。可以更改此坐标值以更改线值，但这会使探测到的数据和对象无效。"
+        },
+        {
+          "name": "Clear Points",
+          "display": "清除点",
+          "desc": "清除点按钮将会清除已探测到的点。"
+        },
+        {
+          "name": "Distance Line Color",
+          "display": "距离线颜色",
+          "desc": "距离线颜色是指被探测位置之间的线的颜色。"
+        },
+        {
+          "name": "Point Radius",
+          "display": "点半径",
+          "desc": "点半径是指在探头位置显示的球体半径。"
+        },
+        {
+          "name": "Line Filename",
+          "display": "线文件名",
+          "desc": "EVS用来处理并显示的线文件名"
+        },
+        {
+          "name": "File Behaviour",
+          "display": "文件行为",
+          "desc": "当选择了EVS线文件时，用户可以选择用存储的点覆盖它，或者将这些点附加到现有的线文件中。"
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "display": "背景",
+      "properties": [
+        {
+          "name": "Style",
+          "display": "样式",
+          "desc": "The Style controls the how to color the Background.样式控制如何给背景着色。"
+        },
+        {
+          "name": "Use Unlocked Background",
+          "display": "使用解锁背景",
+          "desc": "如果将查看器内容输出到4DIM文件或VRML文件，则应将后台设置为解锁。"
+        },
+        {
+          "name": "Primary Color",
+          "display": "主颜色",
+          "desc": "设置背景的颜色"
+        },
+        {
+          "name": "Secondary Color",
+          "display": "次颜色",
+          "desc": "设置两个颜色梯度的第二个颜色。"
+        }
+      ]
+    },
+    {
+      "name": "View",
+      "display": "查看",
+      "properties": [
+        {
+          "name": "Depth Sort",
+          "display": "深度排序",
+          "desc": "当您的视图中有两个或多个透明对象时，如果没有深度排序，则可能会不正确地显示在前面或后面的对象的外观。正确显示多个透明对象需要根据其相对于观察者的视位置对对象的显示顺序进行排序。有两种不同的深度排序选项，每一种都需要更多的计算，因此比正常的渲染速度更慢。这些选项在OpenGL中不可用，因为没有任何显卡制造商支持这种复杂程度。"
+        },
+        {
+          "name": "Update Automatically",
+          "display": "自动更新",
+          "desc": "当自动更新切换为on状态时，将立即处理用户对查看器的更改。"
+        },
+        {
+          "name": "Refresh",
+          "display": "更新",
+          "desc": "如果自动更新未被打开，则刷新按钮将使查看器处理所有用户更改。"
+        }
+      ]
+    },
+    {
+      "name": "Lights",
+      "display": "光线",
+      "properties": [
+        {
+          "name": "Turn On Ambient Light",
+          "display": "打开环境光",
+          "desc": "打开环境光开关将切换环境光的可见性。环境光会影响所有的物体，而且是不定向的。"
+        },
+        {
+          "name": "Ambient Light Color",
+          "display": "环境光颜色",
+          "desc": "环境光的颜色可以用这个控件设置。"
+        },
+        {
+          "name": "Show Lights",
+          "display": "显示灯光",
+          "desc": "如果显示灯光开关设置为on，灯光的位置将显示在模型空间中。"
+        },
+        {
+          "name": "Mouse Controls",
+          "display": "鼠标控制",
+          "desc": "当鼠标移动到查看器内部时，鼠标控件告诉查看器转换什么对象。"
+        },
+        {
+          "name": "Reset Lights",
+          "display": "重置灯光",
+          "desc": "重置灯光按钮将强制所有灯光返回默认值。"
+        },
+        {
+          "name": "Light 1",
+          "display": "灯光1",
+          "desc": "该灯的控件可以改变其类型、颜色、能见度等。"
+        },
+        {
+          "name": "Light 2",
+          "display": "灯光 2",
+          "desc": "该灯的控件可以改变其类型、颜色、能见度等。"
+        },
+        {
+          "name": "Light 3",
+          "display": "灯光 3",
+          "desc": "该灯的控件可以改变其类型、颜色、能见度等。"
+        },
+        {
+          "name": "Light 4",
+          "display": "灯光 4",
+          "desc": "该灯的控件可以改变其类型、颜色、能见度等。"
+        }
+      ]
+    },
+    {
+      "name": "Camera",
+      "display": "相机",
+      "properties": [
+        {
+          "name": "Normalization Scale",
+          "display": "正常化比例",
+          "desc": "相机默认设置为与所有物体保持一段距离。正常化比例将距离以因子集合来缩减，使对象看起来更近。"
+        },
+
+        {
+          "name": "Normalize Invisible Objects",
+          "display": "正常化不可见对象",
+          "desc": "该开关告诉查看器当调整其比例时，是否包括已将其可见状态设置为off对象。"
+        },
+        {
+          "name": "Global Scale",
+          "display": "全局比例",
+          "desc": "当透视模式是在一个更小的视野，就像放大显示和减少透视效果。您可以通过调整全局比例来补偿视场的变化。"
+        },
+        {
+          "name": "Viewport Size",
+          "display": "视口尺寸",
+          "desc": "当透视模式是在一个更小的视野，就像放大显示和减少透视效果。您可以通过调整视口大小来补偿视场的变化。"
+        },
+        {
+          "name": "Tripod From",
+          "display": "三脚架起始",
+          "desc": "三脚架起始坐标允许用户设置一个相机观察起始位置"
+        },
+        {
+          "name": "Tripod Up",
+          "display": "三脚架上方",
+          "desc": "三脚架上方的坐标允许用户设置位置，以描述定义为相机的‘上’方向。这可以产生滚动的效果。"
+        },
+        {
+          "name": "Tripod At",
+          "display": "三脚架位置",
+          "desc": "三脚架所在坐标允许用户设置摄像机观察的位置。"
+        },
+        {
+          "name": "Clipping Planes Active",
+          "display": "裁剪面激活",
+          "desc": "如果裁剪面开关打开，距离相机太远或者太近的对象将被剪掉。"
+        },
+        {
+          "name": "Clipping Plane Front Perspective",
+          "display": "裁剪面前透视",
+          "desc": "如果透视模式打开，那么裁剪面前透视将设置裁剪面的位置。"
+        },
+        {
+          "name": "Clipping Plane Front",
+          "display": "裁剪面前置",
+          "desc": "裁剪面前置是指裁剪面最靠近相机，任何在该裁剪面前方的对象都会被剪掉。"
+        },
+        {
+          "name": "Clipping Plane Back",
+          "display": "裁剪面后置",
+          "desc": "裁剪面后置是指裁剪面离相机最远，裁剪面背后的任何对象都将被剪掉。"
+        },
+        {
+          "name": "Depth Cueing Active",
+          "display": "景深效果处理激活",
+          "desc": "景深效果处理是一个高级显示选项，它根据物体与观察者之间的距离来控制光线的衰减。"
+        },
+        {
+          "name": "Depth Cueing Front",
+          "display": "景深处理前面",
+          "desc": " 景深处理是一个线性混合，从前到后的景深处理。它设定一个位置，对于相机，灯光是百分之百。"
+        },
+        {
+          "name": "Depth Cueing Back",
+          "display": "景深处理背面",
+          "desc": "景深处理是一个线性混合，从前到后的景深处理。它设定一个位置，对于相机，灯光是百分之零。"
+        },
+        {
+          "name": "Depth Cueing Scale",
+          "display": "景深处理比例",
+          "desc": "景深处理比例放大前面和背面之间的变化。"
+        }
+      ]
+    },
+    {
+      "name": "Record 4DIM",
+      "display": "记录4DIM",
+      "properties": [
+        {
+          "name": "State Generation Mode",
+          "display": "状态生成模式",
+          "desc": "如果将状态生成模式设置为手动，则每次按下记录单状态按钮时，4DIM都会添加一个状态。如果选择自动模式，则每次查看器更改时都将向文件写入状态。"
+        },
+        {
+          "name": "Record Single State",
+          "display": "记录单个状态",
+          "desc": "记录查看器中的单个状态到4DIM文件中。视图状态(即方位角、倾角等)也会在此时保存。"
+        },
+        {
+          "name": "Include In Preview",
+          "display": "包含在预览中",
+          "desc": "在4dm文件的预览图片中包含此状态。"
+        },
+        {
+          "name": "Create Temporary 4DIM",
+          "display": "创建临时4DIM",
+          "desc": "创建临时4DIM开关允许用户创建一个临时4d文件来查看正在进行的动画。这个4d文件将不具有跟踪视图更改的能力。"
+        },
+        {
+          "name": "Delete Last State",
+          "display": "删除最后一个状态",
+          "desc": "从4DIM中删除最后一个状态。"
+        },
+        {
+          "name": "Clear All States",
+          "display": "清除所有状态",
+          "desc": "从4DIM中清除所有状态。"
+        },
+        {
+          "name": "Finish 4D",
+          "display": "结束4D",
+          "desc": "结束4D按钮将会完成对4DIM的创建。"
+        },
+        {
+          "name": "Total States",
+          "display": "总状态数",
+          "desc": "总状态数是当前记录的状态总数。"
+        },
+        {
+          "name": "Total Previews",
+          "display": "总预览数",
+          "desc": "总预览数是当前捕获的预览图像总数。"
+        },
+        {
+          "name": "Author",
+          "display": "作者",
+          "desc": "该字段允许用户在输出4DIM上设置作者名称。"
+        },
+        {
+          "name": "Organization",
+          "display": "组织",
+          "desc": "该字段允许用户在输出4DIM上设置组织名称。"
+        },
+        {
+          "name": "Track By Default",
+          "display": "默认跟踪",
+          "desc": "设置后，输出的4DM打开后将默认跟踪视图的变化。"
+        },
+        {
+          "name": "Notes",
+          "display": "备注",
+          "desc": "备注字段允许用户设置任何关于此4DIM的备注。"
+        }
+      ]
+    },
+    {
+      "name": "Write VRML",
+      "display": "写入VRML",
+      "properties": [
+        {
+          "name": "VRML Filename",
+          "display": "VRML文件名",
+          "desc": "输出VRML文件名。设置此文件名将导致写入文件。"
+        },
+        {
+          "name": "Output Optimization",
+          "display": "输出优化",
+          "desc": "该选项可以设置输出类型以优化VRML。"
+        }
+      ]
+    }
+  ]
+}

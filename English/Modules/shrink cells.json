@@ -1,0 +1,28 @@
+{
+  "name": "shrink cells",
+  "display": "shrink cells",
+  "desc": "The shrink_cells module produces a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. ",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Shrink Cells",
+          "display": "Shrink Cells",
+          "desc": "The shrink toggle, if off, results in an output mesh which contains disjoint cells with the same coordinates as the input mesh. If set on, the module computes new coordinates for the nodes based on the shrink factor that specifies the scale relative to the geometric centers of each cell."
+        },
+        {
+          "name": "Scale Factor",
+          "display": "Scale Factor",
+          "desc": "The Scale Factor slider is used to adjust the sizes of the cells. The scale factor value specifies the scale relative to the geometric centers of each cell. The shrink factor value can vary from 0 to 100 percent, 1000 producing non-shrunk cells and 0 producing completely collapsed cells (points). "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "name": "fly through",
+  "display": "fly through",
+  "desc": "The fly_through module facilitates controlling the Viewer or creating an animation in which the view follows a complex 3D path on, through, or around your model.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "View Position",
+          "display": "View Position",
+          "desc": "The View Position allows the user to determine where the view will be placed along the input path."
+        },
+        {
+          "name": "Force Perspective",
+          "display": "Force Perspective",
+          "desc": "The Force Perspective toggle will cause the Viewer connect to the fly_though module to be put into perspective mode every time the module is run."
+        }
+      ]
+    },
+    {
+      "name": "View Settings",
+      "display": "View Settings",
+      "properties": [
+        {
+          "name": "Field Of View",
+          "display": "Field Of View",
+          "desc": "Field of View is a slider that sets the total included angle (in degrees) of the camera lens used to see the scene. and perspective is based on the concept of a lens angle. Larger angles have a wider field of view."
+        },
+        {
+          "name": "Scale",
+          "display": "Scale",
+          "desc": "The Scale slider moves the camera closer or farther away from the point of interest along the path."
+        },
+        {
+          "name": "Look Down Angle",
+          "display": "Look Down Angle",
+          "desc": "The Look Down Angle slider controls the angle of the camera above or below the path. "
+        }
+      ]
+    },
+    {
+      "name": "Percentage Options",
+      "display": "Percentage Options",
+      "properties": [
+        {
+          "name": "Position",
+          "display": "Position",
+          "desc": "The Position slider gives the percentage along a line to use for view positioning."
+        },
+        {
+          "name": "Position Animation",
+          "display": "Position Animation",
+          "desc": "The Position Animation controls the movement (or driving) of the view along the line."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a value for the increment for advancement when stepping or running."
+        }
+      ]
+    },
+    {
+      "name": "Time Options",
+      "display": "Time Options",
+      "properties": [
+        {
+          "name": "Date Component",
+          "display": "Date Component",
+          "desc": "The Date Component allows the user to select which data to use when positioning the view by time data."
+        },
+        {
+          "name": "Date And Time",
+          "display": "Date And Time",
+          "desc": "The Date and Time of interest."
+        },
+        {
+          "name": "Time Loop",
+          "display": "Time Loop",
+          "desc": "The Time Loop controls setting the Date and Time by specified increments."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the beginning time of the simulation.  This value is set to the first date in the selected data component."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the end time for the simulation.  This value is set to the last date in the selected data component."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for advancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for advancement when stepping or running."
+        }
+      ]
+    }
+  ]
+}

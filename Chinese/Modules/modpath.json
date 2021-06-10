@@ -1,0 +1,79 @@
+{
+  "name": "modpath",
+  "display": "modpath",
+  "desc": "modpath模块使用从MODFLOW项目中生成的一个单元一个单元的流量值以及水头值和其他MODFLOW参数来跟踪水粒子在地面移动时的路径。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "DWR File",
+          "display": "DWR 文件",
+          "desc": "DWR文件显示哪个.dwr/.dwz文件被选中，该文件包含MODFLOW包数据，如排水，井等…"
+        },
+        {
+          "name": "Particle Direction",
+          "display": "粒子方向",
+          "desc": "粒子方向允许用户指定向前或向后的路径投影。路径从指定的起点开始，直到满足时间选项类别或接收选项类别中所选的选项。 "
+        },
+        {
+          "name": "Time Options",
+          "display": "时间选项",
+          "desc": "时间选项控件指示粒子基于时间的停止条件。‘运行到结束’表示粒子将一直运行到由于缺乏流而无法逃离单元格为止。‘运行至日期’允许粒子从开始日期移动到结束日期。‘持续时间’选项允许粒子运行一段时间，以天为单位。"
+        },
+        {
+          "name": "Start Date",
+          "display": "起始日期",
+          "desc": "粒子运行的开始时间。"
+        },
+        {
+          "name": "End Date",
+          "display": "结束日期",
+          "desc": "粒子运行的终止时间。"
+        },
+        {
+          "name": "Duration",
+          "display": "持续时间",
+          "desc": "如果‘持续运行’时间选项被选中，可以使用此控件来设置模拟的运行的时间。"
+        },
+        {
+          "name": "Sink Options",
+          "display": "渗透",
+          "desc": "渗透选项控件根据流经单元格的流量指示粒子的停止条件。“穿过有弱渗透的单元”选项允许所有粒子通过单元，除非该单元有强水槽。“在弱渗透单元内停止”选项不允许粒子通过，除非流出单元的流量大于或等于流入单元的流量。最后一个选项“如果流入到单元的流量大于指定的百分比，则停止“，允许用户指定流入到池中的颗粒的百分比。"
+        },
+        {
+          "name": "Fraction",
+          "display": "百分比",
+          "desc": "阻挡单元内粒子流入的百分比"
+        }
+      ]
+    },
+    {
+      "name": "Display Options",
+      "display": "显示选项",
+      "properties": [
+        {
+          "name": "Map Component",
+          "display": "映射组件",
+          "desc": "允许用户选择哪个计算数据组件来给线条着色。"
+        },
+        {
+          "name": "Coloring Options",
+          "display": "着色选项",
+          "desc": "着色选项控件允许用户为着色目的指定速度数据的大小(正常)或Log10(大小)表示。当速度跨越几个数量级时，在对数空间中工作是更有效的。"
+        },
+        {
+          "name": "Minimum Magnitude",
+          "display": "最小值",
+          "desc": "输出数据的最小值。"
+        },
+        {
+          "name": "Maximum Magnitude",
+          "display": "最大值",
+          "desc": "输出数据的最大值。"
+        }
+      ]
+    }
+  ]
+}

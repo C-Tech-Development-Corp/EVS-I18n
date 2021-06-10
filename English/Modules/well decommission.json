@@ -1,0 +1,410 @@
+{
+  "name": "well decommission",
+  "display": "well decommission",
+  "desc": "The well_decommission module analyzes all available data and quantifies the impact to site assessment quality of removing each well. ",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Target Concentration",
+          "display": "Target Concentration",
+          "desc": "The Target Concentration is the subsetting level (in real not log units) that is to be used for the decommissioning analysis. This should normally be the EPA reporting level."
+        },
+        {
+          "name": "Data Component",
+          "display": "Data Component",
+          "desc": "The Data Component selects the data of interest from the file for processing."
+        },
+        {
+          "name": "Data Priority",
+          "display": "Data Priority",
+          "desc": "The Data Priority in well decommission affects which samples are adaptively gridded."
+        },
+        {
+          "name": "Run Cycles",
+          "display": "Run Cycles",
+          "desc": "The Run Cycles button when clicked will run through a series of calculations that sequentially drop each of the monitoring wells in the input data file."
+        },
+        {
+          "name": "Run Decommission Cycles",
+          "display": "Run Decommission Cycles",
+          "desc": "The Run Decommission Cycles toggle when unchecked will run a single baseline analysis. With it checked it will run through a series of calculations that sequentially drop each of the monitoring wells in the input data file."
+        },
+        {
+          "name": "New Variables",
+          "display": "New Variables",
+          "desc": "The New Variables toggle resets all expert system calculated variables to zero before each run. This allows multiple calculations to be performed without tedious manual resetting of these variables. To change an expert system calculated variable, the toggle must be off."
+        }
+      ]
+    },
+    {
+      "name": "Grid Settings",
+      "display": "Grid Settings",
+      "properties": [
+        {
+          "name": "Grid Coordinates",
+          "display": "Grid Coordinates",
+          "desc": "Allows the user to define the coordinate domain within the data set in which kriging will be completed. The Min and Max values are only used when the Rectilinear Option is selected."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "The X Resolution specifies the number of grid nodes that will be included within the model horizontal domain."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "The Y Resolution specifies the number of grid nodes that will be included within the model vertical domain."
+        },
+        {
+          "name": "Grid Type",
+          "display": "Grid Type",
+          "desc": "The type of grid to create for interpolation.   A Convex Hull boundary should be utilized when the user wishes to produce a model that can have irregular boundaries that are defined by the extent of the measured data points. The convex hull of a data set can be thought of as the domain that would be outlined by stretching a rubber band around the external data points in the data set."
+        },
+        {
+          "name": "Adaptive Gridding",
+          "display": "Adaptive Gridding",
+          "desc": "The Adaptive Gridding toggle refines the grid automatically to place grid nodes at all of the measured data points. The adaptive grid will result in an estimated parameter distribution that honors all of the measured data points exactly."
+        },
+        {
+          "name": "Adaptive Gridding Limit",
+          "display": "Adaptive Gridding Limit",
+          "desc": "The Adaptive Gridding Limit value will turn off adaptive gridding when the number of sample points is greater than the set value."
+        },
+        {
+          "name": "Boundary Offset",
+          "display": "Boundary Offset",
+          "desc": "The Boundary Offset parameter sets the distance in user units that the grid coordinate range for the kriging domain will be set outside of the actual coordinate range of the data."
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Data Processing",
+          "display": "Data Processing",
+          "desc": "Data Processing will allow the module to be run in either Linear or Log Space."
+        },
+        {
+          "name": "Data Scaling",
+          "display": "Data Scaling",
+          "desc": "Data Scaling is used to specify a value by which all nodal data values will be multiplied before kriging."
+        },
+        {
+          "name": "Linear Post Clip",
+          "display": "Linear Post Clip",
+          "desc": "When the Log Process toggle is turned off the Linear Post Clip Min will be used after data processing to replace any sample property value that is less than the specified number in linear space."
+        },
+        {
+          "name": "Log Post Clip",
+          "display": "Log Post Clip",
+          "desc": "When the Log Process toggle is turned on the Log Post Clip Min will be used after data processing to replace any sample property value that is less than the specified number in log space."
+        },
+        {
+          "name": "LT Multiplier",
+          "display": "LT Multiplier",
+          "desc": "The Less Than Multiplier value is applied when reading a file with values flagged with the '<' character.  It will multiply the file value by the set multiplier value."
+        },
+        {
+          "name": "Detection Limit",
+          "display": "Detection Limit",
+          "desc": "The Detection Limit value affects any file values set with the 'ND' or other non-detect flags (for a list of these flags open the help for the APDV file format). When the module encounters this flag in the file it will insert the a value equal to (Detection Limit * LT Multiplier)."
+        },
+        {
+          "name": "Collapse Method",
+          "display": "Collapse Method",
+          "desc": "The Collapse Method allows the user to extract data from within the interval specified in Min Z and Max Z using four different methods. It should be noted that if multiple samples occur at the exact same x, y, and z coordinates (duplicate samples), the average of these samples will be calculated first to provide a single data point for that coordinate, and then the extract method will be applied to other samples in the specified depth interval."
+        },
+        {
+          "name": "Tolerance",
+          "display": "Tolerance",
+          "desc": "The Tolerance parameter further extends the definition of coincident points.  It allows all points within a +/- x-y box to be treated as coincident."
+        },
+        {
+          "name": "Collapse Min Z",
+          "display": "Collapse Min Z",
+          "desc": "The Collapse Min Z value is the lowest depth to use when including points to use in the chosen Collapse Method"
+        },
+        {
+          "name": "Collapse Max Z",
+          "display": "Collapse Max Z",
+          "desc": "The Collapse Max Z value is the highest depth to use when including points to use in the chosen Collapse Method"
+        },
+        {
+          "name": "Slice Position",
+          "display": "Slice Position",
+          "desc": "The Slice Position value is used with the Slice Collapse Method. Krig_2D will look for the closest data point above the specified Collapse Min Z value, and the closest data point below the specified Collapse Max Z value, and calculate the average of these two points for input to the kriging analysis."
+        },
+        {
+          "name": "Post Clip Min",
+          "display": "Post Clip Min",
+          "desc": "The Post-Clip Min value specifies the smallest nodal value that will be present in the output data field."
+        },
+        {
+          "name": "Post Clip Max",
+          "display": "Post Clip Max",
+          "desc": "The Post-Clip Max value specifies the largest nodal value that will be present in the output data field."
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "Krig Settings",
+      "properties": [
+        {
+          "name": "Reach",
+          "display": "Reach",
+          "desc": "The Reach input field defines the radial distance (in user units) from any given model node that the kriging module will look for data points to be included in the estimation of the model parameter at that node. Setting the reach to 0 will result in the module calculating a reach value which is approximately two-thirds of the longest distance between any two data points in the data set."
+        },
+        {
+          "name": "Points In Reach",
+          "display": "Points In Reach",
+          "desc": "The Points In Reach value defines the maximum number of data points (within the specified reach) that will be considered for the parameter estimation at a model node. This value is not used for Nearest Neighbor interpolation or when the number of samples falls below the Use All Data threshold."
+        },
+        {
+          "name": "Quadrant Search",
+          "display": "Quadrant Search",
+          "desc": "When Quadrant Search is selected searching is performed for each of the quadrilaterals surrounding the point to be kriged. Within each quadrilateral a maximum number of points (up to one-fourth of the total points) are selected."
+        },
+        {
+          "name": "Use All Points",
+          "display": "Use All Points",
+          "desc": "The Use All Points toggle causes the module to include samples up to the All Points Limit value.  If the number of samples exceeds the limit value the Reach and Points In Reach settings are used."
+        },
+        {
+          "name": "All Points Limit",
+          "display": "All Points Limit",
+          "desc": "The All Points Limit is the maximum number of points to use when interpolating.  If there are more samples in the file than this value the Reach and Points In Reach settings will be used."
+        },
+        {
+          "name": "Min Max Plume Confidence",
+          "display": "Min Max Plume Confidence",
+          "desc": "The Min Max Plume Confidence value is used to specify what interval around the kriged model estimates the kriging confidence or uncertainty will apply to."
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "Variogram And Anisotropy",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Sample Settings",
+      "display": "Sample Settings",
+      "properties": [
+        {
+          "name": "Datamap",
+          "display": "Datamap",
+          "desc": "The Datamap refers the min and max values that are used by the datamap. This does not change data values from the file."
+        },
+        {
+          "name": "Display Spheres",
+          "display": "Display Spheres",
+          "desc": "The Display Spheres toggle will prevent the sample spheres from being displayed."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "Features To Label",
+          "display": "Features To Label",
+          "desc": "The Features To Label value allows the user to select the type of labeling performed."
+        },
+        {
+          "name": "Label Type",
+          "display": "Label Type",
+          "desc": "The Label Type allows the user to select between three font types. Forward Facing Fonts will always be aligned to the View.  TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D Label Settings",
+          "desc": "3D Label Settings allow the user to align the labels to an appropriate view."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font."
+        },
+        {
+          "name": "Label Color",
+          "display": "Label Color",
+          "desc": "Label Color allows the color for every label to be set."
+        },
+        {
+          "name": "Label Angle",
+          "display": "Label Angle",
+          "desc": "The Label Angle field determines where in a circle around the sample to place the label. For example a value of zero means place the labels to the direct right of the sample, a value of 90 would place the label directly above the sample."
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "Format Label Numbers",
+          "desc": "The Format Label Numbers control allows the user to set how numbers that are turned into labels will be formatted."
+        },
+        {
+          "name": "Top Offset",
+          "display": "Top Offset",
+          "desc": "The Top Offset field is the title (the well or boring ID label) offset in the z direction. This can raise or lower your title and is added to the Z offset to determine the z location of the title."
+        },
+        {
+          "name": "Radial Offset",
+          "display": "Radial Offset",
+          "desc": "The Radial Offset field is the radial offset, this determines how far from the sample to place the label, a value of 1 means to add the radius of the sphere to the XYZ location of the sample and place the label there."
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset is added to the Z coordinate in labeled sample to raise or lower the labels in the Z direction."
+        },
+        {
+          "name": "X Blank",
+          "display": "X Blank",
+          "desc": "The X Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Y Blank",
+          "display": "Y Blank",
+          "desc": "The Y Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Z Blank",
+          "display": "Z Blank",
+          "desc": "The Z Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Favor Min Value",
+          "display": "Favor Min Value",
+          "desc": "The Favor Min Value is used along with the X, Y, and Z Blanking fields.  This will switch the behavior of those fields to display the lowest value inside the box."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Sphere Display Component",
+          "display": "Sphere Display Component",
+          "desc": "The Sphere Display Component will change which component the spheres are colored by."
+        },
+        {
+          "name": "Mass Scale Factor",
+          "display": "Mass Scale Factor",
+          "desc": "The Mass Scale Factor is applied to the Deviation of the Min Mass, the Nominal Mass, and the Max Mass. It is used to scale these values, into more useful units."
+        },
+        {
+          "name": "Min Plume Visible",
+          "display": "Min Plume Visible",
+          "desc": "This value toggles the visibility of the Min Plume"
+        },
+        {
+          "name": "Min Plume",
+          "display": "Min Plume",
+          "desc": "This value controls the color of the Min Plume"
+        },
+        {
+          "name": "Nominal Plume Visible",
+          "display": "Nominal Plume Visible",
+          "desc": "This toggle controls the visibility of the Nominal Plume."
+        },
+        {
+          "name": "Nominal Plume",
+          "display": "Nominal Plume",
+          "desc": "This value controls the color of the Nominal Plume."
+        },
+        {
+          "name": "Max Plume Visible",
+          "display": "Max Plume Visible",
+          "desc": "This toggle controls the visibility of the Max Plume."
+        },
+        {
+          "name": "Max Plume",
+          "display": "Max Plume",
+          "desc": "This value controls the color of the Max Plume."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Priority",
+          "display": "Priority",
+          "desc": "The Priority of the glyph will reverse the scaling so that the smallest sample values have the largest size"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "Minimum Scale Factor",
+          "desc": "The Minimum Scale Factor scales the sample values with the least Priority"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "Maximum Scale Factor",
+          "desc": "The Maximum Scale Factor scales the sample values with the greatest Priority"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "Use Log Data",
+          "desc": "The Use Log Data toggle will force the size of the glyph to be based on the log10 of the selected data."
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The Sphere Subdivisions defines how finely the sample spheres are rendered.  Higher values mean smoother spheres but at a higher memory cost."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        }
+      ]
+    }
+  ]
+}

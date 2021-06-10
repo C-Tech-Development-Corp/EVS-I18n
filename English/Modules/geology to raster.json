@@ -1,0 +1,38 @@
+{
+  "name": "geology to raster",
+  "display": "geology to raster",
+  "desc": "The geology_to_raster module will create a raster file based on input geology.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Account For Hierarchy",
+          "display": "Account For Hierarchy",
+          "desc": "Account for Hierarchy is a toggle that forces hierarchy on multiple surfaces.  Use this IF the surfaces represent a geologic hierarchy."
+        },
+        {
+          "name": "Reverse Hierarchy",
+          "display": "Reverse Hierarchy",
+          "desc": "The Reverse Hierarchy toggle determines whether the surfaces will define layers in a normal (top to bottom) manner or reversed (if on)."
+        },
+        {
+          "name": "Minimum Thickness",
+          "display": "Minimum Thickness",
+          "desc": "Minimum Thickness forces layers thinner than the specified value to have a minimum thickness and therefore not pinch-out completely."
+        },
+        {
+          "name": "Output All Surfaces",
+          "display": "Output All Surfaces",
+          "desc": "Output All Surfaces is a toggle that determines if only the first surface is output or whether all should be included."
+        },
+        {
+          "name": "Selected Format",
+          "display": "Selected Format",
+          "desc": "The Selected Format allows the user to select the desired output type from a set list of options."
+        }
+      ]
+    }
+  ]
+}

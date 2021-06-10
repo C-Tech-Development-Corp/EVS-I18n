@@ -1,0 +1,40 @@
+{
+  "name": "transform field",
+  "display": "ƭřáñƨƒôř₥ ƒïèℓδ",
+  "desc": "Tλè ƭřáñƨƒôř₥_ƒïèℓδ ₥ôδúℓè ïƨ úƨèδ ƭô ƭřáñƨℓáƭè, řôƭáƭè ôř ƨçáℓè ƭλè çôôřδïñáƭèƨ áñ¥ ƒïèℓδ.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
+        }
+      ]
+    },
+    {
+      "name": "Transform Settings",
+      "display": "Třáñƨƒôř₥ §èƭƭïñϱƨ",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "Třáñƨƒôř₥ £ïƨƭ",
+          "desc": "Tλè ℓïƨƭ ôƒ ƭřáñƨƒôř₥áƭïôñ áƥƥℓïèδ ƭô ƭλè ïñƥúƭ ƒïèℓδ."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "Éжƭèřñáℓ Fáçèƨ",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Máж Éδϱè Âñϱℓè",
+          "desc": "Tλè Máж Éδϱè Âñϱℓè áñϱℓè ïƨ δèƒïñèδ áƨ ƭλè áñϱℓè βèƭωèèñ ƭωô ƒáçèƨ ôř çèℓℓƨ ïñ ƭλè ₥ôδèℓ."
+        }
+      ]
+    }
+  ]
+}

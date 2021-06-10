@@ -1,0 +1,84 @@
+{
+  "name": "interactive labels",
+  "display": "interactive labels",
+  "desc": "The interactive_labels module allows the user to place formatted labels at probed locations within the Viewer.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Export File",
+          "display": "Export File",
+          "desc": "Export current labels to an *.emt (EVS Multi-Text) file.  NOTE: This will also create an *.elf to store the leader lines if the Create Leader Line option is selected."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "The N1 value is a floating value that is passed in via the InputNumberVariable port for use in the expressions."
+        },
+        {
+          "name": "S1",
+          "display": "S1",
+          "desc": "The S1 value is a string value that is passed in via the InputStringVariable port for use in the expressions."
+        },
+        {
+          "name": "Create Leader Lines",
+          "display": "Create Leader Lines",
+          "desc": "Turning on the Create Leader Lines toggle will cause a line to be created from the probe point to the label origin."
+        },
+        {
+          "name": "Probe Action",
+          "display": "Probe Action",
+          "desc": "Allows for the changing of the label origin or for adding a new label at the probed location.  Only available when the viewer is connected."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font.  These values are module wide so apply to all Forward Facing selected fonts."
+        },
+        {
+          "name": "Control Expression",
+          "display": "Control Expression",
+          "desc": "The Control Expression is the expression used by all labels with a linked Expression value."
+        },
+        {
+          "name": "Created Labels",
+          "display": "Created Labels",
+          "desc": "The list of created labels."
+        },
+        {
+          "name": "Remove Current Label",
+          "display": "Remove Current Label",
+          "desc": "The Remove Current Label Button allows the user to remove the currently selected label from the list"
+        },
+        {
+          "name": "Current Label",
+          "display": "Current Label",
+          "desc": "The currently selected label from the Created Labels."
+        },
+        {
+          "name": "List Of Labels",
+          "display": "List Of Labels",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

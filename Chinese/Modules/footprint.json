@@ -1,0 +1,28 @@
+{
+  "name": "footprint",
+  "display": "footprint",
+  "desc": "footprint模块通过在指定的Z位置创建一个与3D输入相匹配的x-y范围的表面来创建2D footprint。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "X Resolution",
+          "display": "X分辨率",
+          "desc": "决定输出场中X轴的单元数。"
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y 分辨率",
+          "desc": "决定输出场中Y轴的单元数。"
+        },
+        {
+          "name": "Z Position",
+          "display": "Z 位置",
+          "desc": "决定输出在Z轴的位置。这将允许你把输出定位在最合适的高程上。"
+        }
+      ]
+    }
+  ]
+}

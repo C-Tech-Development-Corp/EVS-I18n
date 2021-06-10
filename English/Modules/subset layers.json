@@ -1,0 +1,23 @@
+{
+  "name": "subset layers",
+  "display": "subset layers",
+  "desc": "The subset_layers module allows you to subset geologic input.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "First Surface",
+          "display": "First Surface",
+          "desc": "The First Surface to include in the Output Field."
+        },
+        {
+          "name": "Last Surface",
+          "display": "Last Surface",
+          "desc": "The Last Surface to include in the Output Field."
+        }
+      ]
+    }
+  ]
+}

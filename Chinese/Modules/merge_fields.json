@@ -1,0 +1,53 @@
+{
+  "name": "merge_fields",
+  "display": "merge_fields",
+  "desc": "merge_fields模块将多达4个单独的输入场组合成一个具有任意数量节点数据组件的统一场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Nodal Data From Field 1",
+          "display": "节点数据来自场1",
+          "desc": "应该包含在输出中的来自场1的节点数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Cell Data From Field 1",
+          "display": "单元数据来自场1",
+          "desc": "应该包含在输出中的来自场1的单元数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Nodal Data From Field 2",
+          "display": "节点数据来自场2",
+          "desc": "应该包含在输出中的来自场1的节点数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Cell Data From Field 2",
+          "display": "单元数据来自场2",
+          "desc": "应该包含在输出中的来自场1的单元数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Nodal Data From Field 3",
+          "display": "节点数据来自场3",
+          "desc": "应该包含在输出中的来自场1的节点数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Cell Data From Field 3",
+          "display": "单元数据来自场3",
+          "desc": "应该包含在输出中的来自场1的单元数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Nodal Data From Field 4",
+          "display": "节点数据来自场4",
+          "desc": "应该包含在输出中的来自场1的节点数据。确保组件的顺序与每个输入是相同的。"
+        },
+        {
+          "name": "Cell Data From Field 4",
+          "display": "单元数据来自场4",
+          "desc": "应该包含在输出中的来自场1的单元数据。确保组件的顺序与每个输入是相同的。"
+        }
+      ]
+    }
+  ]
+}

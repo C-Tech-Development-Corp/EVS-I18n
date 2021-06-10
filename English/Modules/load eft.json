@@ -1,0 +1,23 @@
+{
+  "name": "load eft",
+  "display": "load eft",
+  "desc": "The load_eft module reads EVS Textured Field (*.eft) files and displays them.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Vertical Offset",
+          "display": "Vertical Offset",
+          "desc": "Vertical Offset translates your entire model in Z by the value input multiplied by the Z Exaggeration.  This is useful if you want to move your model to avoid having coincident objects."
+        }
+      ]
+    }
+  ]
+}

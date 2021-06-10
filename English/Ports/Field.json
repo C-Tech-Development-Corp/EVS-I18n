@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the current module properties."
+        }
+      ]
+    },
+    {
+      "name": "Port Information",
+      "display": "Port Information",
+      "properties": []
+    },
+    {
+      "name": "Statistics",
+      "display": "Statistics",
+      "properties": [
+        {
+          "name": "Number Of Nodes",
+          "display": "Number Of Nodes",
+          "desc": "Displays the number of nodes in the field."
+        },
+        {
+          "name": "Number Of Cell Sets",
+          "display": "Number Of Cell Sets",
+          "desc": "Displays the number of cell sets in the field."
+        },
+        {
+          "name": "Total Number Of Cells",
+          "display": "Total Number Of Cells",
+          "desc": "Displays the total number of cells in all cell sets of the field."
+        },
+        {
+          "name": "Number Of Node Data",
+          "display": "Number Of Node Data",
+          "desc": "Displays the number of nodal data components in the field."
+        },
+        {
+          "name": "Number Of Cell Data",
+          "display": "Number Of Cell Data",
+          "desc": "Displays the number of cell data components in the field."
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Coordinate Units",
+          "desc": "Displays the coordinate units in the field."
+        },
+        {
+          "name": "Coordinate Extents",
+          "display": "Coordinate Extents",
+          "desc": "Displays the coordinate extents of the field."
+        }
+      ]
+    }
+  ]
+}

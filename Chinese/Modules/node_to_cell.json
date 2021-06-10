@@ -1,0 +1,33 @@
+{
+  "name": "node_to_cell",
+  "display": "node_to_cell",
+  "desc": "该模块用来把节点数据组件插值至单元数据组件",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Node Components To Convert",
+          "display": "要转换的节点组件",
+          "desc": "允许用户选择将哪些节点数据转换为单元数据。"
+        },
+        {
+          "name": "Output Nodal Data",
+          "display": "输出节点数据",
+          "desc": "允许用户指定如何处理输入节点数据至输出。"
+        },
+        {
+          "name": "Strip Original Data",
+          "display": "剥除原始数据",
+          "desc": "该选项已被弃用-使用输出节点数据替代。"
+        },
+        {
+          "name": "Conversion Type",
+          "display": "转换类型",
+          "desc": "转换类型允许用户指定使用哪种类型的转换算法。第一种选择是连接到每个单元的节点的平均值。第二种选择是使用大多数节点共有的值;如果所有节点都有唯一的值，则使用最小的值。"
+        }
+      ]
+    }
+  ]
+}

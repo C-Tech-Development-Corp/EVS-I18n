@@ -1,0 +1,297 @@
+{
+  "name": "legend",
+  "display": "legend",
+  "desc": "The Legend module is used to place a color scale bar in the viewer window.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Legend Type",
+          "display": "Legend Type",
+          "desc": "The Legend Type allows the user to choose between a 2D legend in the overlay, or a 3D Legend that is in the model space."
+        }
+      ]
+    },
+    {
+      "name": "Label Options",
+      "display": "Label Options",
+      "properties": [
+        {
+          "name": "Labels On",
+          "display": "Labels On",
+          "desc": "The Labels On toggle is used to specify whether or not the data labels are to be displayed with the Legend."
+        },
+        {
+          "name": "Label Min",
+          "display": "Label Min",
+          "desc": "The Label Min toggle places a label at the bottom (min) of the data. This only applies to linear or log unformatted."
+        },
+        {
+          "name": "Label Max",
+          "display": "Label Max",
+          "desc": "The Label Max toggle places a label at the top (max) of the data. This only applies to linear or log unformatted."
+        },
+        {
+          "name": "Label Color",
+          "display": "Label Color",
+          "desc": "The Color to set each label."
+        },
+        {
+          "name": "Label Type",
+          "display": "Label Type",
+          "desc": "The Label Type allows the user to choose between data generated labels or user specified labels."
+        },
+        {
+          "name": "Logarithmic Decades",
+          "display": "Logarithmic Decades",
+          "desc": "When the data has been log processed the Logarithmic Decades determines the number of label increments in the color scale bar.  If the Log option is selected the Labels Per Log Decade value is used. If Unformatted is selected the Number Of Intervals is used."
+        },
+        {
+          "name": "Labels Per Log Decade",
+          "display": "Labels Per Log Decade",
+          "desc": "If the Log Option is Selected for Logarithmic Decades the increments per decade can be set with this value."
+        },
+        {
+          "name": "Number Of Intervals",
+          "display": "Number Of Intervals",
+          "desc": "If the data has been processed in linear space or the Unformatted option is Selected for Logarithmic Decades the total increments for the color scale bar can be set with this value."
+        },
+        {
+          "name": "Type In Labels",
+          "display": "Type In Labels",
+          "desc": "If the Type-In Labels option is selected for Label Processing, the labels may be set using this control."
+        },
+        {
+          "name": "Centered Type In Labels",
+          "display": "Centered Type In Labels",
+          "desc": ""
+        },
+        {
+          "name": "Title",
+          "display": "Title",
+          "desc": "The Specified Title to set for the Legend. This option is used when Title Based On is set to User Specified."
+        },
+        {
+          "name": "Units",
+          "display": "Units",
+          "desc": "The Units to add to the end of each label."
+        },
+        {
+          "name": "Units Display",
+          "display": "Units Display",
+          "desc": "The Units Display will affect where the units for the Legend will display, either after each value or appended to the title."
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "Format Label Numbers",
+          "desc": "The Format Label Numbers control allows the user to set how numbers that are turned into labels will be formatted."
+        },
+        {
+          "name": "Decimal Precision",
+          "display": "Decimal Precision",
+          "desc": "Removed"
+        },
+        {
+          "name": "Label Offset",
+          "display": "Label Offset",
+          "desc": "The Label Offset is the distance from the Legend the labels are created."
+        },
+        {
+          "name": "Title Offset",
+          "display": "Title Offset",
+          "desc": "The Title Offset is the distance from the Legend the title is created."
+        },
+        {
+          "name": "Format Character",
+          "display": "Format Character",
+          "desc": "Removed"
+        },
+        {
+          "name": "Font Type",
+          "display": "Font Type",
+          "desc": "The Label Type allows the user to select between three font types. Forward Facing Fonts will always be aligned to the View.  TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D Label Settings",
+          "desc": "3D Label Settings allow the user to align the labels to an appropriate view."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font."
+        },
+        {
+          "name": "Width Height Aspect",
+          "display": "Width Height Aspect",
+          "desc": "The Width Height Aspect determines the aspect ratio of the label text. A small width to height ratio creates narrow text and a large ratio creates wide text.  This is not enabled when using a Forward Facing Font."
+        },
+        {
+          "name": "Position Around Scale",
+          "display": "Position Around Scale",
+          "desc": "The Position Around Scale lets the user choose which corner of the break on the color scale to start writing the label at.  For 2D Legends the Front, Middle, and Back options are not meaningful."
+        },
+        {
+          "name": "Prepend Min",
+          "display": "Prepend Min",
+          "desc": "The Prepend Min string is placed before the label for the minimum value in the Legend."
+        },
+        {
+          "name": "Prepend Max",
+          "display": "Prepend Max",
+          "desc": "The Prepend Max string is placed before the label for the maximum value in the Legend."
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "Display Settings",
+      "properties": [
+        {
+          "name": "Datamap Min",
+          "display": "Datamap Min",
+          "desc": "The Datamap Min value is used to override the default minimum range from the input when setting the color scale"
+        },
+        {
+          "name": "Datamap Max",
+          "display": "Datamap Max",
+          "desc": "The Datamap Max value is used to override the default maximum range from the input when setting the color scale"
+        },
+        {
+          "name": "Flip Legend",
+          "display": "Flip Legend",
+          "desc": "The Flip Legend toggle inverts the legend putting high values at the bottom."
+        },
+        {
+          "name": "Boundary Lines",
+          "display": "Boundary Lines",
+          "desc": "The Boundary Lines toggle specifies whether or not a boundary box is to be drawn around the Legend scale bar."
+        },
+        {
+          "name": "Value Markers",
+          "display": "Value Markers",
+          "desc": "The Value Markers toggle specifies whether or not a tick mark is to be drawn at each label location."
+        },
+        {
+          "name": "Boundary",
+          "display": "Boundary",
+          "desc": "The Boundary value offsets the boundary lines from the Legend. The lines are offset in the directions perpindicular to the orientation.  For example if the legend is oriented in the X direction the boundary is offset in Y and Z."
+        },
+        {
+          "name": "Boundary Color",
+          "display": "Boundary Color",
+          "desc": "The Boundary Color sets the color of the lines that surround and divide the Legend."
+        },
+        {
+          "name": "Display Scale In Output",
+          "display": "Display Scale In Output",
+          "desc": "The Display Scale in Output toggle specifies whether or not to output the colored portion of the legend in the Legend�s Output Object port."
+        },
+        {
+          "name": "Force Gradiated Colors",
+          "display": "Force Gradiated Colors",
+          "desc": "The Force Gradiated Colors toggle will cause the Legend to display gradiated colors instead of solid color breaks when contour data is passed in."
+        },
+        {
+          "name": "Offset In Z Only",
+          "display": "Offset In Z Only",
+          "desc": "The Offset in Z Only toggle specifies whether (when on) to offset the boundary only in the z direction."
+        }
+      ]
+    },
+    {
+      "name": "Legend 2D Options",
+      "display": "Legend 2D Options",
+      "properties": [
+        {
+          "name": "Legend Direction 2D",
+          "display": "Legend Direction 2D",
+          "desc": "The Legend Direction 2D allows the user to set the orientation of the Legend when creating a 2D Legend."
+        },
+        {
+          "name": "Horizontal Position",
+          "display": "Horizontal Position",
+          "desc": "The starting Horizontal Postion to draw the Legend from. This value is in screen coordinates, not model coordinates."
+        },
+        {
+          "name": "Vertical Position",
+          "display": "Vertical Position",
+          "desc": "The starting Vertical Position to draw the Legend from. This value is in screen coordinates, not model coordinates."
+        },
+        {
+          "name": "Screen Depth",
+          "display": "Screen Depth",
+          "desc": "The starting Screen Depth to draw the Legend from. This control is used to place the legend either in front or behinde the model."
+        },
+        {
+          "name": "Legend Size 2D",
+          "display": "Legend Size 2D",
+          "desc": "The Size of the Legend in screen space."
+        },
+        {
+          "name": "Aspect Ratio 2d",
+          "display": "Aspect Ratio 2d",
+          "desc": "The Aspect Ratio restricts the size of the legend to a percentage of the Legend Size 2D."
+        }
+      ]
+    },
+    {
+      "name": "Legend 3D Options",
+      "display": "Legend 3D Options",
+      "properties": [
+        {
+          "name": "Legend Direction 3D",
+          "display": "Legend Direction 3D",
+          "desc": "The Legend Direction 3D allows the user to set the orientation of the Legend when creating a 3D Legend."
+        },
+        {
+          "name": "X Origin",
+          "display": "X Origin",
+          "desc": "The starting X coordinate to draw the Legend from."
+        },
+        {
+          "name": "Y Origin",
+          "display": "Y Origin",
+          "desc": "The starting Y coordinate to draw the Legend from."
+        },
+        {
+          "name": "Z Origin",
+          "display": "Z Origin",
+          "desc": "The starting Z coordinate to draw the Legend from."
+        },
+        {
+          "name": "Legend Size",
+          "display": "Legend Size",
+          "desc": "The Size of the Legend in Coordinate Space."
+        },
+        {
+          "name": "Aspect Ratio",
+          "display": "Aspect Ratio",
+          "desc": "The Aspect Ratio restricts the width of the legend to a percentage of the Legend Size."
+        },
+        {
+          "name": "Width To Depth Aspect Ratio",
+          "display": "Width To Depth Aspect Ratio",
+          "desc": "The Aspect Ratio restricts the depth of the legend to a percentage of the Legend Size."
+        }
+      ]
+    }
+  ]
+}

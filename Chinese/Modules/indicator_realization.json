@@ -1,0 +1,69 @@
+{
+  "name": "indicator_realization",
+  "display": "indicator_realization",
+  "desc": "从地质数据中修改和构建地质表面信息。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Shift Settings",
+      "display": "变换设置",
+      "properties": [
+        {
+          "name": "Randomness Generator Type",
+          "display": "随机产生器类型",
+          "desc": "随机产生器类型决定了实现偏差模式的性质。"
+        },
+        {
+          "name": "Anisotropy",
+          "display": "各向异性",
+          "desc": ""
+        },
+        {
+          "name": "Seed",
+          "display": "种子",
+          "desc": "种子用于随机数产生器，并使其可再生。"
+        },
+        {
+          "name": "Wavelength",
+          "display": "波长",
+          "desc": "波长影响随机产生器。这个值采用坐标系单位。值越小，输出频率变化越高。"
+        },
+        {
+          "name": "Min Max Confidence Equivalent",
+          "display": "最小最大置信度",
+          "desc": "实现偏离标称克立金结果将被限制在等效最小/最大(羽)范围内。该参数必须介于51.00%和99.995%之间。理论上50%与名义克里金结果相同。"
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "数据导出",
+      "properties": [
+        {
+          "name": "Geologic Nodal Data",
+          "display": "地质节点数据",
+          "desc": "地质节点数据选项让用户决定为输出场生成哪些节点数据组件。"
+        },
+        {
+          "name": "Geologic Cell Data",
+          "display": "地质单元数据",
+          "desc": "地质单元数据选项让用户决定为输出场生成哪些单元数据组件。"
+        },
+        {
+          "name": "Probability",
+          "display": "概率",
+          "desc": "概率开关将导出一个数据值，该值描述该单元格或节点作为所选材料的概率。"
+        },
+        {
+          "name": "Probabilities By Material",
+          "display": "按材料概率",
+          "desc": "材料的概率导出一个数据值，该值描述该单元格或节点可能是每个不同材料的概率。"
+        }
+      ]
+    }
+  ]
+}

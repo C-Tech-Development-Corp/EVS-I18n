@@ -1,0 +1,124 @@
+{
+  "name": "cell volumetrics",
+  "display": "cell volumetrics",
+  "desc": "The cell_volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": []
+    },
+    {
+      "name": "Input Settings",
+      "display": "Input Settings",
+      "properties": [
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "The Nodal Data Component used to subset the input."
+        },
+        {
+          "name": "Cell Sets",
+          "display": "Cell Sets",
+          "desc": "The Cell Sets selection list allows the user to select which of the cell sets (or possibly geologic layers) the volumes and masses will be calculated in."
+        },
+        {
+          "name": "Auto Detect Units",
+          "display": "Auto Detect Units",
+          "desc": "The Auto Detect Units toggle will try to determine which Nodal Data Units to use based on the Nodal Data Component and the Processing Type.  It will also try to determine the Coordinate Units based on the input field."
+        },
+        {
+          "name": "Calculation Type",
+          "display": "Calculation Type",
+          "desc": "The Calculation Type determines what type of units to process the Nodal Data Component in."
+        },
+        {
+          "name": "Soil Nodal Data Units",
+          "display": "Soil Nodal Data Units",
+          "desc": "The Soil Nodal Data Units for the Soil Calculation Type and the Nodal Data Component."
+        },
+        {
+          "name": "Groundwater Nodal Data Units",
+          "display": "Groundwater Nodal Data Units",
+          "desc": "The Groundwater Nodal Data Units for the Groundwater Calculation Type and the Nodal Data Component."
+        },
+        {
+          "name": "Nodal Data Unit Ratio",
+          "display": "Nodal Data Unit Ratio",
+          "desc": "If Nodal Data Units have been set to Specify the user needs to set the Nodal Data Unit Ratio. This is the ratio of the user specified units to the units we use for calculation. For example, the units we use for the Nodal Data Component in our calculations are grams/grams. If you wanted to use the units of mg/kg (ppm) you would need to find the ratio to convert the units which is in this case .001/1000 or .000001."
+        },
+        {
+          "name": "Nodal Specified Units",
+          "display": "Nodal Specified Units",
+          "desc": "If Nodal Data Units have been set to Specify the user needs to set the Nodal Specified Units label so that the correct units can be displayed."
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Coordinate Units",
+          "desc": "The Coordinate Units of the input field."
+        },
+        {
+          "name": "Coordinate Unit Ratio",
+          "display": "Coordinate Unit Ratio",
+          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Unit Ratio.  The ratio should be the factor needed to convert between the user specified units and Liters."
+        },
+        {
+          "name": "Coordinate Specified Units",
+          "display": "Coordinate Specified Units",
+          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Specified Units.  This is the label used in the output."
+        }
+      ]
+    },
+    {
+      "name": "Output Settings",
+      "display": "Output Settings",
+      "properties": [
+        {
+          "name": "Volume Units",
+          "display": "Volume Units",
+          "desc": "Volume Units is used to select which units the volume should be calculated in. "
+        },
+        {
+          "name": "Volume Units Ratio",
+          "display": "Volume Units Ratio",
+          "desc": "If the Volume Units is set to Specify the user must set the Volume Units Ratio. The ratio should be the factor needed to convert between the user specified units and liters. For example if your units were Cubic Meters the ratio would be 1000."
+        },
+        {
+          "name": "Volume Specified Units",
+          "display": "Volume Specified Units",
+          "desc": "If the Volume Units is set to Specify the user must set the Volume Specified Units.  This label will be used in the output."
+        },
+        {
+          "name": "Mass Units",
+          "display": "Mass Units",
+          "desc": "Mass Units is used to select which units the mass should be calculated in."
+        },
+        {
+          "name": "Mass Unit Ratio",
+          "display": "Mass Unit Ratio",
+          "desc": "If the Mass Units is set to Specify the user must set the Mass Unit Ratio. The ratio should be the factor needed to convert between the user specified units and kilograms."
+        },
+        {
+          "name": "Mass Specified Units",
+          "display": "Mass Specified Units",
+          "desc": "If the Mass Units is set to Specify the user must set the Mass Unit Ratio. This label will be used in the output."
+        },
+        {
+          "name": "Output Field Data",
+          "display": "Output Field Data",
+          "desc": "The Output Field Data allows the user to select which cell data components to include in the Output Field."
+        },
+        {
+          "name": "Output Results To File",
+          "display": "Output Results To File",
+          "desc": "The Output Results To File toggle causes volumetrics to write a file, specified by the Filename, that contains all volumetrics information in a format suitable for input to programs like Excel (tab delimited .txt file). This file is written to in an append mode. It will grow in size as you use volumetrics. You should delete or move the file when you're done with it."
+        },
+        {
+          "name": "Overwrite File",
+          "display": "Overwrite File",
+          "desc": "The Overwrite file toggle will create a new file when on or append to a file when off."
+        }
+      ]
+    }
+  ]
+}

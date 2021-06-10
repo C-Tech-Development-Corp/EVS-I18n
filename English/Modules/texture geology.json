@@ -1,0 +1,68 @@
+{
+  "name": "texture geology",
+  "display": "texture geology",
+  "desc": "The texture_geology module will texture multiple images onto a field based on the geologic data in the field.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
+        {
+          "name": "Image Filenames",
+          "display": "Image Filenames",
+          "desc": "The file names of the images to be used for texturing the data. Each file will be applied to a single cell set or layer in the input."
+        },
+        {
+          "name": "Cell Sets To Output",
+          "display": "Cell Sets To Output",
+          "desc": "The Cell Sets To Output control allows the user to select the cell sets from the Output Field to include in the output."
+        },
+        {
+          "name": "Azimuth Inclination",
+          "display": "Azimuth Inclination",
+          "desc": "The Azimuth defines the compass direction from the camera eye point towards the model.  Inclination defines the angle from the camera's eye point towards the model. These values in this case apply to the orientation of the image itself."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "Roll describes the rotation of the camera itself along it's direction of view."
+        },
+        {
+          "name": "Mirror",
+          "display": "Mirror",
+          "desc": "The Mirror toggle will change the behaviour of the module in cases where the size of the images are smaller than that of the surface it is being mapped onto.  When this toggle is turned off the images will just repeat when the image reaches its maximum resolution. If this toggle is turned on the images will instead flip over when it reaches its maximum resolution.  This can make a more seamless texture when using certain images."
+        },
+        {
+          "name": "X Size",
+          "display": "X Size",
+          "desc": "The X Size value will scale the size of the images in the x direction."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "This X Offset value will cause the images to shift in the x direction when being mapped onto the surface."
+        },
+        {
+          "name": "Y Size",
+          "display": "Y Size",
+          "desc": "The Y Size value will scale the size of the images in the y direction."
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset value will cause the images to shift in the y direction when being mapped onto the surface."
+        }
+      ]
+    }
+  ]
+}

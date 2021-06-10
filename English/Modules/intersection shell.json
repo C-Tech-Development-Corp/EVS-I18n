@@ -1,0 +1,86 @@
+{
+  "name": "intersection shell",
+  "display": "intersection shell",
+  "desc": "The intersection_shell module outputs a non-volumetric version of a sequentially subset plume.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Include Varying Surface",
+          "display": "Include Varying Surface",
+          "desc": "The Include Varying Surface Toggle controls the visibility of the surface(s) having varying data (based on the Map Component. The ability to control visibility of portions of the output allows you to use multiple intersection shell modules and color or texture_map portions of each plume differently."
+        },
+        {
+          "name": "Output String",
+          "display": "Output String",
+          "desc": "The Output String contains the name(s) and value(s) of the intersection subsets."
+        },
+        {
+          "name": "Above Output String",
+          "display": "Above Output String",
+          "desc": "When the Include Region is set to Above, the Output String will use this string as its identifier."
+        },
+        {
+          "name": "Output String Delimiter",
+          "display": "Output String Delimiter",
+          "desc": "When the Output String consists of All Subsets, the Delimiter is the string occuring between each subset text."
+        },
+        {
+          "name": "Below Output String",
+          "display": "Below Output String",
+          "desc": "When the Include Region is set to Below, the Output String will use this string as its identifier."
+        }
+      ]
+    },
+    {
+      "name": "Subsetting Values",
+      "display": "Subsetting Values",
+      "properties": [
+        {
+          "name": "Subset List",
+          "display": "Subset List",
+          "desc": "The list of serial subsets."
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "Subsetting Level Has Been Set",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "Data Processing",
+      "properties": [
+        {
+          "name": "Output Nodal Data",
+          "display": "Output Nodal Data",
+          "desc": "The Output Nodal Data choice allows the user to select the nodal data to include in the output."
+        },
+        {
+          "name": "Output Cell Data",
+          "display": "Output Cell Data",
+          "desc": "The Output Cell Data choice allows the user to select the cell data to include in the output."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

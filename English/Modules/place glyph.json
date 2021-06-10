@@ -1,0 +1,94 @@
+{
+  "name": "place glyph",
+  "display": "place glyph",
+  "desc": "The place_glyph module is used to place a single scalable geometric objects (glyph) at an interactively determined location.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Glyph Scale",
+          "display": "Glyph Scale",
+          "desc": "The place_glyph module is used to place a single scalable geometric objects (glyph) at an interactively determined location."
+        },
+        {
+          "name": "X Position",
+          "display": "X Position",
+          "desc": "Sets the X Position of the output glyph."
+        },
+        {
+          "name": "Y Position",
+          "display": "Y Position",
+          "desc": "Sets the Y Position of the output glyph."
+        },
+        {
+          "name": "Z Position",
+          "display": "Z Position",
+          "desc": "Sets the Z Position of the output glyph."
+        },
+        {
+          "name": "Include Center Data",
+          "display": "Include Center Data",
+          "desc": "The Include Center Data toggle will tell the module to include the center point of each glyph as a cell data component.  This allows the user to probe onto glyph and return its center instead of the position on the outside of the glyph."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Type",
+          "display": "Glyph Type",
+          "desc": "The Glyph Type choice allows the user to select the source for the created glyph.  Both the Generated and Directed Line options are created by the internally.  The Input Glyph option requires the InputGlyph port to be connected."
+        },
+        {
+          "name": "Include Glyph Data",
+          "display": "Include Glyph Data",
+          "desc": "The Include Glyph Data will notify the module to keep data from the Input Glyph field as data for the output"
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "Generated Glyph",
+          "desc": "The Generated Glyph choice allows the user to select the type of glyph that is automatically generated."
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "Sphere Subdivisions",
+          "desc": "The number of subdivisions to use for spheres. Larger numbers create more detailed sphere representations."
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "Glyph Resolution",
+          "desc": "The resolution for generated cone, polygon, cylinder, and disk glyphs."
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "Primary Axis Factor",
+          "desc": "The scale factor for the primary axis of the glyph."
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "Secondary Axis Factor",
+          "desc": "The scale factor for the secondary axis of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The roll of the glyph along its primary axis."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        }
+      ]
+    }
+  ]
+}

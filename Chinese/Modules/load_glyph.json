@@ -1,0 +1,43 @@
+{
+  "name": "load_glyph",
+  "display": "load_glyph",
+  "desc": "load_glyph模块读取以三种主要EVS场文件格式之一保存的图元。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Offset Base",
+          "display": "基底偏移",
+          "desc": "基底偏移是一个切换开关，它将原点从图元的质心更改为基底。"
+        },
+        {
+          "name": "Alignment",
+          "display": "对齐",
+          "desc": "对齐方式允许用户选择如何确定图元的方向。"
+        },
+        {
+          "name": "Roll",
+          "display": "滚动",
+          "desc": "滚动是一个值，允许您控制围绕滚动轴(图元方向轴)的旋转。"
+        },
+        {
+          "name": "Length Factor",
+          "display": "长度因子",
+          "desc": "长度因子允许缩放图元长度。"
+        },
+        {
+          "name": "Width Factor",
+          "display": "宽度因子",
+          "desc": "宽度因子允许缩放图元宽度。"
+        },
+        {
+          "name": "Height Factor",
+          "display": "高度因子",
+          "desc": "高度因子允许缩放图元高度。"
+        }
+      ]
+    }
+  ]
+}

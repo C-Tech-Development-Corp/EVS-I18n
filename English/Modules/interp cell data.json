@@ -1,0 +1,33 @@
+{
+  "name": "interp cell data",
+  "display": "interp cell data",
+  "desc": "The interp_cell_data module interpolates cell data from one field to another using a Nearest Neighbor interpolation.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Include Original Nodal Data",
+          "display": "Include Original Nodal Data",
+          "desc": "The Include Original Nodal Data toggle will cause all nodal data from the Input Destination Field to be copied to the Output Field. NOTE: Leaving this toggle on will cause the nodal data to be displayed and not the interpolated cell data."
+        },
+        {
+          "name": "Cell Data To Interpolate",
+          "display": "Cell Data To Interpolate",
+          "desc": "The Cell Data To Interpolate toggle allows the user to select which cell data components from the Input Cell Data field to interpolate."
+        },
+        {
+          "name": "Cell Data To Include",
+          "display": "Cell Data To Include",
+          "desc": "The Cell Data To Include control lists all of the cell data from the Input Destination Field that can be included in the output. This data will occur after the interpolated data in the field."
+        }
+      ]
+    }
+  ]
+}

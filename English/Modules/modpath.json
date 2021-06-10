@@ -1,0 +1,84 @@
+{
+  "name": "modpath",
+  "display": "modpath",
+  "desc": "The modpath module uses the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "DWR File",
+          "display": "DWR File",
+          "desc": "The DWR File shows which .dwr/.dwz file has been selected, this file contains MODFLOW package data such as drains, wells, recharge, etc..."
+        },
+        {
+          "name": "Particle Direction",
+          "display": "Particle Direction",
+          "desc": "The Particle Direction allows the user to specify forward or backward path projection. Paths start from the specified starting points and travel until the selected option in either the Time Options category or the Sink Options category are satisfied. "
+        },
+        {
+          "name": "Time Options",
+          "display": "Time Options",
+          "desc": "The Time Options control indicates the time based stopping condition for the particles. Run to end indicates that the particle will run until it cannot escape a cell due to lack of flow. Run for date allows a particle to travel from a start date to an end date. The duration option allows the particles to run for a duration of time in days."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the starting time for the particle run."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the ending time for the particle run."
+        },
+        {
+          "name": "Duration",
+          "display": "Duration",
+          "desc": "If 'Run for duration' is selected in Time Options, the duration of the simulation can be set using this control."
+        },
+        {
+          "name": "Sink Options",
+          "display": "Sink Options",
+          "desc": "The Sink Options control indicates stopping conditions for the particles based on the amount of flow through a cell. The Pass through cells with weak sinks option allows all particles to pass through a cell, unless that cell has a strong sink. The Stop in cells with weak sinks button does not allow a particle to pass unless the flow out of a cell is greater than or equal the flow into it. The last option, Stop if discharge to sink is > specified fraction of inflow to cell, allows the user to specify what fraction of inflow will stop particles in that cell."
+        },
+        {
+          "name": "Fraction",
+          "display": "Fraction",
+          "desc": "The Fraction of inflow to stop particles in that cell"
+        }
+      ]
+    },
+    {
+      "name": "Display Options",
+      "display": "Display Options",
+      "properties": [
+        {
+          "name": "Map Component",
+          "display": "Map Component",
+          "desc": "The Data component allows the user to choose which computed data component to use for coloring the lines."
+        },
+        {
+          "name": "Coloring Options",
+          "display": "Coloring Options",
+          "desc": "The Coloring Options control allows the user to specify Magnitude(normal) or Log10(Magnitude) representation of the velocity data for coloring purposes. When velocities span several orders of magnitude working in log space is useful. "
+        },
+        {
+          "name": "Minimum Magnitude",
+          "display": "Minimum Magnitude",
+          "desc": "The Minimum Magnitude of the output data."
+        },
+        {
+          "name": "Maximum Magnitude",
+          "display": "Maximum Magnitude",
+          "desc": "The Maximum Magnitude of the output data."
+        }
+      ]
+    }
+  ]
+}

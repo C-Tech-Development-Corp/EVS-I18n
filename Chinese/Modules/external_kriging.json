@@ -1,0 +1,76 @@
+{
+  "name": "external_kriging",
+  "display": "external_kriging",
+  "desc": "该模块将将以简单的GeoEAS格式输出数据和网格。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Translate Coordinates",
+          "display": "变换坐标",
+          "desc": "当打开时，根据输入的值将整个模型转换回原点。如果输入值保持为0.0，则将根据模型的质心计算这些值。"
+        },
+        {
+          "name": "Translate Values",
+          "display": "变换值",
+          "desc": "如果转换坐标开关打开，则根据输入的转换值将整个模型转换回原点。如果输入值保持为0.0，则将根据模型的质心计算这些值。"
+        }
+      ]
+    },
+    {
+      "name": "Export Data",
+      "display": "输出数据",
+      "properties": [
+        {
+          "name": "Exponentiate Exported Log Data",
+          "display": "导出对数数据求幂",
+          "desc": "如果任何节点数据被对数处理，那么打开此开关将在导出之前对其进行求幂。"
+        },
+        {
+          "name": "Export Nodal Data For Output",
+          "display": "导出节点数据",
+          "desc": "允许用户选择输出的节点数据"
+        },
+        {
+          "name": "Export Data Filename",
+          "display": "导出数据文件名",
+          "desc": "导出数据的文件名。"
+        }
+      ]
+    },
+    {
+      "name": "Export Grid Requires Grid",
+      "display": "导出网格需要网格",
+      "properties": [
+        {
+          "name": "Exponentiate Log Grid Data",
+          "display": "对数网格数据求幂",
+          "desc": "如果网格中有已被对数处理的数据，此开关将导致在导出时对其求幂。"
+        },
+        {
+          "name": "Nodal Data For Grid Output",
+          "display": "输出网格的节点数据",
+          "desc": "选择网格输出的节点数据。"
+        },
+        {
+          "name": "Export Grid Filename",
+          "display": "输出网格文件名",
+          "desc": "导出网格的文件名。"
+        }
+      ]
+    },
+    {
+      "name": "Import Data Requires Grid",
+      "display": "导入数据需要网格",
+      "properties": [
+        {
+          "name": "Import Data Filename",
+          "display": "导入数据文件名",
+          "desc": "导入的数据文件。"
+        }
+      ]
+    }
+  ]
+}

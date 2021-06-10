@@ -1,0 +1,53 @@
+{
+  "name": "plume cell",
+  "display": "plume cell",
+  "desc": "The plume_cell module is a subsetting module used to eliminate whole cells from the input mesh based on the nodal data of one or more nodes that comprise the cells.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Subset By",
+          "display": "Subset By",
+          "desc": "The Subset By control allows the user to chose which criteria to use for subsetting cells."
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "The N1 value may be passed in via the InputNumberVariable1 port and is usable by the expression"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "The N2 value may be passed in via the InputNumberVariable2 port and is usable by the expression"
+        },
+        {
+          "name": "Subset Expression",
+          "display": "Subset Expression",
+          "desc": "The Subset Expression is used to determine which node or cell to include in the output. All expressions should resolve to either a true or false for each node (if using a nodal subset) or cell (if using a cell subset). Refer to the Module Help which contains many examples of Subset Expressions and acceptable operators"
+        },
+        {
+          "name": "Nodal Subset Variables",
+          "display": "Nodal Subset Variables",
+          "desc": "The Variables to use to set the criteria when subsetting by nodal data."
+        },
+        {
+          "name": "Expression Cells To Include",
+          "display": "Expression Cells To Include",
+          "desc": "The Expression Cells To Include value allows the user to include a cell if all nodes in the cell match the expression criteria, or if any of the nodes in the cell match the expression criteria."
+        },
+        {
+          "name": "Cell Subset Variables",
+          "display": "Cell Subset Variables",
+          "desc": "The Variables to use to set the criteria when subsetting by cell data."
+        }
+      ]
+    }
+  ]
+}

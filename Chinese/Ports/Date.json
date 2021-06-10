@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "name": "Port Information",
+      "display": "端口信息",
+      "properties": []
+    },
+    {
+      "name": "Values",
+      "display": "值",
+      "properties": [
+        {
+          "name": "Data",
+          "display": "日期",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

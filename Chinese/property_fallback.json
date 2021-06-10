@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "name": "Z Scale",
+      "display": "Z轴比例",
+      "desc": "沿竖直方向（z方向）放大的比例系数."
+    },
+    {
+      "name": "Explode",
+      "display": "炸开",
+      "desc": "炸开值是不同地层、单元集、材料炸开后的距离。例如，炸开值设置为20，软件会将把上下相邻的地质层炸开20m距离。请注意，炸开距离和比例系数是叠加作用的，因此如果把Z轴比例设置为5，炸开值设置为20，那么地质层将会被分开100m"
+    },
+    {
+      "name": "Output Quality",
+      "display": "输出质量",
+      "desc": ""
+    },
+    {
+      "name": "Configuration Executed",
+      "display": "配置执行", 
+      "desc": ""
+    },
+    {
+      "name": "Allow Run",
+      "display": "允许运行", 
+      "desc": "“允许运行”开关控制着当应用载入或者数据改变时是否执行。选择“on”，则当应用载入或者点击“执行”按钮模块将会允许。反之如果选择”off“，除非点击”执行“按钮，否则模块不会运行。"
+    },
+    {
+      "name": "Filename",
+      "display": "文件名",
+      "desc": "文件名包含了可以内插值到已创建网格上的数据"
+    },
+    {
+      "name": "Execute",
+      "display": "执行",
+      "desc": "“执行”按钮使模块运行。如果该按钮已经点击并且应用已经保存，那么当应用载入时会促使模块运行。"
+    },
+    {
+      "name": "Port Name",
+      "display": "端口名称",
+      "desc": "显示该连接输出端口的名称"
+    },
+    {
+      "name": "Port Description",
+      "display": "端口描述",
+      "desc": "显示该连接输出端口的描述"
+    },
+    {
+      "name": "Port Type",
+      "display": "端口类型",
+      "desc": "显示该连接输出端口的类型"
+    },
+    {
+      "name": "Port Subtypes",
+      "display": "端口子类型",
+      "desc": "显示该连接输出端口的当前子类型"
+    },
+    {
+      "name": "Object Color",
+      "display": "对象颜色",
+      "desc": "如果模型没有关联数据，则可以设置模型的默认颜色"
+    },
+    {
+      "name": "Vector Component",
+      "display": "矢量组件",
+      "desc": "如果纹理依据被设置为节点数据或者单元数据，矢量组件允许用户使用矢量数据中的单个组件来设置纹理。"
+    },
+    {
+      "name": "Use Vector Magnitude",
+      "display": "使用矢量大小",
+      "desc": " 如果纹理依据设置为节点数据或者单元数据，该选项允许用户使用矢量数据大小来设置纹理的大小。"
+    },
+    {
+      "name": "Node Data",
+      "display": "节点数据",
+      "desc": "如果颜色依据设置为节点数据，则选中的节点数据组件将会设置数据映射。"
+    },
+    {
+      "name": "Cell Data",
+      "display": "单元数据 ",
+      "desc": "如果颜色依据设置为单元数据，则选中的单元数据组件将会设置数据映射。"
+    },
+    {
+      "name": "Color Type",
+      "display": "颜色类型",
+      "desc": "颜色类型允许用户去设置应该如何确定输出的颜色"
+    }
+  ]
+}

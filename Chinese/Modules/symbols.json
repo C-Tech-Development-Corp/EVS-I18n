@@ -1,0 +1,33 @@
+{
+  "name": "symbols",
+  "display": "symbols",
+  "desc": "Symbols根据一组用户定义的参数创建不同钻孔标识符的符号表示。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Z Offset",
+          "display": "Z 偏移",
+          "desc": "Z偏移值会使得符号垂直移动。"
+        },
+        {
+          "name": "Black White Contrast",
+          "display": "黑白对比度",
+          "desc": "黑白对比度设置所产生的浅色和深色之间的对比。如果值为0.50(默认值)，那么最亮的颜色为0.75灰色，最暗的颜色为0.25灰色。值为1.0就会变成黑白。"
+        },
+        {
+          "name": "Radius Scaling",
+          "display": "半径缩放",
+          "desc": "半径缩放值用于根据用户单位缩放符号的半径。符号的整体大小受此参数影响。"
+        },
+        {
+          "name": "Ring Thickness",
+          "display": "环形厚度",
+          "desc": "环形厚度参数设置第一个多边形的轮廓厚度。"
+        }
+      ]
+    }
+  ]
+}
