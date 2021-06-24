@@ -1,7 +1,7 @@
 {
   "name": "triangulate polygons",
   "display": "triangulate polygons",
-  "desc": "triangulate_polygons converts a closed polyline into a triangulated surface.",
+  "desc": "Converts a closed polyline into a triangulated surface.",
   "categories": [
     {
       "name": "Properties",

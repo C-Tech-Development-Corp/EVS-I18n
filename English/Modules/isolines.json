@@ -1,7 +1,7 @@
 {
   "name": "isolines",
   "display": "isolines",
-  "desc": "The isolines module is used to produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface.",
+  "desc": "Produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface.",
   "categories": [
     {
       "name": "Properties",

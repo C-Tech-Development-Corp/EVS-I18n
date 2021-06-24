@@ -1,7 +1,7 @@
 {
   "name": "place text",
   "display": "place text",
-  "desc": "The place_text module provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text.",
+  "desc": "Provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text.",
   "categories": [
     {
       "name": "Properties",

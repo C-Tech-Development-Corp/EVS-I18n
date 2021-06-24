@@ -1,7 +1,7 @@
 {
   "name": "create fault surface",
   "display": "create fault surface",
-  "desc": "The create_fault_surface module creates a 3D grid that is aligned to a specified strike and dip.",
+  "desc": "Create a 3D grid that is aligned to a specified strike and dip.",
   "categories": [
     {
       "name": "Properties",

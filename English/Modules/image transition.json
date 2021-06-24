@@ -1,7 +1,7 @@
 {
   "name": "image transition",
   "display": "image transition",
-  "desc": "The image_transition module receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes.",
+  "desc": "Receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes.",
   "categories": [
     {
       "name": "Properties",

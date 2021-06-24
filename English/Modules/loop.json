@@ -1,7 +1,7 @@
 {
   "name": "loop",
   "display": "loop",
-  "desc": "The loop module iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane..",
+  "desc": "Iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane..",
   "categories": [
     {
       "name": "Properties",

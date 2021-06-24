@@ -1,7 +1,7 @@
 {
   "name": "cell volumetrics",
   "display": "cell volumetrics",
-  "desc": "The cell_volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell.",
+  "desc": "Calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell.",
   "categories": [
     {
       "name": "Properties",

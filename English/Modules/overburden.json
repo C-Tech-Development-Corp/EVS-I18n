@@ -1,7 +1,7 @@
 {
   "name": "overburden",
   "display": "overburden",
-  "desc": "The overburden module computes the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size).",
+  "desc": "Compute the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size).",
   "categories": [
     {
       "name": "Properties",

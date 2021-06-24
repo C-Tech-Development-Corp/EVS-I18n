@@ -1,7 +1,7 @@
 {
   "name": "extrude",
   "display": "extrude",
-  "desc": "The extrude module accepts any mesh and adds one to the dimensionality of the input by extruding the mesh in the Z direction.",
+  "desc": "Accepts surfaces, lines, or points and adds one to the dimensionality of the input by extruding the mesh in the Z direction.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "well decommission",
   "display": "well decommission",
-  "desc": "The well_decommission module analyzes all available data and quantifies the impact to site assessment quality of removing each well. ",
+  "desc": "Analyzes all available data and quantifies the impact to site assessment quality of removing each well. ",
   "categories": [
     {
       "name": "Properties",

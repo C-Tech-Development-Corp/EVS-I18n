@@ -1,0 +1,34 @@
+{
+  "name": "select cell sets",
+  "display": "select cell sets",
+  "desc": "Select individual geologic layers or lithologic materials for output.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Select Cell Sets",
+          "display": "Select Cell Sets",
+          "desc": "The Select Cell Sets control allows the user to select the cell sets from the Input Field to include in the output."
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "External Faces",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "write lines",
   "display": "write lines",
-  "desc": "The write_lines module is used to save a series of points with data connected by lines. These lines are stored in the EVS Line File format.",
+  "desc": "Save a series of points with data connected by lines. These lines are stored in the EVS Line File format.",
   "categories": [
     {
       "name": "Properties",

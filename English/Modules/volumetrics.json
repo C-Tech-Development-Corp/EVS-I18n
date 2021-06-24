@@ -1,7 +1,7 @@
 {
   "name": "volumetrics",
   "display": "volumetrics",
-  "desc": "The volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water.",
+  "desc": "Calculate the volumes and masses of soil, and chemicals in soils and ground water.",
   "categories": [
     {
       "name": "Properties",

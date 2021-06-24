@@ -1,7 +1,7 @@
 {
   "name": "read wavefront obj",
   "display": "read wavefront obj",
-  "desc": "The read_obj module reads Wavefront OBJ files for display.",
+  "desc": "Read Wavefront OBJ files for display.",
   "categories": [
     {
       "name": "Properties",

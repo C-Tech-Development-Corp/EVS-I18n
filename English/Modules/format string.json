@@ -1,7 +1,7 @@
 {
   "name": "format string",
   "display": "format string",
-  "desc": "The format_string module provides a simple means to convert values coming from various numeric and string input ports into a resultant string.",
+  "desc": "Convert values coming from various numeric and string input ports into a resultant string.",
   "categories": [
     {
       "name": "Properties",

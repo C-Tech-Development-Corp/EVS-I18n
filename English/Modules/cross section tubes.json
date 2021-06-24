@@ -1,7 +1,7 @@
 {
   "name": "cross section tubes",
   "display": "cross section tubes",
-  "desc": "The cross_section_tubes module is used to produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes.",
+  "desc": "Produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes.",
   "categories": [
     {
       "name": "Properties",

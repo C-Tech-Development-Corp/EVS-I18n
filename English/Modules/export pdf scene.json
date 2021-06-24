@@ -1,7 +1,7 @@
 {
   "name": "export pdf scene",
   "display": "export pdf scene",
-  "desc": "The export pdf scene module provides EVS with vector output of 3D models for the C Tech PDF Converter.",
+  "desc": "Export EVS scenes with vector output of 3D models for the C Tech PDF Converter.",
   "categories": [
     {
       "name": "Properties",

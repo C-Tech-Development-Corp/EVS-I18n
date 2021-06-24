@@ -1,7 +1,7 @@
 {
   "name": "horizon ranking",
   "display": "horizon ranking",
-  "desc": "The horizon_ranking module is used to give the user control over individual surface priorities and rankings.",
+  "desc": "Adjust individual horizon priorities and rankings.",
   "categories": [
     {
       "name": "Properties",

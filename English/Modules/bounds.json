@@ -1,7 +1,7 @@
 {
   "name": "bounds",
   "display": "bounds",
-  "desc": "The bounds module generates lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh.",
+  "desc": "Generate lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh.",
   "categories": [
     {
       "name": "Properties",

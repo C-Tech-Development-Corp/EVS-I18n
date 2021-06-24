@@ -1,7 +1,7 @@
 {
   "name": "texture walls",
   "display": "texture walls",
-  "desc": "The texture_walls module provides a means to project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
+  "desc": "Project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "shrink cells",
   "display": "shrink cells",
-  "desc": "The shrink_cells module produces a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. ",
+  "desc": "Produce a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. ",
   "categories": [
     {
       "name": "Properties",

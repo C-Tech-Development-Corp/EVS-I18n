@@ -1,7 +1,7 @@
 {
   "name": "fly through",
   "display": "fly through",
-  "desc": "The fly_through module facilitates controlling the Viewer or creating an animation in which the view follows a complex 3D path on, through, or around your model.",
+  "desc": "Create an animation in which the view follows a complex 3D path on, through, or around your model.",
   "categories": [
     {
       "name": "Properties",

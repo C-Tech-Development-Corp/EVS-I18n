@@ -1,7 +1,7 @@
 {
   "name": "texture sphere",
   "display": "texture sphere",
-  "desc": "The texture_sphere module provides a means to (texture map) project images onto a sphere.",
+  "desc": "Project images onto a sphere.",
   "categories": [
     {
       "name": "Properties",

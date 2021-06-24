@@ -1,0 +1,23 @@
+{
+  "name": "subset horizons",
+  "display": "subset horizons",
+  "desc": "Subset horizons to constrain model prior to conversion to surface or layers.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "First Surface",
+          "display": "First Surface",
+          "desc": "The First Surface to include in the Output Field."
+        },
+        {
+          "name": "Last Surface",
+          "display": "Last Surface",
+          "desc": "The Last Surface to include in the Output Field."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "buffer distance",
+  "display": "buffer distance",
+  "desc": "Calculate the 2d distance from every node in the input field to the input line and add this distance as a data component.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Limit Depth",
+          "display": "Limit Depth",
+          "desc": "Limit Depth allows for setting a ZMinDepth and ZMaxDepth thus creating (passing) a fence that only extends to those specified elevations."
+        },
+        {
+          "name": "Z Min Depth",
+          "display": "Z Min Depth",
+          "desc": "If the Limit Depth toggle is selected the Z Min Depth is the minimum cut depth."
+        },
+        {
+          "name": "Z Max Depth",
+          "display": "Z Max Depth",
+          "desc": "If the Limit Depth toggle is selected the Z Max Depth is the maximum cut depth."
+        }
+      ]
+    }
+  ]
+}

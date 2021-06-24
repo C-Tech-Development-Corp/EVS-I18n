@@ -1,7 +1,7 @@
 {
   "name": "stratigraphic realization",
   "display": "stratigraphic realization",
-  "desc": "Modify and construct stratigraphic grid data.",
+  "desc": "Perform Fast Geostatistical Realizations of stratigraphic data.",
   "categories": [
     {
       "name": "Properties",
@@ -67,72 +67,6 @@
           "name": "Min Max Confidence Equivalent",
           "display": "Min Max Confidence Equivalent",
           "desc": "Realization deviations from the nominal kriged results will be constrained to lie within the equivalent Min/Max (plume) bounds. This parameter must lie between 51.00% and 99.995%. Theoretically 50% is the same as the nominal kriged result."
-        }
-      ]
-    },
-    {
-      "name": "Variography Display",
-      "display": "Variography Display",
-      "properties": [
-        {
-          "name": "Variography Z Scale",
-          "display": "Variography Z Scale",
-          "desc": "The Variography Z Scale value sets the vertical scaling of the variography ellipse and lines."
-        },
-        {
-          "name": "Display Variogram Ellipse",
-          "display": "Display Variogram Ellipse",
-          "desc": "The Display Variogram Ellipse control allows the user to display the variography ellipse."
-        },
-        {
-          "name": "Resolution",
-          "display": "Resolution",
-          "desc": "The resolution to use for the ellipse. Larger numbers create more detailed representations."
-        },
-        {
-          "name": "Ellipse Scale",
-          "display": "Ellipse Scale",
-          "desc": "The Ellipse Scale will scale the ellipsoid equally along each axis."
-        },
-        {
-          "name": "X Offset",
-          "display": "X Offset",
-          "desc": "The X Offset slider will allow the user to translate the ellipse along the x axis"
-        },
-        {
-          "name": "Y Offset",
-          "display": "Y Offset",
-          "desc": "The Y Offset slider will allow the user to translate the ellipse along the y axis"
-        },
-        {
-          "name": "Z Offset",
-          "display": "Z Offset",
-          "desc": "The Z Offset slider will allow the user to translate the ellipse along the z axis"
-        },
-        {
-          "name": "Ellipse Color",
-          "display": "Ellipse Color",
-          "desc": "The ellipse is a solid color which can be selected using this control."
-        },
-        {
-          "name": "Display Variogram Lines",
-          "display": "Display Variogram Lines",
-          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipse."
-        },
-        {
-          "name": "Line Scale",
-          "display": "Line Scale",
-          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipse"
-        },
-        {
-          "name": "Primary Ratio Color",
-          "display": "Primary Ratio Color",
-          "desc": "The primary ratio axis is a solid color which can be selected using this control."
-        },
-        {
-          "name": "Secondary Ratio Color",
-          "display": "Secondary Ratio Color",
-          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
         }
       ]
     },

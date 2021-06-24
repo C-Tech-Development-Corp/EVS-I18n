@@ -1,9 +1,15 @@
 {
   "categories": [
     {
-      "name": "Port Information",
-      "display": "Þôřƭ Ìñƒôř₥áƭïôñ",
-      "properties": []
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè çúřřèñƭ ₥ôδúℓè ƥřôƥèřƭïèƨ."
+        }
+      ]
     },
     {
       "name": "Statistics",
@@ -43,17 +49,6 @@
           "name": "Coordinate Extents",
           "display": "Çôôřδïñáƭè Éжƭèñƭƨ",
           "desc": "Ðïƨƥℓá¥ƨ ƭλè çôôřδïñáƭè èжƭèñƭƨ ôƒ ƭλè ƒïèℓδ."
-        }
-      ]
-    },
-    {
-      "name": "Properties",
-      "display": "Þřôƥèřƭïèƨ",
-      "properties": [
-        {
-          "name": "Switch Property View",
-          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
-          "desc": "Éδïƭ ƭλè çúřřèñƭ ₥ôδúℓè ƥřôƥèřƭïèƨ."
         }
       ]
     }

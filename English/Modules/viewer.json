@@ -10,6 +10,16 @@
         {
           "name": "Show Contents",
           "display": "Show Contents",
+          "desc": "Shows or Hides the Viewer Contents"
+        },
+        {
+          "name": "Detached Objects",
+          "display": "Detached Objects",
+          "desc": ""
+        },
+        {
+          "name": "Detached Annotations",
+          "display": "Detached Annotations",
           "desc": ""
         },
         {
@@ -475,92 +485,6 @@
           "name": "Output Optimization",
           "display": "Output Optimization",
           "desc": "The Output Optimization sets the type of output to optimize the VRML for."
-        }
-      ]
-    },
-    {
-      "name": "Properties",
-      "display": "Properties",
-      "properties": [
-        {
-          "name": "Show Contents",
-          "display": "Show Contents",
-          "desc": "Shows or Hides the Viewer Contents"
-        },
-        {
-          "name": "Detached Objects",
-          "display": "Detached Objects",
-          "desc": ""
-        },
-        {
-          "name": "Detached Annotations",
-          "display": "Detached Annotations",
-          "desc": ""
-        },
-        {
-          "name": "Azimuth And Inclination",
-          "display": "Azimuth And Inclination",
-          "desc": "The Azimuth And Inclination control allows the user to set the orientation of the View"
-        },
-        {
-          "name": "Set To Top View",
-          "display": "Set To Top View",
-          "desc": "Zooms to fit the entire model, and displays it centered from top down."
-        },
-        {
-          "name": "Zoom To Fit",
-          "display": "Zoom To Fit",
-          "desc": "Zooms to fit the entire model, and re-centers around the centroid of the scene."
-        },
-        {
-          "name": "Bookmarked Views",
-          "display": "Bookmarked Views",
-          "desc": "Saved views which can be reused."
-        },
-        {
-          "name": "Bookmarked States",
-          "display": "Bookmarked States",
-          "desc": "Saved states which can be reused."
-        },
-        {
-          "name": "Picked Object",
-          "display": "Picked Object",
-          "desc": "The Picked Object displays the current object selected in the Viewer.  This object can be be updated by holding the Ctrl button and clicking on an object in the Viewer."
-        },
-        {
-          "name": "Picked Coordinate",
-          "display": "Picked Coordinate",
-          "desc": "The Picked Coordinate displays the coordinates of the current object selected in the Viewer.  This object can be be updated by holding the Ctrl button and clicking on an object in the Viewer."
-        },
-        {
-          "name": "Center On Picked",
-          "display": "Center On Picked",
-          "desc": "If an object has been picked in the Viewer, the Center On Picked button will force the Viewer to center around that object."
-        },
-        {
-          "name": "Show Viewer Center",
-          "display": "Show Viewer Center",
-          "desc": "Shows an indicator of the current view center point"
-        },
-        {
-          "name": "Perspective Mode",
-          "display": "Perspective Mode",
-          "desc": "Perspective is an important feature, which is off by default. Normally we use a non-perspective view, which displays parallel lines as parallel. Objects are the same size regardless of their distance from the viewer. Perspective gives a view that can be likened to a camera view through a wide-angle lens. It sometimes seems more realistic, but perhaps less scientific (quantitative). The perspective option is used in conjunction with the Field of View. Generally, objects will appear the same size (but distorted) with a 45 degree perspective view and the default view. A smaller Field of View is like zooming in on the display and reduces perspective effects. You can compensate for changing Field of View by adjusting the Viewport Size, changing the Scale, zooming in/out, or translating the objects."
-        },
-        {
-          "name": "Field Of View",
-          "display": "Field Of View",
-          "desc": "The Field of View is used in to compensate for distortion while in Perspective Mode."
-        },
-        {
-          "name": "Renderer",
-          "display": "Renderer",
-          "desc": "The Renderer control provides the option for either OpenGL or Software rendering. The OpenGL renderer is a high performance renderer which is native to the Windows operating system, and is the default option. For most objects, OpenGL rendering provides much faster rendering performance than the software renderer. However, the Software renderer provides some functionality that the OpenGL renderer does not, and therefore is the desired option for some operations. Specifically, spheres are calculated in the software renderer much more quickly and efficiently then OpenGL which renders a many faceted object. If you are visualizing a large number of spheres you should choose the software rendering option. The other important difference is that the Software Renderer support Depth Sorting when your view has multiple transparent objects."
-        },
-        {
-          "name": "Auto Fit Scene",
-          "display": "Auto Fit Scene",
-          "desc": "The Auto Fit Scene control tells the Viewer what kind of change will cause the Viewer to Normalize."
         }
       ]
     }

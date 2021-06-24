@@ -1,7 +1,7 @@
 {
   "name": "edges",
   "display": "edges",
-  "desc": "The edges module produces a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations.",
+  "desc": "Produce a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations.",
   "categories": [
     {
       "name": "Properties",

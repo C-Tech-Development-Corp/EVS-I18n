@@ -1,0 +1,23 @@
+{
+  "name": "compute surface area",
+  "display": "compute surface area",
+  "desc": "Calculate the surface area of the entire field input.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Integrated Area",
+          "display": "Integrated Area",
+          "desc": "The Integrated area of the input field."
+        },
+        {
+          "name": "Area Units",
+          "display": "Area Units",
+          "desc": "The units of the input field squared."
+        }
+      ]
+    }
+  ]
+}

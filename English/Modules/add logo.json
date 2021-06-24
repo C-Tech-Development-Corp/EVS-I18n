@@ -1,7 +1,7 @@
 {
   "name": "add logo",
   "display": "add logo",
-  "desc": "The add_logo module is used to place a logo or other graphic object in the Viewer's non-transformable overlay.",
+  "desc": "Place a logo or other graphic object in the Viewer's non-transformable overlay.",
   "categories": [
     {
       "name": "Properties",

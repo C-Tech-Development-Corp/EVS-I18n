@@ -1,7 +1,7 @@
 {
   "name": "titles",
   "display": "titles",
-  "desc": "The titles module provides a straightforward means to place text in the Viewer.",
+  "desc": "Provides a straightforward means to place text in the Viewer.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "statistics",
   "display": "statistics",
-  "desc": "The statistics module is used to analyze the statistical distribution of a single data from a field.",
+  "desc": "Analyze the statistical distribution of a single data from a field.",
   "categories": [
     {
       "name": "Properties",

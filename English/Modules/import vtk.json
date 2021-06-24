@@ -1,0 +1,23 @@
+{
+  "name": "import vtk",
+  "display": "import vtk",
+  "desc": "The import VTK module reads a dataset from the VTK format.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Units",
+          "display": "Units",
+          "desc": "The coordinate units."
+        }
+      ]
+    }
+  ]
+}

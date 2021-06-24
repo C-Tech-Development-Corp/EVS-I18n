@@ -1,7 +1,7 @@
 {
   "name": "read image",
   "display": "read image",
-  "desc": "The read_image module reads an image file of a specified type and converts it into an 2D uniform field. It can optionally perform some basic image manipulation upon the read image. It also automatically looks for a world file or GCP file associated with the image in the same folder. Since this is done automatically, the world file name must conform to industry standards.",
+  "desc": "Reads an image file of a specified type and converts it into an 2D uniform field. It can optionally perform some basic image manipulation upon the read image. It also automatically looks for a world file or GCP file associated with the image in the same folder. Since this is done automatically, the world file name must conform to industry standards.",
   "categories": [
     {
       "name": "Properties",

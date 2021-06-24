@@ -1,0 +1,176 @@
+{
+  "name": "lithologic realization",
+  "display": "lithologic realization",
+  "desc": "Perform Fast Geostatistical Realizations of lithologic data.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": []
+    },
+    {
+      "name": "Shift Settings",
+      "display": "Shift Settings",
+      "properties": [
+        {
+          "name": "Randomness Generator Type",
+          "display": "Randomness Generator Type",
+          "desc": "The Randomness Generator Types determine the nature of the Realization deviation patterns."
+        },
+        {
+          "name": "Anisotropy",
+          "display": "Anisotropy",
+          "desc": ""
+        },
+        {
+          "name": "Seed",
+          "display": "Seed",
+          "desc": "The Seed is used in the random number generator, and makes it reproducible."
+        },
+        {
+          "name": "Wavelength",
+          "display": "Wavelength",
+          "desc": "Wavelength affects the Randomness Generator. This value is in your coordinate system units. Small values produce an output with higher frequency changes."
+        },
+        {
+          "name": "Min Max Confidence Equivalent",
+          "display": "Min Max Confidence Equivalent",
+          "desc": "Realization deviations from the nominal kriged results will be constrained to lie within the equivalent Min/Max (plume) bounds. This parameter must lie between 51.00% and 99.995%. Theoretically 50% is the same as the nominal kriged result."
+        }
+      ]
+    },
+    {
+      "name": "Fast Geostatistical Realization",
+      "display": "Fast Geostatistical Realization",
+      "properties": [
+        {
+          "name": "Randomness Generator Type",
+          "display": "Randomness Generator Type",
+          "desc": "The Randomness Generator Types determine the nature of the Realization deviation patterns."
+        },
+        {
+          "name": "Anisotropy",
+          "display": "Anisotropy",
+          "desc": ""
+        },
+        {
+          "name": "Seed",
+          "display": "Seed",
+          "desc": "The Seed is used in the random number generator, and makes it reproducible."
+        },
+        {
+          "name": "Wavelength",
+          "display": "Wavelength",
+          "desc": "Wavelength affects the Randomness Generator. This value is in your coordinate system units. Small values produce an output with higher frequency changes."
+        },
+        {
+          "name": "Min Max Confidence Equivalent",
+          "display": "Min Max Confidence Equivalent",
+          "desc": "Realization deviations from the nominal kriged results will be constrained to lie within the equivalent Min/Max (plume) bounds. This parameter must lie between 51.00% and 99.995%. Theoretically 50% is the same as the nominal kriged result."
+        }
+      ]
+    },
+    {
+      "name": "Variography Display",
+      "display": "Variography Display",
+      "properties": [
+        {
+          "name": "Variography Z Scale",
+          "display": "Variography Z Scale",
+          "desc": "The Variography Z Scale value sets the vertical scaling of the variography ellipsoid and lines."
+        },
+        {
+          "name": "Display Variogram Ellipsoid",
+          "display": "Display Variogram Ellipsoid",
+          "desc": "The Display Variogram Ellipsoid control allows the user to display the variography ellipsoid."
+        },
+        {
+          "name": "Ellipsoid Opacity",
+          "display": "Ellipsoid Opacity",
+          "desc": "The Ellipsoid Opacity control allows the user to set the opacity of the ellipsoid directly"
+        },
+        {
+          "name": "Resolution",
+          "display": "Resolution",
+          "desc": "The resolution to use for the ellipsoid. Larger numbers create more detailed representations."
+        },
+        {
+          "name": "Ellipsoid Scale",
+          "display": "Ellipsoid Scale",
+          "desc": "The Ellipsoid Scale will scale the ellipsoid equally along each axis."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "The X Offset slider will allow the user to translate the ellipsoid along the x axis"
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset slider will allow the user to translate the ellipsoid along the y axis"
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset slider will allow the user to translate the ellipsoid along the z axis"
+        },
+        {
+          "name": "Ellipsoid Color",
+          "display": "Ellipsoid Color",
+          "desc": "The ellipsoid is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Display Variogram Lines",
+          "display": "Display Variogram Lines",
+          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipsoid."
+        },
+        {
+          "name": "Line Scale",
+          "display": "Line Scale",
+          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipsoid"
+        },
+        {
+          "name": "Primary Ratio Color",
+          "display": "Primary Ratio Color",
+          "desc": "The primary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Secondary Ratio Color",
+          "display": "Secondary Ratio Color",
+          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Tertiary Axis Color",
+          "display": "Tertiary Axis Color",
+          "desc": "The tertiary axis is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "Data To Export",
+      "properties": [
+        {
+          "name": "Geologic Nodal Data",
+          "display": "Geologic Nodal Data",
+          "desc": "The Geologic Nodal Data options let the user decide which data components to generate for the output field on a node by node basis."
+        },
+        {
+          "name": "Geologic Cell Data",
+          "display": "Geologic Cell Data",
+          "desc": "The Geologic Cell Data options let the user decide which data components to generate for the output field on a cell by cell basis."
+        },
+        {
+          "name": "Probability",
+          "display": "Probability",
+          "desc": "The Probability toggle exports a data value that describes the probability of that cell or node being the chosen material."
+        },
+        {
+          "name": "Probabilities By Material",
+          "display": "Probabilities By Material",
+          "desc": "The Probability By Material exports a data value that describes the probability of that cell or node being each of the different materials."
+        }
+      ]
+    }
+  ]
+}

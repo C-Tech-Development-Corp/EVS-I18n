@@ -1,7 +1,7 @@
 {
   "name": "read multi tcf",
   "display": "read multi tcf",
-  "desc": "The Read_Multi_TCF module is one of a limited set of Time_Data modules. These modules are specifically designed to create models and animations of data that changes over time.",
+  "desc": "Create models and animations of data that changes over time.",
   "categories": [
     {
       "name": "Properties",

@@ -1,0 +1,53 @@
+{
+  "name": "time horizon",
+  "display": "time horizon",
+  "desc": "Extract a horizon from a set of time-based horizons.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Date And Time",
+          "display": "Date And Time",
+          "desc": "The Date and Time of interest."
+        },
+        {
+          "name": "Time Loop",
+          "display": "Time Loop",
+          "desc": "The Time Loop controls setting the Date and Time by specified increments."
+        },
+        {
+          "name": "Start Date",
+          "display": "Start Date",
+          "desc": "The Start Date is the beginning time of the simulation.  This value is set to the first date in the file."
+        },
+        {
+          "name": "End Date",
+          "display": "End Date",
+          "desc": "The End Date is the end time for the simulation.  This value is set to the last date in the file."
+        },
+        {
+          "name": "Step Time Units",
+          "display": "Step Time Units",
+          "desc": "The Step Time Units specify the increment for adavancement when stepping or running."
+        },
+        {
+          "name": "Step Size",
+          "display": "Step Size",
+          "desc": "The Step Size value specifies a factor, along with the Step Time Units, for the increment for adavancement when stepping or running."
+        },
+        {
+          "name": "Material Number",
+          "display": "Material Number",
+          "desc": "The Material Number provides the ability to set the material number for the geologic info port."
+        },
+        {
+          "name": "Material Name",
+          "display": "Material Name",
+          "desc": "The Material Name provides the ability to set the material name for the geologic info port."
+        }
+      ]
+    }
+  ]
+}

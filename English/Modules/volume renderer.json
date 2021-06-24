@@ -1,7 +1,7 @@
 {
   "name": "volume renderer",
   "display": "volume renderer",
-  "desc": "Volume_renderer directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques.",
+  "desc": "Directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques.",
   "categories": [
     {
       "name": "Properties",

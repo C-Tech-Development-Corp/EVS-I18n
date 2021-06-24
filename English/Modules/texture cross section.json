@@ -1,7 +1,7 @@
 {
   "name": "texture cross section",
   "display": "texture cross section",
-  "desc": "The texture_cross_section module provides a means to (texture map) project images from a fence onto a surface.",
+  "desc": "Project images from a fence onto a cross section surface.",
   "categories": [
     {
       "name": "Properties",

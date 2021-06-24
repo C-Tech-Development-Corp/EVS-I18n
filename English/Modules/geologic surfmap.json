@@ -1,7 +1,7 @@
 {
   "name": "geologic surfmap",
   "display": "geologic surfmap",
-  "desc": "The geologic_surfmap module provides a mechanism to drape lines onto Geologic surfaces",
+  "desc": "Drape lines onto horizons.",
   "categories": [
     {
       "name": "Properties",

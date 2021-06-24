@@ -1,0 +1,28 @@
+{
+  "name": "interpolate nodal data",
+  "display": "interpolate nodal data",
+  "desc": "Interpolates nodal data from a source field to a target field which is contained within the input. ",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Remove Nodes Outside Volume",
+          "display": "Remove Nodes Outside Volume",
+          "desc": "The RemoveNodesOutsideVolume control tells the algorithm what do with nodes from the Input Destination Field that fall outside of the coordinate range of the Input Data Field."
+        },
+        {
+          "name": "Data To Interpolate",
+          "display": "Data To Interpolate",
+          "desc": "The Data To Interpolate control is used to select which scalar data component is to be interpolated onto the surface or line of interest."
+        }
+      ]
+    }
+  ]
+}

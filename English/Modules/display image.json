@@ -1,7 +1,7 @@
 {
   "name": "display image",
   "display": "display image",
-  "desc": "DisplayImage: This module is a viewer for images.",
+  "desc": "This module is a viewer for images.",
   "categories": [
     {
       "name": "Properties",

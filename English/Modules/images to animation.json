@@ -1,7 +1,7 @@
 {
   "name": "images to animation",
   "display": "images to animation",
-  "desc": "The ImagesToAnimation module will turn any number of selected images or videos into a single animation.",
+  "desc": "Turn any number of selected images or videos into a single animation.",
   "categories": [
     {
       "name": "Properties",

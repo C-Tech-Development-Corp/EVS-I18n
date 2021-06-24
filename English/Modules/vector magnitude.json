@@ -1,0 +1,23 @@
+{
+  "name": "vector magnitude",
+  "display": "vector magnitude",
+  "desc": "Calculates the magnitude of a vector field data component at every node in a mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Vector Data",
+          "display": "Vector Data",
+          "desc": "The Vector Data control allows the user to select which vector data component to use for creating the magnitude data."
+        }
+      ]
+    }
+  ]
+}

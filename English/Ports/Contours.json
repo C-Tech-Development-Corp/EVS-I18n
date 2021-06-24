@@ -12,11 +12,6 @@
       ]
     },
     {
-      "name": "Port Information",
-      "display": "Port Information",
-      "properties": []
-    },
-    {
       "name": "General Properties",
       "display": "General Properties",
       "properties": [

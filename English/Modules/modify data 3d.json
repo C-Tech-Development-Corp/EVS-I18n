@@ -1,7 +1,7 @@
 {
   "name": "modify data 3d",
   "display": "modify data 3d",
-  "desc": "The modify_data_3D module will alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value.",
+  "desc": "Alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value.",
   "categories": [
     {
       "name": "Properties",

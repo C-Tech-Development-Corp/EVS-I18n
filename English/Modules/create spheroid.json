@@ -1,7 +1,7 @@
 {
   "name": "create spheroid",
   "display": "create spheroid",
-  "desc": "The create_spheroid module produces a 2D or 3D spheroid.",
+  "desc": "Create a 2D or 3D spheroid.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "displace block",
   "display": "displace block",
-  "desc": "The displace_block module translates a field in z by the input surface and input surface data",
+  "desc": "The displace block module translates a field in z by the input surface and input surface data",
   "categories": [
     {
       "name": "Properties",

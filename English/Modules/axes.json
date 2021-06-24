@@ -1,7 +1,7 @@
 {
   "name": "axes",
   "display": "axes",
-  "desc": "The axes module is used to place 3D axes in the viewer scaled by the model data and/or user defined limits.",
+  "desc": "Place 3D axes in the viewer scaled by the model data and/or user defined limits.",
   "categories": [
     {
       "name": "Properties",

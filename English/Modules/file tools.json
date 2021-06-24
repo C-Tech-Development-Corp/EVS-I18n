@@ -1,7 +1,7 @@
 {
   "name": "file tools",
   "display": "file tools",
-  "desc": "This module takes a file and either refine or subset the data and create a new file.",
+  "desc": "Take a file and either refine or subset the data and create a new file.",
   "categories": [
     {
       "name": "Properties",
@@ -25,7 +25,7 @@
         {
           "name": "Subset Value",
           "display": "Subset Value",
-          "desc": "The Subset Value is used when Subsetting to define which line numbers are kept.  For example if the Subset Value is 4 then every 4th line will be kept."
+          "desc": "The Subset Value is used when Subsetting to define which line numbers are kept.  For example if the Subset Value is 4, and the File Process is Subset, then every 4th line will be kept.  If the File Process is Subset at Max and the subset value is 4 then the maximum value of every 4 lines will be kept."
         }
       ]
     }

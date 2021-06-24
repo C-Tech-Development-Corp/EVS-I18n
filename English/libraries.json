@@ -3,933 +3,1092 @@
     {
       "name": "Estimation",
       "display": "Estimation",
-      "properties": [
+      "modules": [
         {
-          "name": "krig 2d",
-          "display": "krig 2d",
-          "desc": "Performs a two dimensional estimation of analytical data. Can also estimate analytical data sourced from other fields, or map data onto an external grid."
+          "name": "2d estimation",
+          "display": "2d estimation",
+          "desc": "Performs a two dimensional estimation of analytical data. Can also estimate analytical data sourced from other fields, or map data onto an external grid.",
+          "keywords": "*estimation 2d interpolate krig krig_2d"
         },
         {
-          "name": "krig 3d",
-          "display": "krig 3d",
-          "desc": "Estimate analytical data"
+          "name": "3d estimation",
+          "display": "3d estimation",
+          "desc": "Performs a three dimensional estimation of analytical data. Can also estimate analytical data sourced from other fields, or map data onto an external grid.",
+          "keywords": "*estimation 3d interpolate krig krig_3d"
         },
         {
-          "name": "krig 3d geology",
-          "display": "krig 3d geology",
-          "desc": "Estimate the geologic surface information from ...."
+          "name": "gridding and horizons",
+          "display": "gridding and horizons",
+          "desc": "Create complex grids and estimate data into horizons. Used to constrain 3d models, create geologic surfaces, water table surfaces, and more.",
+          "keywords": "*gridding *horizons stratigraphy krig krig_3d_geology interpolate estimation"
         },
         {
           "name": "analytical realization",
           "display": "analytical realization",
-          "desc": "Modify analytical data."
+          "desc": "Perform Fast Geostatistical Realizations of analytical data.",
+          "keywords": "analytical realization fgr"
         },
         {
           "name": "stratigraphic realization",
           "display": "stratigraphic realization",
-          "desc": "Modify and construct stratigraphic grid data."
+          "desc": "Perform Fast Geostatistical Realizations of stratigraphic data.",
+          "keywords": "stratigraphic realization fgr"
         },
         {
-          "name": "indicator realization",
-          "display": "indicator realization",
-          "desc": "Modify and construct geologic surface information from geologic data."
+          "name": "lithologic realization",
+          "display": "lithologic realization",
+          "desc": "Perform Fast Geostatistical Realizations of lithologic data.",
+          "keywords": "lithologic indicator realization fgr"
         },
         {
           "name": "external kriging",
           "display": "external kriging",
-          "desc": "The external_kriging will output both data and a grid in the simple GeoEAS format."
+          "desc": "The external_kriging will output both data and a grid in the simple GeoEAS format.",
+          "keywords": "external kriging"
         }
       ]
     },
     {
       "name": "Geology",
       "display": "Geology",
-      "properties": [
+      "modules": [
         {
-          "name": "make geo hierarchy",
-          "display": "make geo hierarchy",
-          "desc": "The make_geo_hierarchy module reads a special input file format called a pgf file, and then allows the user to build geologic surfaces based on the input file's geologic surface intersections. The surface hierarchy can either be generated automatically for simple geology models or for every layer for complex models. When the user is finished creating surfaces the gmf file can be finalized and converted into a *.GEO file."
+          "name": "create stratigraphic hierarchy",
+          "display": "create stratigraphic hierarchy",
+          "desc": "The create stratigraphic hierarchy module reads a special input file format called a pgf file, and then allows the user to build geologic surfaces based on the input file's geologic surface intersections. The surface hierarchy can either be generated automatically for simple geology models or for every layer for complex models. When the user is finished creating surfaces the gmf file can be finalized and converted into a *.GEO file.",
+          "keywords": "create stratigraphic hierarchy make_geo_hierarchy"
         },
         {
-          "name": "3d geology map",
-          "display": "3d geology map",
-          "desc": "The 3D Geology Map module creates 3-dimensional solid layers from the 2-dimensional surfaces in a geology field, to allow visualizations of the geologic layering of a system."
+          "name": "horizons to 3d",
+          "display": "horizons to 3d",
+          "desc": "Create 3-dimensional solid layers from the 2-dimensional surfaces in a geology field, to allow visualizations of the geologic layering of a system.",
+          "keywords": "*horizons to 3d_geology_map"
         },
         {
-          "name": "geology to structured",
-          "display": "geology to structured",
-          "desc": "The geology_to_structured module creates 3-dimensional solid layers from the 2-dimensional surfaces produced by Krig_3D_Geology, to allow visualizations of the geologic layering of a system."
+          "name": "horizons to 3d structured",
+          "display": "horizons to 3d structured",
+          "desc": "Create 3-dimensional solid layers from the 2-dimensional surfaces produced by Krig_3D_Geology, to allow visualizations of the geologic layering of a system.",
+          "keywords": "horizons to 3d geology_to_structured"
         },
         {
-          "name": "layer from surface",
-          "display": "layer from surface",
-          "desc": "The layer_from_surface module creates a layer based on an input surface and variable elevation value."
+          "name": "layer from horizon",
+          "display": "layer from horizon",
+          "desc": "Create a layer based on an input surface and variable elevation value.",
+          "keywords": "layer from horizon surface"
         },
         {
-          "name": "geologic surfaces",
-          "display": "geologic surfaces",
-          "desc": "The geologic_surfaces module provides complete control of displaying, scaling and exploding one or more geologic surfaces from a set of surfaces."
+          "name": "surface from horizons",
+          "display": "surface from horizons",
+          "desc": "Provides complete control of displaying, scaling and exploding one geologic surface from a set of surfaces.",
+          "keywords": "*surface *horizons from geologic"
         },
         {
-          "name": "geologic surface",
-          "display": "geologic surface",
-          "desc": "The geologic_surface module provides complete control of displaying, scaling and exploding one geologic surface from a set of surfaces."
+          "name": "surfaces from horizons",
+          "display": "surfaces from horizons",
+          "desc": "Provides complete control of displaying, scaling and exploding one or more geologic surfaces from a set of surfaces.",
+          "keywords": "*surfaces *horizons from geologic"
         },
         {
-          "name": "indicator geology",
-          "display": "indicator geology",
-          "desc": "Estimate the geologic surface information to cells from."
+          "name": "lithologic modeling",
+          "display": "lithologic modeling",
+          "desc": "Estimate material data to generate a lithologic model.",
+          "keywords": "*lithologic modeling indicator geology"
         },
         {
-          "name": "adaptive indicator krig",
-          "display": "adaptive indicator krig",
-          "desc": "An alternative geologic modeling concept that uses the indicator method for assigning each node's material in a grid based on data."
+          "name": "mask horizons",
+          "display": "mask horizons",
+          "desc": "Allows horizons to be subset by expression or a surface.",
+          "keywords": "mask horizons geology"
         },
         {
           "name": "edit horizons",
           "display": "edit horizons",
-          "desc": "The edit_horizons module is used to give the user fine control over interpolated surfaces."
+          "desc": "Provide fine control and editing of estimated horizon data.",
+          "keywords": "edit horizons"
         },
         {
           "name": "horizon ranking",
           "display": "horizon ranking",
-          "desc": "The horizon_ranking module is used to give the user control over individual surface priorities and rankings."
+          "desc": "Adjust individual horizon priorities and rankings.",
+          "keywords": "horizon ranking"
         },
         {
           "name": "material mapping",
           "display": "material mapping",
-          "desc": "This module can re-assign data for the purpose of grouping."
+          "desc": "This module can re-assign material data for the purpose of grouping.",
+          "keywords": "material mapping"
         },
         {
-          "name": "combine geology",
-          "display": "combine geology",
-          "desc": "The combine_geology module"
+          "name": "combine horizons",
+          "display": "combine horizons",
+          "desc": "Merge horizons from multiple fields.",
+          "keywords": "combine horizons"
         },
         {
-          "name": "subset layers",
-          "display": "subset layers",
-          "desc": "The subset_layers module allows you to subset geologic input."
+          "name": "subset horizons",
+          "display": "subset horizons",
+          "desc": "Subset horizons to constrain model prior to conversion to surface or layers.",
+          "keywords": "subset horizons"
         },
         {
-          "name": "make single layer",
-          "display": "make single layer",
-          "desc": "The make_single_layer module allows you to subset the geology to a single merged layer."
+          "name": "collapse horizons",
+          "display": "collapse horizons",
+          "desc": "Subset horizons to create a single merged layer.",
+          "keywords": "collapse horizons make_single_layer"
         },
         {
           "name": "displace block",
           "display": "displace block",
-          "desc": "The displace_block module translates a field in z by the input surface and input surface data"
+          "desc": "The displace block module translates a field in z by the input surface and input surface data",
+          "keywords": "displace block"
+        },
+        {
+          "name": "adaptive indicator krig",
+          "display": "adaptive indicator krig",
+          "desc": "An alternative geologic modeling concept that uses the indicator method for assigning each node's material in a grid based on data.",
+          "keywords": "adaptive indicator krig"
         }
       ]
     },
     {
       "name": "Display",
       "display": "Display",
-      "properties": [
+      "modules": [
         {
           "name": "post samples",
           "display": "post samples",
-          "desc": "Display your input data."
+          "desc": "Display your input data.",
+          "keywords": "*post *samples borings wells"
         },
         {
           "name": "explode and scale",
           "display": "explode and scale",
-          "desc": "The Explode and Scale module is used to separate (or explode) and apply a scaling factor to the vertical dimension (z-coordinate) of cell sets in a model."
+          "desc": "Separate (or explode) and apply a scaling factor to the vertical dimension (z-coordinate) of cell sets in a model.",
+          "keywords": "*explode *scale and"
         },
         {
           "name": "plume shell",
           "display": "plume shell",
-          "desc": "plume shell module"
+          "desc": "Subset a volumetric model and display a non-volumetric shell of a plume.",
+          "keywords": "*plume shell"
         },
         {
           "name": "intersection shell",
           "display": "intersection shell",
-          "desc": "The intersection_shell module outputs a non-volumetric version of a sequentially subset plume."
+          "desc": "Subset a volumetric model with multiple subsets and display a non-volumetric shell of the results.",
+          "keywords": "*intersection plume shell"
         },
         {
           "name": "change minmax",
           "display": "change minmax",
-          "desc": "The change_minmax module allows setting of max values above the true maximum data range and min values below the true minimum data range."
+          "desc": "Set min and max values above the true maximum data range and min values below the true minimum data range.",
+          "keywords": "change minmax"
         },
         {
-          "name": "contour data",
-          "display": "contour data",
-          "desc": "The contour_data module provides a means to color surface and volumetric objects in solid colored bands."
+          "name": "band data",
+          "display": "band data",
+          "desc": "Color surface and volumetric objects in solid colored bands.",
+          "keywords": "band data contour"
         },
         {
           "name": "volume renderer",
           "display": "volume renderer",
-          "desc": "Volume_renderer directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques."
+          "desc": "Directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques.",
+          "keywords": "volume renderer"
         },
         {
-          "name": "adjust opacity",
-          "display": "adjust opacity",
-          "desc": "The adjust_opacity module provides a means to adjust the opacity of any object based on its data values."
+          "name": "opacity by nodal data",
+          "display": "opacity by nodal data",
+          "desc": "Adjust the opacity of any object based on its data values.",
+          "keywords": "nodal data adjust_opacity"
         },
         {
           "name": "texture colors",
           "display": "texture colors",
-          "desc": "The texture_colors module does high-quality coloring based on texturing."
+          "desc": "The texture_colors module does high-quality coloring based on texturing.",
+          "keywords": "texture colors"
         },
         {
           "name": "illuminated lines",
           "display": "illuminated lines",
-          "desc": "The Illuminated Lines module uses a texture mapped illumination model on polylines with line halo and animation effects."
+          "desc": "The Illuminated Lines module uses a texture mapped illumination model on polylines with line halo and animation effects.",
+          "keywords": "illuminated lines"
         },
         {
           "name": "texture wave",
           "display": "texture wave",
-          "desc": "The texture_wave module utilizes opacity and texture mapping to create an animated effect. This module works with both OpenGL and Software Rendering."
+          "desc": "The texture_wave module utilizes opacity and texture mapping to create an animated effect. This module works with both OpenGL and Software Rendering.",
+          "keywords": "texture wave"
         },
         {
           "name": "slope and aspect",
           "display": "slope and aspect",
-          "desc": "The slope_and_aspect module determines the slope and aspect of a surface."
+          "desc": "Determine the slope and aspect of a surface.",
+          "keywords": "slope and aspect"
         },
         {
-          "name": "select data",
-          "display": "select data",
-          "desc": "The select_data module extracts a single data component from a field."
+          "name": "select single data",
+          "display": "select single data",
+          "desc": "Extract a single node or cell data component from a field.",
+          "keywords": "select single data"
         },
         {
           "name": "read wavefront obj",
           "display": "read wavefront obj",
-          "desc": "The read_obj module reads Wavefront OBJ files for display."
+          "desc": "Read Wavefront OBJ files for display.",
+          "keywords": "read wavefront obj"
         }
       ]
     },
     {
       "name": "Analysis",
       "display": "Analysis",
-      "properties": [
+      "modules": [
         {
           "name": "volumetrics",
           "display": "volumetrics",
-          "desc": "The volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water."
+          "desc": "Calculate the volumes and masses of soil, and chemicals in soils and ground water.",
+          "keywords": "*volumetrics"
         },
         {
           "name": "cell volumetrics",
           "display": "cell volumetrics",
-          "desc": "The cell_volumetrics module is used to calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell."
+          "desc": "Calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell.",
+          "keywords": "cell volumetrics"
         },
         {
-          "name": "area integrate",
-          "display": "area integrate",
-          "desc": "The area_integrate module is used to calculate the area of the entire field input."
+          "name": "compute surface area",
+          "display": "compute surface area",
+          "desc": "Calculate the surface area of the entire field input.",
+          "keywords": "compute surface area integrate"
         },
         {
           "name": "file statistics",
           "display": "file statistics",
-          "desc": "The file_statistics module is used to calculate and display statistics about the data contained in the selected file."
+          "desc": "Calculate and display statistics about the data contained in the selected file.",
+          "keywords": "file statistics"
         },
         {
           "name": "statistics",
           "display": "statistics",
-          "desc": "The statistics module is used to analyze the statistical distribution of a single data from a field."
+          "desc": "Analyze the statistical distribution of a single data from a field.",
+          "keywords": "statistics"
         },
         {
           "name": "well decommission",
           "display": "well decommission",
-          "desc": "The well_decommission module analyzes all available data and quantifies the impact to site assessment quality of removing each well. "
+          "desc": "Analyzes all available data and quantifies the impact to site assessment quality of removing each well. ",
+          "keywords": "well decommission"
         }
       ]
     },
     {
       "name": "Annotation",
       "display": "Annotation",
-      "properties": [
+      "modules": [
         {
           "name": "legend",
           "display": "legend",
-          "desc": "The Legend module is used to place a color scale bar in the viewer window."
+          "desc": "Place a color scale bar in the viewer window.",
+          "keywords": "*legend"
         },
         {
           "name": "axes",
           "display": "axes",
-          "desc": "The axes module is used to place 3D axes in the viewer scaled by the model data and/or user defined limits."
+          "desc": "Place 3D axes in the viewer scaled by the model data and/or user defined limits.",
+          "keywords": "axes"
         },
         {
-          "name": "north",
-          "display": "north",
-          "desc": "The north module is used to place a 3D North Arrow or Compass Rose in the Viewer."
+          "name": "direction indicator",
+          "display": "direction indicator",
+          "desc": "Place a 3D North Arrow or Compass Rose in the Viewer.",
+          "keywords": "direction indicator north compass"
         },
         {
           "name": "add logo",
           "display": "add logo",
-          "desc": "The add_logo module is used to place a logo or other graphic object in the Viewer's non-transformable overlay."
+          "desc": "Place a logo or other graphic object in the Viewer's non-transformable overlay.",
+          "keywords": "add logo"
         },
         {
           "name": "titles",
           "display": "titles",
-          "desc": "The titles module provides a straightforward means to place text in the Viewer."
+          "desc": "Provides a straightforward means to place text in the Viewer.",
+          "keywords": "titles"
         },
         {
           "name": "place text",
           "display": "place text",
-          "desc": "The place_text module provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text."
+          "desc": "Provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text.",
+          "keywords": "place text"
         },
         {
           "name": "interactive labels",
           "display": "interactive labels",
-          "desc": "The interactive_labels module allows the user to place formatted labels at probed locations within the Viewer."
+          "desc": "Place formatted labels at probed locations within the Viewer.",
+          "keywords": "interactive labels"
         },
         {
           "name": "application notes",
           "display": "application notes",
-          "desc": "The Application_Notes module allows you to add textual notes to your applications that are saved with the application."
+          "desc": "Add textual notes to your applications that are saved with the application.",
+          "keywords": "application notes"
         },
         {
           "name": "format string",
           "display": "format string",
-          "desc": "The format_string module provides a simple means to convert values coming from various numeric and string input ports into a resultant string."
+          "desc": "Convert values coming from various numeric and string input ports into a resultant string.",
+          "keywords": "format string"
         }
       ]
     },
     {
       "name": "Subsetting",
       "display": "Subsetting",
-      "properties": [
+      "modules": [
         {
           "name": "external faces",
           "display": "external faces",
-          "desc": "The external_faces module extracts external faces from a 2D or 3D field for rendering."
+          "desc": "Extracts external faces from a 2D or 3D field for rendering.",
+          "keywords": "*external faces"
         },
         {
           "name": "external edges",
           "display": "external edges",
-          "desc": "The external_edges module extracts the outer edges of a mesh."
+          "desc": "Extracts the outer edges of a mesh.",
+          "keywords": "*external edges"
         },
         {
-          "name": "thin fence",
-          "display": "thin fence",
-          "desc": "Thin_fence creates a fence diagram along a user defined (x, y) path."
+          "name": "cross section",
+          "display": "cross section",
+          "desc": "Create a fence diagram along a user defined (x, y) path.",
+          "keywords": "cross section thin_fence"
         },
         {
           "name": "slice",
           "display": "slice",
-          "desc": "The slice module allows you to create a subset of your input which is of reduced dimensionality."
+          "desc": "Create a slice through an input field.",
+          "keywords": "slice"
         },
         {
           "name": "isolines",
           "display": "isolines",
-          "desc": "The isolines module is used to produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface."
+          "desc": "Produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface.",
+          "keywords": "isolines"
         },
         {
           "name": "cut",
           "display": "cut",
-          "desc": "The cut module allows you to create a subset of your input which is of the same dimensionality."
+          "desc": "Create a subset of your input on one side of a planar surface.",
+          "keywords": "cut"
         },
         {
           "name": "plume",
           "display": "plume",
-          "desc": "The plume module creates a true 3D volumetric subset of a 3D input. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric. This module should not normally be used when you desire a visualization of a plume but rather when you wish to do subsequent operations such as analysis, slices, etc."
+          "desc": "Create a true 3D volumetric subset of a 3D input. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric. This module should not normally be used when you desire a visualization of a plume but rather when you wish to do subsequent operations such as analysis, slices, etc.",
+          "keywords": "*plume"
         },
         {
           "name": "plume area",
           "display": "plume area",
-          "desc": "plume area module"
+          "desc": "plume area module",
+          "keywords": "plume area"
         },
         {
           "name": "constant shell",
           "display": "constant shell",
-          "desc": "constant_shell module"
+          "desc": "constant_shell module",
+          "keywords": "constant shell"
         },
         {
           "name": "intersection",
           "display": "intersection",
-          "desc": "intersection is a powerful module that incorporates some of the characteristics of plume_volume, yet allows for any number of volumetric sequential (serial) subsetting operations."
+          "desc": "Create a true 3D volumetric subset of a 3D input using multiple subset criteria. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric.",
+          "keywords": "*intersection plume"
         },
         {
           "name": "union",
           "display": "union",
-          "desc": "union is a powerful module that allows for a large number of complex serial and parallel subsetting operations required to compute and visualize the union of multiple analytes and threshold levels."
+          "desc": "Allows for a large number of complex parallel subsetting operations required to compute and visualize the union of multiple analytes and threshold levels.",
+          "keywords": "*union plume"
         },
         {
-          "name": "plume cell",
-          "display": "plume cell",
-          "desc": "The plume_cell module is a subsetting module used to eliminate whole cells from the input mesh based on the nodal data of one or more nodes that comprise the cells."
+          "name": "subset by expression",
+          "display": "subset by expression",
+          "desc": "Eliminate whole cells from the input mesh based on the nodal data of one or more nodes that comprise the cells.",
+          "keywords": "subset by expression plume_cell"
         },
         {
           "name": "footprint",
           "display": "footprint",
-          "desc": "The footprint module is used to create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input."
+          "desc": "Create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input.",
+          "keywords": "footprint"
         },
         {
           "name": "slope aspect splitter",
           "display": "slope aspect splitter",
-          "desc": "The slope_aspect_splitter module will split an input field into two output fields based upon the subset expression used."
+          "desc": "Split an input field into two output fields based upon slope or aspect data using a subset expression.",
+          "keywords": "slope aspect splitter"
         },
         {
           "name": "crop and downsize",
           "display": "crop and downsize",
-          "desc": "The crop_and_downsize module is used to subset an image, or structured field."
+          "desc": "Subset or simplify an image or structured field.",
+          "keywords": "crop and downsize"
         },
         {
-          "name": "select cells",
-          "display": "select cells",
-          "desc": "select_cells provides the ability to select individual geologic layers for output."
+          "name": "select cell sets",
+          "display": "select cell sets",
+          "desc": "Select individual geologic layers or lithologic materials for output.",
+          "keywords": "select cell sets"
         },
         {
           "name": "orthoslice",
           "display": "orthoslice",
-          "desc": "The orthoslice module displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis."
+          "desc": "Displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis.",
+          "keywords": "orthoslice"
         },
         {
           "name": "edges",
           "display": "edges",
-          "desc": "The edges module produces a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations."
+          "desc": "Produce a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations.",
+          "keywords": "edges"
         },
         {
           "name": "bounds",
           "display": "bounds",
-          "desc": "The bounds module generates lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh."
+          "desc": "Generate lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh.",
+          "keywords": "bounds"
         }
       ]
     },
     {
       "name": "Proximity",
       "display": "Proximity",
-      "properties": [
+      "modules": [
         {
-          "name": "area cut",
-          "display": "area cut",
-          "desc": "area_cut uses a surface representing a region to map data to a field. This allows downstream modules to cut inside or outside of the area."
+          "name": "distance to 2d area",
+          "display": "distance to 2d area",
+          "desc": "Use a surface representing a region to map data to a field. This allows downstream modules to cut inside or outside of the area.",
+          "keywords": "distance to 2d area cut"
         },
         {
-          "name": "surf cut",
-          "display": "surf cut",
-          "desc": "surf_cut maps the distance from a surface to the points in a field as data. This allows downstream modules to cut above or below the surface."
+          "name": "distance to surface",
+          "display": "distance to surface",
+          "desc": "Map the distance from a surface to the points in a field as data. This allows downstream modules to cut above or below the surface.",
+          "keywords": "distance to surface cut"
         },
         {
-          "name": "shape cut",
-          "display": "shape cut",
-          "desc": "shape cut will map the distance from the edges of a set shape to the nodes of the input field."
+          "name": "distance to shape",
+          "display": "distance to shape",
+          "desc": "Map the distance from the a set shape to the nodes of the input field.",
+          "keywords": "distance to shape cut"
         },
         {
-          "name": "buffer",
-          "display": "buffer",
-          "desc": "The buffer module will calculate the distance from every node in the input field to the input line and add this distance as a data component."
+          "name": "buffer distance",
+          "display": "buffer distance",
+          "desc": "Calculate the 2d distance from every node in the input field to the input line and add this distance as a data component.",
+          "keywords": "buffer distance"
         },
         {
-          "name": "tunnel cut",
-          "display": "tunnel cut",
-          "desc": "The tunnel_cut module will calculate the distance from every node in the input field to the input line and add this distance as a data component."
+          "name": "distance to tunnel center",
+          "display": "distance to tunnel center",
+          "desc": "Calculate the 3d distance from every node in the input field to the input line and add this distance as a data component.",
+          "keywords": "distance to tunnel center cut"
         },
         {
           "name": "overburden",
           "display": "overburden",
-          "desc": "The overburden module computes the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size)."
-        },
-        {
-          "name": "mask geology",
-          "display": "mask geology",
-          "desc": "mask_geology allows a geologic field to be subset by expression or a surface."
+          "desc": "Compute the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size).",
+          "keywords": "overburden"
         }
       ]
     },
     {
       "name": "Processing",
       "display": "Processing",
-      "properties": [
+      "modules": [
         {
           "name": "node computation",
           "display": "node computation",
-          "desc": "This module uses a Python script to manipulate the value or coordinates of a field."
+          "desc": "Use a Python script to manipulate the value or coordinates of a field.",
+          "keywords": "node computation"
         },
         {
-          "name": "combine components",
-          "display": "combine components",
-          "desc": "The combine_components module"
+          "name": "cell computation",
+          "display": "cell computation",
+          "desc": "Use a Python script to manipulate the cell data values of a field.",
+          "keywords": "cell computation"
         },
         {
-          "name": "interp data",
-          "display": "interp data",
-          "desc": "The Interp data module interpolates nodal data from a field to either an equal or lower dimension field. "
+          "name": "combine nodal data",
+          "display": "combine nodal data",
+          "desc": "Combine nodal data from multiple input fields which share the same structure.",
+          "keywords": "combine nodal data components"
         },
         {
-          "name": "thickness",
-          "display": "thickness",
-          "desc": "The module thickness is used to measure the thickness of a field relative to a specified surface."
+          "name": "interpolate nodal data",
+          "display": "interpolate nodal data",
+          "desc": "Interpolates nodal data from a source field to a target field which is contained within the input. ",
+          "keywords": "interpolate nodal data"
         },
         {
-          "name": "data translate",
-          "display": "data translate",
-          "desc": "The data_translate module accepts nearly any mesh and translates the grid in x, y, or z based upon either a nodal or cell data component or a constant."
+          "name": "interpolate cell data",
+          "display": "interpolate cell data",
+          "desc": "Interpolates cell data from one field to another using a Nearest Neighbor interpolation.",
+          "keywords": "interpolate cell data"
+        },
+        {
+          "name": "compute thickness",
+          "display": "compute thickness",
+          "desc": "Measure the thickness of a field relative to a specified surface.",
+          "keywords": "compute thickness"
+        },
+        {
+          "name": "translate by data",
+          "display": "translate by data",
+          "desc": "Translates a field in x, y, or z based upon either a nodal or cell data component or a constant.",
+          "keywords": "translate by data"
+        },
+        {
+          "name": "cell data to node data",
+          "display": "cell data to node data",
+          "desc": "Interpolate cell data components to nodal data components.",
+          "keywords": "cell data to node data"
+        },
+        {
+          "name": "node data to cell data",
+          "display": "node data to cell data",
+          "desc": "Interpolate nodal data components to cell data components.",
+          "keywords": "node data to cell data"
+        },
+        {
+          "name": "shrink cells",
+          "display": "shrink cells",
+          "desc": "Produce a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. ",
+          "keywords": "shrink cells"
+        },
+        {
+          "name": "cell centers",
+          "display": "cell centers",
+          "desc": "Produce a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh.",
+          "keywords": "cell centers"
         }
       ]
     },
     {
       "name": "Import",
       "display": "Import",
-      "properties": [
+      "modules": [
         {
-          "name": "load evs field",
-          "display": "load evs field",
-          "desc": "Load_EVS_Field reads a dataset from any of six different EVS compatible file formats into an EVS field."
+          "name": "read evs field",
+          "display": "read evs field",
+          "desc": "Read a dataset from any of six different EVS compatible file formats into an EVS field.",
+          "keywords": "read load evs field eff efb efz"
         },
         {
-          "name": "read vtk",
-          "display": "read vtk",
-          "desc": "The read_VTK module reads a dataset from the VTK format."
+          "name": "import vtk",
+          "display": "import vtk",
+          "desc": "The import VTK module reads a dataset from the VTK format.",
+          "keywords": "import vtk"
         },
         {
-          "name": "read cad",
-          "display": "read cad",
-          "desc": "The read_CAD module will read all versions of AutoCAD DWG and DXF files."
+          "name": "import cad",
+          "display": "import cad",
+          "desc": "Read all versions of AutoCAD DWG and DXF files as well as Microstation DGN files.",
+          "keywords": "import cad read dwg dxf dgn"
         },
         {
-          "name": "read vector gis",
-          "display": "read vector gis",
-          "desc": "The read_vector_GIS module reads vector file formats."
+          "name": "import vector gis",
+          "display": "import vector gis",
+          "desc": "Reads vector file formats such as shapefiles.",
+          "keywords": "import vector gis read"
         },
         {
-          "name": "raster to geology",
-          "display": "raster to geology",
-          "desc": "The raster_to_geology module reads several different raster format files in EVS Geology format."
+          "name": "import raster as horizon",
+          "display": "import raster as horizon",
+          "desc": "Read several different raster format files as a single horizon.",
+          "keywords": "import raster horizon geology"
         },
         {
           "name": "buildings",
           "display": "buildings",
-          "desc": "The buildings module reads C Tech's .BLDG file and creates various 3D objects."
+          "desc": "Create 3d buildings interactively or from a file.",
+          "keywords": "buildings"
         },
         {
           "name": "read lines",
           "display": "read lines",
-          "desc": "The read_lines module is used to visualize a series of points with data connected by lines."
+          "desc": "Read a series of points with data connected by lines.",
+          "keywords": "read lines"
         },
         {
-          "name": "strike and dip",
-          "display": "strike and dip",
-          "desc": "The strike_and_dip module is used to visualize sampled locations by strike and dip values."
+          "name": "read strike and dip",
+          "display": "read strike and dip",
+          "desc": "Read sampled locations with strike and dip values.",
+          "keywords": "read strike and dip"
         },
         {
-          "name": "load glyph",
-          "display": "load glyph",
-          "desc": "The load_glyph module reads glyphs saved in any of the three primary EVS field file formats."
+          "name": "read glyph",
+          "display": "read glyph",
+          "desc": "Reads glyphs saved in any of the three primary EVS field file formats.",
+          "keywords": "load read glyph"
         },
         {
-          "name": "symbols",
-          "display": "symbols",
-          "desc": "Symbols creates symbolic representations of different borehole identifiers based on a set of user defined parameters."
+          "name": "read symbols",
+          "display": "read symbols",
+          "desc": "Creates symbolic representations of different borehole identifiers based on a set of user defined parameters.",
+          "keywords": "read symbols"
         },
         {
-          "name": "read geometry",
-          "display": "read geometry",
-          "desc": "The read_geometry module reads geometry files for modeling."
+          "name": "import geometry",
+          "display": "import geometry",
+          "desc": "Reads topology from geometry files, such as wavefront obj, for modeling.",
+          "keywords": "import read geometry"
         }
       ]
     },
     {
       "name": "Export",
       "display": "Export",
-      "properties": [
+      "modules": [
         {
-          "name": "save evs field",
-          "display": "save evs field",
-          "desc": "The Save_EVS_Field module creates a file in one of 5 different formats containing all the mesh and nodal and/or cell data component information sent to the input port."
+          "name": "write evs field",
+          "display": "write evs field",
+          "desc": "Creates a file in one of 5 different formats containing all the mesh and nodal and/or cell data component information sent to the input port.",
+          "keywords": "write save evs field eff efb"
         },
         {
           "name": "export web scene",
           "display": "export web scene",
-          "desc": "The export web scene module provides EVS with vector output of 3D models for the C Tech Web Viewer."
+          "desc": "Export EVS scenes with vector output of 3D models for the C Tech Web Viewer.",
+          "keywords": "export web scene"
         },
         {
           "name": "export pdf scene",
           "display": "export pdf scene",
-          "desc": "The export pdf scene module provides EVS with vector output of 3D models for the C Tech PDF Converter."
+          "desc": "Export EVS scenes with vector output of 3D models for the C Tech PDF Converter.",
+          "keywords": "export pdf scene"
         },
         {
-          "name": "write coordinates",
-          "display": "write coordinates",
-          "desc": "Write_Coordinates provides a means to export an ASCII file containing the coordinates (and optionally the data) of any object in EVS."
+          "name": "export nodes",
+          "display": "export nodes",
+          "desc": "Export an ASCII file containing the coordinates and optionally the data of any field in EVS.",
+          "keywords": "write coordinates export nodes"
         },
         {
-          "name": "write cad",
-          "display": "write cad",
-          "desc": "The write_CAD module provides EVS with vector output of graphical results in industry standard AutoCAD DWG or DXF format."
+          "name": "export cad",
+          "display": "export cad",
+          "desc": "Write vector output of graphical results in industry standard AutoCAD DWG or DXF format or Microstation DGN format.",
+          "keywords": "write export cad dwg dxf dgn"
         },
         {
-          "name": "write vector gis",
-          "display": "write vector gis",
-          "desc": "The write_vector_GIS module will create a file in one of the following vector formats: ESRI Shapefile (*.shp); GMT ASCII Vectors (*.gmt); and MapInfo TAB (*.tab)."
+          "name": "export vector gis",
+          "display": "export vector gis",
+          "desc": "Create a file in one of the following vector formats: ESRI Shapefile (*.shp); GMT ASCII Vectors (*.gmt); and MapInfo TAB (*.tab).",
+          "keywords": "export vector gis write"
         },
         {
-          "name": "geology to raster",
-          "display": "geology to raster",
-          "desc": "The geology_to_raster module will create a raster file based on input geology."
+          "name": "export horizon to raster",
+          "display": "export horizon to raster",
+          "desc": "Create a raster file based on a single input horizon.",
+          "keywords": "export horizon raster geology"
         },
         {
           "name": "write lines",
           "display": "write lines",
-          "desc": "The write_lines module is used to save a series of points with data connected by lines. These lines are stored in the EVS Line File format."
+          "desc": "Save a series of points with data connected by lines. These lines are stored in the EVS Line File format.",
+          "keywords": "write lines"
         },
         {
-          "name": "geology to vistas",
-          "display": "geology to vistas",
-          "desc": "The geology_to_vistas module writes the fundamental geologic grid information to a file format that Ground Water Vistas can read."
+          "name": "export horizons to vistas",
+          "display": "export horizons to vistas",
+          "desc": "Write the fundamental geologic grid and horizon information to a file format that Ground Water Vistas can read.",
+          "keywords": "export horizons vistas geology"
         }
       ]
     },
     {
       "name": "Modeling",
       "display": "Modeling",
-      "properties": [
+      "modules": [
         {
-          "name": "streamlines",
-          "display": "streamlines",
-          "desc": "The streamlines module is used to produce streamlines or streamribbons of a field which is a 2 or 3 element vector data component on any type of mesh."
+          "name": "3d streamlines",
+          "display": "3d streamlines",
+          "desc": "Produce streamlines or streamribbons of a field which is a 2 or 3 element vector data component on any type of mesh.",
+          "keywords": "3d streamlines"
         },
         {
-          "name": "streamline surface",
-          "display": "streamline surface",
-          "desc": "The streamline surface module is used to produce streamlines on any surface based on its slopes."
+          "name": "surface streamlines",
+          "display": "surface streamlines",
+          "desc": "Produce streamlines on any surface based on its slopes.",
+          "keywords": "surface streamlines"
         },
         {
-          "name": "drill path",
-          "display": "drill path",
-          "desc": "The drill_path module is used to produce a line path through a volume dependent on a starting locations and user defined restrictions."
+          "name": "create drill path",
+          "display": "create drill path",
+          "desc": "Produce a line path through a volume dependent on a starting locations and user defined restrictions.",
+          "keywords": "create drill path"
         },
         {
           "name": "modpath",
           "display": "modpath",
-          "desc": "The modpath module uses the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground."
+          "desc": "Use the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground.",
+          "keywords": "modpath"
         },
         {
-          "name": "combine vect",
-          "display": "combine vect",
-          "desc": "The combine vect (combine vector) module is used to create a 2d or 3d vector by combining selected scalar data components."
+          "name": "scalars to vector",
+          "display": "scalars to vector",
+          "desc": "Create a 2d or 3d vector by combining selected scalar data components.",
+          "keywords": "scalars to vector"
         },
         {
-          "name": "magnitude",
-          "display": "magnitude",
-          "desc": "The magnitude module calculates the magnitude of a vector field data component at every node in a mesh."
+          "name": "vector magnitude",
+          "display": "vector magnitude",
+          "desc": "Calculates the magnitude of a vector field data component at every node in a mesh.",
+          "keywords": "vector magnitude"
         },
         {
           "name": "gradient",
           "display": "gradient",
-          "desc": "The gradient module calculates the vector gradient field of a scalar data component at every node in a mesh."
+          "desc": "Calculate the vector gradient field of a scalar data component at every node in a mesh.",
+          "keywords": "gradient"
         },
         {
           "name": "capture zone",
           "display": "capture zone",
-          "desc": "The capture_zone module utilizes streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells."
+          "desc": "Use streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells.",
+          "keywords": "capture zone"
         },
         {
           "name": "seepage velocity",
           "display": "seepage velocity",
-          "desc": "The seepage_velocity module is used to compute the vector groundwater flow field visualizations of the vector field."
+          "desc": "Compute the vector groundwater flow field visualizations of the vector field.",
+          "keywords": "seepage velocity"
         },
         {
           "name": "regional averages",
           "display": "regional averages",
-          "desc": "The regional_average module averages nodal data values from the input field that fall into the input regions."
+          "desc": "Average nodal data values from the input field that fall into the input regions.",
+          "keywords": "regional averages"
         }
       ]
     },
     {
       "name": "Geometry",
       "display": "Geometry",
-      "properties": [
+      "modules": [
         {
           "name": "draw lines",
           "display": "draw lines",
-          "desc": "The draw_lines module enables you to create both 2D and 3D lines interactively with the mouse."
+          "desc": "Create both 2D and 3D lines interactively with the mouse.",
+          "keywords": "draw lines"
         },
         {
-          "name": "polyline spline",
-          "display": "polyline spline",
-          "desc": "The polyline_spline module accepts a 3D polyline and can either increase or decrease the number of line segments of the polyline."
+          "name": "polyline processing",
+          "display": "polyline processing",
+          "desc": "Accepts a 3D polyline and can either increase or decrease the number of line segments of the polyline, as well as smooth or spline the polyline.",
+          "keywords": "polyline spline smooth refine processing"
         },
         {
           "name": "triangulate polygons",
           "display": "triangulate polygons",
-          "desc": "triangulate_polygons converts a closed polyline into a triangulated surface."
+          "desc": "Converts a closed polyline into a triangulated surface.",
+          "keywords": "triangulate polygons"
         },
         {
-          "name": "tri tool",
-          "display": "tri tool",
-          "desc": "The tri_tool module can be used to clean, break up cells, and flip normals on an input surface."
+          "name": "triangle refinement",
+          "display": "triangle refinement",
+          "desc": "Clean, break up cells, and flip normals on an input surface.",
+          "keywords": "triangle refinement tool"
         },
         {
           "name": "tubes",
           "display": "tubes",
-          "desc": "The tubes module is used to produce open or closed tubes of constant or data dependent radius using 3D lines or polylines as input."
+          "desc": "Produce open or closed tubes of constant or data dependent radius using 3D lines or polylines as input.",
+          "keywords": "tubes"
         },
         {
           "name": "volumetric tunnel",
           "display": "volumetric tunnel",
-          "desc": "The volumetric_tunnel module is used to produce a volumetric extrusion along a line."
+          "desc": "Produce a volumetric extrusion along a line.",
+          "keywords": "volumetric tunnel"
         },
         {
           "name": "cross section tubes",
           "display": "cross section tubes",
-          "desc": "The cross_section_tubes module is used to produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes."
+          "desc": "Produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes.",
+          "keywords": "cross section tubes"
         },
         {
           "name": "extrude",
           "display": "extrude",
-          "desc": "The extrude module accepts any mesh and adds one to the dimensionality of the input by extruding the mesh in the Z direction."
+          "desc": "Accepts surfaces, lines, or points and adds one to the dimensionality of the input by extruding the mesh in the Z direction.",
+          "keywords": "extrude"
         },
         {
           "name": "drive glyphs",
           "display": "drive glyphs",
-          "desc": "The drive_glyph module provides a way to move any object along multiple paths to create a 'driving' animation."
+          "desc": "Provides a way to move any object along multiple paths to create a 'driving' animation.",
+          "keywords": "drive glyphs"
         },
         {
           "name": "place glyph",
           "display": "place glyph",
-          "desc": "The place_glyph module is used to place a single scalable geometric objects (glyph) at an interactively determined location."
+          "desc": "Place a single scalable geometric objects (glyph) at an interactively determined location.",
+          "keywords": "place glyph"
         },
         {
-          "name": "glyph",
-          "display": "glyph",
-          "desc": "The glyph module is used to place geometric objects (glyphs) at nodal locations."
+          "name": "glyphs at nodes",
+          "display": "glyphs at nodes",
+          "desc": "Place geometric objects (glyphs) at all nodal locations of a field.",
+          "keywords": "glyphs at nodes"
         },
         {
           "name": "create fault surface",
           "display": "create fault surface",
-          "desc": "The create_fault_surface module creates a 3D grid that is aligned to a specified strike and dip."
+          "desc": "Create a 3D grid that is aligned to a specified strike and dip.",
+          "keywords": "create fault surface"
         },
         {
           "name": "create grid",
           "display": "create grid",
-          "desc": "The create_grid module produces a 2D or 3D uniform grid."
+          "desc": "Create a 2D or 3D uniform grid.",
+          "keywords": "create grid"
         },
         {
           "name": "create spheroid",
           "display": "create spheroid",
-          "desc": "The create_spheroid module produces a 2D or 3D spheroid."
+          "desc": "Create a 2D or 3D spheroid.",
+          "keywords": "create spheroid"
         }
       ]
     },
     {
       "name": "Projection",
       "display": "Projection",
-      "properties": [
+      "modules": [
         {
-          "name": "surfmap",
-          "display": "surfmap",
-          "desc": "The module provides a mechanism to drape lines onto surfaces."
+          "name": "project onto surface",
+          "display": "project onto surface",
+          "desc": "Drape features onto surfaces.",
+          "keywords": "surfmap project surface"
         },
         {
           "name": "geologic surfmap",
           "display": "geologic surfmap",
-          "desc": "The geologic_surfmap module provides a mechanism to drape lines onto Geologic surfaces"
+          "desc": "Drape lines onto horizons.",
+          "keywords": "geologic surfmap"
         },
         {
           "name": "transform field",
           "display": "transform field",
-          "desc": "The transform_field module is used to translate, rotate or scale the coordinates any field."
+          "desc": "Translate, rotate or scale the coordinates any field.",
+          "keywords": "transform field"
         },
         {
-          "name": "transform group",
-          "display": "transform group",
-          "desc": "The transform_group module is used to translate, rotate or scale the coordinates any number of input objects."
+          "name": "transform objects",
+          "display": "transform objects",
+          "desc": "Translate, rotate or scale the coordinates any number of input objects.",
+          "keywords": "transform group objects"
         },
         {
           "name": "project field",
           "display": "project field",
-          "desc": "The project_field module is used to project the coordinates in any field, from one coordinate system to another."
+          "desc": "Project the coordinates in any field from one coordinate system to another.",
+          "keywords": "project field"
         }
       ]
     },
     {
       "name": "Image",
       "display": "Image",
-      "properties": [
+      "modules": [
         {
           "name": "overlay aerial",
           "display": "overlay aerial",
-          "desc": "The overlay_aerial module will take as input a field and then map an image onto the horizontal areas of the grid."
-        },
-        {
-          "name": "load eft",
-          "display": "load eft",
-          "desc": "The load_eft module reads EVS Textured Field (*.eft) files and displays them."
-        },
-        {
-          "name": "texture walls",
-          "display": "texture walls",
-          "desc": "The texture_walls module provides a means to project images onto surfaces such as walls of buildings to add more realism to your visualizations."
-        },
-        {
-          "name": "texture geology",
-          "display": "texture geology",
-          "desc": "The texture_geology module will texture multiple images onto a field based on the geologic data in the field."
-        },
-        {
-          "name": "georeferenced output",
-          "display": "georeferenced output",
-          "desc": "The georeferenced_output module will output a image in one of the following formats: BMP; TIF; JPG; and PNG. It will also output a world file that will allow the image to be placed correctly in applications that allow georeferencing."
-        },
-        {
-          "name": "read image",
-          "display": "read image",
-          "desc": "The read_image module reads an image file of a specified type and converts it into an 2D uniform field. It can optionally perform some basic image manipulation upon the read image. It also automatically looks for a world file or GCP file associated with the image in the same folder. Since this is done automatically, the world file name must conform to industry standards."
-        },
-        {
-          "name": "fly through",
-          "display": "fly through",
-          "desc": "The fly_through module facilitates controlling the Viewer or creating an animation in which the view follows a complex 3D path on, through, or around your model."
-        },
-        {
-          "name": "image transition",
-          "display": "image transition",
-          "desc": "The image_transition module receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes."
-        },
-        {
-          "name": "display image",
-          "display": "display image",
-          "desc": "DisplayImage: This module is a viewer for images."
-        },
-        {
-          "name": "texture sphere",
-          "display": "texture sphere",
-          "desc": "The texture_sphere module provides a means to (texture map) project images onto a sphere."
-        },
-        {
-          "name": "texture cylinder",
-          "display": "texture cylinder",
-          "desc": "The texture_cylinder module provides a means to (texture map) project images onto a cylinder."
+          "desc": "Map an image onto the horizontal areas of an input field.",
+          "keywords": "overlay aerial"
         },
         {
           "name": "texture cross section",
           "display": "texture cross section",
-          "desc": "The texture_cross_section module provides a means to (texture map) project images from a fence onto a surface."
+          "desc": "Project images from a fence onto a cross section surface.",
+          "keywords": "texture cross section"
+        },
+        {
+          "name": "texture cell sets",
+          "display": "texture cell sets",
+          "desc": "Texture multiple images onto a field based on the cell sets, typically from stratigraphic or lithologic data, in the field.",
+          "keywords": "texture geology cell sets"
+        },
+        {
+          "name": "texture walls",
+          "display": "texture walls",
+          "desc": "Project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
+          "keywords": "texture walls"
+        },
+        {
+          "name": "export georeferenced image",
+          "display": "export georeferenced image",
+          "desc": "Output a image in one of the following formats: BMP; TIF; JPG; and PNG. It will also output a world file that will allow the image to be placed correctly in applications that allow georeferencing.",
+          "keywords": "export georeferenced image output"
+        },
+        {
+          "name": "fly through",
+          "display": "fly through",
+          "desc": "Create an animation in which the view follows a complex 3D path on, through, or around your model.",
+          "keywords": "fly through"
+        },
+        {
+          "name": "read image",
+          "display": "read image",
+          "desc": "Reads an image file of a specified type and converts it into an 2D uniform field. It can optionally perform some basic image manipulation upon the read image. It also automatically looks for a world file or GCP file associated with the image in the same folder. Since this is done automatically, the world file name must conform to industry standards.",
+          "keywords": "read image"
+        },
+        {
+          "name": "image transition",
+          "display": "image transition",
+          "desc": "Receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes.",
+          "keywords": "image transition"
+        },
+        {
+          "name": "display image",
+          "display": "display image",
+          "desc": "This module is a viewer for images.",
+          "keywords": "display image"
+        },
+        {
+          "name": "texture sphere",
+          "display": "texture sphere",
+          "desc": "Project images onto a sphere.",
+          "keywords": "texture sphere"
+        },
+        {
+          "name": "texture cylinder",
+          "display": "texture cylinder",
+          "desc": "Project images onto a cylinder.",
+          "keywords": "texture cylinder"
+        },
+        {
+          "name": "read eft",
+          "display": "read eft",
+          "desc": "Reads EVS Textured Field (*.eft) files and displays them.",
+          "keywords": "load read eft"
         }
       ]
     },
     {
       "name": "Time",
       "display": "Time",
-      "properties": [
+      "modules": [
         {
           "name": "read tcf",
           "display": "read tcf",
-          "desc": "The Read_TCF module is one of a limited set of Time_Data modules. These modules are specifically designed to create models and animations of data that changes over time."
+          "desc": "Create models and animations of data that changes over time.",
+          "keywords": "read tcf"
         },
         {
           "name": "read multi tcf",
           "display": "read multi tcf",
-          "desc": "The Read_Multi_TCF module is one of a limited set of Time_Data modules. These modules are specifically designed to create models and animations of data that changes over time."
+          "desc": "Create models and animations of data that changes over time.",
+          "keywords": "read multi tcf"
         },
         {
           "name": "time value",
           "display": "time value",
-          "desc": "The time_value module is used to parse a TVF file consisting of dates, values, and (optionally) labels."
+          "desc": "Parse a TVF file consisting of dates, values, and (optionally) labels.",
+          "keywords": "time value"
         },
         {
-          "name": "time geology",
-          "display": "time geology",
-          "desc": "The time_geology module allows you to extract a surface from a set of time-based surfaces."
+          "name": "time horizon",
+          "display": "time horizon",
+          "desc": "Extract a horizon from a set of time-based horizons.",
+          "keywords": "time geology horizon"
         },
         {
           "name": "time loop",
           "display": "time loop",
-          "desc": "The time_loop module allows you to loop through a series of times or specify a specific time of interest."
+          "desc": "Loop through a series of times or specify a specific time of interest.",
+          "keywords": "time loop"
         }
       ]
     },
     {
       "name": "Tools",
       "display": "Tools",
-      "properties": [
+      "modules": [
         {
-          "name": "group object",
-          "display": "group object",
-          "desc": "GroupObject provides a way to organize multiple renderable objects by grouping them into a single renderable object."
+          "name": "group objects",
+          "display": "group objects",
+          "desc": "Organize multiple renderable objects by grouping them into a single renderable object.",
+          "keywords": "group objects"
         },
         {
-          "name": "2d overlay group",
-          "display": "2d overlay group",
-          "desc": "2D_Overlay provides a module that applies any connected module's output to the Viewer's 2D overlay. Objects in the overlay are not transformed (rotated, zoomed, panned). These objects are locked in position. This provides a mechanism to apply graphics like drawing title blocks or company logos."
+          "name": "group objects to 2d overlay",
+          "display": "group objects to 2d overlay",
+          "desc": "Applies all connected module's output to the Viewer's 2D overlay. Objects in the overlay are not transformed (rotated, zoomed, panned). These objects are locked in position. This provides a mechanism to apply graphics like drawing title blocks or company logos.",
+          "keywords": "group objects to 2d overlay"
         },
         {
           "name": "trigger script",
           "display": "trigger script",
-          "desc": "The trigger_script module allows any change in a module property to trigger a python script."
+          "desc": "Allows any change in a module property to trigger a python script.",
+          "keywords": "trigger script"
         },
         {
           "name": "merge fields",
           "display": "merge fields",
-          "desc": "The merge_fields module combines the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components."
+          "desc": "Combine the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components.",
+          "keywords": "merge fields"
         },
         {
           "name": "float math",
           "display": "float math",
-          "desc": "The float_math module provides a simple means to perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value."
+          "desc": "Perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value.",
+          "keywords": "float math"
         },
         {
-          "name": "scat to tin",
-          "display": "scat to tin",
-          "desc": "The scat_to_tin module is used to convert scattered sample data into a three-dimensional surface of triangular cells representing an unstructured mesh."
+          "name": "create tin",
+          "display": "create tin",
+          "desc": "Convert nodes into a three-dimensional surface of triangular cells representing an unstructured mesh.",
+          "keywords": "scat tin create"
         },
         {
           "name": "scat to unif",
           "display": "scat to unif",
-          "desc": "The scat_to_unif module is used to convert scattered sample data into a three-dimensional uniform field."
+          "desc": "The scat_to_unif module is used to convert scattered sample data into a three-dimensional uniform field.",
+          "keywords": "scat to unif"
         },
         {
           "name": "material to cellsets",
           "display": "material to cellsets",
-          "desc": "This module takes a field's output and recreates the cell sets based on nodal data."
+          "desc": "Recreates the cell sets based on nodal data.",
+          "keywords": "material to cellsets"
         },
         {
           "name": "loop",
           "display": "loop",
-          "desc": "The loop module iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane.."
+          "desc": "Iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane..",
+          "keywords": "loop"
         },
         {
           "name": "modify data 3d",
           "display": "modify data 3d",
-          "desc": "The modify_data_3D module will alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value."
-        }
-      ]
-    },
-    {
-      "name": "Cell Data",
-      "display": "Cell Data",
-      "properties": [
-        {
-          "name": "cell computation",
-          "display": "cell computation",
-          "desc": "This module uses a Python script to manipulate the cell data values of a field."
-        },
-        {
-          "name": "cell to node",
-          "display": "cell to node",
-          "desc": "The cell to node module is used to interpolate cell data components to nodal data components."
-        },
-        {
-          "name": "node to cell",
-          "display": "node to cell",
-          "desc": "The node_to_cell module is used to interpolate nodal data components to cell data components."
-        },
-        {
-          "name": "shrink cells",
-          "display": "shrink cells",
-          "desc": "The shrink_cells module produces a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. "
-        },
-        {
-          "name": "cell centers",
-          "display": "cell centers",
-          "desc": "The cell_centers module produces a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh."
-        },
-        {
-          "name": "interp cell data",
-          "display": "interp cell data",
-          "desc": "The interp_cell_data module interpolates cell data from one field to another using a Nearest Neighbor interpolation."
+          "desc": "Alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value.",
+          "keywords": "modify data 3d"
         }
       ]
     },
     {
       "name": "View",
       "display": "View",
-      "properties": [
+      "modules": [
         {
           "name": "viewer",
           "display": "viewer",
-          "desc": "The Viewer displays all 3D models."
+          "desc": "The Viewer displays all 3D models.",
+          "keywords": "viewer"
         }
       ]
     }

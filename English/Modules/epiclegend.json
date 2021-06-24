@@ -1,7 +1,7 @@
 {
   "name": "epiclegend",
   "display": "epiclegend",
-  "desc": "The Legend module is used to place a color scale bar in the viewer window.",
+  "desc": "Place a color scale bar in the viewer window.",
   "categories": [
     {
       "name": "Properties",

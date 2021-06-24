@@ -1,0 +1,38 @@
+{
+  "name": "read symbols",
+  "display": "read symbols",
+  "desc": "Creates symbolic representations of different borehole identifiers based on a set of user defined parameters.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset value will move the symbol vertically."
+        },
+        {
+          "name": "Black White Contrast",
+          "display": "Black White Contrast",
+          "desc": "The Black White Contrast value sets the contrast between light and dark colors produced. A value of .50 (default) makes the lightest color .75 gray and the darkest color .25 gray. A value of 1.0 would make white and black."
+        },
+        {
+          "name": "Radius Scaling",
+          "display": "Radius Scaling",
+          "desc": "The Radius Scaling value is used to scale the radius of the symbol based on user units. The symbols overall size is affected by this parameter."
+        },
+        {
+          "name": "Ring Thickness",
+          "display": "Ring Thickness",
+          "desc": "The Ring Thickness parameter sets the outline thickness of the first polygon."
+        }
+      ]
+    }
+  ]
+}

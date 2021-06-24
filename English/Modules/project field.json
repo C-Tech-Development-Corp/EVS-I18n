@@ -1,7 +1,7 @@
 {
   "name": "project field",
   "display": "project field",
-  "desc": "The project_field module is used to project the coordinates in any field, from one coordinate system to another.",
+  "desc": "Project the coordinates in any field from one coordinate system to another.",
   "categories": [
     {
       "name": "Properties",

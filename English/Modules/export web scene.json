@@ -1,7 +1,7 @@
 {
   "name": "export web scene",
   "display": "export web scene",
-  "desc": "The export web scene module provides EVS with vector output of 3D models for the C Tech Web Viewer.",
+  "desc": "Export EVS scenes with vector output of 3D models for the C Tech Web Viewer.",
   "categories": [
     {
       "name": "Properties",

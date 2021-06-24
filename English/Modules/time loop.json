@@ -1,7 +1,7 @@
 {
   "name": "time loop",
   "display": "time loop",
-  "desc": "The time_loop module allows you to loop through a series of times or specify a specific time of interest.",
+  "desc": "Loop through a series of times or specify a specific time of interest.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "edit horizons",
   "display": "edit horizons",
-  "desc": "The edit_horizons module is used to give the user fine control over interpolated surfaces.",
+  "desc": "Provide fine control and editing of estimated horizon data.",
   "categories": [
     {
       "name": "Properties",

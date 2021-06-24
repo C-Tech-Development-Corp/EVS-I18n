@@ -1,0 +1,28 @@
+{
+  "name": "export vector gis",
+  "display": "export vector gis",
+  "desc": "Create a file in one of the following vector formats: ESRI Shapefile (*.shp); GMT ASCII Vectors (*.gmt); and MapInfo TAB (*.tab).",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Prepend Nodal Data",
+          "display": "Prepend Nodal Data",
+          "desc": "Prepend Nodal Flag toggle on will add the prefix \"n_\" before each nodal data name when writing, indicating that the nodal data has been averaged across the cell."
+        },
+        {
+          "name": "Exponentiate Log Data",
+          "display": "Exponentiate Log Data",
+          "desc": "The Exponentiate Log Data tells the module that any nodal or cell data with log units should be exponentiated when written out."
+        },
+        {
+          "name": "Include Average Data",
+          "display": "Include Average Data",
+          "desc": "Turning the Include Average Coordinate Data toggle will add four cell data components to the output file.  These are the absolute cell number average coordinate of each cell in X, Y, and Z."
+        }
+      ]
+    }
+  ]
+}

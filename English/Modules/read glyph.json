@@ -1,0 +1,48 @@
+{
+  "name": "read glyph",
+  "display": "read glyph",
+  "desc": "Reads glyphs saved in any of the three primary EVS field file formats.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Offset Base",
+          "display": "Offset Base",
+          "desc": "Offset Base is a toggle that changes the origin from the centroid of the glyph to the base."
+        },
+        {
+          "name": "Alignment",
+          "display": "Alignment",
+          "desc": "The Alignment allows the user to choose how determine the orientation of the glyph."
+        },
+        {
+          "name": "Roll",
+          "display": "Roll",
+          "desc": "The Roll is a value that lets you control the rotation about the roll axis (glyph directional axis)."
+        },
+        {
+          "name": "Length Factor",
+          "display": "Length Factor",
+          "desc": "Length Factor is a value that lets you scale the length of the glyph."
+        },
+        {
+          "name": "Width Factor",
+          "display": "Width Factor",
+          "desc": "Width Factor is a value that lets you scale the width of the glyph."
+        },
+        {
+          "name": "Height Factor",
+          "display": "Height Factor",
+          "desc": "Height Factor is a value that lets you scale the height of the glyph."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "gradient",
   "display": "gradient",
-  "desc": "The gradient module calculates the vector gradient field of a scalar data component at every node in a mesh.",
+  "desc": "Calculate the vector gradient field of a scalar data component at every node in a mesh.",
   "categories": [
     {
       "name": "Properties",

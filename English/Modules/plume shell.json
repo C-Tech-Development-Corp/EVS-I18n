@@ -1,7 +1,7 @@
 {
   "name": "plume shell",
   "display": "plume shell",
-  "desc": "plume shell module",
+  "desc": "Subset a volumetric model and display a non-volumetric shell of a plume.",
   "categories": [
     {
       "name": "Properties",

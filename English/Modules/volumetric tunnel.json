@@ -1,7 +1,7 @@
 {
   "name": "volumetric tunnel",
   "display": "volumetric tunnel",
-  "desc": "The volumetric_tunnel module is used to produce a volumetric extrusion along a line.",
+  "desc": "Produce a volumetric extrusion along a line.",
   "categories": [
     {
       "name": "Properties",

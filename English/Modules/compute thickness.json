@@ -1,0 +1,12 @@
+{
+  "name": "compute thickness",
+  "display": "compute thickness",
+  "desc": "Measure the thickness of a field relative to a specified surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "modflow converter",
   "display": "modflow converter",
-  "desc": "The modflow_converter module will import MODFLOW data from various sources.",
+  "desc": "Import MODFLOW data from various sources.",
   "categories": [
     {
       "name": "Properties",

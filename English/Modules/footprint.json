@@ -1,7 +1,7 @@
 {
   "name": "footprint",
   "display": "footprint",
-  "desc": "The footprint module is used to create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input.",
+  "desc": "Create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input.",
   "categories": [
     {
       "name": "Properties",

@@ -1,7 +1,7 @@
 {
   "name": "overlay aerial",
   "display": "overlay aerial",
-  "desc": "The overlay_aerial module will take as input a field and then map an image onto the horizontal areas of the grid.",
+  "desc": "Map an image onto the horizontal areas of an input field.",
   "categories": [
     {
       "name": "Properties",

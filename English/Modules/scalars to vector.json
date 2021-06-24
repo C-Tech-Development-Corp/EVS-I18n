@@ -1,0 +1,28 @@
+{
+  "name": "scalars to vector",
+  "display": "scalars to vector",
+  "desc": "Create a 2d or 3d vector by combining selected scalar data components.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Vector Type",
+          "display": "Vector Type",
+          "desc": "The Vector Type allows the user to select between two and three data components to create the output vector."
+        },
+        {
+          "name": "Vector Components",
+          "display": "Vector Components",
+          "desc": "The Vector Components allow the user to set which data components to use when creating the vector."
+        }
+      ]
+    }
+  ]
+}
