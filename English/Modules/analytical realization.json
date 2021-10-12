@@ -88,7 +88,7 @@
         {
           "name": "Variography Z Scale",
           "display": "Variography Z Scale",
-          "desc": "The Variography Z Scale value sets the vertical scaling of the variography ellipsoid and lines."
+          "desc": "The Variography Z Scale value is the vertical exaggeration to be applied to the output variography ellipsoid and lines."
         },
         {
           "name": "Display Variogram Ellipsoid",

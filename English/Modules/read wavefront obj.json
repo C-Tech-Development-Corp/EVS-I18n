@@ -29,21 +29,6 @@
           "desc": "This toggle will prevent the module from reading the image alpha channel into memory when turned to the Off position."
         },
         {
-          "name": "Sharpen Image",
-          "display": "Sharpen Image",
-          "desc": "The Soften Image toggle makes the image smoother by applying low intensity pixel averaging."
-        },
-        {
-          "name": "Soften Image",
-          "display": "Soften Image",
-          "desc": "The Sharpen Image toggle increases the visibility of details on the image."
-        },
-        {
-          "name": "Edge Enhance",
-          "display": "Edge Enhance",
-          "desc": "The Edge Enhance toggle enhances the edges of the objects and discards other image information."
-        },
-        {
           "name": "Brightness",
           "display": "Brightness",
           "desc": "The Brightness of the image can be adjusted when the Adjust Brightness toggle is selected"

@@ -11,6 +11,11 @@
           "name": "Check For Cell Set Data",
           "display": "Check For Cell Set Data",
           "desc": "The Check For Cell Set Data toggle will cause any cell data that is constant throughout its cell set to be written as a cell set data component."
+        },
+        {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
         }
       ]
     }

@@ -28,6 +28,38 @@
           "desc": "Tλè λèïϱλƭ ôƒ ƭλè řèñδèřèδ ƥôřƭïôñ ôƒ ƭλè ϱèôřèƒèřèñçèδ ï₥áϱè, ïñ ƥïжèℓƨ."
         }
       ]
+    },
+    {
+      "name": "View",
+      "display": "Vïèω",
+      "properties": [
+        {
+          "name": "Avs Image Source",
+          "display": "ÂƲƨ Ì₥áϱè §ôúřçè",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Window Size",
+      "display": "Wïñδôω §ïƺè",
+      "properties": [
+        {
+          "name": "Window Sizing",
+          "display": "Wïñδôω §ïƺïñϱ",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Width",
+          "display": "Vïèωèř Wïδƭλ",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Height",
+          "display": "Vïèωèř Hèïϱλƭ",
+          "desc": ""
+        }
+      ]
     }
   ]
 }

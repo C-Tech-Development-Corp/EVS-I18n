@@ -104,31 +104,31 @@
           "name": "edit horizons",
           "display": "edit horizons",
           "desc": "Provide fine control and editing of estimated horizon data.",
-          "keywords": "edit horizons"
+          "keywords": "*edit *horizons"
         },
         {
           "name": "horizon ranking",
           "display": "horizon ranking",
           "desc": "Adjust individual horizon priorities and rankings.",
-          "keywords": "horizon ranking"
+          "keywords": "*horizon *ranking"
         },
         {
           "name": "material mapping",
           "display": "material mapping",
           "desc": "This module can re-assign material data for the purpose of grouping.",
-          "keywords": "material mapping"
+          "keywords": "*material *mapping"
         },
         {
           "name": "combine horizons",
           "display": "combine horizons",
           "desc": "Merge horizons from multiple fields.",
-          "keywords": "combine horizons"
+          "keywords": "*combine *horizons"
         },
         {
           "name": "subset horizons",
           "display": "subset horizons",
           "desc": "Subset horizons to constrain model prior to conversion to surface or layers.",
-          "keywords": "subset horizons"
+          "keywords": "*subset *horizons"
         },
         {
           "name": "collapse horizons",
@@ -140,13 +140,13 @@
           "name": "displace block",
           "display": "displace block",
           "desc": "The displace block module translates a field in z by the input surface and input surface data",
-          "keywords": "displace block"
+          "keywords": "*displace *block"
         },
         {
           "name": "adaptive indicator krig",
           "display": "adaptive indicator krig",
           "desc": "An alternative geologic modeling concept that uses the indicator method for assigning each node's material in a grid based on data.",
-          "keywords": "adaptive indicator krig"
+          "keywords": "*adaptive *indicator *krig"
         }
       ]
     },
@@ -182,7 +182,7 @@
           "name": "change minmax",
           "display": "change minmax",
           "desc": "Set min and max values above the true maximum data range and min values below the true minimum data range.",
-          "keywords": "change minmax"
+          "keywords": "*change *minmax"
         },
         {
           "name": "band data",
@@ -194,7 +194,7 @@
           "name": "volume renderer",
           "display": "volume renderer",
           "desc": "Directly renders a 3D uniform field using either the Back-to-Front (BTF) or Ray-tracing volume rendering techniques.",
-          "keywords": "volume renderer"
+          "keywords": "*volume *renderer"
         },
         {
           "name": "opacity by nodal data",
@@ -206,37 +206,37 @@
           "name": "texture colors",
           "display": "texture colors",
           "desc": "The texture_colors module does high-quality coloring based on texturing.",
-          "keywords": "texture colors"
+          "keywords": "*texture *colors"
         },
         {
           "name": "illuminated lines",
           "display": "illuminated lines",
           "desc": "The Illuminated Lines module uses a texture mapped illumination model on polylines with line halo and animation effects.",
-          "keywords": "illuminated lines"
+          "keywords": "*illuminated *lines"
         },
         {
           "name": "texture wave",
           "display": "texture wave",
           "desc": "The texture_wave module utilizes opacity and texture mapping to create an animated effect. This module works with both OpenGL and Software Rendering.",
-          "keywords": "texture wave"
+          "keywords": "*texture *wave"
         },
         {
           "name": "slope and aspect",
           "display": "slope and aspect",
           "desc": "Determine the slope and aspect of a surface.",
-          "keywords": "slope and aspect"
+          "keywords": "*slope *and *aspect"
         },
         {
           "name": "select single data",
           "display": "select single data",
           "desc": "Extract a single node or cell data component from a field.",
-          "keywords": "select single data"
+          "keywords": "*select *single *data"
         },
         {
           "name": "read wavefront obj",
           "display": "read wavefront obj",
           "desc": "Read Wavefront OBJ files for display.",
-          "keywords": "read wavefront obj"
+          "keywords": "*read *wavefront *obj"
         }
       ]
     },
@@ -254,7 +254,7 @@
           "name": "cell volumetrics",
           "display": "cell volumetrics",
           "desc": "Calculate the volumes and masses of soil, and chemicals in soils and ground water at each cell.",
-          "keywords": "cell volumetrics"
+          "keywords": "*cell *volumetrics"
         },
         {
           "name": "compute surface area",
@@ -266,19 +266,19 @@
           "name": "file statistics",
           "display": "file statistics",
           "desc": "Calculate and display statistics about the data contained in the selected file.",
-          "keywords": "file statistics"
+          "keywords": "*file *statistics"
         },
         {
           "name": "statistics",
           "display": "statistics",
           "desc": "Analyze the statistical distribution of a single data from a field.",
-          "keywords": "statistics"
+          "keywords": "*statistics"
         },
         {
           "name": "well decommission",
           "display": "well decommission",
           "desc": "Analyzes all available data and quantifies the impact to site assessment quality of removing each well. ",
-          "keywords": "well decommission"
+          "keywords": "*well *decommission"
         }
       ]
     },
@@ -289,14 +289,20 @@
         {
           "name": "legend",
           "display": "legend",
-          "desc": "Place a color scale bar in the viewer window.",
+          "desc": "The Legend module is used to place a color scale bar in the viewer window.",
           "keywords": "*legend"
+        },
+        {
+          "name": "3d legend",
+          "display": "3d legend",
+          "desc": "The Legend module is used to place a color scale bar in the viewer window.",
+          "keywords": "*3d *legend"
         },
         {
           "name": "axes",
           "display": "axes",
           "desc": "Place 3D axes in the viewer scaled by the model data and/or user defined limits.",
-          "keywords": "axes"
+          "keywords": "*axes"
         },
         {
           "name": "direction indicator",
@@ -308,37 +314,43 @@
           "name": "add logo",
           "display": "add logo",
           "desc": "Place a logo or other graphic object in the Viewer's non-transformable overlay.",
-          "keywords": "add logo"
+          "keywords": "*add *logo"
         },
         {
           "name": "titles",
           "display": "titles",
           "desc": "Provides a straightforward means to place text in the Viewer.",
-          "keywords": "titles"
+          "keywords": "*titles"
+        },
+        {
+          "name": "3d titles",
+          "display": "3d titles",
+          "desc": "Provides a straightforward means to place text in the Viewer.",
+          "keywords": "*3d *titles"
         },
         {
           "name": "place text",
           "display": "place text",
           "desc": "Provides a means to interactively place 2D and 3D renderable text strings or to read an EMT file to place the text.",
-          "keywords": "place text"
+          "keywords": "*place *text"
         },
         {
           "name": "interactive labels",
           "display": "interactive labels",
           "desc": "Place formatted labels at probed locations within the Viewer.",
-          "keywords": "interactive labels"
+          "keywords": "*interactive *labels"
         },
         {
           "name": "application notes",
           "display": "application notes",
           "desc": "Add textual notes to your applications that are saved with the application.",
-          "keywords": "application notes"
+          "keywords": "*application *notes"
         },
         {
           "name": "format string",
           "display": "format string",
           "desc": "Convert values coming from various numeric and string input ports into a resultant string.",
-          "keywords": "format string"
+          "keywords": "*format *string"
         }
       ]
     },
@@ -368,19 +380,19 @@
           "name": "slice",
           "display": "slice",
           "desc": "Create a slice through an input field.",
-          "keywords": "slice"
+          "keywords": "*slice"
         },
         {
           "name": "isolines",
           "display": "isolines",
           "desc": "Produce lines of constant value which can be offset from a 2D surface, or the external faces of a 3D surface.",
-          "keywords": "isolines"
+          "keywords": "*isolines"
         },
         {
           "name": "cut",
           "display": "cut",
           "desc": "Create a subset of your input on one side of a planar surface.",
-          "keywords": "cut"
+          "keywords": "*cut"
         },
         {
           "name": "plume",
@@ -392,13 +404,13 @@
           "name": "plume area",
           "display": "plume area",
           "desc": "plume area module",
-          "keywords": "plume area"
+          "keywords": "*plume *area"
         },
         {
           "name": "constant shell",
           "display": "constant shell",
           "desc": "constant_shell module",
-          "keywords": "constant shell"
+          "keywords": "*constant *shell"
         },
         {
           "name": "intersection",
@@ -422,43 +434,43 @@
           "name": "footprint",
           "display": "footprint",
           "desc": "Create the 2D footprint by creating a surface at the specified Z Position with an x-y extent that matches the 3D input.",
-          "keywords": "footprint"
+          "keywords": "*footprint"
         },
         {
           "name": "slope aspect splitter",
           "display": "slope aspect splitter",
           "desc": "Split an input field into two output fields based upon slope or aspect data using a subset expression.",
-          "keywords": "slope aspect splitter"
+          "keywords": "*slope *aspect *splitter"
         },
         {
           "name": "crop and downsize",
           "display": "crop and downsize",
           "desc": "Subset or simplify an image or structured field.",
-          "keywords": "crop and downsize"
+          "keywords": "*crop *and *downsize"
         },
         {
           "name": "select cell sets",
           "display": "select cell sets",
           "desc": "Select individual geologic layers or lithologic materials for output.",
-          "keywords": "select cell sets"
+          "keywords": "*select *cell *sets"
         },
         {
           "name": "orthoslice",
           "display": "orthoslice",
           "desc": "Displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis.",
-          "keywords": "orthoslice"
+          "keywords": "*orthoslice"
         },
         {
           "name": "edges",
           "display": "edges",
           "desc": "Produce a wireframe representation of an unstructured cell data mesh. This allows viewing of all grid boundaries (internal AND external) of the input mesh. The edges module is useful in that it is able to render lines around adaptive gridding locations.",
-          "keywords": "edges"
+          "keywords": "*edges"
         },
         {
           "name": "bounds",
           "display": "bounds",
           "desc": "Generate lines and/or surfaces that indicate the bounding box of a 3D structured field. This is useful when you need to see the shape of an object and the structure of its mesh.",
-          "keywords": "bounds"
+          "keywords": "*bounds"
         }
       ]
     },
@@ -488,7 +500,7 @@
           "name": "buffer distance",
           "display": "buffer distance",
           "desc": "Calculate the 2d distance from every node in the input field to the input line and add this distance as a data component.",
-          "keywords": "buffer distance"
+          "keywords": "*buffer *distance"
         },
         {
           "name": "distance to tunnel center",
@@ -500,7 +512,7 @@
           "name": "overburden",
           "display": "overburden",
           "desc": "Compute the complete volume required to excavate a plume or ore body given the pit wall slope (measured from vertical) and the excavation digging accuracy (we refer to as buffer size).",
-          "keywords": "overburden"
+          "keywords": "*overburden"
         }
       ]
     },
@@ -512,13 +524,13 @@
           "name": "node computation",
           "display": "node computation",
           "desc": "Use a Python script to manipulate the value or coordinates of a field.",
-          "keywords": "node computation"
+          "keywords": "*node *computation"
         },
         {
           "name": "cell computation",
           "display": "cell computation",
           "desc": "Use a Python script to manipulate the cell data values of a field.",
-          "keywords": "cell computation"
+          "keywords": "*cell *computation"
         },
         {
           "name": "combine nodal data",
@@ -530,49 +542,49 @@
           "name": "interpolate nodal data",
           "display": "interpolate nodal data",
           "desc": "Interpolates nodal data from a source field to a target field which is contained within the input. ",
-          "keywords": "interpolate nodal data"
+          "keywords": "*interpolate *nodal *data"
         },
         {
           "name": "interpolate cell data",
           "display": "interpolate cell data",
           "desc": "Interpolates cell data from one field to another using a Nearest Neighbor interpolation.",
-          "keywords": "interpolate cell data"
+          "keywords": "*interpolate *cell *data"
         },
         {
           "name": "compute thickness",
           "display": "compute thickness",
           "desc": "Measure the thickness of a field relative to a specified surface.",
-          "keywords": "compute thickness"
+          "keywords": "*compute *thickness"
         },
         {
           "name": "translate by data",
           "display": "translate by data",
           "desc": "Translates a field in x, y, or z based upon either a nodal or cell data component or a constant.",
-          "keywords": "translate by data"
+          "keywords": "*translate *by *data"
         },
         {
           "name": "cell data to node data",
           "display": "cell data to node data",
           "desc": "Interpolate cell data components to nodal data components.",
-          "keywords": "cell data to node data"
+          "keywords": "*cell *data *to *node *data"
         },
         {
           "name": "node data to cell data",
           "display": "node data to cell data",
           "desc": "Interpolate nodal data components to cell data components.",
-          "keywords": "node data to cell data"
+          "keywords": "*node *data *to *cell *data"
         },
         {
           "name": "shrink cells",
           "display": "shrink cells",
           "desc": "Produce a mesh containing disjoint cells which can be optionally shrunk relative to their geometric centers. ",
-          "keywords": "shrink cells"
+          "keywords": "*shrink *cells"
         },
         {
           "name": "cell centers",
           "display": "cell centers",
           "desc": "Produce a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh.",
-          "keywords": "cell centers"
+          "keywords": "*cell *centers"
         }
       ]
     },
@@ -590,7 +602,7 @@
           "name": "import vtk",
           "display": "import vtk",
           "desc": "The import VTK module reads a dataset from the VTK format.",
-          "keywords": "import vtk"
+          "keywords": "*import *vtk"
         },
         {
           "name": "import cad",
@@ -614,19 +626,19 @@
           "name": "buildings",
           "display": "buildings",
           "desc": "Create 3d buildings interactively or from a file.",
-          "keywords": "buildings"
+          "keywords": "*buildings"
         },
         {
           "name": "read lines",
           "display": "read lines",
           "desc": "Read a series of points with data connected by lines.",
-          "keywords": "read lines"
+          "keywords": "*read *lines"
         },
         {
           "name": "read strike and dip",
           "display": "read strike and dip",
           "desc": "Read sampled locations with strike and dip values.",
-          "keywords": "read strike and dip"
+          "keywords": "*read *strike *and *dip"
         },
         {
           "name": "read glyph",
@@ -638,7 +650,7 @@
           "name": "read symbols",
           "display": "read symbols",
           "desc": "Creates symbolic representations of different borehole identifiers based on a set of user defined parameters.",
-          "keywords": "read symbols"
+          "keywords": "*read *symbols"
         },
         {
           "name": "import geometry",
@@ -662,13 +674,13 @@
           "name": "export web scene",
           "display": "export web scene",
           "desc": "Export EVS scenes with vector output of 3D models for the C Tech Web Viewer.",
-          "keywords": "export web scene"
+          "keywords": "*export *web *scene"
         },
         {
           "name": "export pdf scene",
           "display": "export pdf scene",
           "desc": "Export EVS scenes with vector output of 3D models for the C Tech PDF Converter.",
-          "keywords": "export pdf scene"
+          "keywords": "*export *pdf *scene"
         },
         {
           "name": "export nodes",
@@ -698,7 +710,7 @@
           "name": "write lines",
           "display": "write lines",
           "desc": "Save a series of points with data connected by lines. These lines are stored in the EVS Line File format.",
-          "keywords": "write lines"
+          "keywords": "*write *lines"
         },
         {
           "name": "export horizons to vistas",
@@ -716,61 +728,61 @@
           "name": "3d streamlines",
           "display": "3d streamlines",
           "desc": "Produce streamlines or streamribbons of a field which is a 2 or 3 element vector data component on any type of mesh.",
-          "keywords": "3d streamlines"
+          "keywords": "*3d *streamlines"
         },
         {
           "name": "surface streamlines",
           "display": "surface streamlines",
           "desc": "Produce streamlines on any surface based on its slopes.",
-          "keywords": "surface streamlines"
+          "keywords": "*surface *streamlines"
         },
         {
           "name": "create drill path",
           "display": "create drill path",
           "desc": "Produce a line path through a volume dependent on a starting locations and user defined restrictions.",
-          "keywords": "create drill path"
+          "keywords": "*create *drill *path"
         },
         {
           "name": "modpath",
           "display": "modpath",
           "desc": "Use the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground.",
-          "keywords": "modpath"
+          "keywords": "*modpath"
         },
         {
           "name": "scalars to vector",
           "display": "scalars to vector",
           "desc": "Create a 2d or 3d vector by combining selected scalar data components.",
-          "keywords": "scalars to vector"
+          "keywords": "*scalars *to *vector"
         },
         {
           "name": "vector magnitude",
           "display": "vector magnitude",
           "desc": "Calculates the magnitude of a vector field data component at every node in a mesh.",
-          "keywords": "vector magnitude"
+          "keywords": "*vector *magnitude"
         },
         {
           "name": "gradient",
           "display": "gradient",
           "desc": "Calculate the vector gradient field of a scalar data component at every node in a mesh.",
-          "keywords": "gradient"
+          "keywords": "*gradient"
         },
         {
           "name": "capture zone",
           "display": "capture zone",
           "desc": "Use streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells.",
-          "keywords": "capture zone"
+          "keywords": "*capture *zone"
         },
         {
           "name": "seepage velocity",
           "display": "seepage velocity",
           "desc": "Compute the vector groundwater flow field visualizations of the vector field.",
-          "keywords": "seepage velocity"
+          "keywords": "*seepage *velocity"
         },
         {
           "name": "regional averages",
           "display": "regional averages",
           "desc": "Average nodal data values from the input field that fall into the input regions.",
-          "keywords": "regional averages"
+          "keywords": "*regional *averages"
         }
       ]
     },
@@ -782,7 +794,7 @@
           "name": "draw lines",
           "display": "draw lines",
           "desc": "Create both 2D and 3D lines interactively with the mouse.",
-          "keywords": "draw lines"
+          "keywords": "*draw *lines"
         },
         {
           "name": "polyline processing",
@@ -794,7 +806,7 @@
           "name": "triangulate polygons",
           "display": "triangulate polygons",
           "desc": "Converts a closed polyline into a triangulated surface.",
-          "keywords": "triangulate polygons"
+          "keywords": "*triangulate *polygons"
         },
         {
           "name": "triangle refinement",
@@ -806,61 +818,61 @@
           "name": "tubes",
           "display": "tubes",
           "desc": "Produce open or closed tubes of constant or data dependent radius using 3D lines or polylines as input.",
-          "keywords": "tubes"
+          "keywords": "*tubes"
         },
         {
           "name": "volumetric tunnel",
           "display": "volumetric tunnel",
           "desc": "Produce a volumetric extrusion along a line.",
-          "keywords": "volumetric tunnel"
+          "keywords": "*volumetric *tunnel"
         },
         {
           "name": "cross section tubes",
           "display": "cross section tubes",
           "desc": "Produce open or closed tubes of user defined cross-section and constant or data dependent radius using 3D lines or polylines as input for the center line and a single 2D polyline as the cross-section of the tubes.",
-          "keywords": "cross section tubes"
+          "keywords": "*cross *section *tubes"
         },
         {
           "name": "extrude",
           "display": "extrude",
           "desc": "Accepts surfaces, lines, or points and adds one to the dimensionality of the input by extruding the mesh in the Z direction.",
-          "keywords": "extrude"
+          "keywords": "*extrude"
         },
         {
           "name": "drive glyphs",
           "display": "drive glyphs",
           "desc": "Provides a way to move any object along multiple paths to create a 'driving' animation.",
-          "keywords": "drive glyphs"
+          "keywords": "*drive *glyphs"
         },
         {
           "name": "place glyph",
           "display": "place glyph",
           "desc": "Place a single scalable geometric objects (glyph) at an interactively determined location.",
-          "keywords": "place glyph"
+          "keywords": "*place *glyph"
         },
         {
           "name": "glyphs at nodes",
           "display": "glyphs at nodes",
           "desc": "Place geometric objects (glyphs) at all nodal locations of a field.",
-          "keywords": "glyphs at nodes"
+          "keywords": "*glyphs *at *nodes"
         },
         {
           "name": "create fault surface",
           "display": "create fault surface",
           "desc": "Create a 3D grid that is aligned to a specified strike and dip.",
-          "keywords": "create fault surface"
+          "keywords": "*create *fault *surface"
         },
         {
           "name": "create grid",
           "display": "create grid",
           "desc": "Create a 2D or 3D uniform grid.",
-          "keywords": "create grid"
+          "keywords": "*create *grid"
         },
         {
           "name": "create spheroid",
           "display": "create spheroid",
           "desc": "Create a 2D or 3D spheroid.",
-          "keywords": "create spheroid"
+          "keywords": "*create *spheroid"
         }
       ]
     },
@@ -878,13 +890,13 @@
           "name": "geologic surfmap",
           "display": "geologic surfmap",
           "desc": "Drape lines onto horizons.",
-          "keywords": "geologic surfmap"
+          "keywords": "*geologic *surfmap"
         },
         {
           "name": "transform field",
           "display": "transform field",
           "desc": "Translate, rotate or scale the coordinates any field.",
-          "keywords": "transform field"
+          "keywords": "*transform *field"
         },
         {
           "name": "transform objects",
@@ -896,7 +908,7 @@
           "name": "project field",
           "display": "project field",
           "desc": "Project the coordinates in any field from one coordinate system to another.",
-          "keywords": "project field"
+          "keywords": "*project *field"
         }
       ]
     },
@@ -908,13 +920,13 @@
           "name": "overlay aerial",
           "display": "overlay aerial",
           "desc": "Map an image onto the horizontal areas of an input field.",
-          "keywords": "overlay aerial"
+          "keywords": "*overlay *aerial"
         },
         {
           "name": "texture cross section",
           "display": "texture cross section",
           "desc": "Project images from a fence onto a cross section surface.",
-          "keywords": "texture cross section"
+          "keywords": "*texture *cross *section"
         },
         {
           "name": "texture cell sets",
@@ -926,7 +938,7 @@
           "name": "texture walls",
           "display": "texture walls",
           "desc": "Project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
-          "keywords": "texture walls"
+          "keywords": "*texture *walls"
         },
         {
           "name": "export georeferenced image",
@@ -938,37 +950,19 @@
           "name": "fly through",
           "display": "fly through",
           "desc": "Create an animation in which the view follows a complex 3D path on, through, or around your model.",
-          "keywords": "fly through"
-        },
-        {
-          "name": "read image",
-          "display": "read image",
-          "desc": "Reads an image file of a specified type and converts it into an 2D uniform field. It can optionally perform some basic image manipulation upon the read image. It also automatically looks for a world file or GCP file associated with the image in the same folder. Since this is done automatically, the world file name must conform to industry standards.",
-          "keywords": "read image"
-        },
-        {
-          "name": "image transition",
-          "display": "image transition",
-          "desc": "Receives two images and is used to transition from one image to another in any one of a variety of methods, including image fades and wipes.",
-          "keywords": "image transition"
-        },
-        {
-          "name": "display image",
-          "display": "display image",
-          "desc": "This module is a viewer for images.",
-          "keywords": "display image"
+          "keywords": "*fly *through"
         },
         {
           "name": "texture sphere",
           "display": "texture sphere",
           "desc": "Project images onto a sphere.",
-          "keywords": "texture sphere"
+          "keywords": "*texture *sphere"
         },
         {
           "name": "texture cylinder",
           "display": "texture cylinder",
           "desc": "Project images onto a cylinder.",
-          "keywords": "texture cylinder"
+          "keywords": "*texture *cylinder"
         },
         {
           "name": "read eft",
@@ -986,19 +980,19 @@
           "name": "read tcf",
           "display": "read tcf",
           "desc": "Create models and animations of data that changes over time.",
-          "keywords": "read tcf"
+          "keywords": "*read *tcf"
         },
         {
           "name": "read multi tcf",
           "display": "read multi tcf",
           "desc": "Create models and animations of data that changes over time.",
-          "keywords": "read multi tcf"
+          "keywords": "*read *multi *tcf"
         },
         {
           "name": "time value",
           "display": "time value",
           "desc": "Parse a TVF file consisting of dates, values, and (optionally) labels.",
-          "keywords": "time value"
+          "keywords": "*time *value"
         },
         {
           "name": "time horizon",
@@ -1010,7 +1004,7 @@
           "name": "time loop",
           "display": "time loop",
           "desc": "Loop through a series of times or specify a specific time of interest.",
-          "keywords": "time loop"
+          "keywords": "*time *loop"
         }
       ]
     },
@@ -1022,31 +1016,31 @@
           "name": "group objects",
           "display": "group objects",
           "desc": "Organize multiple renderable objects by grouping them into a single renderable object.",
-          "keywords": "group objects"
+          "keywords": "*group *objects"
         },
         {
           "name": "group objects to 2d overlay",
           "display": "group objects to 2d overlay",
           "desc": "Applies all connected module's output to the Viewer's 2D overlay. Objects in the overlay are not transformed (rotated, zoomed, panned). These objects are locked in position. This provides a mechanism to apply graphics like drawing title blocks or company logos.",
-          "keywords": "group objects to 2d overlay"
+          "keywords": "*group *objects *to *2d *overlay"
         },
         {
           "name": "trigger script",
           "display": "trigger script",
           "desc": "Allows any change in a module property to trigger a python script.",
-          "keywords": "trigger script"
+          "keywords": "*trigger *script"
         },
         {
           "name": "merge fields",
           "display": "merge fields",
           "desc": "Combine the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components.",
-          "keywords": "merge fields"
+          "keywords": "*merge *fields"
         },
         {
           "name": "float math",
           "display": "float math",
           "desc": "Perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value.",
-          "keywords": "float math"
+          "keywords": "*float *math"
         },
         {
           "name": "create tin",
@@ -1058,25 +1052,25 @@
           "name": "scat to unif",
           "display": "scat to unif",
           "desc": "The scat_to_unif module is used to convert scattered sample data into a three-dimensional uniform field.",
-          "keywords": "scat to unif"
+          "keywords": "*scat *to *unif"
         },
         {
           "name": "material to cellsets",
           "display": "material to cellsets",
           "desc": "Recreates the cell sets based on nodal data.",
-          "keywords": "material to cellsets"
+          "keywords": "*material *to *cellsets"
         },
         {
           "name": "loop",
           "display": "loop",
           "desc": "Iterates an operation. For example, you could use a loop object to control the movement of an object in your application; such as incrementing the movement of a slider for a slice plane..",
-          "keywords": "loop"
+          "keywords": "*loop"
         },
         {
           "name": "modify data 3d",
           "display": "modify data 3d",
           "desc": "Alter the data within its inner radius to a set value and the blend data in its outer radius between its original value and the set modification value.",
-          "keywords": "modify data 3d"
+          "keywords": "*modify *data *3d"
         }
       ]
     },
@@ -1088,7 +1082,7 @@
           "name": "viewer",
           "display": "viewer",
           "desc": "The Viewer displays all 3D models.",
-          "keywords": "viewer"
+          "keywords": "*viewer"
         }
       ]
     }

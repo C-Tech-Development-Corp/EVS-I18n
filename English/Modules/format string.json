@@ -49,6 +49,16 @@
           "desc": "The N4 field is a double value that can be used as the variable {N4} in the expression."
         },
         {
+          "name": "N5",
+          "display": "N5",
+          "desc": "The N5 field is a double value that can be used as the variable {N5} in the expression."
+        },
+        {
+          "name": "N6",
+          "display": "N6",
+          "desc": "The N6 field is a double value that can be used as the variable {N6} in the expression."
+        },
+        {
           "name": "S1",
           "display": "S1",
           "desc": "The S1 field is a string value that can be used as the variable {S1} in the expression."
@@ -62,6 +72,11 @@
           "name": "S3",
           "display": "S3",
           "desc": "The S3 field is a string value that can be used as the variable {S3} in the expression."
+        },
+        {
+          "name": "S4",
+          "display": "S4",
+          "desc": "The S4 field is a string value that can be used as the variable {S4} in the expression."
         },
         {
           "name": "Date",

@@ -21,6 +21,11 @@
           "name": "Grid Info",
           "display": "Grid Info",
           "desc": "The details of the input field that will be written to the file."
+        },
+        {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
         }
       ]
     }

@@ -28,6 +28,38 @@
           "desc": "The height of the rendered portion of the georeferenced image, in pixels."
         }
       ]
+    },
+    {
+      "name": "View",
+      "display": "View",
+      "properties": [
+        {
+          "name": "Avs Image Source",
+          "display": "Avs Image Source",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Window Size",
+      "display": "Window Size",
+      "properties": [
+        {
+          "name": "Window Sizing",
+          "display": "Window Sizing",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Width",
+          "display": "Viewer Width",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Height",
+          "display": "Viewer Height",
+          "desc": ""
+        }
+      ]
     }
   ]
 }

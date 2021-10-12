@@ -367,7 +367,7 @@
         {
           "name": "Uncertainty Sphere Z Scale",
           "display": "Uncertainty Sphere Z Scale",
-          "desc": "The Uncertainty Sphere Z Scale value sets the vertical scaling of the uncertainty spheres.  These spheres are visible from the Uncertainty Sphere output port."
+          "desc": "The Uncertainty Sphere Z Scale value is the vertical exaggeration to be applied to the output object.  These spheres are visible from the Uncertainty Sphere output port."
         },
         {
           "name": "Uncertainty Spheres To Display",

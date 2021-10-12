@@ -66,17 +66,17 @@
         {
           "name": "Coordinate Units",
           "display": "Coordinate Units",
-          "desc": "The Coordinate Units of the input field."
-        },
-        {
-          "name": "Coordinate Unit Ratio",
-          "display": "Coordinate Unit Ratio",
-          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Unit Ratio.  The ratio should be the factor needed to convert between the user specified units and Liters."
+          "desc": "If Auto Detect Units is unchecked and you wish to use unusual units (e.g. mm, fathoms, etc.), you must select \"Specify\".  This will override the units specified in your data file."
         },
         {
           "name": "Coordinate Specified Units",
           "display": "Coordinate Specified Units",
-          "desc": "If the Coordinate Units have been set to Specify the user must set the Coordinate Specified Units.  This is the label used in the output."
+          "desc": "If Auto Detect Units is unchecked, enter the name of unusual units (e.g. mm, fathoms, etc.). Coordinate Unit Ratio must also be entered."
+        },
+        {
+          "name": "Coordinate Unit Ratio",
+          "display": "Coordinate Unit Ratio",
+          "desc": "If Auto Detect Units is unchecked, enter the conversion factor which will properly accommodate your volumetric units.   Liters is the default (1.0), meters is 1,000 since there are 1,000 liters per cubic meter."
         }
       ]
     },

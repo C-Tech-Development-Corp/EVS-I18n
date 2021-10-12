@@ -13,6 +13,11 @@
           "desc": "When the Append To File toggle is on, the existing file contents will be preserved."
         },
         {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
+        },
+        {
           "name": "Output File Version",
           "display": "Output File Version",
           "desc": "The Output File Version specifies which version of CAD to write in. Not used for DGN files."

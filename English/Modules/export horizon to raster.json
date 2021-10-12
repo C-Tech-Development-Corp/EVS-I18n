@@ -31,6 +31,11 @@
           "name": "Selected Format",
           "display": "Selected Format",
           "desc": "The Selected Format allows the user to select the desired output type from a set list of options."
+        },
+        {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
         }
       ]
     }

@@ -64,6 +64,11 @@
           "desc": "The Connectivity Component determines how SAD files are connected."
         },
         {
+          "name": "Display As",
+          "display": "Display As",
+          "desc": "Use Display As to change how the boring lines are displayed, you can either turn off them off entirely, display them as tubes, or display them as wires."
+        },
+        {
           "name": "Display Tubes",
           "display": "Display Tubes",
           "desc": "This toggle turns the tubes on and off."
@@ -92,6 +97,21 @@
           "name": "Solid Tube Color",
           "display": "Solid Tube Color",
           "desc": "If the Solid Color feature is chosen as the Display Color, the color can be set using this control."
+        },
+        {
+          "name": "Main Color",
+          "display": "Main Color",
+          "desc": "Each boring tube is divided using two colors, the Main Color sets the first of these."
+        },
+        {
+          "name": "Secondary Color",
+          "display": "Secondary Color",
+          "desc": "Each boring tube is divided using two colors, the Secondary Color sets the second of these."
+        },
+        {
+          "name": "Color Separation",
+          "display": "Color Separation",
+          "desc": "The Color Separation defines the length both the Main Color and the Secondary Color will go to before switching to the other. This can be used as a visual clue as to the vertical scale of the model."
         },
         {
           "name": "Include Center Data",

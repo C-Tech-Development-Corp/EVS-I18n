@@ -21,6 +21,11 @@
           "name": "Include Average Data",
           "display": "Include Average Data",
           "desc": "Turning the Include Average Coordinate Data toggle will add four cell data components to the output file.  These are the absolute cell number average coordinate of each cell in X, Y, and Z."
+        },
+        {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
         }
       ]
     }

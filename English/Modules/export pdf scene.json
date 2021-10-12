@@ -29,6 +29,11 @@
       "display": "Scene Information",
       "properties": [
         {
+          "name": "Description",
+          "display": "Description",
+          "desc": "The Description field allows the user to set the description in the output scene."
+        },
+        {
           "name": "Author",
           "display": "Author",
           "desc": "The Author field allows the user to set the author name on the output scene."
@@ -39,16 +44,6 @@
           "desc": "The Organization field allows the user to set the organization name on the output scene."
         },
         {
-          "name": "Description",
-          "display": "Description",
-          "desc": "The Description field allows the user to set the description in the output scene."
-        },
-        {
-          "name": "Restrictions",
-          "display": "Restrictions",
-          "desc": "The Restrictions field allows the user to set the restrictions displayed in the output scene."
-        },
-        {
           "name": "Project",
           "display": "Project",
           "desc": "The Project field allows the user to set the project displayed in the output scene."
@@ -56,7 +51,23 @@
         {
           "name": "Status",
           "display": "Status",
-          "desc": "The Restrictions field allows the user to set the status displayed in the output scene."
+          "desc": "The Status field allows the user to set the status displayed in the output scene."
+        },
+        {
+          "name": "Restrictions",
+          "display": "Restrictions",
+          "desc": "The Restrictions field allows the user to set the restrictions displayed in the output scene."
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "Variables",
+      "properties": [
+        {
+          "name": "S1",
+          "display": "S1",
+          "desc": "The S1 field is a string value that can be used as the variable {S1} in the expression."
         }
       ]
     }
