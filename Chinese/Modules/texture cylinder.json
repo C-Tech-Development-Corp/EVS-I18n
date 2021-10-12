@@ -1,0 +1,63 @@
+{
+  "name": "texture cylinder",
+  "display": "texture cylinder",
+  "desc": "texture cylinder模块提供了将图像(纹理映射)投影到柱面上的方法。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Switch Horizontal For Vertical",
+          "display": "水平转换为垂直",
+          "desc": "用于处理使用不同扫描顺序生成的图像。"
+        },
+        {
+          "name": "Flip Horizontal",
+          "display": "水平翻转",
+          "desc": "水平翻转开关将反转传入图像中每个像素在水平方向上的顺序。"
+        },
+        {
+          "name": "Flip Vertical",
+          "display": "垂直翻转",
+          "desc": "垂直翻转开关将反转传入图像中每个像素在垂直方向上的顺序。"
+        },
+        {
+          "name": "Horizontal Scale Factor",
+          "display": "水平缩放因子",
+          "desc": ".水平缩放因子滑块设置放大或缩小图像的因子。它代表了一个东/西比例。"
+        },
+        {
+          "name": "Vertical Scale Factor",
+          "display": "垂直缩放因子",
+          "desc": "垂直缩放因子滑块设置放大或缩小图像的因子。它代表了一个北/南比例。"
+        },
+        {
+          "name": "Angular Shift",
+          "display": "角位移",
+          "desc": "角位移滑块控制圆柱体周围纹理的旋转(以度为单位)。"
+        },
+        {
+          "name": "Vertical Shift",
+          "display": "垂直位移",
+          "desc": "垂直移动滑块控制纹理在圆柱上的垂直位置。"
+        },
+        {
+          "name": "Cylinder Center",
+          "display": "圆柱中心",
+          "desc": "圆柱中心是纹理映射过程中使用的圆柱中心的值。"
+        },
+        {
+          "name": "Cylinder Z Min",
+          "display": "圆柱最小Z值",
+          "desc": "是纹理映射过程中使用的圆柱体垂直范围的最小值。"
+        },
+        {
+          "name": "Cylinder Z Max",
+          "display": "圆柱最大Z值",
+          "desc": "是纹理映射过程中使用的圆柱体垂直范围的最大值。"
+        }
+      ]
+    }
+  ]
+}

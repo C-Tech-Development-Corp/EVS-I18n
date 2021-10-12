@@ -1,0 +1,28 @@
+{
+  "name": "export vector gis",
+  "display": "export vector gis",
+  "desc": "该模块将创建以下几种矢量格式的一种：ESRI shpaefile(*.shp);GMT ASCII Vectors(*.gmt);and MapInfo Tab(*.tab).",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Prepend Nodal Data",
+          "display": "预设节点数据",
+          "desc": "将在写出时在每个节点数据名之前添加前缀\“n_\”，表示节点数据已在单元中平均。"
+        },
+        {
+          "name": "Exponentiate Log Data",
+          "display": "对数数据求幂",
+          "desc": "当写出数据时，告知模块具有log标志的节点或者单元数据应该求幂操作。"
+        },
+        {
+          "name": "Include Average Data",
+          "display": "包含平均数据",
+          "desc": "打开后将向输出文件添加四个单元格数据组件。分别是绝对单元数，每个单元在X, Y, Z的平均坐标。"
+        }
+      ]
+    }
+  ]
+}

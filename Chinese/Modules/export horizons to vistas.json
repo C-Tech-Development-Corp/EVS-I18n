@@ -1,0 +1,28 @@
+{
+  "name": "export horizons to vistas",
+  "display": "export horizons to vistas",
+  "desc": "export horizons to vistas模块将基本的地质网格信息写入一个文件格式，地下水可以读取。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Reverse Hierarchy",
+          "display": "反转层级",
+          "desc": "此开关确定这些表面是按照正常(从上到下)的方式定义层，还是反转(如果打开的话)定义层。"
+        },
+        {
+          "name": "Minimum Thickness",
+          "display": "最小层厚",
+          "desc": "最小厚度值迫使薄于规定值的层具有最小厚度，因此不能完全尖灭。"
+        },
+        {
+          "name": "Grid Info",
+          "display": "网格信息",
+          "desc": "将被写入文件的输入场的详细信息。"
+        }
+      ]
+    }
+  ]
+}

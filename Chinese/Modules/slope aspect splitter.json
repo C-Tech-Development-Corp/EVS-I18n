@@ -1,0 +1,38 @@
+{
+  "name": "slope aspect splitter",
+  "display": "slope aspect splitter",
+  "desc": "slope aspect splitter模块将根据所使用的子集表达式将输入场分割为两个输出场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Flat Surface Aspect",
+          "display": "平面坡向",
+          "desc": "用于平面上坡向的值。"
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "表达式中可用的变量N1"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "表达式中可用的变量N2"
+        },
+        {
+          "name": "Subset Expression",
+          "display": "子集化表达式",
+          "desc": "用来子集化输入场的表达式"
+        },
+        {
+          "name": "Subset Variables",
+          "display": "子集化变量",
+          "desc": "用来决定写出哪一个场。"
+        }
+      ]
+    }
+  ]
+}

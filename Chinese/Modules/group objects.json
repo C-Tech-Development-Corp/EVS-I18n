@@ -1,0 +1,18 @@
+{
+  "name": "group objects",
+  "display": "group objects",
+  "desc": "该模块提供了一种途径来将多个可渲染对象组团为单个可渲染对象。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Visibility",
+          "display": "可见性",
+          "desc": "打开或者关闭输出对象的可见性。"
+        }
+      ]
+    }
+  ]
+}

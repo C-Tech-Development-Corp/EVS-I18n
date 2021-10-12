@@ -1,0 +1,38 @@
+{
+  "name": "layer from horizon",
+  "display": "layer from horizon",
+  "desc": "该模块基于输入的层面和高程值创建地层。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Surface Definition",
+          "display": "层面定义",
+          "desc": "层面定义允许用户选择所选层面定义的是层的顶部还是底部。"
+        },
+        {
+          "name": "Constant Value",
+          "display": "常量值",
+          "desc": "所选的面构成了该层的一个表面，常量值是另一个表面的高度。"
+        },
+        {
+          "name": "Material Name",
+          "display": "材料名称",
+          "desc": "新建地层的材料名称。"
+        },
+        {
+          "name": "Material Number",
+          "display": "材料编号",
+          "desc": "新建地层的材料编号。"
+        },
+        {
+          "name": "Selected Surface",
+          "display": "选择层面",
+          "desc": "从输入场中选择一个层面来构建地层的顶面或者底面。"
+        }
+      ]
+    }
+  ]
+}

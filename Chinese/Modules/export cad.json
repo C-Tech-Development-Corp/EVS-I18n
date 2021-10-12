@@ -1,0 +1,23 @@
+{
+  "name": "export cad",
+  "display": "export cad",
+  "desc": "export CAD模块为EVS提供行业标准AutoCAD DWG或DXF格式的图形结果的矢量输出。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Append To File",
+          "display": "附加到文件",
+          "desc": "当附加到文件开关打开时，现有文件内容将被保留。"
+        },
+        {
+          "name": "Output File Version",
+          "display": "输出文件版本",
+          "desc": "输出文件版本指定要写入的CAD版本。"
+        }
+      ]
+    }
+  ]
+}

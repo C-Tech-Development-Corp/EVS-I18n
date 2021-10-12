@@ -1,0 +1,171 @@
+{
+  "name": "lithologic modeling",
+  "display": "lithologic modeling",
+  "desc": "Estimate material data to generate a lithologic model.估算网格单元地质信息",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "New Variables",
+          "display": "新变量",
+          "desc": "新变量开关将在每次运行前将所有专家系统计算变量重置为零。这允许在不需要手动重置这些变量的情况下执行多次计算。要更改专家系统的计算变量，开关必须关闭。"
+        }
+      ]
+    },
+    {
+      "name": "Grid Settings",
+      "display": "网格设置",
+      "properties": [
+        {
+          "name": "Grid Coordinates",
+          "display": "网格坐标",
+          "desc": "允许用户在克里金运算的数据集中定义坐标域。有关这些参数的更多信息，请阅读帮助。"
+        },
+        {
+          "name": "X Resolution",
+          "display": "X 分辨率",
+          "desc": "X轴分辨率指定模型水平域包含的网格节点的数量。"
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y 分辨率",
+          "desc": "Y轴分辨率指定模型垂直域包含的网格节点的数量。"
+        },
+        {
+          "name": "Z Resolution",
+          "display": "Z 分辨率",
+          "desc": "Z轴分辨率指定模型高程域包含的网格节点的数量。"
+        },
+        {
+          "name": "Cell Set Subdivision",
+          "display": "单元集细分",
+          "desc": "生成集选项允许用户选择输出单元是否按材料分组，按层分组或不分组，从而每层可以包含单独的材料分组。"
+        },
+        {
+          "name": "Layers From Geology",
+          "display": "地质层级",
+          "desc": "该控件与输入地质端口一起使用。它可以使用地质层序用来创建一个单层或为每个层序创建一个层."
+        },
+        {
+          "name": "Proportional Gridding",
+          "display": "比例网格",
+          "desc": "比例网格可以用来设置每个层中创建的单元格的最小数量。或者使单元格的数量与层的厚度以及Z方向的分辨率成正比。"
+        },
+        {
+          "name": "Min Cells Per Layer",
+          "display": "每层最少单元数",
+          "desc": "该参数用来控制（Z方向上）每层上最少的单元格数量。该选项在有输入地质网格时使用。"
+        },
+        {
+          "name": "Cells Per Layer",
+          "display": "每层的单元数",
+          "desc": "当使用比例网格选项时，（Z方向上）每层的单元格数量。该选项在有输入地质网格时使用。"
+        },
+        {
+          "name": "Min Layer Thickness",
+          "display": "最小层厚",
+          "desc": "最小层厚是每个单元在竖直方向最小高度。"
+        },
+        {
+          "name": "Reverse Surface Hierarchy",
+          "display": "反转面层级",
+          "desc": "选择后将从底部开始到顶部定义地层。"
+        },
+        {
+          "name": "Rectilinear Offset",
+          "display": "矩形偏移",
+          "desc": "用来创建一个矩形域，在输入数据的基础上该域沿三个轴向外延展。"
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "克里金设置",
+      "properties": [
+        {
+          "name": "Estimation Type",
+          "display": "估算类型",
+          "desc": "允许用户在最近临近点算法或者克里金算法中选择其一。"
+        },
+        {
+          "name": "Lithology Method",
+          "display": "岩性方法",
+          "desc": "岩性方法允许用户选择未细化(块)或细化(光滑)算法。改进后的算法对模型创建时间和内存需求有很大的影响，而光滑法需要更低的网格分辨率才能获得更好的效果。选择合适的分辨率，它实际上可以在更短的时间内提供更好的结果。"
+        },
+        {
+          "name": "Reach",
+          "display": "范围",
+          "desc": "该字段定义了从任何给定模型节点出发的径向距离(用户单位)，在该范围内，克里金插值模块将查找样本数据点，用于该节点上的模型参数估计。将该字段设置为0将导致模块计算一个特定的值，该值大约是数据集中任意两个数据点之间最长距离的三分之二。"
+        },
+        {
+          "name": "Points In Reach",
+          "display": "范围内点数量",
+          "desc": "该参数定义了模型某个节点上参数估值需要考虑的最大数据点数量。在使用最近临近点插值算法或当样本数量低于阈值时不会使用该值。"
+        },
+        {
+          "name": "Octant Search",
+          "display": "八分搜索",
+          "desc": "当打开八分搜索时，将对围绕被插值点的八个八分之一象限进行搜索。在每个八分之一域内选择最大点数(最高为总点数的四分之一)。然后，按顺序从每个八分域取点直到达到总点数的最大值或直到所有八分域的点都被使用。"
+        },
+        {
+          "name": "Use All Points",
+          "display": "使用所有点",
+          "desc": "使用所有点开关使模块包含所有样本点。如果样本数量超过点总量限值，则使用范围和范围设置中的点。"
+        },
+        {
+          "name": "All Points Limit",
+          "display": "点总量限值",
+          "desc": "点总量限值是插值时的最大点数。如果文件中的样本数多于此值，则使用范围和范围设置中的点。"
+        },
+        {
+          "name": "PGF Refine Distance",
+          "display": "PGF采样距离",
+          "desc": "理解PGF采样距离参数需要理解以.PGF文件作为输入的指示克里金算法的基础知识。请参考模块帮助以了解更多细节。"
+        },
+        {
+          "name": "Max Points Per Interval",
+          "display": "每间隔段最大点数",
+          "desc": "用来控制PGF数据中每个样本段最大采样点数。"
+        },
+        {
+          "name": "Maximum Refined Points",
+          "display": "最大采样点数",
+          "desc": "最大采样点数设置了pgf文件采样时创建的点总数的限制。如果生成的点数以及原始文件样本数大于这个值，就会报告错误。"
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "变差函数和各向异性",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "导出数据",
+      "properties": [
+        {
+          "name": "Geologic Nodal Data",
+          "display": "地质节点数据",
+          "desc": "地质节点数据选项允许用户决定在输出场的节点上生成哪些数据组件。"
+        },
+        {
+          "name": "Geologic Cell Data",
+          "display": "地质单元数据",
+          "desc": "地质单元数据选项允许用户决定在输出场的单元上生成哪些数据组件。"
+        },
+        {
+          "name": "Probability",
+          "display": "概率",
+          "desc": "概率开关打开将导出一个数据值，该值描述该单元格或节点作为所选材料的概率。"
+        },
+        {
+          "name": "Probabilities By Material",
+          "display": "材料概率",
+          "desc": "材料的概率输出一个数据值，该值描述该单元格或节点是每种不同材料的概率。"
+        }
+      ]
+    }
+  ]
+}

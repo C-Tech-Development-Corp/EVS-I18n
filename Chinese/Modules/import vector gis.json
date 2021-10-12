@@ -1,0 +1,59 @@
+{
+  "name": "import vector gis",
+  "display": "import vector gis",
+  "desc": "该模块读取向量格式文件。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Line Width",
+          "display": "线宽",
+          "desc": "设置输入数据的线元素宽度。"
+        },
+        {
+          "name": "Include Attributes As Data",
+          "display": "包含属性作为数据",
+          "desc": "打开后每种属性将会设置为单元数据。"
+        },
+        {
+          "name": "Assign Data To Z",
+          "display": "分配数据至Z",
+          "desc": "如果此开关打开且包含属性作为数据开关打开，则所选数据会作为z坐标分配。"
+        },
+        {
+          "name": "Default Color",
+          "display": "默认颜色",
+          "desc": "如果没有数据分配到模型，则采用默认颜色。"
+        },
+        {
+          "name": "Data To Display",
+          "display": "显示数据",
+          "desc": "允许用户设置哪种数据组件在输出对象端口中显示。"
+        },
+        {
+          "name": "Data To Assign To Z",
+          "display": "分配数据至Z",
+          "desc": "允许用户选择哪个数据分配作为z坐标。"
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "导出",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "转换为压缩包",
+          "desc": "将模型替换为一个数据压缩包版本。"
+        }
+      ]
+    }
+  ]
+}

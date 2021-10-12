@@ -1,0 +1,23 @@
+{
+  "name": "subset horizons",
+  "display": "subset horizons",
+  "desc": "该模块允许你子集化地质输入层面。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "First Surface",
+          "display": "第一个面",
+          "desc": "输出场中包含的第一个层面。"
+        },
+        {
+          "name": "Last Surface",
+          "display": "最后一个面",
+          "desc": "输出场中包含的最后一个层面。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "vector magnitude",
+  "display": "vector magnitude",
+  "desc": "vector magnitude模块计算网格中每个节点的矢量场数据大小。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Vector Data",
+          "display": "矢量数据",
+          "desc": "矢量数据控件允许用户选择用于创建数据大小的矢量数据组件。"
+        }
+      ]
+    }
+  ]
+}

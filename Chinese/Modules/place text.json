@@ -1,0 +1,64 @@
+{
+  "name": "place text",
+  "display": "place text",
+  "desc": "place text模块提供了一种方法来交互地放置2D和3D可呈现的文本字符串，或者读取EMT文件来放置文本。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Import File",
+          "display": "导入文件",
+          "desc": "从一个.pt（place_text）文件中导入已存在的文本。"
+        },
+        {
+          "name": "Reload Import File",
+          "display": "重载导入文件",
+          "desc": "重载导入文件按钮迫使模块重新载入导入的文件。"
+        },
+        {
+          "name": "Export File",
+          "display": "导出文件",
+          "desc": "把当前文本导出为一个*.pt文件。"
+        }
+      ]
+    },
+    {
+      "name": "Text Settings",
+      "display": "文本设置",
+      "properties": [
+        {
+          "name": "Probe Action",
+          "display": "探测动作",
+          "desc": "允许更改文本中心或在探测的位置添加新字符串。仅当查看器连接时可用。"
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "前向样式",
+          "desc": "前向样式允许用户将标签对齐到适当的视图，并改变字体的基本布局。这些值是模块范围，所以适用于所有前向选定字体。"
+        },
+        {
+          "name": "Created Text",
+          "display": "已创建的文本",
+          "desc": "允许用户选择单个文本进行编辑。"
+        },
+        {
+          "name": "Remove Current Text",
+          "display": "移除当前文本",
+          "desc": "该按钮允许用户从列表中移除当前选择的文本。"
+        },
+        {
+          "name": "Current Text Values",
+          "display": "当前文本值",
+          "desc": "从已创建文本中选择的文本值。"
+        },
+        {
+          "name": "List Of Texts",
+          "display": "文本列表",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

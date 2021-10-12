@@ -1,0 +1,140 @@
+{
+  "name": "overlay aerial",
+  "display": "overlay aerial",
+  "desc": "overlay_aerial模块将获取一个场作为输入，然后将图像映射到网格的水平区域上。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        },
+        {
+          "name": "Image Quality",
+          "display": "图像质量",
+          "desc": "图像质量允许用户选择读取输入图像的最大分辨率。这允许用户创建一个粗糙的图像，以更快的测试和一个高分辨率的图像，以确定最终的输出。"
+        },
+        {
+          "name": "Georeferencing Method",
+          "display": "地理参照方法",
+          "desc": "地理参照方法控制图像如何扭曲以适应输入面。该方法由用户选择，但也由发现与该图像文件关联的地理参照文件的类型控制。请阅读帮助了解更多信息。"
+        },
+        {
+          "name": "Min Extents",
+          "display": "最小范围",
+          "desc": "当选择地图的最小/最大地理参照方法时，最小范围允许用户设置图像左下角的位置。"
+        },
+        {
+          "name": "Max Extents",
+          "display": "最大范围",
+          "desc": "当选择地图的最小/最大地理参照方法时，最小范围允许用户设置图像右上角的位置。"
+        },
+        {
+          "name": "Texture Bottom Surfaces",
+          "display": "底面贴纹理",
+          "desc": "此开关将告诉模块给所有法线向下的表面贴纹理。"
+        },
+        {
+          "name": "Map Data",
+          "display": "映射数据",
+          "desc": "映射数据开关将导致模块将第一个节点数据组件传递给可渲染对象。注意:这将导致在节点数据颜色值和图像颜色之间有一个混合。"
+        },
+        {
+          "name": "Wall Visibility",
+          "display": "围墙可见性",
+          "desc": "围墙可见性开关打开时将显示垂直面或“墙壁”。"
+        },
+        {
+          "name": "Border And Wall Color",
+          "display": "边界和围墙颜色",
+          "desc": "边框和墙壁颜色允许用户设置用于边框和墙壁的颜色。"
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "导出",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "转换为压缩包",
+          "desc": "将此模块替换为数据的压缩包版本。"
+        }
+      ]
+    },
+    {
+      "name": "Image Processing",
+      "display": "图像处理",
+      "properties": [
+        {
+          "name": "Sharpen Image",
+          "display": "锐化图像",
+          "desc": "锐化图像开关将允许用户通过扩大沿边缘的亮度差异来锐化图像的边缘。"
+        },
+        {
+          "name": "Soften Image",
+          "display": "软化图像",
+          "desc": "软化图像切换将允许用户通过减少沿边缘的亮度差异来软化图像的边缘。"
+        },
+        {
+          "name": "Enhance Edges",
+          "display": "加强边缘",
+          "desc": "增强了对象的边缘，并丢弃了其他图像信息。"
+        },
+        {
+          "name": "Brightness",
+          "display": "亮度",
+          "desc": "亮度滑块可以添加或删除每个像素的亮度。"
+        },
+        {
+          "name": "Contrast",
+          "display": "对比度",
+          "desc": "对比度滑块可以添加或删除每个像素的对比度。使亮点更亮，暗点更暗。"
+        },
+        {
+          "name": "White Balance Red",
+          "display": "白平衡 红",
+          "desc": "白平衡红色滑块影响白平衡的红色通道。"
+        },
+        {
+          "name": "White Balance Green",
+          "display": "白平衡 绿",
+          "desc": "白平衡绿色滑块影响白平衡的绿色通道。"
+        },
+        {
+          "name": "White Balance Blue",
+          "display": "白平衡 蓝",
+          "desc": "白平衡蓝色滑块影响白平衡的蓝色通道。"
+        },
+        {
+          "name": "Gamma Correction Red",
+          "display": "伽马校正 红",
+          "desc": "伽马校正红色滑块影响伽马值的红色通道。"
+        },
+        {
+          "name": "Gamma Correction Green",
+          "display": "伽马校正 绿",
+          "desc": "伽马校正绿色滑块影响伽马值的绿色通道。"
+        },
+        {
+          "name": "Gamma Correction Blue",
+          "display": "伽马校正 蓝",
+          "desc": "伽马校正蓝色滑块影响伽马值的蓝色通道。"
+        },
+        {
+          "name": "Reproject Image",
+          "display": "重投影图像",
+          "desc": "重投影图像切换允许用户启用图像投影。"
+        },
+        {
+          "name": "Image Projection",
+          "display": "图像投影",
+          "desc": "图像投影允许用户将图像从一个坐标系转换到另一个坐标系。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "name": "direction indicator",
+  "display": "direction indicator",
+  "desc": "该模块用来在查看器中放置一个三维的指北或者罗盘标志",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Display Type",
+          "display": "显示类型",
+          "desc": "允许用户选择一个指北箭头或一个罗盘作为输出。"
+        },
+        {
+          "name": "X Center",
+          "display": "X 中心",
+          "desc": "选择的显示类型对象的X中心。"
+        },
+        {
+          "name": "Y Center",
+          "display": "Y 中心",
+          "desc": "选择的显示类型对象的Y中心。"
+        },
+        {
+          "name": "Z Center",
+          "display": "Z 中心",
+          "desc": "选择的显示类型对象的Z中心。"
+        },
+        {
+          "name": "Height Factor",
+          "display": "高度因子",
+          "desc": "高度因子用来缩放输出对象的垂直高度。"
+        }
+      ]
+    },
+    {
+      "name": "North Arrow Settings",
+      "display": "指北箭头设置",
+      "properties": [
+        {
+          "name": "Arrow Size",
+          "display": "箭头尺寸",
+          "desc": "箭头尺寸用来缩放输出对象所有纬度的大小。"
+        },
+        {
+          "name": "Arrow Bevel",
+          "display": "箭头斜角",
+          "desc": "影响指北箭头的倾斜角度。"
+        },
+        {
+          "name": "Stem Width",
+          "display": "宽度",
+          "desc": "影响箭头的宽度。"
+        },
+        {
+          "name": "Stem Length",
+          "display": "长度",
+          "desc": "影响箭头的长度。"
+        },
+        {
+          "name": "Triangle Base Factor",
+          "display": "三角底座因子",
+          "desc": "影响箭头首部三角形的宽度。"
+        },
+        {
+          "name": "North Color",
+          "display": "指北针颜色",
+          "desc": "控制指北箭头的颜色。"
+        }
+      ]
+    },
+    {
+      "name": "Compass Rose Settings",
+      "display": "罗盘设置",
+      "properties": [
+        {
+          "name": "Rose Size",
+          "display": "刻度盘尺寸",
+          "desc": "缩放输出对象在各个维度的大小。"
+        },
+        {
+          "name": "North Length",
+          "display": "北向长度",
+          "desc": "允许缩放北向轴的长度。"
+        },
+        {
+          "name": "Sub Cardinal Length",
+          "display": "次刻度长度",
+          "desc": "控制相对于主刻度偏移45度角刻度轴的长度。"
+        },
+        {
+          "name": "Inner Radius Factor",
+          "display": "内核半径因子",
+          "desc": "控制内核部分的半径。"
+        },
+        {
+          "name": "Primary Color",
+          "display": "主颜色",
+          "desc": "罗盘有两种颜色组成，主颜色用此控件来设置。"
+        },
+        {
+          "name": "Secondary Color",
+          "display": "次颜色",
+          "desc": "罗盘有两种颜色组成，次颜色用此控件来设置。"
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "标签设置",
+      "properties": [
+        {
+          "name": "Label Type",
+          "display": "标签类型",
+          "desc": "标签类型允许用户在两种字体类型之间进行选择。TrueType字体是标准字体。Line字体是低影响的字体，在生成大量标签时表现得更好。"
+        },
+        {
+          "name": "Font Base Scale",
+          "display": "字体基础比例",
+          "desc": "影响所有文本对象的大小。"
+        },
+        {
+          "name": "Flip Labels",
+          "display": "翻转标签",
+          "desc": "使得文本从反面可读。"
+        },
+        {
+          "name": "Line Font Style",
+          "display": "线性字体风格",
+          "desc": "允许用户切换字体的基本外观。"
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType字体风格",
+          "desc": "允许用户切换字体的基本外观。"
+        },
+        {
+          "name": "Font Color",
+          "display": "字体颜色",
+          "desc": "允许用户设置字体的颜色值。"
+        },
+        {
+          "name": "North Label",
+          "display": "指北标签",
+          "desc": "设置与罗盘或北箭头北端文本相关的所有值。"
+        },
+        {
+          "name": "East Label",
+          "display": "东向标签",
+          "desc": "设置罗盘东端文本相关的所有值。"
+        },
+        {
+          "name": "South Label",
+          "display": "南向标签",
+          "desc": "设置罗盘南端文本相关的所有值。"
+        },
+        {
+          "name": "West Label",
+          "display": "西向标签",
+          "desc": "设置罗盘西端文本相关的所有值。"
+        },
+        {
+          "name": "Sub Cardinal Labels",
+          "display": "次刻度标签",
+          "desc": "设置罗盘次刻度上文本相关的所有值。"
+        }
+      ]
+    }
+  ]
+}

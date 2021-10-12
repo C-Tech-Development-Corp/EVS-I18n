@@ -1,0 +1,23 @@
+{
+  "name": "import geometry",
+  "display": "import geometry",
+  "desc": "import geometry模块读取几何文件以进行建模。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Transform Settings",
+      "display": "转换设置",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "转换列表",
+          "desc": "应用于输入场的转换列表。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "name": "format string",
+  "display": "format string",
+  "desc": "该模块提供了一种简单的方法来将来自多个不同端口的数字或者字符串转换为一个合成字符串。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Expression",
+          "display": "表达式",
+          "desc": "表达式允许用户控制用于创建输出字符串的变量序列。"
+        },
+        {
+          "name": "Date Format",
+          "display": "日期格式",
+          "desc": "日期格式允许用户控制如何在输出字符串中显示日期。"
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "变量",
+      "properties": [
+        {
+          "name": "Scale",
+          "display": "比例",
+          "desc": "比例是垂直(z)坐标的缩放因子。这个值反映了层厚度的倍增系数。例如，一个厚度为10英尺的层，其z-缩放为4，在观察者中显示为40英尺厚。"
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "N1字段是一个双精度值，可以用作表达式中的变量{N1}。"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "N2字段是一个双精度值，可以用作表达式中的变量{N2}。"
+        },
+        {
+          "name": "N3",
+          "display": "N3",
+          "desc": ".N3字段是一个双精度值，可以用作表达式中的变量{N3}。"
+        },
+        {
+          "name": "N4",
+          "display": "N4",
+          "desc": "N4字段是一个双精度值，可以用作表达式中的变量{N4}。"
+        },
+        {
+          "name": "S1",
+          "display": "S1",
+          "desc": "S1字段是一个字符串值，可以用作表达式中的变量{S1}。"
+        },
+        {
+          "name": "S2",
+          "display": "S2",
+          "desc": "S2字段是一个字符串值，可以用作表达式中的变量{S2}。"
+        },
+        {
+          "name": "S3",
+          "display": "S3",
+          "desc": "S3字段是一个字符串值，可以用作表达式中的变量{S3}。"
+        },
+        {
+          "name": "Date",
+          "display": "日期",
+          "desc": "S4字段是一个字符串值，可以用作表达式中的变量{S4}。"
+        }
+      ]
+    },
+    {
+      "name": "Output",
+      "display": "输出",
+      "properties": [
+        {
+          "name": "Result",
+          "display": "结果",
+          "desc": "结果是解析表达式创建的输出字符串。"
+        }
+      ]
+    }
+  ]
+}

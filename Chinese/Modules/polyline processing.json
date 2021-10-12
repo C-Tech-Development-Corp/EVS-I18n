@@ -1,0 +1,63 @@
+{
+  "name": "polyline processing",
+  "display": "polyline processing",
+  "desc": "polyline processing模块接受3D多段线，并且可以增加或减少多段线的线段数。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Specification Method",
+          "display": "指定方法",
+          "desc": "在指定方法中，输出的线段大小可以通过两个选项进行调整；点数模式或路径步长模式。选择点数开关可通过指定线段（端点）的数量来进行线条的平滑调整。选择路径步长开关可通过指定步长（以输入网格为单位）进行平滑调整。此模块创建的任意两条线段之间的最大角度显示在线场的最大角度中。"
+        },
+        {
+          "name": "Number Of Points",
+          "display": "点数",
+          "desc": "如果将指定方法设置为点数，则可以使用此控件设置路径中的总点数。"
+        },
+        {
+          "name": "Path Step Size",
+          "display": "路径步长",
+          "desc": "如果从指定方法中选择了路径步长，则每个路径步长的长度以输入网格为单位。"
+        },
+        {
+          "name": "Resample At End",
+          "display": "结束时重新采样",
+          "desc": "如果结束时重新采样开关处于启用状态，则在平滑或样条化之前和之后对线条进行分段。"
+        },
+        {
+          "name": "Tolerance",
+          "display": "公差",
+          "desc": "公差参数确定合并两条多段线之前两个不相交点的闭合程度。"
+        },
+        {
+          "name": "Sampling Method",
+          "display": "采样方法",
+          "desc": "采样方法允许用户更改创建多段线的方式。对于样条曲线，模块将每个点按由点的梯度确定的路径连接。平滑方法将保持原始路径，尖角将使用平滑度百分比进行平滑。保留节点法将保留与输入相同的路径，但会将路径分成较小的段。"
+        },
+        {
+          "name": "Smoothing Order",
+          "display": "平滑阶数",
+          "desc": "平滑阶数决定了用于样条线的点数。点数越多，线就越平滑，与原始线的距离也越大。"
+        },
+        {
+          "name": "Smoothing Percentage",
+          "display": "平滑度百分比",
+          "desc": "平滑度百分比决定了平滑的程度。值越大，创建的线条越平滑，与原始线条的距离也越远。"
+        },
+        {
+          "name": "Smoothing Iterations",
+          "display": "平滑迭代",
+          "desc": "平滑迭代类似于将多个polyline_spline模块串联在一起。这提供了一种在保持接近原始点的同时进一步平滑不规则线条的方法。"
+        },
+        {
+          "name": "ELF Filename",
+          "display": "ELF 文件名",
+          "desc": "此按钮允许用户将创建的多段线输出为ELF文件。"
+        }
+      ]
+    }
+  ]
+}

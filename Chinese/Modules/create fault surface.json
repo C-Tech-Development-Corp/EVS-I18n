@@ -1,0 +1,53 @@
+{
+  "name": "create fault surface",
+  "display": "create fault surface",
+  "desc": "create_fault_surface模块创建一个与指定的倾向和倾角对齐的3D网格。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Strike",
+          "display": "倾向",
+          "desc": "倾向值是指断层面绕Z轴的走向。数值为零，南北对齐，顺时针旋转。"
+        },
+        {
+          "name": "Dip",
+          "display": "倾角",
+          "desc": "倾角值允许断层表面绕倾向值所确定的轴旋转。"
+        },
+        {
+          "name": "Dip Direction",
+          "display": "倾角方向",
+          "desc": "倾角方向控制倾角沿倾向值所定义的轴旋转的方向。"
+        },
+        {
+          "name": "Center Point",
+          "display": "中心点",
+          "desc": "中心点是断层面中心的位置。它也被用作断层面的旋转中心。"
+        },
+        {
+          "name": "X Resolution",
+          "display": "X 分辨率",
+          "desc": "X分辨率是网格X方向上的节点数。"
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y 分辨率",
+          "desc": "Y分辨率是网格X方向上的节点数。"
+        },
+        {
+          "name": "Width",
+          "display": "宽度",
+          "desc": "宽度定义了网格在X方向的范围。"
+        },
+        {
+          "name": "Length",
+          "display": "长度",
+          "desc": "长度定义了网格在Y方向的范围。"
+        }
+      ]
+    }
+  ]
+}

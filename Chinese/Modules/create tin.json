@@ -1,0 +1,28 @@
+{
+  "name": "create tin",
+  "display": "create tin",
+  "desc": "该模块用于将分散的样本数据转换为三维面，该面是由三角单元格组成的非结构化网格。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "将所选的数据映射到输出三角网。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "如果着色依据是节点数据，那么将所选的节点数据设置到数据映射。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "如果着色依据是单元数据，那么将所选的单元数据设置到数据映射。"
+        }
+      ]
+    }
+  ]
+}

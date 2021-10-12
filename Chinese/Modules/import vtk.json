@@ -1,0 +1,18 @@
+{
+  "name": "import vtk",
+  "display": "import vtk",
+  "desc": "import VTK模块从VTK格式文件读取数据集。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Units",
+          "display": "单位",
+          "desc": "坐标单位"
+        }
+      ]
+    }
+  ]
+}

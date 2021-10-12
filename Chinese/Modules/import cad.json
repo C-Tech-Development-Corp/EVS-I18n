@@ -1,0 +1,79 @@
+{
+  "name": "import cad",
+  "display": "import cad",
+  "desc": "import CAD模块将读取所有版本的AutoCAD DWG和DXF文件。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": []
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Render Mode",
+          "display": "渲染模式",
+          "desc": "渲染模式选项允许您选择如何渲染CAD数据。请阅读模块帮助了解更多细节。"
+        },
+        {
+          "name": "Remove Coincident Nodes",
+          "display": "删除重合节点",
+          "desc": "删除重合节点开关可使读取器处理数据，从而删除重合节点。这需要更长的时间来处理，但会创建一个更小、更有效的CAD数据。"
+        },
+        {
+          "name": "Include Hidden Layers",
+          "display": "包含隐藏图层",
+          "desc": "包含隐藏图层开关将导致绘制标记为隐藏的CAD图层。"
+        },
+        {
+          "name": "Remove Points And Degenerate Cells",
+          "display": "删除点和退化单元",
+          "desc": "删除点和退化单元选项将从输出中删除所有点和退化单元。"
+        },
+        {
+          "name": "Show As Wireframe",
+          "display": "显示为线框",
+          "desc": "显示为线框开关将勾勒曲面。它相当于将线条渲染设置为“常规”。"
+        },
+        {
+          "name": "Color For White",
+          "display": "颜色为白色",
+          "desc": "颜色为白色按钮允许用户设置任何特征的颜色为白色。"
+        },
+        {
+          "name": "Deviation For Curves",
+          "display": "曲线偏差",
+          "desc": "曲线偏差允许用户指定显示分析曲线（圆弧、圆）的精度。默认值0.0使用了一个专家系统算法来根据CAD模型的整体尺寸确定一个合理的值。"
+        },
+        {
+          "name": "Normal For 3D Solids",
+          "display": "3D实体的法线",
+          "desc": "3D实体的法线指定平行面的公差。"
+        },
+        {
+          "name": "Separate Layers",
+          "display": "独立层",
+          "desc": "独立层开关使CAD文件中的每个图层在EVS中作为单独的单元集输出。  "
+        },
+        {
+          "name": "Layers To Include",
+          "display": "要包含的层",
+          "desc": "要包含的层允许用户设置要渲染的数据集。"
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "display": "导出",
+      "properties": [
+        {
+          "name": "Convert To Packaged",
+          "display": "转换为压缩包",
+          "desc": "将此模块替换为数据的打包版本。"
+        }
+      ]
+    }
+  ]
+}

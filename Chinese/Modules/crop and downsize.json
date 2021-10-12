@@ -1,0 +1,58 @@
+{
+  "name": "crop and downsize",
+  "display": "crop and downsize",
+  "desc": "crop and downsize模块用于对图形或结构化场进行子集划分。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Min I",
+          "display": "最小 I",
+          "desc": "最小I是I方向裁剪的最小范围值。"
+        },
+        {
+          "name": "Max I",
+          "display": "最大 I",
+          "desc": "最大I是I方向裁剪的最大范围值。"
+        },
+        {
+          "name": "Down Size I",
+          "display": "缩小 I",
+          "desc": "缩小I控件将设置一个在I方向减少分辨率的因子。"
+        },
+        {
+          "name": "Min J",
+          "display": "最小 J",
+          "desc": "最小J是J方向裁剪的最小范围值。"
+        },
+        {
+          "name": "Max J",
+          "display": "最大 J",
+          "desc": "最大J是J方向裁剪的最大范围值。"
+        },
+        {
+          "name": "Down Size J",
+          "display": "缩小 J",
+          "desc": "缩小J控件将设置一个在J方向减少分辨率的因子。"
+        },
+        {
+          "name": "Min K",
+          "display": "最小 K",
+          "desc": "最小K是K方向裁剪的最小范围值。"
+        },
+        {
+          "name": "Max K",
+          "display": "最大 K",
+          "desc": "最大K是K方向裁剪的最大范围值。"
+        },
+        {
+          "name": "Down Size K",
+          "display": "缩小 K",
+          "desc": "缩小K控件将设置一个在K方向减少分辨率的因子。"
+        }
+      ]
+    }
+  ]
+}

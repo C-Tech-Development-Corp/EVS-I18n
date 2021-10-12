@@ -1,0 +1,155 @@
+{
+  "name": "glyphs at nodes",
+  "display": "glyphs at nodes",
+  "desc": "glyphs at nodes模块用来在节点位置放置几何对象",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Size And Orient By",
+          "display": "尺寸和定向",
+          "desc": "用于确定在创建图元时使用哪些数据。仅当单元格是点类型时，基于单元格数据的大小调整和定向才有效。"
+        },
+        {
+          "name": "Nodal Orientation Component",
+          "display": "节点方向组件",
+          "desc": "节点方向组件决定哪个节点数据组件用于旋转和对齐图元。这个数据组件应该是一个向量。"
+        },
+        {
+          "name": "Cell Orientation Component",
+          "display": "单元方向组件",
+          "desc": "单元方向组件确定使用哪个单元格数据组件旋转和对齐符号。这个数据组件应该是一个向量。单元格类型必须是一个点。"
+        },
+        {
+          "name": "Datamap Range",
+          "display": "数据映射范围",
+          "desc": "数据映射范围是指数据映射使用的最小值和最大值。这不会改变文件中的数据值。"
+        },
+        {
+          "name": "Glyph Size",
+          "display": "图元大小",
+          "desc": "图元大小值用于在各个方向缩放图元。默认值是根据您的输入数据自动计算的。"
+        },
+        {
+          "name": "Priority",
+          "display": "优先级",
+          "desc": "图元的优先级将反转缩放，以便最小的样本值具有最大的尺寸。"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "最小缩放因子",
+          "desc": "以最小优先级对样本值进行缩放"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "最大缩放因子",
+          "desc": "以最大优先级对样本值进行缩放"
+        },
+        {
+          "name": "Use Log Data",
+          "display": "使用对数数据",
+          "desc": "将强制图元大小基于所选数据的对数值。"
+        },
+        {
+          "name": "Size For Vector Data",
+          "display": "矢量数据大小",
+          "desc": "允许用户在按矢量数据组件调整大小时更改方法行为。"
+        },
+        {
+          "name": "Nodal Size Component",
+          "display": "控制大小的节点组件",
+          "desc": "决定使用哪个节点数据组件来确定图元的大小。"
+        },
+        {
+          "name": "Cell Size Component",
+          "display": "控制大小的单元组件",
+          "desc": "确定使用哪个单元数据组件调整符号的大小。单元类型必须是一个点。"
+        },
+        {
+          "name": "Magnitude For Zero Length",
+          "display": "零长度量级",
+          "desc": "表示图元为零的矢量大小。这就建立了取对数值的最小值，因为0的对数是没有定义的(负无穷)。"
+        },
+        {
+          "name": "Include Center Data",
+          "display": "包含中心数据",
+          "desc": "该开关告诉模块将每个图元的中心点包含为单元数据组件。这允许用户探测图元并返回它的中心位置，而不是图元外部的位置。"
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "图元设置",
+      "properties": [
+        {
+          "name": "Glyph Type",
+          "display": "图元类型",
+          "desc": "图元类型选项允许用户为所创建的图元选择来源。生成和定向线选项都是由内部创建的。输入图元选项要求连接输入符号端口。"
+        },
+        {
+          "name": "Include Glyph Data",
+          "display": "包含图元数据",
+          "desc": "通知模块将输入图元字段中的数据作为输出数据"
+        },
+        {
+          "name": "Generated Glyph",
+          "display": "产生图元",
+          "desc": "该选项允许用户选择自动生成的图元类型。"
+        },
+        {
+          "name": "Sphere Subdivisions",
+          "display": "圆球细分度",
+          "desc": "用于球体细分的数量。更大的数字创建更精确的球体表示。"
+        },
+        {
+          "name": "Glyph Resolution",
+          "display": "图元分辨率",
+          "desc": "产生的圆锥、多边形、圆柱、圆盘等图元的分辨率。"
+        },
+        {
+          "name": "Primary Axis Factor",
+          "display": "主轴因子",
+          "desc": "图元主轴额缩放因子。"
+        },
+        {
+          "name": "Secondary Axis Factor",
+          "display": "次轴因子",
+          "desc": "图元次轴额缩放因子。"
+        },
+        {
+          "name": "Roll",
+          "display": "卷曲",
+          "desc": "沿图元主轴的卷曲。"
+        },
+        {
+          "name": "Alignment",
+          "display": "对齐",
+          "desc": "允许用户选择图元的方向。"
+        }
+      ]
+    },
+    {
+      "name": "Output Settings",
+      "display": "输出设置",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "该控件允许用户设置输出依据何种数据来着色。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "如果着色依据设置为节点数据，那么可以选择哪个节点数据组件来映射颜色。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "如果着色依据设置为单元数据，那么可以选择哪个单元数据组件来映射颜色。"
+        }
+      ]
+    }
+  ]
+}

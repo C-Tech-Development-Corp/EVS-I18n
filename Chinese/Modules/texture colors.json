@@ -1,0 +1,54 @@
+{
+  "name": "texture colors",
+  "display": "texture colors",
+  "desc": "texture colors模块基于纹理进行高质量的着色。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Texture By",
+          "display": "贴纹理依据",
+          "desc": "允许用户设置如何确定输出的纹理。"
+        },
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "选择哪一个节点数据来贴纹理。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "如何纹理依据设置为单元数据，则选择哪一个单元数据组件来贴纹理。"
+        },
+        {
+          "name": "Texture Resolution",
+          "display": "纹理分辨率",
+          "desc": "纹理分辨率决定了纹理贴图着色所用颜色的数量。更高的分辨率可以创建更平滑的着色，但是会牺牲内存和计算/渲染时间。"
+        },
+        {
+          "name": "Separate Cells",
+          "display": "分割单元",
+          "desc": "如果纹理依据设置为单元数据，这个选项将确保没有单元格共享节点，这可以防止模糊影响。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        },
+        {
+          "name": "Input Z Scale",
+          "display": "输入Z比例",
+          "desc": "输入Z比例是对输入对象的垂直放大。"
+        }
+      ]
+    }
+  ]
+}
