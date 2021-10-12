@@ -1,86 +1,104 @@
 {
   "name": "titles",
-  "display": "titles",
-  "desc": "titles模块提供了在查看器中放置文本的简单方法。",
+  "display": "ƭïƭℓèƨ",
+  "desc": "ÞřôƲïδèƨ á ƨƭřáïϱλƭƒôřωářδ ₥èáñƨ ƭô ƥℓáçè ƭèжƭ ïñ ƭλè Vïèωèř.",
   "categories": [
     {
       "name": "Properties",
-      "display": "属性",
+      "display": "Þřôƥèřƭïèƨ",
       "properties": [
         {
-          "name": "Title Type",
-          "display": "标题类型",
-          "desc": "标题类型允许用户在叠加层中的2D标题和模型空间中的3D标题之间进行选择。"
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
         },
         {
-          "name": "X Coordinate",
-          "display": "X坐标",
-          "desc": "X坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
-        },
+          "name": "Title",
+          "display": "Tïƭℓè",
+          "desc": "Tλè Tïƭℓè ïƨ ƭλè ƭèжƭ ƭô úƨè ƒôř ƭλè Tïƭℓè."
+        }
+      ]
+    },
+    {
+      "name": "Text Settings",
+      "display": "Tèжƭ §èƭƭïñϱƨ",
+      "properties": [
         {
-          "name": "Y Coordinate",
-          "display": "Y坐标",
-          "desc": "Y坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
-        },
-        {
-          "name": "Z Coordinate",
-          "display": "Z坐标",
-          "desc": "Z坐标指定标题的左下边缘在2D叠加空间中的位置（例如，从-1.0到1.0）。"
-        },
-        {
-          "name": "X Coordinate 3D",
-          "display": "X坐标3D",
-          "desc": "X坐标指定标题的左下边缘在坐标空间中的位置。"
-        },
-        {
-          "name": "Y Coordinate 3D",
-          "display": "Y坐标3D",
-          "desc": "Y坐标指定标题的左下边缘在坐标空间中的位置。"
-        },
-        {
-          "name": "Z Coordinate 3D",
-          "display": "Z坐标3D",
-          "desc": "Z坐标指定标题的左下边缘在坐标空间中的位置。"
-        },
-        {
-          "name": "Width Height Ratio",
-          "display": "宽高比",
-          "desc": "宽高比允许您拉伸或压缩字体，以调整非正方形查看器引起的失真。"
-        },
-        {
-          "name": "Title Text",
-          "display": "标题文本",
-          "desc": "标题文本是用于标题的文本。"
+          "name": "Title Size",
+          "display": "Tïƭℓè §ïƺè",
+          "desc": "Tλè Tïƭℓè §ïƺè δèƭèř₥ïñèƨ λôω ℓářϱè ƭλè ƭïƭℓè ƭèжƭ ωïℓℓ βè."
         },
         {
           "name": "Title Color",
-          "display": "标题颜色",
+          "display": "Tïƭℓè Çôℓôř",
+          "desc": "Tλè Tïƭℓè Çôℓôř ïƨ ƭλè çôℓôř ƭô úƨè ƒôř ƭλè Tïƭℓè"
+        },
+        {
+          "name": "Title Font",
+          "display": "Tïƭℓè Fôñƭ",
+          "desc": "Tïƭℓè Fôñƭ áℓℓôωƨ ƭλè úƨèř ƭô áℓƭèř ƭλè βáƨïç ℓôôƙ ôƒ ƭλè ƒôñƭ."
+        },
+        {
+          "name": "Title Alignment",
+          "display": "Tïƭℓè Âℓïϱñ₥èñƭ",
           "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Positioning",
+      "display": "Þôƨïƭïôñïñϱ",
+      "properties": [
+        {
+          "name": "Anchor Side",
+          "display": "Âñçλôř §ïδè",
+          "desc": "Tλè Âñçλôř §ïδè δèƭèř₥ïñèƨ ωλèƭλèř ƭλè ƭïƭℓè ƭèжƭ ïƨ ƥôƨïƭïôñèδ ôƒƒ ƭλè ƭôƥ ôř βôƭƭô₥ èδϱè ôƒ ƭλè Ʋïèωèř."
         },
         {
-          "name": "Font Type",
-          "display": "字体类型",
-          "desc": "标签类型允许用户在三种字体类型之间进行选择。前向字体始终与视图对齐。TrueType字体是标准字体。线条字体是影响较小的字体，在生成大量标签时效果更好。"
+          "name": "Anchor Margin",
+          "display": "Âñçλôř Mářϱïñ",
+          "desc": "Tλè Âñçλôř Mářϱïñ δèƭèř₥ïñèƨ λôω ƒář ƒřô₥ ƭλè áñçλôř ƨïδè ƭλè ñèář èδϱè ôƒ ƭλè ƭèжƭ ωïℓℓ βè."
         },
         {
-          "name": "Forward Facing Style",
-          "display": "前向样式",
-          "desc": "（Forward Facing ）前向样式允许用户将标签与适当的视图对齐，并更改字体的基本布局。"
+          "name": "Left Margin",
+          "display": "£èƒƭ Mářϱïñ",
+          "desc": "Tλè £èƒƭ Mářϱïñ δèƭèř₥ïñèƨ λôω çℓôƨè ƭô ƭλè ℓèƒƭ èδϱè ôƒ ƭλè Ʋïèωèř ƭλè ƭèжƭ ïƨ áℓℓôωèδ ƭô βè."
         },
         {
-          "name": "TrueType Font Style",
-          "display": "TrueType字体样式",
-          "desc": "TrueType字体样式允许用户更改字体的基本外观。"
+          "name": "Right Margin",
+          "display": "Rïϱλƭ Mářϱïñ",
+          "desc": "Tλè Rïϱλƭ Mářϱïñ δèƭèř₥ïñèƨ λôω çℓôƨè ƭô ƭλè ℓèƒƭ èδϱè ôƒ ƭλè Ʋïèωèř ƭλè ƭèжƭ ïƨ áℓℓôωèδ ƭô βè."
         },
         {
-          "name": "Line Font Style",
-          "display": "线条字体样式",
-          "desc": "（Line）线条字体样式允许用户更改字体的基本外观。"
+          "name": "Rotation",
+          "display": "Rôƭáƭïôñ",
+          "desc": "Tλè Rôƭáƭïôñ áℓℓôωƨ ¥ôú ƭô ƨƥïñ ƭλè ƭïƭℓè ƭèжƭ ářôúñδ ωλ ƥôïñƭ ƭλèř çèñƭèř ωôúℓδ βè ïƒ ñôƭ řôƭáƭèδ."
         },
         {
-          "name": "3D Font Settings",
-          "display": "3D字体设置",
-          "desc": "3D标签设置允许用户将标签与适当的视图对齐。"
+          "name": "Overlay",
+          "display": "ÓƲèřℓá¥",
+          "desc": "Tλè ÓƲèřℓá¥ çôñƭřôℓ áℓℓôωƨ ƭλè úƨèř ƭô ƥúƭ ƭλè ℓôϱô βèλïñδ ƭλè ₥ôδèℓ ôř ïñ ƒřôñƭ ôƒ ïƭ."
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "Vářïáβℓèƨ",
+      "properties": [
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "Tλè N1 ƒïèℓδ ïƨ á δôúβℓè Ʋáℓúè ƭλáƭ çáñ βè úƨèδ áƨ ƭλè Ʋářïáβℓè {N1} ïñ ƭλè èжƥřèƨƨïôñ."
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "Tλè N2 ƒïèℓδ ïƨ á δôúβℓè Ʋáℓúè ƭλáƭ çáñ βè úƨèδ áƨ ƭλè Ʋářïáβℓè {N2} ïñ ƭλè èжƥřèƨƨïôñ."
+        },
+        {
+          "name": "S1",
+          "display": "§1",
+          "desc": "Tλè §1 ƒïèℓδ ïƨ á ƨƭřïñϱ Ʋáℓúè ƭλáƭ çáñ βè úƨèδ áƨ ƭλè Ʋářïáβℓè {§1} ïñ ƭλè èжƥřèƨƨïôñ."
         }
       ]
     }

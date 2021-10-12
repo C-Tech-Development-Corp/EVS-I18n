@@ -1,0 +1,34 @@
+{
+  "name": "import geometry",
+  "display": "import geometry",
+  "desc": "Reads topology from geometry files, such as wavefront obj, for modeling.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Use Application Origin",
+          "display": "Use Application Origin",
+          "desc": "When true, the module will apply the Application Origin. When false, coordinates will be left in internal model space."
+        }
+      ]
+    },
+    {
+      "name": "Transform Settings",
+      "display": "Transform Settings",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "Transform List",
+          "desc": "The list of transformation applied to the input field."
+        }
+      ]
+    }
+  ]
+}

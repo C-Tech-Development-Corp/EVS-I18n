@@ -1,0 +1,48 @@
+{
+  "name": "subset by expression",
+  "display": "subset by expression",
+  "desc": "此模块是一个子集化模块，根据输入网格的节点或单元数据来删除单元格。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Subset By",
+          "display": "子集化依据",
+          "desc": "允许用户选择何种准则来子集化单元格。"
+        },
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "可以通过输入数字变量端口1来传递N1，用在表达式上。"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "可以通过输入数字变量端口2来传递N1，用在表达式上。"
+        },
+        {
+          "name": "Subset Expression",
+          "display": "子集化表达式",
+          "desc": "子集化表达式用于确定输出中包含哪个节点或单元。对于每个节点(如果使用节点子集)或单元(如果使用单元子集)，所有表达式都应该解析为true或false。请参考模块帮助，其中包含许多子集表达式和可接受操作符的示例"
+        },
+        {
+          "name": "Nodal Subset Variables",
+          "display": "节点子集化变量",
+          "desc": "当使用节点数据子集化时，这些变量可以使用。"
+        },
+        {
+          "name": "Expression Cells To Include",
+          "display": "包含表达式单元",
+          "desc": "如果单元格中的所有节点都匹配表达式条件，或者单元格中的任何节点都匹配表达式条件，则允许用户包含该单元格。"
+        },
+        {
+          "name": "Cell Subset Variables",
+          "display": "单元子集化变量",
+          "desc": "当使用单元数据子集化时，这些变量可以使用。"
+        }
+      ]
+    }
+  ]
+}

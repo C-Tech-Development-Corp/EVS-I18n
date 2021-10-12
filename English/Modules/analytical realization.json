@@ -1,7 +1,7 @@
 {
   "name": "analytical realization",
   "display": "analytical realization",
-  "desc": "Modify analytical data.",
+  "desc": "Perform Fast Geostatistical Realizations of analytical data.",
   "categories": [
     {
       "name": "Properties",
@@ -82,100 +82,13 @@
       ]
     },
     {
-      "name": "Min Max Plume Settings",
-      "display": "Min Max Plume Settings",
-      "properties": [
-        {
-          "name": "Min Max Plume Confidence",
-          "display": "Min Max Plume Confidence",
-          "desc": "The Min Max Plume Confidence value is used to specify what interval around the kriged model estimates the kriging confidence or uncertainty will apply to."
-        },
-        {
-          "name": "Auxillary Realization Data",
-          "display": "Auxillary Realization Data",
-          "desc": "The Auxillary Data options let the user decide which data components generated during realization to generate for the output field on a node by node basis."
-        }
-      ]
-    },
-    {
       "name": "Variography Display",
       "display": "Variography Display",
       "properties": [
         {
           "name": "Variography Z Scale",
           "display": "Variography Z Scale",
-          "desc": "The Variography Z Scale value sets the vertical scaling of the variography ellipsoid and lines."
-        },
-        {
-          "name": "Display Variogram Ellipsoid",
-          "display": "Display Variogram Ellipsoid",
-          "desc": "The Display Variogram Ellipsoid control allows the user to display the variography ellipsoid."
-        },
-        {
-          "name": "Resolution",
-          "display": "Resolution",
-          "desc": "The resolution to use for the ellipsoid. Larger numbers create more detailed representations."
-        },
-        {
-          "name": "Ellipsoid Scale",
-          "display": "Ellipsoid Scale",
-          "desc": "The Ellipsoid Scale will scale the ellipsoid equally along each axis."
-        },
-        {
-          "name": "X Offset",
-          "display": "X Offset",
-          "desc": "The X Offset slider will allow the user to translate the ellipsoid along the x axis"
-        },
-        {
-          "name": "Y Offset",
-          "display": "Y Offset",
-          "desc": "The Y Offset slider will allow the user to translate the ellipsoid along the y axis"
-        },
-        {
-          "name": "Z Offset",
-          "display": "Z Offset",
-          "desc": "The Z Offset slider will allow the user to translate the ellipsoid along the z axis"
-        },
-        {
-          "name": "Ellipsoid Color",
-          "display": "Ellipsoid Color",
-          "desc": "The ellipsoid is a solid color which can be selected using this control."
-        },
-        {
-          "name": "Display Variogram Lines",
-          "display": "Display Variogram Lines",
-          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipsoid."
-        },
-        {
-          "name": "Line Scale",
-          "display": "Line Scale",
-          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipsoid"
-        },
-        {
-          "name": "Primary Ratio Color",
-          "display": "Primary Ratio Color",
-          "desc": "The primary ratio axis is a solid color which can be selected using this control."
-        },
-        {
-          "name": "Secondary Ratio Color",
-          "display": "Secondary Ratio Color",
-          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
-        },
-        {
-          "name": "Tertiary Axis Color",
-          "display": "Tertiary Axis Color",
-          "desc": "The tertiary axis is a solid color which can be selected using this control."
-        }
-      ]
-    },
-    {
-      "name": "Variography Display",
-      "display": "Variography Display",
-      "properties": [
-        {
-          "name": "Variography Z Scale",
-          "display": "Variography Z Scale",
-          "desc": "The Variography Z Scale value sets the vertical scaling of the variography ellipsoid and lines."
+          "desc": "The Variography Z Scale value is the vertical exaggeration to be applied to the output variography ellipsoid and lines."
         },
         {
           "name": "Display Variogram Ellipsoid",
@@ -241,6 +154,22 @@
           "name": "Tertiary Axis Color",
           "display": "Tertiary Axis Color",
           "desc": "The tertiary axis is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Min Max Plume Settings",
+      "display": "Min Max Plume Settings",
+      "properties": [
+        {
+          "name": "Min Max Plume Confidence",
+          "display": "Min Max Plume Confidence",
+          "desc": "The Min Max Plume Confidence value is used to specify what interval around the kriged model estimates the kriging confidence or uncertainty will apply to."
+        },
+        {
+          "name": "Auxillary Realization Data",
+          "display": "Auxillary Realization Data",
+          "desc": "The Auxillary Data options let the user decide which data components generated during realization to generate for the output field on a node by node basis."
         }
       ]
     }

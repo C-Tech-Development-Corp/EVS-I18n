@@ -1,0 +1,33 @@
+{
+  "name": "create tin",
+  "display": "create tin",
+  "desc": "Convert nodes into a three-dimensional surface of triangular cells representing an unstructured mesh.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By selection set the data map of the output TIN."
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "Nodal Data Component",
+          "desc": "If Color By is set to Node Data the Nodal Data Component selects which nodal data will set the data map."
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "Cell Data Component",
+          "desc": "If Color By is set to Cell Data the Cell Data Component selects which cell data will set the data map."
+        }
+      ]
+    }
+  ]
+}

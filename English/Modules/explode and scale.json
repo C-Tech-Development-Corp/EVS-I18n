@@ -1,7 +1,7 @@
 {
   "name": "explode and scale",
   "display": "explode and scale",
-  "desc": "The Explode and Scale module is used to separate (or explode) and apply a scaling factor to the vertical dimension (z-coordinate) of cell sets in a model.",
+  "desc": "Separate (or explode) and apply a scaling factor to the vertical dimension (z-coordinate) of cell sets in a model.",
   "categories": [
     {
       "name": "Properties",

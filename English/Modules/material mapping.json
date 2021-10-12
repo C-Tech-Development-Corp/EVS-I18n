@@ -1,7 +1,7 @@
 {
   "name": "material mapping",
   "display": "material mapping",
-  "desc": "This module can re-assign data for the purpose of grouping.",
+  "desc": "This module can re-assign material data for the purpose of grouping.",
   "categories": [
     {
       "name": "Properties",

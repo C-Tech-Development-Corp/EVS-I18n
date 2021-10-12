@@ -1,0 +1,38 @@
+{
+  "name": "cell data to node data",
+  "display": "cell data to node data",
+  "desc": "Interpolate cell data components to nodal data components.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Separate Cells",
+          "display": "Separate Cells",
+          "desc": "The Separate Cells toggle will force any cells with shared nodes to separate preventing any blurring of values between cells."
+        },
+        {
+          "name": "Cell Data Components",
+          "display": "Cell Data Components",
+          "desc": "The Cell Data Components control allows the user to select which cell data to interpolate."
+        },
+        {
+          "name": "Output Cell Data",
+          "display": "Output Cell Data",
+          "desc": "The Output Cell Data option allows the user to specify how to handle input cell data in the output."
+        },
+        {
+          "name": "Strip Original Data",
+          "display": "Strip Original Data",
+          "desc": "This has been deprecated - use Output Nodal Data instead"
+        }
+      ]
+    }
+  ]
+}

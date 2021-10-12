@@ -1,0 +1,18 @@
+{
+  "name": "slope and aspect",
+  "display": "slope and aspect",
+  "desc": "slope and aspect模块确定一个表面的坡度和坡向。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Flat Surface Aspect",
+          "display": "平面坡向",
+          "desc": "用于平面上坡向的值。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "translate by data",
+  "display": "translate by data",
+  "desc": "该模块接受几乎任何网格，并基于节点或单元数据组件或常量来平移网格x、y或z坐标。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Translation Method",
+          "display": "平移方法",
+          "desc": "允许用户在设置坐标和平移坐标之间进行选择。"
+        },
+        {
+          "name": "Translation By",
+          "display": "平移依据",
+          "desc": "允许用户设置平移的依据。"
+        },
+        {
+          "name": "Constant Value",
+          "display": "常量值",
+          "desc": "当平移依据为常量选项，该值作为平移值。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "允许用户使用变量来平移，当变换依据设置为单元数据组件时。"
+        },
+        {
+          "name": "Node Data Component",
+          "display": "节点数据组件",
+          "desc": "允许用户使用变量来平移，当变换依据设置为节点数据组件时。"
+        },
+        {
+          "name": "Translation In",
+          "display": "平移轴",
+          "desc": "允许用户设置平移的坐标轴。"
+        }
+      ]
+    },
+    {
+      "name": "Data Selection",
+      "display": "数据选择",
+      "properties": [
+        {
+          "name": "Color By",
+          "display": "着色依据",
+          "desc": "允许用户决定输出对象如何着色。"
+        },
+        {
+          "name": "Nodal Data Component",
+          "display": "节点数据组件",
+          "desc": "当选择节点数据作为着色依据，可以选择哪个节点组件来进行颜色映射。"
+        },
+        {
+          "name": "Cell Data Component",
+          "display": "单元数据组件",
+          "desc": "当选择单元数据作为着色依据，可以选择哪个单元组件来进行颜色映射。"
+        }
+      ]
+    }
+  ]
+}

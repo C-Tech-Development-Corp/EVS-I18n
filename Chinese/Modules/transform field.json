@@ -1,0 +1,29 @@
+{
+  "name": "transform field",
+  "display": "transform field",
+  "desc": "该模块用来平移、旋转或缩放任何场空间的坐标。",
+  "categories": [
+    {
+      "name": "Transform Settings",
+      "display": "变换设置",
+      "properties": [
+        {
+          "name": "Transform List",
+          "display": "变换列表",
+          "desc": "应用到输入场中的变换列表。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        }
+      ]
+    }
+  ]
+}

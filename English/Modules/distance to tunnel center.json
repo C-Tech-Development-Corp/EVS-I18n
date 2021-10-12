@@ -1,0 +1,18 @@
+{
+  "name": "distance to tunnel center",
+  "display": "distance to tunnel center",
+  "desc": "Calculate the 3d distance from every node in the input field to the input line and add this distance as a data component.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Tunnel Radius",
+          "display": "Tunnel Radius",
+          "desc": "The Tunnel Radius is measured as a normal to the trajectory line in model units."
+        }
+      ]
+    }
+  ]
+}

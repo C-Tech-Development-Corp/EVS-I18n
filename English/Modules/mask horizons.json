@@ -1,0 +1,86 @@
+{
+  "name": "mask horizons",
+  "display": "mask horizons",
+  "desc": "Allows horizons to be subset by expression or a surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Masking Method",
+          "display": "Masking Method",
+          "desc": "The Masking Method allows the user to choose between masking by the Input Area or by a user defined Expression."
+        },
+        {
+          "name": "Allow Subsetting",
+          "display": "Allow Subsetting",
+          "desc": "The Allow Subsetting toggle when turned on will ensure that all layers receive the masking information so if they are later subset, they can still be masked."
+        }
+      ]
+    },
+    {
+      "name": "Input Area Masking",
+      "display": "Input Area Masking",
+      "properties": [
+        {
+          "name": "Masking Direction",
+          "display": "Masking Direction",
+          "desc": "The Masking Direction option allows the user to set whether the area inside or outside of the Input Area is masked."
+        },
+        {
+          "name": "Nested Surface Masking",
+          "display": "Nested Surface Masking",
+          "desc": "The Nested Surface Masking toggle allows you to cut doughnut like shapes if you have polygons INSIDE of other polygons."
+        },
+        {
+          "name": "Area Cells To Include",
+          "display": "Area Cells To Include",
+          "desc": "The Area Cells To Include value allows the user to include a cell if all nodes in the cell are inside of the selected area, or if any of the nodes in the cell are inside of the selected area."
+        }
+      ]
+    },
+    {
+      "name": "Expression Masking",
+      "display": "Expression Masking",
+      "properties": [
+        {
+          "name": "Masking Expression",
+          "display": "Masking Expression",
+          "desc": "The Expression to use for masking."
+        },
+        {
+          "name": "Masking Variable List",
+          "display": "Masking Variable List",
+          "desc": "The Variables to use to set the values during computation."
+        },
+        {
+          "name": "Masking Variables",
+          "display": "Masking Variables",
+          "desc": ""
+        },
+        {
+          "name": "Expression Cells To Include",
+          "display": "Expression Cells To Include",
+          "desc": "The Expression Cells To Include value allows the user to include a cell if all nodes in the cell match the expression criteria, or if any of the nodes in the cell match the expression criteria."
+        }
+      ]
+    },
+    {
+      "name": "Gpu Options",
+      "display": "Gpu Options",
+      "properties": [
+        {
+          "name": "Use GPU For Fast Calculations",
+          "display": "Use GPU For Fast Calculations",
+          "desc": "The Use GPU For Fast Calculations toggle will allow the graphics card of the computer to make certain calculations which can greatly increase the speed of the module.  Not all graphics cards can support this.  The default for this option can be changed in the options menu."
+        },
+        {
+          "name": "Max Block Size",
+          "display": "Max Block Size",
+          "desc": "The amount of nodes which will be processed on each GPU pass.  Larger numbers run faster, but cause interruptions. Smaller numbers are more likely to succeed on lower end graphics cards."
+        }
+      ]
+    }
+  ]
+}

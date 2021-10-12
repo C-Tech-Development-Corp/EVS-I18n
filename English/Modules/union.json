@@ -1,7 +1,7 @@
 {
   "name": "union",
   "display": "union",
-  "desc": "union is a powerful module that allows for a large number of complex serial and parallel subsetting operations required to compute and visualize the union of multiple analytes and threshold levels.",
+  "desc": "Allows for a large number of complex parallel subsetting operations required to compute and visualize the union of multiple analytes and threshold levels.",
   "categories": [
     {
       "name": "Properties",

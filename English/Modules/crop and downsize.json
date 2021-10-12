@@ -1,7 +1,7 @@
 {
   "name": "crop and downsize",
   "display": "crop and downsize",
-  "desc": "The crop_and_downsize module is used to subset an image, or structured field.",
+  "desc": "Subset or simplify an image or structured field.",
   "categories": [
     {
       "name": "Properties",

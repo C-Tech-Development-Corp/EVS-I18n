@@ -1,0 +1,53 @@
+{
+  "name": "scat to unif",
+  "display": "scat to unif",
+  "desc": "该模块用来把离散的样本点转换为一个三维均匀场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "I Dimension",
+          "display": "I 维度",
+          "desc": "网格在X方向的分辨率。"
+        },
+        {
+          "name": "J Dimension",
+          "display": "J 维度",
+          "desc": "网格在y方向的分辨率。"
+        },
+        {
+          "name": "K Dimension",
+          "display": "K 维度",
+          "desc": "网格在z方向的分辨率。"
+        },
+        {
+          "name": "Search Distance X",
+          "display": "搜索X距离",
+          "desc": "沿X轴搜索输入数据点的距离。"
+        },
+        {
+          "name": "Search Distance Y",
+          "display": "搜索Y距离",
+          "desc": "沿Y轴搜索输入数据点的距离。"
+        },
+        {
+          "name": "Search Distance Z",
+          "display": "搜索Z距离",
+          "desc": "沿Z轴搜索输入数据点的距离。"
+        },
+        {
+          "name": "Data For Interpolation",
+          "display": "插值的数据",
+          "desc": "允许用户从输入场选择节点数据插值到创建的三角网格。"
+        },
+        {
+          "name": "Interpolation Order",
+          "display": "插值顺序",
+          "desc": "控制相邻节点上的插值顺序。"
+        }
+      ]
+    }
+  ]
+}

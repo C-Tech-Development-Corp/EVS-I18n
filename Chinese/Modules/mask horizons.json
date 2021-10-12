@@ -1,0 +1,70 @@
+{
+  "name": "mask horizons",
+  "display": "mask horizons",
+  "desc": "该模块允许使用一个表达式或者一个面来子集化地质场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Masking Method",
+          "display": "遮罩方法",
+          "desc": "遮罩方法允许用户在输入区域遮罩或者用户定义表达式遮罩中选择。"
+        },
+        {
+          "name": "Allow Subsetting",
+          "display": "允许子集化",
+          "desc": "打开此开关后，将确保所有层都接收到遮罩信息，因此如果它们是稍后的子集，则仍可以对其进行遮罩。"
+        }
+      ]
+    },
+    {
+      "name": "Input Area Masking",
+      "display": "输入区域遮罩",
+      "properties": [
+        {
+          "name": "Masking Direction",
+          "display": "遮罩方向",
+          "desc": "允许用户设置是屏蔽输入区域内部还是外部区域。"
+        },
+        {
+          "name": "Nested Surface Masking",
+          "display": "嵌套面遮罩",
+          "desc": "如果在其他多边形内部有多边形，则“嵌套面遮罩”开关允许您剪切类似甜甜圈的形状。"
+        },
+        {
+          "name": "Area Cells To Include",
+          "display": "包含区域单元",
+          "desc": "允许用户选择当单元中的所有节点都在选定区域内时包含，或者只要单元中的任意节点都在选定区域内时，可以包含单元"
+        }
+      ]
+    },
+    {
+      "name": "Expression Masking",
+      "display": "表达式遮罩",
+      "properties": [
+        {
+          "name": "Masking Expression",
+          "display": "遮罩表达式",
+          "desc": "用来遮罩的表达式"
+        },
+        {
+          "name": "Masking Variable List",
+          "display": "遮罩变量列表",
+          "desc": "在计算时需要使用的变量。"
+        },
+        {
+          "name": "Masking Variables",
+          "display": "遮罩变量",
+          "desc": ""
+        },
+        {
+          "name": "Expression Cells To Include",
+          "display": "包含表达式单元",
+          "desc": "允许用户选择以何种方式包含单元，单元的所有节点匹配表达式，或者任意节点匹配表达式。"
+        }
+      ]
+    }
+  ]
+}

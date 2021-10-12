@@ -1,0 +1,18 @@
+{
+  "name": "read eft",
+  "display": "read eft",
+  "desc": "read eft模块读取EVS纹理场(*.eft)文件并显示它们。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Vertical Offset",
+          "display": "垂直偏移",
+          "desc": "垂直偏移量通过值输入乘以Z缩放值将整个模型在Z轴平移。如果您想移动您的模型以避免使用相同的对象，这是非常有用的。"
+        }
+      ]
+    }
+  ]
+}

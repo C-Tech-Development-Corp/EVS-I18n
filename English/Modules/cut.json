@@ -1,7 +1,7 @@
 {
   "name": "cut",
   "display": "cut",
-  "desc": "The cut module allows you to create a subset of your input which is of the same dimensionality.",
+  "desc": "Create a subset of your input on one side of a planar surface.",
   "categories": [
     {
       "name": "Properties",

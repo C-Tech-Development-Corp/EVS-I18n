@@ -1,7 +1,7 @@
 {
   "name": "change minmax",
   "display": "change minmax",
-  "desc": "The change_minmax module allows setting of max values above the true maximum data range and min values below the true minimum data range.",
+  "desc": "Set min and max values above the true maximum data range and min values below the true minimum data range.",
   "categories": [
     {
       "name": "Properties",

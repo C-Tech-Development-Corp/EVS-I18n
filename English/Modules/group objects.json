@@ -1,0 +1,28 @@
+{
+  "name": "group objects",
+  "display": "group objects",
+  "desc": "Organize multiple renderable objects by grouping them into a single renderable object.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Visibility",
+          "display": "Visibility",
+          "desc": "The Visibility toggle will turn on or off the visible state of the output objects."
+        },
+        {
+          "name": "Detached Objects",
+          "display": "Detached Objects",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

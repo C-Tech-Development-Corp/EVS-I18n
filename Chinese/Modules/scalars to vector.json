@@ -1,0 +1,23 @@
+{
+  "name": "scalars to vector",
+  "display": "scalars to vector",
+  "desc": "scalars to vector模块用于通过组合选择的标量数据组件创建2d或3d矢量。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Vector Type",
+          "display": "矢量类型",
+          "desc": "矢量类型允许用户在两个和三个数据组件之间选择创建输出矢量。"
+        },
+        {
+          "name": "Vector Components",
+          "display": "矢量组件",
+          "desc": "矢量组件允许用户设置在创建矢量时使用哪些数据组件。"
+        }
+      ]
+    }
+  ]
+}

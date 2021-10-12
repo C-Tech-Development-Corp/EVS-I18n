@@ -1,0 +1,43 @@
+{
+  "name": "opacity by nodal data",
+  "display": "opacity by nodal data",
+  "desc": "该模块提供一种方法来基于数据值调整任何对象的不透明度。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Component",
+          "display": "组件",
+          "desc": "组件值允许用户选择在设置不透明度时使用哪个数据组件。"
+        },
+        {
+          "name": "Opacity Ramp Start",
+          "display": "不透明度斜坡起始",
+          "desc": "是在创建输出时开始使用的不透明度水平。值0被认为是完全透明的，值100被认为是完全不透明的。"
+        },
+        {
+          "name": "Level Start",
+          "display": "起始水平",
+          "desc": "是开始改变不透明度的数据的较低范围。任何低于此值的值将被设置为不透明度渐变的起始值。"
+        },
+        {
+          "name": "Opacity Ramp End",
+          "display": "不透明度斜坡终点",
+          "desc": "是不透明度的结束水平，用于创建输出。值0.0被认为是完全透明的，值100被认为是完全不透明的。"
+        },
+        {
+          "name": "Level End",
+          "display": "终点水平",
+          "desc": "是开始改变不透明度的数据的上部范围。任何高于此值的值将被设置为不透明度渐变的结束值。"
+        },
+        {
+          "name": "Non Linear",
+          "display": "非线性",
+          "desc": "打开此开关将导致较低的值有较低的不透明度，而较高的值将改变更多的不透明度。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "texture cell sets",
+  "display": "texture cell sets",
+  "desc": "texture cell sets模块将根据场中的地质数据将多个图像纹理化到一个场空间上。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或单元之间的角度。"
+        },
+        {
+          "name": "Image Filenames",
+          "display": "图片名称",
+          "desc": "用于对数据进行纹理化的图像的文件名。"
+        },
+        {
+          "name": "Data Type",
+          "display": "数据类型",
+          "desc": "用于确定纹理的数据类型。这个模块只适用于三个组件:层;材料;和岩性。"
+        },
+        {
+          "name": "Nodal Texture Component",
+          "display": "按节点组件贴纹理",
+          "desc": "用于确定纹理的节点数据组件。这个模块只适用于三个组件:层;材料;和岩性。"
+        },
+        {
+          "name": "Cell Texture Component",
+          "display": "按单元组件贴纹理",
+          "desc": "用于确定纹理的单元数据组件。这个模块只适用于三个组件:层;材料;和岩性。"
+        },
+        {
+          "name": "Azimuth Inclination",
+          "display": "方位角和倾斜角",
+          "desc": "方位角定义了从摄像机眼睛指向模型的罗盘方向。倾角定义了从相机的眼睛指向模型的角度。在本例中，这些值应用于图像本身的方向。"
+        },
+        {
+          "name": "Roll",
+          "display": "滚动",
+          "desc": "滚动描述了相机本身沿着它的视图方向的旋转。"
+        },
+        {
+          "name": "Mirror",
+          "display": "镜像",
+          "desc": "镜像开关将改变模块的行为，在情况下，图像的大小比它被映射到的面更小。当这个开关被关闭时，当图像达到它的最大分辨率时，图像将会重复。如果打开这个开关，图像将会在达到最大分辨率时翻转过来。在使用某些图像时，这可以使纹理更加无缝。"
+        },
+        {
+          "name": "X Size",
+          "display": "X 尺寸",
+          "desc": "X尺寸值将在X方向上缩放图像的大小。"
+        },
+        {
+          "name": "X Offset",
+          "display": "X 偏移",
+          "desc": "X偏移值将导致图像被映射到面时在X方向上移动。"
+        },
+        {
+          "name": "Y Size",
+          "display": "Y 尺寸",
+          "desc": "Y尺寸值将在y方向上缩放图像的大小。"
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y 偏移",
+          "desc": "Y偏移值将导致图像被映射到面时在y方向上移动。"
+        },
+        {
+          "name": "Map Data",
+          "display": "映射数据",
+          "desc": "打开映射数据开关将导致第一个节点数据组件与图像一起显示。注意:由于数据值在显示中表示为与图像相同的颜色，因此在使用此选项时将会将两者混合。"
+        }
+      ]
+    }
+  ]
+}

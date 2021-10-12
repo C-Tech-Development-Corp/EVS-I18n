@@ -1,7 +1,7 @@
 {
   "name": "node computation",
   "display": "node computation",
-  "desc": "This module uses a Python script to manipulate the value or coordinates of a field.",
+  "desc": "Use a Python script to manipulate the value or coordinates of a field.",
   "categories": [
     {
       "name": "Properties",

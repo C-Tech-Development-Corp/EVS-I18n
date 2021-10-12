@@ -1,0 +1,58 @@
+{
+  "name": "texture wave",
+  "display": "texture wave",
+  "desc": "texture wave模块利用不透明度和纹理映射来创建动画效果。这个模块工作于OpenGL和软件渲染。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Mode",
+          "display": "模式",
+          "desc": "模式允许用户确定相位如何影响线条的纹理。"
+        },
+        {
+          "name": "Phase",
+          "display": "相位",
+          "desc": "相位滑块允许您控制振荡的当前位置。"
+        },
+        {
+          "name": "Phase Loop",
+          "display": "相位循环",
+          "desc": "相位循环控制通过相位值使变化动画化的方法。"
+        },
+        {
+          "name": "Number Of Steps",
+          "display": "步数",
+          "desc": "步数的数量决定动画的长度。"
+        },
+        {
+          "name": "Texture Resolution",
+          "display": "纹理分辨率",
+          "desc": "纹理分辨率是用于纹理着色的图像内部分辨率。"
+        },
+        {
+          "name": "Minimum Amplitude",
+          "display": "最小振幅",
+          "desc": "最小振幅是物体的最小不透明度。"
+        },
+        {
+          "name": "Maximum Amplitude",
+          "display": "最大振幅",
+          "desc": "最大振幅是物体的最大不透明度。"
+        },
+        {
+          "name": "Contrast",
+          "display": "对比度",
+          "desc": "对比度影响对比度(类似于色彩饱和度)。"
+        },
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "要展示的数据组件。"
+        }
+      ]
+    }
+  ]
+}

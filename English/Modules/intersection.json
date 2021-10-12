@@ -1,7 +1,7 @@
 {
   "name": "intersection",
   "display": "intersection",
-  "desc": "intersection is a powerful module that incorporates some of the characteristics of plume_volume, yet allows for any number of volumetric sequential (serial) subsetting operations.",
+  "desc": "Create a true 3D volumetric subset of a 3D input using multiple subset criteria. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric.",
   "categories": [
     {
       "name": "Properties",

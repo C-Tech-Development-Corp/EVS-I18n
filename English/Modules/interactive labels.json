@@ -1,7 +1,7 @@
 {
   "name": "interactive labels",
   "display": "interactive labels",
-  "desc": "The interactive_labels module allows the user to place formatted labels at probed locations within the Viewer.",
+  "desc": "Place formatted labels at probed locations within the Viewer.",
   "categories": [
     {
       "name": "Properties",

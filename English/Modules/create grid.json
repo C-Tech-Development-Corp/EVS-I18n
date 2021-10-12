@@ -1,7 +1,7 @@
 {
   "name": "create grid",
   "display": "create grid",
-  "desc": "The create_grid module produces a 2D or 3D uniform grid.",
+  "desc": "Create a 2D or 3D uniform grid.",
   "categories": [
     {
       "name": "Properties",

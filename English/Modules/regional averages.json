@@ -1,7 +1,7 @@
 {
   "name": "regional averages",
   "display": "regional averages",
-  "desc": "The regional_average module averages nodal data values from the input field that fall into the input regions.",
+  "desc": "Average nodal data values from the input field that fall into the input regions.",
   "categories": [
     {
       "name": "Properties",

@@ -1,0 +1,18 @@
+{
+  "name": "displace block",
+  "display": "displace block",
+  "desc": "displace block模块通过输入表面和输入表面数据在z方向平移场。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Translation Component",
+          "display": "平移组件",
+          "desc": "平移组件是来自输入表面的节点数据组件，它允许输入场的非均匀断层块平移。"
+        }
+      ]
+    }
+  ]
+}

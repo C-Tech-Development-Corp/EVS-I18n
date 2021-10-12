@@ -1,7 +1,7 @@
 {
   "name": "capture zone",
   "display": "capture zone",
-  "desc": "The capture_zone module utilizes streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells.",
+  "desc": "Use streamlines technology to determine the volumetric regions of your model for which groundwater flow will be captured by one or more extraction wells.",
   "categories": [
     {
       "name": "Properties",

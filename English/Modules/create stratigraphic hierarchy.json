@@ -1,0 +1,357 @@
+{
+  "name": "create stratigraphic hierarchy",
+  "display": "create stratigraphic hierarchy",
+  "desc": "The create stratigraphic hierarchy module reads a special input file format called a pgf file, and then allows the user to build geologic surfaces based on the input file's geologic surface intersections. The surface hierarchy can either be generated automatically for simple geology models or for every layer for complex models. When the user is finished creating surfaces the gmf file can be finalized and converted into a *.GEO file.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Existing GMF Filename",
+          "display": "Existing GMF Filename",
+          "desc": "The name of an existing GMF.  This file will be loaded and the surfaces added to the current hierarchy being created."
+        },
+        {
+          "name": "Current GMF Filename",
+          "display": "Current GMF Filename",
+          "desc": "The name of an current GMF being created.  This file can be overwritten or appended to each time the Write Surface button is pressed."
+        },
+        {
+          "name": "Overwrite GMF File",
+          "display": "Overwrite GMF File",
+          "desc": "The Overwrite GMF File toggle causes the Current GMF file used while creating the hierarchy to be overwritten when the Write Layer button is selected. This toggle is on by default but automatically turned off when using an Existing GMF Filename, or after the Write Layer button is selected."
+        },
+        {
+          "name": "Preserve Bottom",
+          "display": "Preserve Bottom",
+          "desc": "When the Preserve Bottom toggle is selected, the places where the TIN has reached the bottom of the boring will not be dropped."
+        }
+      ]
+    },
+    {
+      "name": "Geologic Hiearchy Options",
+      "display": "Geologic Hiearchy Options",
+      "properties": [
+        {
+          "name": "Current Material List",
+          "display": "Current Material List",
+          "desc": "The Current Material List shows every material that intersects the current surface."
+        },
+        {
+          "name": "Layer Thickness",
+          "display": "Layer Thickness",
+          "desc": "The Layer Thickness slider is enabled when the Method is set to Layer Thickness.  This slider controls the thickness of the current layer."
+        },
+        {
+          "name": "Set To Max Thickness",
+          "display": "Set To Max Thickness",
+          "desc": "The Set To Max Thickness button will force the current Layer Thickness to its maximum extent. This saves the user from having to drag the slider each time."
+        },
+        {
+          "name": "Write Surface",
+          "display": "Write Surface",
+          "desc": "The Write Surface button will write the position of every boring in the TIN surface and the current selected material to the GMF file. If the Overwrite toggle is on it will overwrite the current file, else it will append the surface to the GMF file. It will also look at the position of the surface at each boring, if the surface is at the bottom of a material and there is another material below it, it will add the material below to the current selected material list. If the surface is at the bottom of the boring it will remove that boring from the TIN surface. NOTE: If a boring is at the bottom of a surface but other borings continue, a commented flag will be placed in the GMF file. This commented flag will not affect the output of the GMF file but will be taken into account when creating a GEO file with the Finish Geology button, where these flagged values are turned into SHORT flags. Finally if there are any locked borings (discussed below) then they will be unlocked."
+        },
+        {
+          "name": "Undo Surface",
+          "display": "Undo Surface",
+          "desc": "The Undo Surface button will remove the last surface from the file. NOTE: This button affects file contents not just the memory resident surface."
+        },
+        {
+          "name": "Finish Geology",
+          "display": "Finish Geology",
+          "desc": "The Finish Geology button should be used when the GMF file is complete. This will convert the GMF to a GEO file."
+        },
+        {
+          "name": "Cycle",
+          "display": "Cycle",
+          "desc": "The Cycle toggle will cause the module to automatically generate layers using the set parameters until it reaches a stopping condition. The stopping conditions include that it has reached the bottom of the model or that the next layer it creates would be of the same material as the one above it. The latter case can occur when using the heading/dip plane method with a tolerance that is to small. For the layer thickness method the algorithm will set the distance to the maximum extent and then write out that layer. It will then pick a material from the available materials at that location and continue."
+        }
+      ]
+    },
+    {
+      "name": "Picked Data",
+      "display": "Picked Data",
+      "properties": [
+        {
+          "name": "Picked Boring",
+          "display": "Picked Boring",
+          "desc": "The currently selected boring."
+        },
+        {
+          "name": "Boring State",
+          "display": "Boring State",
+          "desc": "The Boring State is used to describe the action being taken on the currently picked boring.\nThe Normal State is used when the boring at the current surface contains the selected material and allows the surface to move along that boring.\nThe Locked prevents the surface from moving along that boring. The locked status of all boring will be cleared when the Write Layer button has been selected.\nThe Preserved state is used when the Preserve Bottom toggle is selected and shows that the surface will not be dropped when the bottom of the boring is reached.\nThe To Be Dropped state shows that the current boring has reached the end of the boring and will be dropped when the current surface has been written.\nThe Dropped state means that the boring has been dropped from the remaining surfaces."
+        },
+        {
+          "name": "Offset",
+          "display": "Offset",
+          "desc": "The Offset value is applied to the current position of the picked boring allowing the user control of a single point in the TIN."
+        }
+      ]
+    },
+    {
+      "name": "Group Select",
+      "display": "Group Select",
+      "properties": [
+        {
+          "name": "Show Group Select Window",
+          "display": "Show Group Select Window",
+          "desc": "The Show Group Select Window allows the user to select multiple borings at once and to change their state."
+        },
+        {
+          "name": "Zoom To Fit",
+          "display": "Zoom To Fit",
+          "desc": "The Zoom To Fit button resets the scaling for the group select window."
+        },
+        {
+          "name": "Set Group To Locked",
+          "display": "Set Group To Locked",
+          "desc": "The borings contained within the drawn polyline will have the state changed to the Locked position."
+        },
+        {
+          "name": "Set Group To Normal",
+          "display": "Set Group To Normal",
+          "desc": "The borings contained within the drawn polyline will have the state changed to the Normal position."
+        },
+        {
+          "name": "Erase Last Point",
+          "display": "Erase Last Point",
+          "desc": "The last point drawn in the selection polyline will be removed."
+        },
+        {
+          "name": "Clear All Points",
+          "display": "Clear All Points",
+          "desc": "All Points in the selection polyline will be removed."
+        }
+      ]
+    },
+    {
+      "name": "Sample Settings",
+      "display": "Sample Settings",
+      "properties": [
+        {
+          "name": "Display Spheres",
+          "display": "Display Spheres",
+          "desc": "The Display Spheres toggle will toggle the visibility of the spheres from the renderable object."
+        },
+        {
+          "name": "Sphere Count Limit",
+          "display": "Sphere Count Limit",
+          "desc": "The Sphere Count Limit value determines the maximum number of spheres to create.  If the number of samples (spheres to be generated) exceeds this value, the module will turn spheres off and generate (more efficient) colored tubes instead."
+        },
+        {
+          "name": "Maximum Sample Threshold",
+          "display": "Maximum Sample Threshold",
+          "desc": "The Maximum Sample Threshold will set the maximum number of samples from the input file to allow.  If the file contains more than this amount an error will occur."
+        }
+      ]
+    },
+    {
+      "name": "Glyph Settings",
+      "display": "Glyph Settings",
+      "properties": [
+        {
+          "name": "Glyph Size",
+          "display": "Glyph Size",
+          "desc": "The Glyph Size value is used to scale the glyphs in all directions. The default is automatically computed based on your input data."
+        },
+        {
+          "name": "Priority",
+          "display": "Priority",
+          "desc": "The Priority of the glyph will reverse the scaling so that the smallest sample values have the largest size"
+        },
+        {
+          "name": "Minimum Scale Factor",
+          "display": "Minimum Scale Factor",
+          "desc": "The Minimum Scale Factor scales the sample values with the least Priority"
+        },
+        {
+          "name": "Maximum Scale Factor",
+          "display": "Maximum Scale Factor",
+          "desc": "The Maximum Scale Factor scales the sample values with the greatest Priority"
+        },
+        {
+          "name": "Sphere Resolution",
+          "display": "Sphere Resolution",
+          "desc": "The Sphere Resolution defines how finely the sample spheres are rendered.  Higher values mean smoother spheres but at a higher memory cost."
+        }
+      ]
+    },
+    {
+      "name": "Color Tube Settings",
+      "display": "Color Tube Settings",
+      "properties": [
+        {
+          "name": "Display As",
+          "display": "Display As",
+          "desc": "Use Display As to change how the Color Tube is displayed, you can either turn off the tube entirely, display it as a tube, or display it as a wire."
+        },
+        {
+          "name": "Tube Ratio",
+          "display": "Tube Ratio",
+          "desc": "The Tube Ratio field sets what percentage of the sample sphere minimum radius the tube radius will be. For example if you have sample spheres with a minimum radius of 10 and the Tube ratio is set to 70, then the radius of each tube will be 7."
+        },
+        {
+          "name": "Tube Resolution",
+          "display": "Tube Resolution",
+          "desc": "The Tube Resolution indicates how many faces will be used to create each tube; increasing this number will result in rounder tubes, but will use more memory. The minimum value for this field is 2 which creates plane like tubes, 3 will create triangular shaped tubes, 4 will be square, etc..."
+        },
+        {
+          "name": "Max Variation",
+          "display": "Max Variation",
+          "desc": "The Max Variation value is a tool used to correct color blending between samples. "
+        },
+        {
+          "name": "Phase",
+          "display": "Phase",
+          "desc": "The Phase value allows you to control the apparent rotation of tubes. This is specified in degrees of rotation."
+        },
+        {
+          "name": "Close Tubes",
+          "display": "Close Tubes",
+          "desc": "The Close Tubes toggle will cause there to be a cap on the top and bottom of each tube that is the same resolution of the tube, giving each tube a solid look."
+        },
+        {
+          "name": "Connect Lines",
+          "display": "Connect Lines",
+          "desc": "The Connect Lines toggle is used for non-vertical borings. The best way to visualize this function is to use an example of 3 non-vertical samples. A cell will be created between the first and second sample and another cell will be created between the second and third sample. Because these are necessarily separate cells the ends between the cells may not be coincident. This is especially evident when looking at borings with large changes in angle between samples, or kinks. To merge these cells into a single tube the separate ends are averaged causing a distorted, but more efficient and seamless tube."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "Features To Label",
+          "display": "Features To Label",
+          "desc": "The Features To Label value allows the user to select the type of labeling performed."
+        },
+        {
+          "name": "PGF Labeling",
+          "display": "PGF Labeling",
+          "desc": "PGF Labeling allows the user to specify where each label will occur."
+        },
+        {
+          "name": "PGF Format",
+          "display": "PGF Format",
+          "desc": "The PGF Format control allows the user to select between material value, material name, or both."
+        },
+        {
+          "name": "Label Type",
+          "display": "Label Type",
+          "desc": "The Label Type allows the user to select between three font types. Forward Facing Fonts will always be aligned to the View.  TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "3D Label Settings",
+          "display": "3D Label Settings",
+          "desc": "3D Label Settings allow the user to align the labels to an appropriate view."
+        },
+        {
+          "name": "Forward Facing Style",
+          "display": "Forward Facing Style",
+          "desc": "Forward Facing Style allows the user to align the labels to an appropriate view and to alter the basic layout of the font."
+        },
+        {
+          "name": "Label Color",
+          "display": "Label Color",
+          "desc": "Label Color allows the color for every label to be set."
+        },
+        {
+          "name": "Label Angle",
+          "display": "Label Angle",
+          "desc": "The Label Angle field determines where in a circle around the sample to place the label. For example a value of zero means place the labels to the direct right of the sample, a value of 90 would place the label directly above the sample."
+        },
+        {
+          "name": "Format Label Numbers",
+          "display": "Format Label Numbers",
+          "desc": "The Format Label Numbers control allows the user to set how numbers that are turned into labels will be formatted."
+        },
+        {
+          "name": "Top Offset",
+          "display": "Top Offset",
+          "desc": "The Top Offset field is the title (the well or boring ID label) offset in the z direction. This can raise or lower your title and is added to the Z offset to determine the z location of the title."
+        },
+        {
+          "name": "Radial Offset",
+          "display": "Radial Offset",
+          "desc": "The Radial Offset field is the radial offset, this determines how far from the sample to place the label, a value of 1 means to add the radius of the sphere to the XYZ location of the sample and place the label there."
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset is added to the Z coordinate in labeled sample to raise or lower the labels in the Z direction."
+        },
+        {
+          "name": "X Blank",
+          "display": "X Blank",
+          "desc": "The X Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Y Blank",
+          "display": "Y Blank",
+          "desc": "The Y Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Z Blank",
+          "display": "Z Blank",
+          "desc": "The Z Blank field helps to create a 3D box that will allow only the label at the highest value to be displayed inside. If there are multiple samples with the same max value within the box, the label that is displayed is based upon the order processed, which is not necessarily the order defined in the file."
+        },
+        {
+          "name": "Favor Min Value",
+          "display": "Favor Min Value",
+          "desc": "The Favor Min Value is used along with the X, Y, and Z Blanking fields.  This will switch the behavior of those fields to display the lowest value inside the box."
+        }
+      ]
+    },
+    {
+      "name": "View",
+      "display": "View",
+      "properties": [
+        {
+          "name": "Avs Image Source",
+          "display": "Avs Image Source",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Window Size",
+      "display": "Window Size",
+      "properties": [
+        {
+          "name": "Window Sizing",
+          "display": "Window Sizing",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Width",
+          "display": "Viewer Width",
+          "desc": ""
+        },
+        {
+          "name": "Viewer Height",
+          "display": "Viewer Height",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

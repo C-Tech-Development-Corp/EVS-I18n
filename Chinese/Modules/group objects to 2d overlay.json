@@ -1,0 +1,6 @@
+{
+  "name": "group objects to 2d overlay",
+  "display": "group objects to 2d overlay",
+  "desc": "group objects to 2d overlay提供了一个模块，它将任何连接的模块的输出应用到查看器的2D覆盖上。覆盖层中的对象没有被转换(旋转，缩放，平移)。这些物体被锁定在固定的位置上。这提供了一种应用图形的机制，如绘制标题块或公司标识。",
+  "categories": []
+}

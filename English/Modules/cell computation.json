@@ -1,7 +1,7 @@
 {
   "name": "cell computation",
   "display": "cell computation",
-  "desc": "This module uses a Python script to manipulate the cell data values of a field.",
+  "desc": "Use a Python script to manipulate the cell data values of a field.",
   "categories": [
     {
       "name": "Properties",

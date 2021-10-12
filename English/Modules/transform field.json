@@ -1,7 +1,7 @@
 {
   "name": "transform field",
   "display": "transform field",
-  "desc": "The transform_field module is used to translate, rotate or scale the coordinates any field.",
+  "desc": "Translate, rotate or scale the coordinates any field.",
   "categories": [
     {
       "name": "Properties",

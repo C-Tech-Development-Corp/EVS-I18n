@@ -1,0 +1,85 @@
+{
+  "name": "3d streamlines",
+  "display": "3d streamlines",
+  "desc": "该模块用于在任意类型的网格上产生具有2元或3元向矢量数据分量场的流线或流带。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Vector Nodal Data",
+          "display": "矢量节点数据",
+          "desc": "矢量节点数据显示传递到输入字段的所有节点数据，包括矢量和标量。必须选择矢量数据组件来创建流线。"
+        },
+        {
+          "name": "Time Units",
+          "display": "时间单位",
+          "desc": "允许用户指定输入场中使用的单位类型。"
+        },
+        {
+          "name": "Flow Direction",
+          "display": "流动方向",
+          "desc": "流方向允许用户选择线流的方向。"
+        }
+      ]
+    },
+    {
+      "name": "Terminating Conditions",
+      "display": "终止条件",
+      "properties": [
+        {
+          "name": "Segments Per Cell",
+          "display": "每单元片段数",
+          "desc": "设置每个单元中使用的积分步距的数量(即单元的分裂数量)，以计算流线。"
+        },
+        {
+          "name": "Order",
+          "display": "阶数",
+          "desc": "设置积分的阶数。高阶积分更精确，但执行速度慢得多。"
+        },
+        {
+          "name": "Max Segments Total",
+          "display": "最大片段总数",
+          "desc": "最大线段总量用于设置每个流线完成的最大允许的流线线段数量。如果沿流线的线段数量超过最大数量，则流线终止于最后一个(最大)线段的末端。"
+        },
+        {
+          "name": "Minimum Velocity",
+          "display": "最小速率",
+          "desc": "最小速率用于指定将在积分中考虑的最小速度。如果一个区域内的速度场的大小小于这个最小值，流线将在该区域结束(或者如果起始点的梯度小于最小值，流线将不会产生)。将其设置为较低的值将产生较长的流线(通常更多)。数值越高，流线越少，流线越短。如果流线在数据集中不可见，则将其设置为较低的值可能产生流线。"
+        },
+        {
+          "name": "Extinction Angle",
+          "display": "消弧角",
+          "desc": "用于指定应终止积分(流线生成)前连续线段之间的最大允许角。"
+        }
+      ]
+    },
+    {
+      "name": "Display Settings",
+      "display": "显示设置",
+      "properties": [
+        {
+          "name": "Output Nodal Data",
+          "display": "输出节点数据",
+          "desc": "允许用户选择如何给输出流线着色。"
+        },
+        {
+          "name": "Coloring",
+          "display": "色彩",
+          "desc": "允许用户指定如何处理输出节点数据。"
+        },
+        {
+          "name": "Minimum Clamp Value",
+          "display": "最小限值",
+          "desc": "允许用户通过箝位数据来重置显示输出节点数据的最小值。"
+        },
+        {
+          "name": "Maximum Clamp Value",
+          "display": "最大限值",
+          "desc": "允许用户通过箝位数据来重置显示输出节点数据的最大值，以达到上色的目的。"
+        }
+      ]
+    }
+  ]
+}

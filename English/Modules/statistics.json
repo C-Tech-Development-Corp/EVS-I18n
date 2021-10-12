@@ -1,7 +1,7 @@
 {
   "name": "statistics",
   "display": "statistics",
-  "desc": "The statistics module is used to analyze the statistical distribution of a single data from a field.",
+  "desc": "Analyze the statistical distribution of a single data from a field.",
   "categories": [
     {
       "name": "Properties",
@@ -56,6 +56,11 @@
           "name": "Precision",
           "display": "Precision",
           "desc": "The Precision is the number of decimal points to use for calculated values."
+        },
+        {
+          "name": "Format Data",
+          "display": "Format Data",
+          "desc": "The Format Data control allows the user to set how data will be formatted for display."
         }
       ]
     }

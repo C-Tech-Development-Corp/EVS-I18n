@@ -1,0 +1,29 @@
+{
+  "name": "change minmax",
+  "display": "change minmax",
+  "desc": "该模块允许设置超过数据真实范围的输出范围。",
+  "categories": [
+    {
+      "name": "Nodal Data Ranges",
+      "display": "节点数据范围",
+      "properties": [
+        {
+          "name": "Change Nodal Data",
+          "display": "更改节点数据",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Cell Data Ranges",
+      "display": "单元数据范围",
+      "properties": [
+        {
+          "name": "Change Cell Data",
+          "display": "更改单元数据",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

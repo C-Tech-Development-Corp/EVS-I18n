@@ -1,7 +1,7 @@
 {
   "name": "external edges",
   "display": "external edges",
-  "desc": "The external_edges module extracts the outer edges of a mesh.",
+  "desc": "Extracts the outer edges of a mesh.",
   "categories": [
     {
       "name": "Properties",

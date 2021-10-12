@@ -1,7 +1,7 @@
 {
   "name": "texture cylinder",
   "display": "texture cylinder",
-  "desc": "The texture_cylinder module provides a means to (texture map) project images onto a cylinder.",
+  "desc": "Project images onto a cylinder.",
   "categories": [
     {
       "name": "Properties",

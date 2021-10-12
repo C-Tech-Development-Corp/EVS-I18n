@@ -1,7 +1,7 @@
 {
   "name": "file statistics",
   "display": "file statistics",
-  "desc": "The file_statistics module is used to calculate and display statistics about the data contained in the selected file.",
+  "desc": "Calculate and display statistics about the data contained in the selected file.",
   "categories": [
     {
       "name": "Properties",
@@ -67,6 +67,11 @@
           "name": "Coordinate Precision",
           "display": "Coordinate Precision",
           "desc": "The Coordiante Precision is the number of decimal points to use for coordinate values."
+        },
+        {
+          "name": "Format Data",
+          "display": "Format Data",
+          "desc": "The Format Data control allows the user to set how data will be formatted for display."
         },
         {
           "name": "Precision",

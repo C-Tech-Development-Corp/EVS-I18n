@@ -1,7 +1,7 @@
 {
   "name": "cell centers",
   "display": "cell centers",
-  "desc": "The cell_centers module produces a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh.",
+  "desc": "Produce a mesh containing consisting of points, each point represents a geometrical center of a corresponding cell in the input mesh.",
   "categories": [
     {
       "name": "Properties",

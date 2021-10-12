@@ -1,0 +1,81 @@
+{
+  "name": "intersection shell",
+  "display": "intersection shell",
+  "desc": "intersection shell模块输出一个非体积类型的串联子集羽。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Include Varying Surface",
+          "display": "包含数据曲面",
+          "desc": "此开关控制面的可见性，这些面基于映射组件从而具有不同的数据。控制输出某部分显示的能力，允许你以不同的方式使用多个intersection shell模块和每个羽的颜色或者纹理映射部分。"
+        },
+        {
+          "name": "Output String",
+          "display": "输出字符",
+          "desc": "输出字符串内容包含各个子集化的名称和值。"
+        },
+        {
+          "name": "",
+          "display": "大于输出字符串",
+          "desc": "当包含的区域设置为高于（above），输出字符串将会使用这个字符串作为标识符。"
+        },
+        {
+          "name": "Output String Delimiter",
+          "display": "输出字符串分隔符",
+          "desc": "当输出字符串有所有子集构成，分隔符是显示在每个子集文本之间的字符串。"
+        },
+        {
+          "name": "Below Output String",
+          "display": "小于输出字符串",
+          "desc": "当包含的区域设置为低于（below），输出字符串将会使用这个字符串作为标识符"
+        }
+      ]
+    },
+    {
+      "name": "Subsetting Values",
+      "display": "子集化值",
+      "properties": [
+        {
+          "name": "Subset List",
+          "display": "子集列表",
+          "desc": "intersection模块创建的子集列表。"
+        },
+        {
+          "name": "Subsetting Level Has Been Set",
+          "display": "子集化值已设置。",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Output Nodal Data",
+          "display": "输出节点数据",
+          "desc": "输出节点数据选择允许用户选择输出包含的节点数据类型。"
+        },
+        {
+          "name": "Output Cell Data",
+          "display": "输出单元数据",
+          "desc": "输出节点数据选择允许用户选择输出包含的单元数据类型。"
+        }
+      ]
+    },
+    {
+      "name": "External Faces",
+      "display": "外表面",
+      "properties": [
+        {
+          "name": "Max Edge Angle",
+          "display": "最大边缘角",
+          "desc": "最大边缘角定义为模型中两个面或者两个单元之间的夹角。"
+        }
+      ]
+    }
+  ]
+}

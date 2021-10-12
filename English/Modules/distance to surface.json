@@ -1,0 +1,55 @@
+{
+  "name": "distance to surface",
+  "display": "distance to surface",
+  "desc": "Map the distance from a surface to the points in a field as data. This allows downstream modules to cut above or below the surface.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Reverse Cutting Surface Normal",
+          "display": "Reverse Cutting Surface Normal",
+          "desc": "The Reverse Cutting Surface Normal toggle flips the normal vector of the cutting surface. In other words, this changes the 'sign' of the surf_cut data component. This is useful for certain applications where you want the distance from the surface to be positive on a particular side."
+        }
+      ]
+    },
+    {
+      "name": "Gpu Options",
+      "display": "Gpu Options",
+      "properties": [
+        {
+          "name": "Use GPU For Fast Calculations",
+          "display": "Use GPU For Fast Calculations",
+          "desc": "The Use GPU For Fast Calculations toggle will allow the graphics card of the computer to make certain calculations which can greatly increase the speed of the module.  Not all graphics cards can support this.  The default for this option can be changed in the options menu."
+        },
+        {
+          "name": "Force Emulated GPU",
+          "display": "Force Emulated GPU",
+          "desc": "The Force Emulated GPU toggle will allow the system to emulate a more functional graphics card if the computer doesn't have one which allows certain calculations.  The default for this option can be changed in the options menu"
+        },
+        {
+          "name": "Max Block Size",
+          "display": "Max Block Size",
+          "desc": "The amount of nodes which will be processed on each GPU pass.  Larger numbers run faster, but cause interruptions. Smaller numbers are more likely to succeed on lower end graphics cards."
+        }
+      ]
+    },
+    {
+      "name": "Cpu Options",
+      "display": "Cpu Options",
+      "properties": [
+        {
+          "name": "Extended Search Algorithm",
+          "display": "Extended Search Algorithm",
+          "desc": "The Extended Search Algorithm toggle should only be chosen if the cutting process is not honoring the input surface well. It also increases compute times dramatically but should always result in equal or greater accuracy."
+        },
+        {
+          "name": "Nodes In Search",
+          "display": "Nodes In Search",
+          "desc": "The Nodes In Search control determines the maximum number of nodes that are used in the search for the nearest node or edge when cutting through all nodes in the 3D volume. Higher values result in more accurate cutting, but longer compute times. Raise this number if any problems occur with the module's ability to cut along the surface you are using."
+        }
+      ]
+    }
+  ]
+}

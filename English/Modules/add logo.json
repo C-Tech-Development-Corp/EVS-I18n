@@ -1,57 +1,42 @@
 {
   "name": "add logo",
   "display": "add logo",
-  "desc": "The add_logo module is used to place a logo or other graphic object in the Viewer's non-transformable overlay.",
+  "desc": "Place a logo or other graphic object in the Viewer's non-transformable overlay.",
   "categories": [
     {
       "name": "Properties",
       "display": "Properties",
       "properties": [
         {
-          "name": "Logo Image File",
-          "display": "Logo Image File",
-          "desc": "The Image file to be used for the logo."
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Size",
+          "display": "Size",
+          "desc": "Specify the width and height of the image in percentage of screen height."
         }
       ]
     },
     {
-      "name": "Display Settings",
-      "display": "Display Settings",
+      "name": "Positioning",
+      "display": "Positioning",
       "properties": [
         {
-          "name": "Visible",
-          "display": "Visible",
-          "desc": "Controls the visibility of the object."
+          "name": "Anchor Point",
+          "display": "Anchor Point",
+          "desc": "The Anchor Point determines where to place the legend, and which point on the legend to base placement on."
         },
         {
-          "name": "Logo Size",
-          "display": "Logo Size",
-          "desc": "The Logo Size will change both the width and height of the image in overlay space."
-        },
-        {
-          "name": "Horizontal Translation",
-          "display": "Horizontal Translation",
-          "desc": "The Horizontal Translation shifts the logo in the horizontal direction in the overlay space."
-        },
-        {
-          "name": "Vertical Translation",
-          "display": "Vertical Translation",
-          "desc": "The Vertical Translation shifts the logo in the horizontal direction in the overlay space."
+          "name": "Position Offset",
+          "display": "Position Offset",
+          "desc": ""
         },
         {
           "name": "Overlay",
           "display": "Overlay",
           "desc": "The Overlay control allows the user to put the logo behind the model or in front of it."
-        },
-        {
-          "name": "Mask Image",
-          "display": "Mask Image",
-          "desc": "The Mask Image will set the opacity of all pixels with the same color as the Mask color to zero."
-        },
-        {
-          "name": "Mask Color",
-          "display": "Mask Color",
-          "desc": "When Mask Image is used the Mask Color is the color used to select pixels to be masked."
         }
       ]
     }

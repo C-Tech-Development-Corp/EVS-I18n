@@ -1,7 +1,7 @@
 {
   "name": "place glyph",
   "display": "place glyph",
-  "desc": "The place_glyph module is used to place a single scalable geometric objects (glyph) at an interactively determined location.",
+  "desc": "Place a single scalable geometric objects (glyph) at an interactively determined location.",
   "categories": [
     {
       "name": "Properties",

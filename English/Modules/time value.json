@@ -1,7 +1,7 @@
 {
   "name": "time value",
   "display": "time value",
-  "desc": "The time_value module is used to parse a TVF file consisting of dates, values, and (optionally) labels.",
+  "desc": "Parse a TVF file consisting of dates, values, and (optionally) labels.",
   "categories": [
     {
       "name": "Properties",

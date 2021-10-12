@@ -1,7 +1,7 @@
 {
   "name": "buildings",
   "display": "buildings",
-  "desc": "The buildings module reads C Tech's .BLDG file and creates various 3D objects.",
+  "desc": "Create 3d buildings interactively or from a file.",
   "categories": [
     {
       "name": "Properties",

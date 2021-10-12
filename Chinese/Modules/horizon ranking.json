@@ -1,0 +1,28 @@
+{
+  "name": "horizon ranking",
+  "display": "horizon ranking",
+  "desc": "该模块提供一种对各个层面的优先级和排序的控制途径。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Horizon Rankings",
+          "display": "层位排序",
+          "desc": "允许用户控制各个层面的优先级和排序。"
+        },
+        {
+          "name": "Top To Bottom",
+          "display": "顶至底",
+          "desc": "返回它们的默认值排序(1在顶部)。"
+        },
+        {
+          "name": "Bottom To Top",
+          "display": "底至顶",
+          "desc": "该按钮反转排序，相当于反转层序结构。"
+        }
+      ]
+    }
+  ]
+}

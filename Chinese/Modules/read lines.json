@@ -1,0 +1,44 @@
+{
+  "name": "read lines",
+  "display": "read lines",
+  "desc": "该模块用来将一系列带数据的点用线连接起来并显示。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Data Component",
+          "display": "数据组件",
+          "desc": "控制用哪个数据来着色线。"
+        }
+      ]
+    },
+    {
+      "name": "Data Processing",
+      "display": "数据处理",
+      "properties": [
+        {
+          "name": "Log Process Nodal Data",
+          "display": "对数处理节点数据",
+          "desc": "打开后输入的节点数据将进行对数处理。"
+        },
+        {
+          "name": "Log Process Cell Data",
+          "display": "对数处理单元数据",
+          "desc": "打开后输入的单元数据将进行对数处理。"
+        },
+        {
+          "name": "Connectivity Component",
+          "display": "组件连接",
+          "desc": "决定SAD文件如何连接。"
+        },
+        {
+          "name": "Clip Min",
+          "display": "剪切最小值",
+          "desc": "只有在选择节点或单元数据的对数处理并为每个数据值设置最小值以便正确处理它们时，此操作才会被激活。"
+        }
+      ]
+    }
+  ]
+}

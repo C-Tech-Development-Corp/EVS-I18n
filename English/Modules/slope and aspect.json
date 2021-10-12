@@ -1,7 +1,7 @@
 {
   "name": "slope and aspect",
   "display": "slope and aspect",
-  "desc": "The slope_and_aspect module determines the slope and aspect of a surface.",
+  "desc": "Determine the slope and aspect of a surface.",
   "categories": [
     {
       "name": "Properties",

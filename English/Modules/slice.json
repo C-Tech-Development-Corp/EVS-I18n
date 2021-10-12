@@ -1,7 +1,7 @@
 {
   "name": "slice",
   "display": "slice",
-  "desc": "The slice module allows you to create a subset of your input which is of reduced dimensionality.",
+  "desc": "Create a slice through an input field.",
   "categories": [
     {
       "name": "Properties",

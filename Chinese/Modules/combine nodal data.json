@@ -1,0 +1,43 @@
+{
+  "name": "combine nodal data",
+  "display": "combine nodal data",
+  "desc": "The combine_components module",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Model Components",
+          "display": "模型组件",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        },
+        {
+          "name": "Components 1",
+          "display": "组件 1",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        },
+        {
+          "name": "Components 2",
+          "display": "组件 2",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        },
+        {
+          "name": "Components 3",
+          "display": "组件 3",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        },
+        {
+          "name": "Components 4",
+          "display": "组件 4",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        },
+        {
+          "name": "Components 5",
+          "display": "组件 5",
+          "desc": "允许用户从相关输入场中选择在输出中包含哪些节点数据组件。"
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,16 @@
           "desc": "This application origin is used to determine an origin coordinate used for all calculations.  On write, some modules allow you to not trnaslate this back, in which case, this becomes a local origin point of the output generated."
         },
         {
+          "name": "Viewer Snapshot",
+          "display": "Viewer Snapshot",
+          "desc": "Save a snapshot of the contents of the primary viewer."
+        },
+        {
+          "name": "Application Snapshot",
+          "display": "Application Snapshot",
+          "desc": "Save a snapshot image of the contents of the Application window."
+        },
+        {
           "name": "Application Loading",
           "display": "Application Loading",
           "desc": ""
@@ -21,6 +31,11 @@
           "name": "Smooth Lines",
           "display": "Smooth Lines",
           "desc": ""
+        },
+        {
+          "name": "Application Information",
+          "display": "Application Information",
+          "desc": "Information usable throughout the application for titles and other strings. Date Format is the python style date format used to format {Today}."
         }
       ]
     }

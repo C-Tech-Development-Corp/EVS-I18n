@@ -1,0 +1,76 @@
+{
+  "name": "node computation",
+  "display": "node computation",
+  "desc": "这个模块使用Python脚本来操作场的值或坐标。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Nodal Computation Variables 1",
+          "display": "节点计算变量 1",
+          "desc": "在计算期间用于设置值的变量。"
+        },
+        {
+          "name": "Nodal Computation Variables 2",
+          "display": "节点计算变量 2",
+          "desc": "在计算期间用于设置值的变量。"
+        }
+      ]
+    },
+    {
+      "name": "Output",
+      "display": "输出",
+      "properties": [
+        {
+          "name": "Data Definitions",
+          "display": "数据定义",
+          "desc": "除了坐标之外，您希望生成的数据。"
+        }
+      ]
+    },
+    {
+      "name": "Variables",
+      "display": "变量",
+      "properties": [
+        {
+          "name": "N1",
+          "display": "N1",
+          "desc": "传递至脚本的数字"
+        },
+        {
+          "name": "N2",
+          "display": "N2",
+          "desc": "传递至脚本的数字"
+        },
+        {
+          "name": "N3",
+          "display": "N3",
+          "desc": "传递至脚本的数字"
+        },
+        {
+          "name": "N4",
+          "display": "N4",
+          "desc": "传递至脚本的数字"
+        }
+      ]
+    },
+    {
+      "name": "Script Operations",
+      "display": "脚本操作",
+      "properties": [
+        {
+          "name": "Edit Script In Editor",
+          "display": "在编辑器中编辑",
+          "desc": "在编辑器中打开所选的脚本。"
+        },
+        {
+          "name": "Create Default Script",
+          "display": "Create Default Script",
+          "desc": "创建一个默认脚本文件，并将其分配给文件名参数。"
+        }
+      ]
+    }
+  ]
+}

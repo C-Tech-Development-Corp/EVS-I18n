@@ -1,7 +1,7 @@
 {
   "name": "trigger script",
   "display": "trigger script",
-  "desc": "The trigger_script module allows any change in a module property to trigger a python script.",
+  "desc": "Allows any change in a module property to trigger a python script.",
   "categories": [
     {
       "name": "Properties",

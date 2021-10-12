@@ -1,0 +1,43 @@
+{
+  "name": "write evs field",
+  "display": "write evs field",
+  "desc": "Creates a file in one of 5 different formats containing all the mesh and nodal and/or cell data component information sent to the input port.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Split Into Separate Files",
+          "display": "Split Into Separate Files",
+          "desc": "Splits the output into separate files. The corresponding .EFF or .EFZ file will only contain the tag information (see below). Any required nodes, data, or connectivity will be written into separate files."
+        },
+        {
+          "name": "Force Nodal Data In Output",
+          "display": "Force Nodal Data In Output",
+          "desc": "Causes the field definition to always contain Node_Data. If this is off, and there are no node data components, a simpler, Mesh-Only style field will be saved. However, when you load those fields into EVS or MVS, many modules will not work correctly with them. This will cause a mesh like that to save as a Mesh+Node_Data (with 0 data components), which will allow many modules to work with this data."
+        },
+        {
+          "name": "Force Cell Data In Output",
+          "display": "Force Cell Data In Output",
+          "desc": "Same as above, but with cell data. Very few modules require cell data, so this is not on by default, but is provided as an option."
+        },
+        {
+          "name": "Check For Cell Set Data",
+          "display": "Check For Cell Set Data",
+          "desc": "The Check For Cell Set Data toggle will cause any cell data that is constant throughout its cell set to be written as a cell set data component."
+        },
+        {
+          "name": "Translate By Origin",
+          "display": "Translate By Origin",
+          "desc": "The Translate by Origin toggle will cause the output to be written in the users coordinate space.  When this is turned off the output will be written around the origin."
+        },
+        {
+          "name": "Notes",
+          "display": "Notes",
+          "desc": "The Notes to include within the file.  These are just comments and have to affect on the module."
+        }
+      ]
+    }
+  ]
+}

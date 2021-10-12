@@ -1,7 +1,7 @@
 {
   "name": "application notes",
   "display": "application notes",
-  "desc": "The Application_Notes module allows you to add textual notes to your applications that are saved with the application.",
+  "desc": "Add textual notes to your applications that are saved with the application.",
   "categories": [
     {
       "name": "Properties",

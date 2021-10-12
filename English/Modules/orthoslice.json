@@ -1,7 +1,7 @@
 {
   "name": "orthoslice",
   "display": "orthoslice",
-  "desc": "The orthoslice module displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis.",
+  "desc": "Displays slice positions north-south (vertical), east-west (vertical) and horizontal. The orthoslice module subsets a structured field by extracting one slice plane and can only be orthogonal to the X, Y, or Z axis.",
   "categories": [
     {
       "name": "Properties",

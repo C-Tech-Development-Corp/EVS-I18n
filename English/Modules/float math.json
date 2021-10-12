@@ -1,7 +1,7 @@
 {
   "name": "float math",
   "display": "float math",
-  "desc": "The float_math module provides a simple means to perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value.",
+  "desc": "Perform mathematical operations on values coming from various numeric and string input ports to generate a resultant value.",
   "categories": [
     {
       "name": "Properties",

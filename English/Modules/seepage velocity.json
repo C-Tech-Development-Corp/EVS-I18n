@@ -1,7 +1,7 @@
 {
   "name": "seepage velocity",
   "display": "seepage velocity",
-  "desc": "The seepage_velocity module is used to compute the vector groundwater flow field visualizations of the vector field.",
+  "desc": "Compute the vector groundwater flow field visualizations of the vector field.",
   "categories": [
     {
       "name": "Properties",

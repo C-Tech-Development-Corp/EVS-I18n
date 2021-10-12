@@ -1,7 +1,7 @@
 {
   "name": "texture walls",
   "display": "texture walls",
-  "desc": "The texture_walls module provides a means to project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
+  "desc": "Project images onto surfaces such as walls of buildings to add more realism to your visualizations.",
   "categories": [
     {
       "name": "Properties",
@@ -64,21 +64,6 @@
       "display": "Image Processing",
       "properties": [
         {
-          "name": "Sharpen Image",
-          "display": "Sharpen Image",
-          "desc": "The Sharpen Image toggle will allow the user to sharpen the edges in an image by exaggerating the brightness difference along the edges."
-        },
-        {
-          "name": "Soften Image",
-          "display": "Soften Image",
-          "desc": "The Soften Image toggle will allow the user to soften the edges in an image by reducing the brightness difference along the edges."
-        },
-        {
-          "name": "Enhance Edges",
-          "display": "Enhance Edges",
-          "desc": "Enhances the Edges of the objects and discards other image information."
-        },
-        {
           "name": "Brightness",
           "display": "Brightness",
           "desc": "The Brightness slider can either add or remove brightness from every pixel."
@@ -87,21 +72,6 @@
           "name": "Contrast",
           "display": "Contrast",
           "desc": "The Contrast slider can either add or remove contrast from every pixel. Making bright spots brighter and dark spots darker"
-        },
-        {
-          "name": "White Balance Red",
-          "display": "White Balance Red",
-          "desc": "The White Balance Red slider affects the red channel of the white balance."
-        },
-        {
-          "name": "White Balance Green",
-          "display": "White Balance Green",
-          "desc": "The White Balance Green slider affects the green channel of the white balance."
-        },
-        {
-          "name": "White Balance Blue",
-          "display": "White Balance Blue",
-          "desc": "The White Balance Blue slider affects the blue channel of the white balance."
         },
         {
           "name": "Gamma Correction Red",

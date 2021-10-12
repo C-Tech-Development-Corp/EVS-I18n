@@ -1,0 +1,53 @@
+{
+  "name": "read tcf",
+  "display": "read tcf",
+  "desc": "Read TCF模块是Time_Data模块的有限集合之一。这些模块专门用于创建随时间变化的数据模型和动画。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Log Process Nodal Data",
+          "display": "对数处理节点数据",
+          "desc": "当选择此选项，输入的节点数据将会进行对数处理。"
+        },
+        {
+          "name": "Log Process Cell Data",
+          "display": "对数处理单元数据",
+          "desc": "当选择此选项，输入的单元数据将会进行对数处理。"
+        },
+        {
+          "name": "Date And Time",
+          "display": "日期与时间",
+          "desc": "关注的时间和日期"
+        },
+        {
+          "name": "Time Loop",
+          "display": "时间循环",
+          "desc": "时间循环控件由指定的增量设置日期和时间。"
+        },
+        {
+          "name": "Start Date",
+          "display": "起始日期",
+          "desc": "模拟的开始时间。该值被设置为文件的第一个日期。"
+        },
+        {
+          "name": "End Date",
+          "display": "结束日期",
+          "desc": "模拟的结束时间。该值被设置为文件的最后一个日期。"
+        },
+        {
+          "name": "Step Time Units",
+          "display": "步进时间单位",
+          "desc": "当步进或运行时前进的增量单位。"
+        },
+        {
+          "name": "Step Size",
+          "display": "步长大小",
+          "desc": "为步进或运行时的前进增量指定一个因子，结合步进时间单位。"
+        }
+      ]
+    }
+  ]
+}

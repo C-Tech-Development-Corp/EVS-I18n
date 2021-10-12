@@ -1,0 +1,23 @@
+{
+  "name": "compute surface area",
+  "display": "çô₥ƥúƭè ƨúřƒáçè ářèá",
+  "desc": "Çáℓçúℓáƭè ƭλè ƨúřƒáçè ářèá ôƒ ƭλè èñƭïřè ƒïèℓδ ïñƥúƭ.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Integrated Area",
+          "display": "Ìñƭèϱřáƭèδ Âřèá",
+          "desc": "Tλè Ìñƭèϱřáƭèδ ářèá ôƒ ƭλè ïñƥúƭ ƒïèℓδ."
+        },
+        {
+          "name": "Area Units",
+          "display": "Âřèá Ûñïƭƨ",
+          "desc": "Tλè úñïƭƨ ôƒ ƭλè ïñƥúƭ ƒïèℓδ ƨ9úářèδ."
+        }
+      ]
+    }
+  ]
+}

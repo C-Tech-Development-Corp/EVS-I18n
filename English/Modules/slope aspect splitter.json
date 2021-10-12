@@ -1,7 +1,7 @@
 {
   "name": "slope aspect splitter",
   "display": "slope aspect splitter",
-  "desc": "The slope_aspect_splitter module will split an input field into two output fields based upon the subset expression used.",
+  "desc": "Split an input field into two output fields based upon slope or aspect data using a subset expression.",
   "categories": [
     {
       "name": "Properties",

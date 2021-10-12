@@ -1,0 +1,252 @@
+{
+  "name": "lithologic modeling",
+  "display": "lithologic modeling",
+  "desc": "Estimate material data to generate a lithologic model.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "New Variables",
+          "display": "New Variables",
+          "desc": "The New Variables toggle resets all expert system calculated variables to zero before each run. This allows multiple calculations to be performed without tedious manual resetting of these variables. To change an expert system calculated variable, the toggle must be off."
+        }
+      ]
+    },
+    {
+      "name": "Grid Settings",
+      "display": "Grid Settings",
+      "properties": [
+        {
+          "name": "Only Create Grid",
+          "display": "Only Create Grid",
+          "desc": "The Only Create Grid toggle forces the module to exit after the gridding is complete with no interpolation done."
+        },
+        {
+          "name": "Grid Coordinates",
+          "display": "Grid Coordinates",
+          "desc": "Allows the user to define the coordinate domain within the data set in which kriging will be completed. Please read the help for more information on these parameters."
+        },
+        {
+          "name": "X Resolution",
+          "display": "X Resolution",
+          "desc": "The X Resolution specifies the number of grid nodes that will be included within the model horizontal domain."
+        },
+        {
+          "name": "Y Resolution",
+          "display": "Y Resolution",
+          "desc": "The Y Resolution specifies the number of grid nodes that will be included within the model vertical domain."
+        },
+        {
+          "name": "Z Resolution",
+          "display": "Z Resolution",
+          "desc": "The Z Resolution specifies the number of grid nodes that will be included within the model elevation domain when creating a single layer."
+        },
+        {
+          "name": "Cell Set Subdivision",
+          "display": "Cell Set Subdivision",
+          "desc": "The Generate Sets option allows the user to select whether the output is grouped into materials, grouped into layers or not grouped and thus containing individual materials per layer."
+        },
+        {
+          "name": "Layers From Geology",
+          "display": "Layers From Geology",
+          "desc": "The Layers from Geology control is used with input geology port. It can be used to create a single layer or a layer for each horizon"
+        },
+        {
+          "name": "Proportional Gridding",
+          "display": "Proportional Gridding",
+          "desc": "When multiple geologic layers exist, cells are apportioned to layers in Z, based on each layer’s average thickness over the total model domain, but further subject to the “Min Cells Per Layer” parameter.  Actual Z Resolution may be higher than specified."
+        },
+        {
+          "name": "Min Cells Per Layer",
+          "display": "Min Cells Per Layer",
+          "desc": "The minimum number of cells (in the Z direction) per layer. This option is used when proportionally gridding an input geologic grid."
+        },
+        {
+          "name": "Cells Per Layer",
+          "display": "Cells Per Layer",
+          "desc": "The Cells (in the Z direction) per layer when using the selected Proportional Gridding option. This option is used when proportioning an input geologic grid."
+        },
+        {
+          "name": "Min Layer Thickness",
+          "display": "Min Layer Thickness",
+          "desc": "The Minimum Layer Thickness is the smallest vertical height of each cell."
+        },
+        {
+          "name": "Reverse Surface Hierarchy",
+          "display": "Reverse Surface Hierarchy",
+          "desc": "Reversing Surface Hierarchy will define layers starting from the bottom to the top."
+        },
+        {
+          "name": "Rectilinear Offset",
+          "display": "Rectilinear Offset",
+          "desc": "Rectilinear Offset is used to create a domain that is larger than the input data along all three axes."
+        }
+      ]
+    },
+    {
+      "name": "Krig Settings",
+      "display": "Krig Settings",
+      "properties": [
+        {
+          "name": "Estimation Type",
+          "display": "Estimation Type",
+          "desc": "The Estimation Type will allow the user to select from between the Nearest Neighbor and Kriging algorithms."
+        },
+        {
+          "name": "Lithology Method",
+          "display": "Lithology Method",
+          "desc": "The Lithology Method allows the user to select the unrefined (Block) or the refinement (Smooth) algorithm. The refined algorithm has a profound affect on the model creation time and memory requirements, but the Smooth method requires much lower grid resolutions to achieve great results.  It can actually provide superior results in less time with proper selection of resolutions."
+        },
+        {
+          "name": "Reach",
+          "display": "Reach",
+          "desc": "The Reach input field defines the radial distance (in user units) from any given model node that the kriging module will look for data points to be included in the estimation of the model parameter at that node. Setting the reach to 0 will result in the module calculating a reach value which is approximately two-thirds of the longest distance between any two data points in the data set."
+        },
+        {
+          "name": "Points In Reach",
+          "display": "Points In Reach",
+          "desc": "The Points In Reach value defines the maximum number of data points (within the specified reach) that will be considered for the parameter estimation at a model node. This value is not used for Nearest Neighbor interpolation or when the number of samples falls below the Use All Data threshold."
+        },
+        {
+          "name": "Octant Search",
+          "display": "Octant Search",
+          "desc": "When the Octant Search toggle is selected searching is performed for each of the eight Octants surrounding the point to be kriged. Within each octant a maximum number of points (up to one-fourth of the total points) are selected. Then, points are taken sequentially from each octant up to the maximum number of total points or until all octant's points have been used."
+        },
+        {
+          "name": "Use All Points",
+          "display": "Use All Points",
+          "desc": "The Use All Points toggle causes the module to include samples up to the All Points Limit value.  If the number of samples exceeds the limit value the Reach and Points In Reach settings are used."
+        },
+        {
+          "name": "All Points Limit",
+          "display": "All Points Limit",
+          "desc": "The All Points Limit is the maximum number of points to use when interpolating.  If there are more samples in the file than this value the Reach and Points In Reach settings will be used."
+        },
+        {
+          "name": "PGF Refine Distance",
+          "display": "PGF Refine Distance",
+          "desc": "Understanding the PGF Refine Distance parameter requires an understanding of the basics of indicator kriging with a .PGF file as input.  Please reference the module help for more details."
+        },
+        {
+          "name": "Max Points Per Interval",
+          "display": "Max Points Per Interval",
+          "desc": "The Max Points Per Interval is used to cap the number of points created between samples in pgf data."
+        },
+        {
+          "name": "Maximum Refined Points",
+          "display": "Maximum Refined Points",
+          "desc": "The Maximum Refined Points sets a limit on the total number of points created when refining a *.pgf file.  If the number of points generated, along with the original number of file samples, are greater than this value an error will be reported."
+        },
+        {
+          "name": "Variogram And Anisotropy",
+          "display": "Variogram And Anisotropy",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "name": "Variography Display",
+      "display": "Variography Display",
+      "properties": [
+        {
+          "name": "Variography Z Scale",
+          "display": "Variography Z Scale",
+          "desc": "The Variography Z Scale value is the vertical exaggeration to be applied to the output variography ellipsoid and line objects."
+        },
+        {
+          "name": "Display Variogram Ellipsoid",
+          "display": "Display Variogram Ellipsoid",
+          "desc": "The Display Variogram Ellipsoid control allows the user to display the variography ellipsoid."
+        },
+        {
+          "name": "Ellipsoid Opacity",
+          "display": "Ellipsoid Opacity",
+          "desc": "The Ellipsoid Opacity control allows the user to set the opacity of the ellipsoid directly"
+        },
+        {
+          "name": "Resolution",
+          "display": "Resolution",
+          "desc": "The resolution to use for the ellipsoid. Larger numbers create more detailed representations."
+        },
+        {
+          "name": "Ellipsoid Scale",
+          "display": "Ellipsoid Scale",
+          "desc": "The Ellipsoid Scale will scale the ellipsoid equally along each axis."
+        },
+        {
+          "name": "X Offset",
+          "display": "X Offset",
+          "desc": "The X Offset slider will allow the user to translate the ellipsoid along the x axis"
+        },
+        {
+          "name": "Y Offset",
+          "display": "Y Offset",
+          "desc": "The Y Offset slider will allow the user to translate the ellipsoid along the y axis"
+        },
+        {
+          "name": "Z Offset",
+          "display": "Z Offset",
+          "desc": "The Z Offset slider will allow the user to translate the ellipsoid along the z axis"
+        },
+        {
+          "name": "Ellipsoid Color",
+          "display": "Ellipsoid Color",
+          "desc": "The ellipsoid is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Display Variogram Lines",
+          "display": "Display Variogram Lines",
+          "desc": "The Display Variogram Lines allow the user to display lines aligned with the variography ellipsoid."
+        },
+        {
+          "name": "Line Scale",
+          "display": "Line Scale",
+          "desc": "The Line Scale is a scalar that sets the lenght of the variogram lines relative the scale of the ellipsoid"
+        },
+        {
+          "name": "Primary Ratio Color",
+          "display": "Primary Ratio Color",
+          "desc": "The primary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Secondary Ratio Color",
+          "display": "Secondary Ratio Color",
+          "desc": "The secondary ratio axis is a solid color which can be selected using this control."
+        },
+        {
+          "name": "Tertiary Axis Color",
+          "display": "Tertiary Axis Color",
+          "desc": "The tertiary axis is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Data To Export",
+      "display": "Data To Export",
+      "properties": [
+        {
+          "name": "Geologic Nodal Data",
+          "display": "Geologic Nodal Data",
+          "desc": "The Geologic Nodal Data options let the user decide which data components to generate for the output field on a node by node basis."
+        },
+        {
+          "name": "Geologic Cell Data",
+          "display": "Geologic Cell Data",
+          "desc": "The Geologic Cell Data options let the user decide which data components to generate for the output field on a cell by cell basis."
+        },
+        {
+          "name": "Probability",
+          "display": "Probability",
+          "desc": "The Probability toggle exports a data value that describes the probability of that cell or node being the chosen material."
+        },
+        {
+          "name": "Probabilities By Material",
+          "display": "Probabilities By Material",
+          "desc": "The Probability By Material exports a data value that describes the probability of that cell or node being each of the different materials."
+        }
+      ]
+    }
+  ]
+}

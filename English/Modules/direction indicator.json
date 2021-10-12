@@ -1,0 +1,181 @@
+{
+  "name": "direction indicator",
+  "display": "direction indicator",
+  "desc": "Place a 3D North Arrow or Compass Rose in the Viewer.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Properties",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "Switch Property View",
+          "desc": "Edit the renderable (red) port properties for the module."
+        },
+        {
+          "name": "Visible",
+          "display": "Visible",
+          "desc": "Controls the visibility of the object."
+        },
+        {
+          "name": "Display Type",
+          "display": "Display Type",
+          "desc": "The Display Type allows the user to select between a north arrow and a compass rose as output."
+        },
+        {
+          "name": "X Center",
+          "display": "X Center",
+          "desc": "The X center of the chosen display type object."
+        },
+        {
+          "name": "Y Center",
+          "display": "Y Center",
+          "desc": "The Y center of the chosen display type object."
+        },
+        {
+          "name": "Z Center",
+          "display": "Z Center",
+          "desc": "The Z center of the chosen display type object."
+        },
+        {
+          "name": "Height Factor",
+          "display": "Height Factor",
+          "desc": "The Height Factor scales the vertical height of the output object."
+        }
+      ]
+    },
+    {
+      "name": "North Arrow Settings",
+      "display": "North Arrow Settings",
+      "properties": [
+        {
+          "name": "Arrow Size",
+          "display": "Arrow Size",
+          "desc": "The Arrow Size scales the size in all dimensions of the output object."
+        },
+        {
+          "name": "Arrow Bevel",
+          "display": "Arrow Bevel",
+          "desc": "The Arrow Bevel affects the degree of bevelling on the north arrow."
+        },
+        {
+          "name": "Stem Width",
+          "display": "Stem Width",
+          "desc": "The Stem Width affects the width of the arrow's stem (shaft)."
+        },
+        {
+          "name": "Stem Length",
+          "display": "Stem Length",
+          "desc": "The Stem Length Factor affects the length of the arrow's stem (shaft)."
+        },
+        {
+          "name": "Triangle Base Factor",
+          "display": "Triangle Base Factor",
+          "desc": "The Triangle Base Factor affects the width of the arrow's head."
+        },
+        {
+          "name": "North Color",
+          "display": "North Color",
+          "desc": "The North Arrow is a solid color which can be selected using this control."
+        }
+      ]
+    },
+    {
+      "name": "Compass Rose Settings",
+      "display": "Compass Rose Settings",
+      "properties": [
+        {
+          "name": "Rose Size",
+          "display": "Rose Size",
+          "desc": "The Rose Size scales the output object in all dimensions."
+        },
+        {
+          "name": "North Length",
+          "display": "North Length",
+          "desc": "The North Length Factor allows you to exaggerate the length of the north pointing shaft."
+        },
+        {
+          "name": "Sub Cardinal Length",
+          "display": "Sub Cardinal Length",
+          "desc": "The Sub-Cardinal Length Factor controls the length of the 45 degree shafts relative to the primary shafts."
+        },
+        {
+          "name": "Inner Radius Factor",
+          "display": "Inner Radius Factor",
+          "desc": "The Inner Radius Factor controls the radius of the solid core section."
+        },
+        {
+          "name": "Primary Color",
+          "display": "Primary Color",
+          "desc": "The compass rose is made of two colors the first can be set using this control."
+        },
+        {
+          "name": "Secondary Color",
+          "display": "Secondary Color",
+          "desc": "The compass rose is made of two colors the second can be set using this control."
+        }
+      ]
+    },
+    {
+      "name": "Label Settings",
+      "display": "Label Settings",
+      "properties": [
+        {
+          "name": "Label Type",
+          "display": "Label Type",
+          "desc": "The Label Type allows the user to select between two font types. TrueType fonts are standard fonts.  Line fonts are low impact fonts which perform better when large numbers of labels are generated."
+        },
+        {
+          "name": "Font Base Scale",
+          "display": "Font Base Scale",
+          "desc": "The Font Base Scale affects the size of all text objects."
+        },
+        {
+          "name": "Flip Labels",
+          "display": "Flip Labels",
+          "desc": "Flip Labels makes the text readable from the underside."
+        },
+        {
+          "name": "Line Font Style",
+          "display": "Line Font Style",
+          "desc": "The Line Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "TrueType Font Style",
+          "display": "TrueType Font Style",
+          "desc": "The TrueType Font Style allows the user to alter the basic look of the font."
+        },
+        {
+          "name": "Font Color",
+          "display": "Font Color",
+          "desc": "The Font Color allows the user to set the value for the color of the Font."
+        },
+        {
+          "name": "North Label",
+          "display": "North Label",
+          "desc": "The North Label sets all values related to the text on the North end of the either the compass rose or the north arrow."
+        },
+        {
+          "name": "East Label",
+          "display": "East Label",
+          "desc": "The East Label sets all values related to the text on the East end of the compass rose."
+        },
+        {
+          "name": "South Label",
+          "display": "South Label",
+          "desc": "The South Label sets all values related to the text on the South end of the compass rose."
+        },
+        {
+          "name": "West Label",
+          "display": "West Label",
+          "desc": "The West Label sets all values related to the text on the West end of the compass rose."
+        },
+        {
+          "name": "Sub Cardinal Labels",
+          "display": "Sub Cardinal Labels",
+          "desc": "The Sub Cardinal Labels control sets all values related to the text at the sub cardinal directions of the compass rose."
+        }
+      ]
+    }
+  ]
+}

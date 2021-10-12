@@ -1,0 +1,23 @@
+{
+  "name": "import vtk",
+  "display": "ï₥ƥôřƭ Ʋƭƙ",
+  "desc": "Tλè ï₥ƥôřƭ VTK ₥ôδúℓè řèáδƨ á δáƭáƨèƭ ƒřô₥ ƭλè VTK ƒôř₥áƭ.",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "Þřôƥèřƭïèƨ",
+      "properties": [
+        {
+          "name": "Switch Property View",
+          "display": "§ωïƭçλ Þřôƥèřƭ¥ Vïèω",
+          "desc": "Éδïƭ ƭλè řèñδèřáβℓè (řèδ) ƥôřƭ ƥřôƥèřƭïèƨ ƒôř ƭλè ₥ôδúℓè."
+        },
+        {
+          "name": "Units",
+          "display": "Ûñïƭƨ",
+          "desc": "Tλè çôôřδïñáƭè úñïƭƨ."
+        }
+      ]
+    }
+  ]
+}

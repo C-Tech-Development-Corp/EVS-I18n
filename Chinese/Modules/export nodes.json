@@ -1,0 +1,38 @@
+{
+  "name": "export nodes",
+  "display": "export nodes",
+  "desc": "该模块提供了一种导出ASCII文件的途径，该文件包含EVS中任何对象的坐标(以及可选的数据)。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "File Delimiter",
+          "display": "文件分隔符",
+          "desc": "文件分隔符允许您为输出文件指定分隔符。默认值是逗号。有一个特殊的分隔符<TAB>，它将对输出文件进行制表符分隔。"
+        },
+        {
+          "name": "Write Nodal Data",
+          "display": "写入节点数据",
+          "desc": "此开关使得所有节点数据包含至文件中。"
+        },
+        {
+          "name": "Exponentiate Log Data",
+          "display": "对数数据求幂",
+          "desc": "告诉模块当写出数据时，所有带有log单位的数据需要求幂操作。"
+        },
+        {
+          "name": "Write Node Number",
+          "display": "写入节点编号",
+          "desc": "此开关使得节点编号包含至文件中。"
+        },
+        {
+          "name": "Append To File",
+          "display": "附加至文件",
+          "desc": "此开关使得数据附加至已存在的文件中，并且取消附加数据部分的行头。"
+        }
+      ]
+    }
+  ]
+}

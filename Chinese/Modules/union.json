@@ -1,6 +1,6 @@
 {
   "name": "union",
-  "display": "union
+  "display": "union",
   "desc": "union是一个功能强大的模块，允许进行大量复杂的串行和并行子集化设置操作，这些操作需要计算和可视化多个分析物和阈值水平的联合体。",
   "categories": [
     {

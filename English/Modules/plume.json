@@ -1,7 +1,7 @@
 {
   "name": "plume",
   "display": "plume",
-  "desc": "The plume module creates a true 3D volumetric subset of a 3D input. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric. This module should not normally be used when you desire a visualization of a plume but rather when you wish to do subsequent operations such as analysis, slices, etc.",
+  "desc": "Create a true 3D volumetric subset of a 3D input. The resulting volume can be used as input for further subsetting or volumetric computations since it is volumetric. This module should not normally be used when you desire a visualization of a plume but rather when you wish to do subsequent operations such as analysis, slices, etc.",
   "categories": [
     {
       "name": "Properties",

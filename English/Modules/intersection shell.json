@@ -1,7 +1,7 @@
 {
   "name": "intersection shell",
   "display": "intersection shell",
-  "desc": "The intersection_shell module outputs a non-volumetric version of a sequentially subset plume.",
+  "desc": "Subset a volumetric model with multiple subsets and display a non-volumetric shell of the results.",
   "categories": [
     {
       "name": "Properties",

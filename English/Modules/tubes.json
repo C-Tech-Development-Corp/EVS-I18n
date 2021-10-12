@@ -1,7 +1,7 @@
 {
   "name": "tubes",
   "display": "tubes",
-  "desc": "The tubes module is used to produce open or closed tubes of constant or data dependent radius using 3D lines or polylines as input.",
+  "desc": "Produce open or closed tubes of constant or data dependent radius using 3D lines or polylines as input.",
   "categories": [
     {
       "name": "Properties",

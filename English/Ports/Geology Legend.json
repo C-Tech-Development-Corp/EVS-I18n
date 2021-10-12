@@ -10,11 +10,6 @@
           "desc": "Edit the current module properties."
         }
       ]
-    },
-    {
-      "name": "Port Information",
-      "display": "Port Information",
-      "properties": []
     }
   ]
 }

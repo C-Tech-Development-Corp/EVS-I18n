@@ -1,7 +1,7 @@
 {
   "name": "texture cross section",
   "display": "texture cross section",
-  "desc": "The texture_cross_section module provides a means to (texture map) project images from a fence onto a surface.",
+  "desc": "Project images from a fence onto a cross section surface.",
   "categories": [
     {
       "name": "Properties",
@@ -54,21 +54,6 @@
           "desc": "The Flip Vertical toggle will cause the input image to be read from bottom to top instead of top to bottom"
         },
         {
-          "name": "Sharpen Image",
-          "display": "Sharpen Image",
-          "desc": "The Sharpen Image toggle will allow the user to sharpen the edges in an image by exaggerating the brightness difference along the edges."
-        },
-        {
-          "name": "Soften Image",
-          "display": "Soften Image",
-          "desc": "The Soften Image toggle will allow the user to soften the edges in an image by reducing the brightness difference along the edges."
-        },
-        {
-          "name": "Enhance Edges",
-          "display": "Enhance Edges",
-          "desc": "Enhances the Edges of the objects and discards other image information."
-        },
-        {
           "name": "Brightness",
           "display": "Brightness",
           "desc": "The Brightness slider can either add or remove brightness from every pixel."
@@ -77,21 +62,6 @@
           "name": "Contrast",
           "display": "Contrast",
           "desc": "The Contrast slider can either add or remove contrast from every pixel. Making bright spots brighter and dark spots darker"
-        },
-        {
-          "name": "White Balance Red",
-          "display": "White Balance Red",
-          "desc": "The White Balance Red slider affects the red channel of the white balance."
-        },
-        {
-          "name": "White Balance Green",
-          "display": "White Balance Green",
-          "desc": "The White Balance Green slider affects the green channel of the white balance."
-        },
-        {
-          "name": "White Balance Blue",
-          "display": "White Balance Blue",
-          "desc": "The White Balance Blue slider affects the blue channel of the white balance."
         },
         {
           "name": "Gamma Correction Red",

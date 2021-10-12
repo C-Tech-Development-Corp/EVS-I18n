@@ -1,9 +1,15 @@
 {
   "categories": [
     {
-      "name": "Port Information",
-      "display": "端口信息",
-      "properties": []
+        "name": "Properties",
+        "display": "属性",
+        "properties": [
+          {
+              "name": "Switch Property View",
+              "display": "Switch Property View",
+              "desc": "Edit the current module properties."
+            }  
+        ]
     },
     {
       "name": "Values",

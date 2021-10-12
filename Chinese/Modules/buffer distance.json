@@ -1,0 +1,28 @@
+{
+  "name": "buffer distance",
+  "display": "buffer distance",
+  "desc": "buffer模块输入一条线，并计算左侧端口输入场中节点与该线的距离，把该距离并作为一个数据组件存入节点。",
+  "categories": [
+    {
+      "name": "Properties",
+      "display": "属性",
+      "properties": [
+        {
+          "name": "Limit Depth",
+          "display": "限定深度",
+          "desc": "允许设置最低深度 z值和最高深度 z值，从而创建(传递)一个仅扩展到那些指定高度的围栅。"
+        },
+        {
+          "name": "Z Min Depth",
+          "display": "最低深度 z值",
+          "desc": "如果限定深度开关打开，该参数为限定的最低深度。"
+        },
+        {
+          "name": "最高深度 z值",
+          "display": "Z Max Depth",
+          "desc": "如果限定深度开关打开，该参数为限定的最高深度。"
+        }
+      ]
+    }
+  ]
+}

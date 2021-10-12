@@ -1,7 +1,7 @@
 {
   "name": "merge fields",
   "display": "merge fields",
-  "desc": "The merge_fields module combines the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components.",
+  "desc": "Combine the input fields from up to 4 separate inputs into a unified single field with any number of nodal data components.",
   "categories": [
     {
       "name": "Properties",

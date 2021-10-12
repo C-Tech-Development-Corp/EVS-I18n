@@ -1,7 +1,7 @@
 {
   "name": "draw lines",
   "display": "draw lines",
-  "desc": "The draw_lines module enables you to create both 2D and 3D lines interactively with the mouse.",
+  "desc": "Create both 2D and 3D lines interactively with the mouse.",
   "categories": [
     {
       "name": "Properties",

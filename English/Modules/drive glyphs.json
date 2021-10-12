@@ -1,7 +1,7 @@
 {
   "name": "drive glyphs",
   "display": "drive glyphs",
-  "desc": "The drive_glyph module provides a way to move any object along multiple paths to create a 'driving' animation.",
+  "desc": "Provides a way to move any object along multiple paths to create a 'driving' animation.",
   "categories": [
     {
       "name": "Properties",

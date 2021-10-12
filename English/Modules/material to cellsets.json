@@ -1,7 +1,7 @@
 {
   "name": "material to cellsets",
   "display": "material to cellsets",
-  "desc": "This module takes a field's output and recreates the cell sets based on nodal data.",
+  "desc": "Recreates the cell sets based on nodal data.",
   "categories": [
     {
       "name": "Properties",

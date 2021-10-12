@@ -1,7 +1,7 @@
 {
   "name": "modpath",
   "display": "modpath",
-  "desc": "The modpath module uses the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground.",
+  "desc": "Use the cell by cell flow values generated from a MODFLOW project along with head values and other MODFLOW parameters to trace the path of a particle of water as it moves through the ground.",
   "categories": [
     {
       "name": "Properties",

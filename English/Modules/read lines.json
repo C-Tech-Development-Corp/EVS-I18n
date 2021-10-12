@@ -1,7 +1,7 @@
 {
   "name": "read lines",
   "display": "read lines",
-  "desc": "The read_lines module is used to visualize a series of points with data connected by lines.",
+  "desc": "Read a series of points with data connected by lines.",
   "categories": [
     {
       "name": "Properties",
