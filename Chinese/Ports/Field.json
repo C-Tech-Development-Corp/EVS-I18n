@@ -1,9 +1,15 @@
 {
   "categories": [
     {
-      "name": "Port Information",
-      "display": "端口信息",
-      "properties": []
+        "name": "Properties",
+        "display": "属性",
+        "properties": [
+          {
+              "name": "Switch Property View",
+              "display": "Switch Property View",
+              "desc": "Edit the current module properties."
+            }  
+        ]
     },
     {
       "name": "Statistics",
@@ -33,6 +39,11 @@
           "name": "Number Of Cell Data",
           "display": "单元数据数量",
           "desc": "显示场中单元数据组件的数量。"
+        },
+        {
+          "name": "Coordinate Units",
+          "display": "Coordinate Units",
+          "desc": "Displays the coordinate units in the field."
         },
         {
           "name": "Coordinate Extents",

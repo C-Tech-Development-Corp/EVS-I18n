@@ -1,9 +1,15 @@
 {
   "categories": [
     {
-      "name": "Port Information",
-      "display": "端口信息",
-      "properties": []
+        "name": "Properties",
+        "display": "属性",
+        "properties": [
+          {
+              "name": "Switch Property View",
+              "display": "Switch Property View",
+              "desc": "Edit the current module properties."
+            }  
+        ]
     },
     {
       "name": "General Properties",
@@ -13,6 +19,11 @@
           "name": "Visible",
           "display": "可见性",
           "desc": "控制对象的可见性"
+        },
+        {
+          "name": "Pickable",
+          "display": "Pickable",
+          "desc": "Controls whether the object can be picked interactively in the viewer."
         },
         {
           "name": "Opacity",
@@ -25,14 +36,14 @@
           "desc": "控制对象的哪些面可以展示。"
         },
         {
-          "name": "Normals Generation",
-          "display": "法线生成",
-          "desc": "控制如何生成面的法线。单元法线将导致面化。顶点法线将创建光滑的面。"
+          "name": "Faces To Display",
+          "display": "面剔除",
+          "desc": "控制对象的哪些面可以展示。"
         },
         {
-          "name": "Rendering Priority",
-          "display": "渲染优先级",
-          "desc": "控制对象的展示优先级。更高的数值的渲染对象会比同一视图空间中的其他对象优先渲染。"
+          "name": "Color By",
+          "display": "Color By",
+          "desc": "The Color By control allows the user to set how the color of the output should be determined."
         },
         {
           "name": "Node Data Datamap",
@@ -45,9 +56,24 @@
           "desc": "基于渲染对象中包含的数据，将颜色映射到最终输出对象"
         },
         {
-          "name": "Object Secondary Color",
-          "display": "对象次生色",
-          "desc": "设置对象的次生色。"
+            "name": "Object Secondary Color",
+            "display": "对象次生色",
+            "desc": "设置对象的次生色。"
+        },
+        {
+          "name": "Normals Generation",
+          "display": "法线生成",
+          "desc": "控制如何生成面的法线。单元法线将导致面化。顶点法线将创建光滑的面。"
+        },
+        {
+          "name": "Rendering Priority",
+          "display": "渲染优先级",
+          "desc": "控制对象的展示优先级。更高的数值的渲染对象会比同一视图空间中的其他对象优先渲染。"
+        },
+        {
+          "name": "Glyph Normals",
+          "display": "Glyph Normals",
+          "desc": "Controls how normals are generated for glyphs, including spheres.  Cell normals will cause faceting.  Vertex normals will create smooth surfaces."
         }
       ]
     },
@@ -55,6 +81,21 @@
       "name": "Advanced Properties",
       "display": "高级属性",
       "properties": [
+        {
+          "name": "Auto Orient Normals",
+          "display": "Auto Orient Normals",
+          "desc": "Recompute new normals and reorient all triangles to face outward when possible."
+        },
+        {
+          "name": "Force Consistent Normals",
+          "display": "Force Consistent Normals",
+          "desc": "Flip normals on adjancent triangles to make surface normals consistent."
+        },
+        {
+          "name": "Max Edge Angle",
+          "display": "Max Edge Angle",
+          "desc": "The Max Edge Angle angle is defined as the angle between two faces or cells in the model."
+        },
         {
           "name": "Use Alternate Object",
           "display": "使用替代对象",
@@ -178,145 +219,6 @@
           "name": "Type",
           "display": "类型",
           "desc": ""
-        }
-      ]
-    },
-    {
-      "name": "General Properties",
-      "display": "通用属性",
-      "properties": [
-        {
-          "name": "Visible",
-          "display": "可见性",
-          "desc": "控制对象的可见性。"
-        },
-        {
-          "name": "Opacity",
-          "display": "不透明度",
-          "desc": "控制对象的不透明度。"
-        },
-        {
-          "name": "Face Culling",
-          "display": "面选择",
-          "desc": "控制对象的哪些面将被展示。"
-        },
-        {
-          "name": "Normals Generation",
-          "display": "法线生成",
-          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
-        },
-        {
-          "name": "Rendering Priority",
-          "display": "渲染优先级",
-          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
-        },
-        {
-          "name": "Node Data Datamap",
-          "display": "节点数据映射",
-          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
-        },
-        {
-          "name": "Cell Data Datamap",
-          "display": "单元数据映射",
-          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
-        },
-        {
-          "name": "Object Secondary Color",
-          "display": "对象次生色,
-          "desc": "控制对象的次生色。
-        },
-        {
-          "name": "Pickable",
-          "display": "可选性
-          "desc": "控制是否可以在查看器中通过交互的方式选择对象。"
-        }
-      ]
-    },
-    {
-      "name": "General Properties",
-      "display": "通用属性",
-      "properties": [
-        {
-          "name": "Visible",
-          "display": "可见性",
-          "desc": "控制对象的可见性。"
-        },
-        {
-          "name": "Opacity",
-          "display": "不透明度",
-          "desc": "控制对象的不透明度。"
-        },
-        {
-          "name": "Face Culling",
-          "display": "面选择",
-          "desc": "控制对象的哪些面将被展示。"
-        },
-        {
-          "name": "Normals Generation",
-          "display": "法线生成",
-          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
-        },
-        {
-          "name": "Glyph Normals",
-          "display": "图元法线",
-          "desc": "控制如何为包括球体在内的图元生成法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
-        },
-        {
-          "name": "Rendering Priority",
-          "display": "渲染优先级",
-          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
-        },
-        {
-          "name": "Node Data Datamap",
-          "display": "节点数据映射",
-          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
-        },
-        {
-          "name": "Cell Data Datamap",
-          "display": "单元数据映射",
-          "desc": " 控制颜色如何基于渲染对象中包含的数据映射到结果对象。"
-        },
-      ]
-    },
-    {
-      "name": "General Properties",
-      "display": "通用属性",
-      "properties": [
-        {
-          "name": "Visible",
-          "display": "可见性",
-          "desc": "控制对象的可见性。"
-        }
-      ]
-    },
-    {
-      "name": "General Properties",
-      "display": "通用属性",
-      "properties": [
-        {
-          "name": "Visible",
-          "display": "可见性",
-          "desc": "控制对象的可见性。"
-        },
-        {
-          "name": "Opacity",
-          "display": "不透明度",
-          "desc": "控制对象的不透明度。"
-        },
-        {
-          "name": "Face Culling",
-          "display": "面选择",
-          "desc": "控制对象的哪些面将被展示。"
-        },
-        {
-          "name": "Normals Generation",
-          "display": "法线生成",
-          "desc": "控制如何生成面法线。单元格法线将导致面化。顶点法线将创建光滑的表面。"
-        },
-         {
-          "name": "Rendering Priority",
-          "display": "渲染优先级",
-          "desc": " 控制对象的渲染优先级。更高的数值会使渲染对象比同一空间中的其他渲染对象有更好的效果。"
         }
       ]
     }
